@@ -1,0 +1,106 @@
+{
+  "resolvedId": "C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/pages/FavPage/FavPage.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<script setup lang=\"ts\">\nimport { useStoreMap, useUnit } from 'effector-vue/composition';\n\nimport { API } from '@/shared/api';\nimport { shuffled } from '@/shared/lib';\nimport { MainContainer } from '@/shared/ui';\n\nimport { ProductModel } from '@/entities/Product';\n\nimport { RootLayout } from '@/widgets/RootLayout';\n\nconst [likedProducts] = useUnit([ProductModel.$likedProducts]);\n\nconst products = useStoreMap({\n    store: ProductModel.$availableProducts,\n    keys: () => likedProducts,\n    fn: (products, likedProducts) => products.filter((product) => likedProducts.value.includes(`${product.id}`)),\n});\n</script>\n<template>\n    <RootLayout>\n        <MainContainer class=\"py-[40px] lg:max-w-[350px]\">\n            <div>\n                <h2 class=\"text-xl pb-10 border-b-gray-200 border-b-1\">Favorite</h2>\n                <ul class=\"py-10 grid gap-10\">\n                    <li v-for=\"product in products\" :key=\"product.id\">\n                        <RouterLink :to=\"`/product/${product.id}`\">\n                            <div class=\"flex gap-4 items-center\">\n                                <Image width=\"90\" :src=\"API.BASE_URL + shuffled(product.images)[0]\" />\n                                <div>\n                                    <p>{{ product.name }}</p>\n                                    <p># {{ product.id }}</p>\n                                </div>\n                            </div>\n                        </RouterLink>\n                    </li>\n                </ul>\n            </div>\n        </MainContainer>\n    </RootLayout>\n</template>\n",
+      "start": 1761072563246,
+      "end": 1761072563261,
+      "sourcemaps": null
+    },
+    {
+      "name": "@tailwindcss/vite:generate:build",
+      "start": 1761072563261,
+      "end": 1761072563261,
+      "order": "pre"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761072563261,
+      "end": 1761072563261,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761072563261,
+      "end": 1761072563261,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "import _sfc_main from \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/pages/FavPage/FavPage.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/pages/FavPage/FavPage.vue?vue&type=script&setup=true&lang.ts\";\nexport default _sfc_main;\n",
+      "start": 1761072563261,
+      "end": 1761072563344,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:define",
+      "start": 1761072563344,
+      "end": 1761072563344,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761072563344,
+      "end": 1761072563344,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761072563344,
+      "end": 1761072563344,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761072563344,
+      "end": 1761072563344,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761072563344,
+      "end": 1761072563344,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761072563344,
+      "end": 1761072563344,
+      "order": "normal-normal"
+    },
+    {
+      "name": "unplugin-vue-components",
+      "result": "/* unplugin-vue-components disabled */import _sfc_main from \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/pages/FavPage/FavPage.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/pages/FavPage/FavPage.vue?vue&type=script&setup=true&lang.ts\";\nexport default _sfc_main;\n",
+      "start": 1761072563344,
+      "end": 1761072563345,
+      "order": "post",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/pages/FavPage/FavPage.vue"
+        ],
+        "sourcesContent": [
+          "import _sfc_main from \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/pages/FavPage/FavPage.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/pages/FavPage/FavPage.vue?vue&type=script&setup=true&lang.ts\";\nexport default _sfc_main;\n"
+        ],
+        "names": [],
+        "mappings": "sCAAA,MAAM,CAAC,SAAS,CAAC,IAAI,CAAC,CAAC,CAAC,CAAC,CAAC,KAAK,CAAC,KAAK,CAAC,QAAQ,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,EAAE,CAAC,GAAG,CAAC,KAAK,CAAC,OAAO,CAAC,OAAO,CAAC,GAAG,CAAC,GAAG,CAAC,IAAI,CAAC,MAAM,CAAC,KAAK,CAAC,IAAI,CAAC,IAAI,CAAC,EAAE,CAAC;AAC/J,MAAM,CAAC,CAAC,CAAC,IAAI,CAAC,CAAC,CAAC,CAAC,CAAC,KAAK,CAAC,KAAK,CAAC,QAAQ,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,EAAE,CAAC,GAAG,CAAC,KAAK,CAAC,OAAO,CAAC,OAAO,CAAC,GAAG,CAAC,GAAG,CAAC,IAAI,CAAC,MAAM,CAAC,KAAK,CAAC,IAAI,CAAC,IAAI,CAAC,EAAE,CAAC;AACvJ,MAAM,CAAC,OAAO,CAAC,SAAS;"
+      }
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761072563345,
+      "end": 1761072563345,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761072563345,
+      "end": 1761072563345,
+      "order": "normal"
+    }
+  ]
+}

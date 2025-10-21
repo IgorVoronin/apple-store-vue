@@ -1,0 +1,113 @@
+{
+  "resolvedId": "C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/app/App.vue?vue&type=script&setup=true&lang.ts",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock } from \"vue\"\n\nimport 'primeicons/primeicons.css';\n\nexport default /*@__PURE__*/_defineComponent({\n  __name: 'App',\n  setup(__props) {\n\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_RouterView = _resolveComponent(\"RouterView\")!\n\n  return (_openBlock(), _createBlock(_component_RouterView))\n}\n}\n\n})",
+      "start": 1761072563347,
+      "end": 1761072563348
+    },
+    {
+      "name": "@tailwindcss/vite:generate:build",
+      "start": 1761072563348,
+      "end": 1761072563348,
+      "order": "pre"
+    },
+    {
+      "name": "vite:esbuild",
+      "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock } from \"vue\";\nimport \"primeicons/primeicons.css\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"App\",\n  setup(__props) {\n    return (_ctx, _cache) => {\n      const _component_RouterView = _resolveComponent(\"RouterView\");\n      return _openBlock(), _createBlock(_component_RouterView);\n    };\n  }\n});\n",
+      "start": 1761072563348,
+      "end": 1761072563364,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/app/App.vue?vue&type=script&setup=true&lang.ts"
+        ],
+        "sourcesContent": [
+          "import { defineComponent as _defineComponent } from 'vue'\nimport { resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock } from \"vue\"\n\nimport 'primeicons/primeicons.css';\n\nexport default /*@__PURE__*/_defineComponent({\n  __name: 'App',\n  setup(__props) {\n\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_RouterView = _resolveComponent(\"RouterView\")!\n\n  return (_openBlock(), _createBlock(_component_RouterView))\n}\n}\n\n})"
+        ],
+        "mappings": "AAAA,SAAS,mBAAmB,wBAAwB;AACpD,SAAS,oBAAoB,mBAAmB,aAAa,YAAY,eAAe,oBAAoB;AAE5G,OAAO;AAEP,eAA4B,iCAAiB;AAAA,EAC3C,QAAQ;AAAA,EACR,MAAM,SAAS;AAGjB,WAAO,CAAC,MAAU,WAAgB;AAChC,YAAM,wBAAwB,kBAAkB,YAAY;AAE5D,aAAQ,WAAW,GAAG,aAAa,qBAAqB;AAAA,IAC1D;AAAA,EACA;AAEA,CAAC;",
+        "names": []
+      }
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761072563364,
+      "end": 1761072563364,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1761072563364,
+      "end": 1761072563364,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761072563364,
+      "end": 1761072563364,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761072563364,
+      "end": 1761072563364,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761072563364,
+      "end": 1761072563364,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761072563364,
+      "end": 1761072563364,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761072563364,
+      "end": 1761072563364,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761072563364,
+      "end": 1761072563364,
+      "order": "normal-normal"
+    },
+    {
+      "name": "unplugin-vue-components",
+      "result": "/* unplugin-vue-components disabled */import { defineComponent as _defineComponent } from \"vue\";\nimport { resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock } from \"vue\";\nimport \"primeicons/primeicons.css\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"App\",\n  setup(__props) {\n    return (_ctx, _cache) => {\n      const _component_RouterView = _resolveComponent(\"RouterView\");\n      return _openBlock(), _createBlock(_component_RouterView);\n    };\n  }\n});\n",
+      "start": 1761072563364,
+      "end": 1761072563366,
+      "order": "post",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/app/App.vue?vue&type=script&setup=true&lang.ts"
+        ],
+        "sourcesContent": [
+          "import { defineComponent as _defineComponent } from \"vue\";\nimport { resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock } from \"vue\";\nimport \"primeicons/primeicons.css\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"App\",\n  setup(__props) {\n    return (_ctx, _cache) => {\n      const _component_RouterView = _resolveComponent(\"RouterView\");\n      return _openBlock(), _createBlock(_component_RouterView);\n    };\n  }\n});\n"
+        ],
+        "names": [],
+        "mappings": "sCAAA,MAAM,CAAC,CAAC,CAAC,eAAe,CAAC,EAAE,CAAC,gBAAgB,CAAC,CAAC,CAAC,IAAI,CAAC,CAAC,GAAG,CAAC;AACzD,MAAM,CAAC,CAAC,CAAC,gBAAgB,CAAC,EAAE,CAAC,iBAAiB,CAAC,CAAC,SAAS,CAAC,EAAE,CAAC,UAAU,CAAC,CAAC,WAAW,CAAC,EAAE,CAAC,YAAY,CAAC,CAAC,CAAC,IAAI,CAAC,CAAC,GAAG,CAAC;AACjH,MAAM,CAAC,CAAC,UAAU,CAAC,UAAU,CAAC,GAAG,CAAC;AAClC,MAAM,CAAC,OAAO,CAAC,CAAC,CAAC,CAAC,CAAC,QAAQ,CAAC,CAAC,CAAC,CAAC,gBAAgB,CAAC;AAChD,CAAC,CAAC,MAAM,CAAC,CAAC,CAAC,GAAG,CAAC;AACf,CAAC,CAAC,KAAK,CAAC,OAAO,CAAC,CAAC;AACjB,CAAC,CAAC,CAAC,CAAC,MAAM,CAAC,CAAC,IAAI,CAAC,CAAC,MAAM,CAAC,CAAC,CAAC,CAAC,CAAC;AAC7B,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,KAAK,CAAC,qBAAqB,CAAC,CAAC,CAAC,iBAAiB,CAAC,CAAC,UAAU,CAAC,CAAC;AACnE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,MAAM,CAAC,UAAU,CAAC,CAAC,CAAC,CAAC,YAAY,CAAC,qBAAqB,CAAC;AAC9D,CAAC,CAAC,CAAC,CAAC,CAAC;AACL,CAAC,CAAC;AACF,CAAC,CAAC;"
+      }
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761072563369,
+      "end": 1761072563369,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761072563369,
+      "end": 1761072563369,
+      "order": "normal"
+    }
+  ]
+}

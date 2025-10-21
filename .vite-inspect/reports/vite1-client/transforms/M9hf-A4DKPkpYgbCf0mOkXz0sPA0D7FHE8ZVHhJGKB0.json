@@ -1,0 +1,90 @@
+{
+  "resolvedId": "C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/node_modules/@primeuix/styles/dist/buttongroup/index.mjs",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "var style=\"\\n    .p-buttongroup {\\n        display: inline-flex;\\n    }\\n\\n    .p-buttongroup .p-button {\\n        margin: 0;\\n    }\\n\\n    .p-buttongroup .p-button:not(:last-child),\\n    .p-buttongroup .p-button:not(:last-child):hover {\\n        border-inline-end: 0 none;\\n    }\\n\\n    .p-buttongroup .p-button:not(:first-of-type):not(:last-of-type) {\\n        border-radius: 0;\\n    }\\n\\n    .p-buttongroup .p-button:first-of-type:not(:only-of-type) {\\n        border-start-end-radius: 0;\\n        border-end-end-radius: 0;\\n    }\\n\\n    .p-buttongroup .p-button:last-of-type:not(:only-of-type) {\\n        border-start-start-radius: 0;\\n        border-end-start-radius: 0;\\n    }\\n\\n    .p-buttongroup .p-button:focus {\\n        position: relative;\\n        z-index: 1;\\n    }\\n\";export{style};//# sourceMappingURL=index.mjs.map",
+      "start": 1761072564519,
+      "end": 1761072564525,
+      "sourcemaps": null
+    },
+    {
+      "name": "@tailwindcss/vite:generate:build",
+      "start": 1761072564525,
+      "end": 1761072564525,
+      "order": "pre"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761072564525,
+      "end": 1761072564525,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761072564525,
+      "end": 1761072564525,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1761072564525,
+      "end": 1761072564525,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761072564525,
+      "end": 1761072564525,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761072564525,
+      "end": 1761072564525,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761072564525,
+      "end": 1761072564525,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761072564525,
+      "end": 1761072564525,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761072564525,
+      "end": 1761072564525,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761072564525,
+      "end": 1761072564525,
+      "order": "normal-normal"
+    },
+    {
+      "name": "unplugin-vue-components",
+      "start": 1761072564525,
+      "end": 1761072564525,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761072564525,
+      "end": 1761072564525,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761072564525,
+      "end": 1761072564525,
+      "order": "normal"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "resolvedId": "C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/node_modules/@primeuix/themes/dist/aura/virtualscroller/index.mjs",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "var o={mask:{background:\"{content.background}\",color:\"{text.muted.color}\"},icon:{size:\"2rem\"}},e={loader:o};export{e as default,o as loader};//# sourceMappingURL=index.mjs.map",
+      "start": 1761072563106,
+      "end": 1761072563158,
+      "sourcemaps": null
+    },
+    {
+      "name": "@tailwindcss/vite:generate:build",
+      "start": 1761072563158,
+      "end": 1761072563158,
+      "order": "pre"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761072563158,
+      "end": 1761072563158,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761072563158,
+      "end": 1761072563158,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1761072563158,
+      "end": 1761072563158,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761072563158,
+      "end": 1761072563158,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761072563158,
+      "end": 1761072563158,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761072563158,
+      "end": 1761072563158,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761072563158,
+      "end": 1761072563158,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761072563158,
+      "end": 1761072563158,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761072563158,
+      "end": 1761072563158,
+      "order": "normal-normal"
+    },
+    {
+      "name": "unplugin-vue-components",
+      "start": 1761072563158,
+      "end": 1761072563158,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761072563158,
+      "end": 1761072563158,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761072563158,
+      "end": 1761072563158,
+      "order": "normal"
+    }
+  ]
+}

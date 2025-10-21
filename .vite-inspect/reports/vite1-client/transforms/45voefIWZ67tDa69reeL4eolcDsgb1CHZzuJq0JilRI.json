@@ -1,0 +1,90 @@
+{
+  "resolvedId": "C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/node_modules/primevue/overlayeventbus/index.mjs",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "import { EventBus } from '@primeuix/utils/eventbus';\n\nvar OverlayEventBus = EventBus();\n\nexport { OverlayEventBus as default };\n//# sourceMappingURL=index.mjs.map\n",
+      "start": 1761072564021,
+      "end": 1761072564065,
+      "sourcemaps": null
+    },
+    {
+      "name": "@tailwindcss/vite:generate:build",
+      "start": 1761072564065,
+      "end": 1761072564065,
+      "order": "pre"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761072564065,
+      "end": 1761072564065,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761072564065,
+      "end": 1761072564065,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1761072564065,
+      "end": 1761072564065,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761072564065,
+      "end": 1761072564065,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761072564065,
+      "end": 1761072564065,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761072564065,
+      "end": 1761072564065,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761072564065,
+      "end": 1761072564065,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761072564065,
+      "end": 1761072564065,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761072564065,
+      "end": 1761072564065,
+      "order": "normal-normal"
+    },
+    {
+      "name": "unplugin-vue-components",
+      "start": 1761072564065,
+      "end": 1761072564065,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761072564065,
+      "end": 1761072564065,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761072564065,
+      "end": 1761072564065,
+      "order": "normal"
+    }
+  ]
+}

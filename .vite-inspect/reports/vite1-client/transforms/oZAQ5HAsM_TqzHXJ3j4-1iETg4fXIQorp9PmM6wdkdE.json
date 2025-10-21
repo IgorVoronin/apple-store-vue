@@ -1,0 +1,107 @@
+{
+  "resolvedId": "C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/widgets/DiscountItems/DicsountItems.vue?vue&type=style&index=0&scoped=00e21e49&lang.css",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "\n.root {\n    margin-bottom: 56px;\n}\n\n.title {\n    margin-bottom: 32px;\n    font-size: 24px;\n    line-height: 32px;\n    text-align: left;\n}\n",
+      "start": 1761072563568,
+      "end": 1761072563568
+    },
+    {
+      "name": "@tailwindcss/vite:generate:build",
+      "result": "\n.root {\n    margin-bottom: 56px;\n}\n\n.title {\n    margin-bottom: 32px;\n    font-size: 24px;\n    line-height: 32px;\n    text-align: left;\n}\n",
+      "start": 1761072563568,
+      "end": 1761072563569,
+      "order": "pre",
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761072563570,
+      "end": 1761072563570,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761072563570,
+      "end": 1761072563570,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "\n.root[data-v-00e21e49] {\n    margin-bottom: 56px;\n}\n.title[data-v-00e21e49] {\n    margin-bottom: 32px;\n    font-size: 24px;\n    line-height: 32px;\n    text-align: left;\n}\n",
+      "start": 1761072563570,
+      "end": 1761072563570,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:define",
+      "start": 1761072563570,
+      "end": 1761072563570,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761072563570,
+      "end": 1761072563570,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761072563570,
+      "end": 1761072563570,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761072563570,
+      "end": 1761072563570,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761072563570,
+      "end": 1761072563570,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761072563570,
+      "end": 1761072563570,
+      "order": "normal-normal"
+    },
+    {
+      "name": "unplugin-vue-components",
+      "result": "/* unplugin-vue-components disabled */",
+      "start": 1761072563570,
+      "end": 1761072563571,
+      "order": "post",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/widgets/DiscountItems/DicsountItems.vue?vue&type=style&index=0&scoped=00e21e49&lang.css"
+        ],
+        "sourcesContent": [
+          ""
+        ],
+        "names": [],
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761072563571,
+      "end": 1761072563571,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761072563571,
+      "end": 1761072563571,
+      "order": "normal"
+    }
+  ]
+}

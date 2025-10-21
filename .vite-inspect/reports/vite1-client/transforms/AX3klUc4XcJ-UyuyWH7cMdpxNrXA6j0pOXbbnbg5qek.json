@@ -1,0 +1,102 @@
+{
+  "resolvedId": "C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/entities/Product/lib/mapCategories.ts",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "export const CATEGORIES_MAP: Record<string, string> = {\n    Смартфоны: 'Phones',\n    Компьютеры: 'Computers',\n    Планшеты: 'Tablets',\n    Часы: 'Smart Watches',\n    Гаджеты: 'Gadgets',\n    Аксессуары: 'Accessories',\n};\n\nconst CATEGORY_ICON_MAP: Record<string, string> = {\n    Смартфоны: 'pi pi-mobile ',\n    Компьютеры: 'pi pi-desktop',\n    Планшеты: 'pi pi-tablet',\n    Часы: 'pi pi-clock',\n    Гаджеты: 'pi pi-gauge',\n    Аксессуары: 'pi pi-headphones',\n};\n\nexport const mapCategoriesLabels = (\n    categories: string[]\n): {\n    label: string;\n    id: number;\n    icon: string;\n    category: string;\n}[] =>\n    categories.map((category, idx) => ({\n        label: CATEGORIES_MAP[category],\n        id: idx,\n        icon: CATEGORY_ICON_MAP[category],\n        category: category,\n    }));\n",
+      "start": 1761072563857,
+      "end": 1761072563980,
+      "sourcemaps": null
+    },
+    {
+      "name": "@tailwindcss/vite:generate:build",
+      "start": 1761072563980,
+      "end": 1761072563980,
+      "order": "pre"
+    },
+    {
+      "name": "vite:esbuild",
+      "result": "export const CATEGORIES_MAP = {\n  Смартфоны: \"Phones\",\n  Компьютеры: \"Computers\",\n  Планшеты: \"Tablets\",\n  Часы: \"Smart Watches\",\n  Гаджеты: \"Gadgets\",\n  Аксессуары: \"Accessories\"\n};\nconst CATEGORY_ICON_MAP = {\n  Смартфоны: \"pi pi-mobile \",\n  Компьютеры: \"pi pi-desktop\",\n  Планшеты: \"pi pi-tablet\",\n  Часы: \"pi pi-clock\",\n  Гаджеты: \"pi pi-gauge\",\n  Аксессуары: \"pi pi-headphones\"\n};\nexport const mapCategoriesLabels = (categories) => categories.map((category, idx) => ({\n  label: CATEGORIES_MAP[category],\n  id: idx,\n  icon: CATEGORY_ICON_MAP[category],\n  category\n}));\n",
+      "start": 1761072563980,
+      "end": 1761072564021,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/entities/Product/lib/mapCategories.ts"
+        ],
+        "sourcesContent": [
+          "export const CATEGORIES_MAP: Record<string, string> = {\n    Смартфоны: 'Phones',\n    Компьютеры: 'Computers',\n    Планшеты: 'Tablets',\n    Часы: 'Smart Watches',\n    Гаджеты: 'Gadgets',\n    Аксессуары: 'Accessories',\n};\n\nconst CATEGORY_ICON_MAP: Record<string, string> = {\n    Смартфоны: 'pi pi-mobile ',\n    Компьютеры: 'pi pi-desktop',\n    Планшеты: 'pi pi-tablet',\n    Часы: 'pi pi-clock',\n    Гаджеты: 'pi pi-gauge',\n    Аксессуары: 'pi pi-headphones',\n};\n\nexport const mapCategoriesLabels = (\n    categories: string[]\n): {\n    label: string;\n    id: number;\n    icon: string;\n    category: string;\n}[] =>\n    categories.map((category, idx) => ({\n        label: CATEGORIES_MAP[category],\n        id: idx,\n        icon: CATEGORY_ICON_MAP[category],\n        category: category,\n    }));\n"
+        ],
+        "mappings": "AAAO,aAAM,iBAAyC;AAAA,EAClD,WAAW;AAAA,EACX,YAAY;AAAA,EACZ,UAAU;AAAA,EACV,MAAM;AAAA,EACN,SAAS;AAAA,EACT,YAAY;AAChB;AAEA,MAAM,oBAA4C;AAAA,EAC9C,WAAW;AAAA,EACX,YAAY;AAAA,EACZ,UAAU;AAAA,EACV,MAAM;AAAA,EACN,SAAS;AAAA,EACT,YAAY;AAChB;AAEO,aAAM,sBAAsB,CAC/B,eAOA,WAAW,IAAI,CAAC,UAAU,SAAS;AAAA,EAC/B,OAAO,eAAe,QAAQ;AAAA,EAC9B,IAAI;AAAA,EACJ,MAAM,kBAAkB,QAAQ;AAAA,EAChC;AACJ,EAAE;",
+        "names": []
+      }
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761072564021,
+      "end": 1761072564021,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1761072564022,
+      "end": 1761072564022,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761072564022,
+      "end": 1761072564022,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761072564022,
+      "end": 1761072564022,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761072564022,
+      "end": 1761072564022,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761072564022,
+      "end": 1761072564022,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761072564022,
+      "end": 1761072564022,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761072564022,
+      "end": 1761072564022,
+      "order": "normal-normal"
+    },
+    {
+      "name": "unplugin-vue-components",
+      "start": 1761072564022,
+      "end": 1761072564022,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761072564022,
+      "end": 1761072564022,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761072564022,
+      "end": 1761072564022,
+      "order": "normal"
+    }
+  ]
+}

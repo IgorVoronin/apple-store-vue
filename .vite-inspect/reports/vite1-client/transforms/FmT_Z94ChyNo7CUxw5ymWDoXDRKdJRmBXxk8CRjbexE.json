@@ -1,0 +1,107 @@
+{
+  "resolvedId": "C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/widgets/ProductsGrid/ProductsGrid.vue?vue&type=style&index=0&scoped=da1a08a1&lang.css",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "\n.container {\n    margin-top: 40px;\n    margin-bottom: 72px;\n}\n\n.list {\n    @media (width >= 1200px) {\n        grid-template-columns: repeat(3, 1fr);\n    }\n}\n",
+      "start": 1761072563546,
+      "end": 1761072563546
+    },
+    {
+      "name": "@tailwindcss/vite:generate:build",
+      "result": "\n.container {\n    margin-top: 40px;\n    margin-bottom: 72px;\n}\n\n.list {\n    @media (width >= 1200px) {\n        grid-template-columns: repeat(3, 1fr);\n    }\n}\n",
+      "start": 1761072563546,
+      "end": 1761072563552,
+      "order": "pre",
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761072563553,
+      "end": 1761072563553,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761072563553,
+      "end": 1761072563553,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "\n.container[data-v-da1a08a1] {\n    margin-top: 40px;\n    margin-bottom: 72px;\n}\n.list[data-v-da1a08a1] {\n@media (width >= 1200px) {\n        grid-template-columns: repeat(3, 1fr);\n}\n}\n",
+      "start": 1761072563553,
+      "end": 1761072563554,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:define",
+      "start": 1761072563554,
+      "end": 1761072563554,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761072563554,
+      "end": 1761072563554,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761072563554,
+      "end": 1761072563554,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761072563554,
+      "end": 1761072563554,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761072563554,
+      "end": 1761072563554,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761072563554,
+      "end": 1761072563554,
+      "order": "normal-normal"
+    },
+    {
+      "name": "unplugin-vue-components",
+      "result": "/* unplugin-vue-components disabled */",
+      "start": 1761072563554,
+      "end": 1761072563554,
+      "order": "post",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/widgets/ProductsGrid/ProductsGrid.vue?vue&type=style&index=0&scoped=da1a08a1&lang.css"
+        ],
+        "sourcesContent": [
+          ""
+        ],
+        "names": [],
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761072563554,
+      "end": 1761072563554,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761072563554,
+      "end": 1761072563554,
+      "order": "normal"
+    }
+  ]
+}

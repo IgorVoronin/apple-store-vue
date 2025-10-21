@@ -1,0 +1,102 @@
+{
+  "resolvedId": "C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/entities/Product/lib/filterCategoryByKey.ts",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "import type { Product } from '../types';\n\nexport const filterCategoryByKey = (products: Product[], key: string) =>\n    products\n        .map((product) => product.characteristics)\n        .flat(1)\n        .filter((obj1) => obj1.characteristic === key)\n        .filter((obj1, i, arr) => arr.findIndex((obj2) => obj2.value === obj1.value) === i)\n        .map((el) => el.value);\n",
+      "start": 1761072563857,
+      "end": 1761072563980,
+      "sourcemaps": null
+    },
+    {
+      "name": "@tailwindcss/vite:generate:build",
+      "start": 1761072563980,
+      "end": 1761072563980,
+      "order": "pre"
+    },
+    {
+      "name": "vite:esbuild",
+      "result": "export const filterCategoryByKey = (products, key) => products.map((product) => product.characteristics).flat(1).filter((obj1) => obj1.characteristic === key).filter((obj1, i, arr) => arr.findIndex((obj2) => obj2.value === obj1.value) === i).map((el) => el.value);\n",
+      "start": 1761072563980,
+      "end": 1761072564021,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/entities/Product/lib/filterCategoryByKey.ts"
+        ],
+        "sourcesContent": [
+          "import type { Product } from '../types';\n\nexport const filterCategoryByKey = (products: Product[], key: string) =>\n    products\n        .map((product) => product.characteristics)\n        .flat(1)\n        .filter((obj1) => obj1.characteristic === key)\n        .filter((obj1, i, arr) => arr.findIndex((obj2) => obj2.value === obj1.value) === i)\n        .map((el) => el.value);\n"
+        ],
+        "mappings": "AAEO,aAAM,sBAAsB,CAAC,UAAqB,QACrD,SACK,IAAI,CAAC,YAAY,QAAQ,eAAe,EACxC,KAAK,CAAC,EACN,OAAO,CAAC,SAAS,KAAK,mBAAmB,GAAG,EAC5C,OAAO,CAAC,MAAM,GAAG,QAAQ,IAAI,UAAU,CAAC,SAAS,KAAK,UAAU,KAAK,KAAK,MAAM,CAAC,EACjF,IAAI,CAAC,OAAO,GAAG,KAAK;",
+        "names": []
+      }
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761072564021,
+      "end": 1761072564021,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1761072564022,
+      "end": 1761072564022,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761072564022,
+      "end": 1761072564022,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761072564022,
+      "end": 1761072564022,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761072564022,
+      "end": 1761072564022,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761072564022,
+      "end": 1761072564022,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761072564022,
+      "end": 1761072564022,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761072564022,
+      "end": 1761072564022,
+      "order": "normal-normal"
+    },
+    {
+      "name": "unplugin-vue-components",
+      "start": 1761072564022,
+      "end": 1761072564022,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761072564022,
+      "end": 1761072564022,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761072564022,
+      "end": 1761072564022,
+      "order": "normal"
+    }
+  ]
+}

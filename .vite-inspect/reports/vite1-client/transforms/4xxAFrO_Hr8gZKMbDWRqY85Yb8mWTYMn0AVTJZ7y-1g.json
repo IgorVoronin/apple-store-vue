@@ -1,0 +1,106 @@
+{
+  "resolvedId": "C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/widgets/Banners/ui/BannerWrapper/BannerWrapper.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<script setup lang=\"ts\">\nimport { isLargeScreen } from '@/shared/lib';\n\nimport { RedirectToShopPage } from '@/features/RedirectToShopPage';\n\ndefineProps<{\n    title: string;\n    width: number;\n    description: string;\n    img: string;\n    isLast: boolean;\n}>();\n</script>\n<template>\n    <div :class=\"`px-4 py-10 text-center`\">\n        <Image :width=\"width\" class=\"flex justify-center mb-6\" :src=\"img\" />\n        <h3 class=\"text-4xl mb-2\">{{ title }}</h3>\n        <p class=\"text-[#909090] text-md\">{{ description }}</p>\n        <RedirectToShopPage\n            v-if=\"isLast\"\n            :size=\"isLargeScreen ? 'large' : 'medium'\"\n            :class=\"{\n                'mt-4': true,\n                'w-full': !isLargeScreen,\n                flex: isLargeScreen,\n                'ml-10': isLargeScreen,\n                'max-w-[188px]': isLargeScreen,\n            }\"\n            >Shop Now</RedirectToShopPage\n        >\n    </div>\n</template>\n",
+      "start": 1761072563983,
+      "end": 1761072564024,
+      "sourcemaps": null
+    },
+    {
+      "name": "@tailwindcss/vite:generate:build",
+      "start": 1761072564024,
+      "end": 1761072564024,
+      "order": "pre"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761072564024,
+      "end": 1761072564024,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761072564024,
+      "end": 1761072564024,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "import _sfc_main from \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/widgets/Banners/ui/BannerWrapper/BannerWrapper.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/widgets/Banners/ui/BannerWrapper/BannerWrapper.vue?vue&type=script&setup=true&lang.ts\";\nexport default _sfc_main;\n",
+      "start": 1761072564024,
+      "end": 1761072564094,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:define",
+      "start": 1761072564094,
+      "end": 1761072564094,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761072564094,
+      "end": 1761072564095,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761072564095,
+      "end": 1761072564095,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761072564095,
+      "end": 1761072564095,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761072564095,
+      "end": 1761072564095,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761072564095,
+      "end": 1761072564095,
+      "order": "normal-normal"
+    },
+    {
+      "name": "unplugin-vue-components",
+      "result": "/* unplugin-vue-components disabled */import _sfc_main from \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/widgets/Banners/ui/BannerWrapper/BannerWrapper.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/widgets/Banners/ui/BannerWrapper/BannerWrapper.vue?vue&type=script&setup=true&lang.ts\";\nexport default _sfc_main;\n",
+      "start": 1761072564095,
+      "end": 1761072564095,
+      "order": "post",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/widgets/Banners/ui/BannerWrapper/BannerWrapper.vue"
+        ],
+        "sourcesContent": [
+          "import _sfc_main from \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/widgets/Banners/ui/BannerWrapper/BannerWrapper.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/widgets/Banners/ui/BannerWrapper/BannerWrapper.vue?vue&type=script&setup=true&lang.ts\";\nexport default _sfc_main;\n"
+        ],
+        "names": [],
+        "mappings": "sCAAA,MAAM,CAAC,SAAS,CAAC,IAAI,CAAC,CAAC,CAAC,CAAC,CAAC,KAAK,CAAC,KAAK,CAAC,QAAQ,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,EAAE,CAAC,GAAG,CAAC,OAAO,CAAC,OAAO,CAAC,EAAE,CAAC,aAAa,CAAC,aAAa,CAAC,GAAG,CAAC,GAAG,CAAC,IAAI,CAAC,MAAM,CAAC,KAAK,CAAC,IAAI,CAAC,IAAI,CAAC,EAAE,CAAC;AACxL,MAAM,CAAC,CAAC,CAAC,IAAI,CAAC,CAAC,CAAC,CAAC,CAAC,KAAK,CAAC,KAAK,CAAC,QAAQ,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,EAAE,CAAC,GAAG,CAAC,OAAO,CAAC,OAAO,CAAC,EAAE,CAAC,aAAa,CAAC,aAAa,CAAC,GAAG,CAAC,GAAG,CAAC,IAAI,CAAC,MAAM,CAAC,KAAK,CAAC,IAAI,CAAC,IAAI,CAAC,EAAE,CAAC;AAChL,MAAM,CAAC,OAAO,CAAC,SAAS;"
+      }
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761072564095,
+      "end": 1761072564095,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761072564095,
+      "end": 1761072564095,
+      "order": "normal"
+    }
+  ]
+}

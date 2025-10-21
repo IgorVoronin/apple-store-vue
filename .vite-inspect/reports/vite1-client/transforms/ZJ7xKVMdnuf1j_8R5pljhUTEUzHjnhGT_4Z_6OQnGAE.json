@@ -1,0 +1,106 @@
+{
+  "resolvedId": "C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/widgets/ProductsGrid/ProductsGrid.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<script setup lang=\"ts\">\nimport { onMounted, ref, watch } from 'vue';\nimport { useRoute } from 'vue-router';\nimport { useUnit, useVModel } from 'effector-vue/composition';\n\nimport { isLargeScreen } from '@/shared/lib';\nimport { MainContainer } from '@/shared/ui';\n\nimport { type Product, ProductList, ProductModel, ProductPreview } from '@/entities/Product';\n\nimport { AddProductToCartAction } from '@/features/AddProductToCartAction';\nimport { ProductFilters, ProductFiltersModel } from '@/features/ProductFilters';\nimport { ProductLikeAction } from '@/features/ProductLikeAction';\n\nimport { ProductsGridFilterBar } from '@/widgets/ProductsGrid';\n\nconst route = useRoute();\nconst [products] = useUnit([ProductFiltersModel.$paginatedProducts]);\nconst selectedCategories = useVModel(ProductModel.$selectedCategories);\nconst selectedProcessors = useVModel(ProductModel.$selectedProcessors);\nconst selectedDiagonals = useVModel(ProductModel.$selectedDiagonals);\n\nconst page = ref(0);\n\n// Сбрасываем все фильтры и устанавливаем категорию из URL\nonMounted(() => {\n    const category = route.query.category as string;\n    // Сбрасываем все фильтры\n    selectedProcessors.value = [];\n    selectedDiagonals.value = [];\n    \n    if (category) {\n        selectedCategories.value = [category];\n    } else {\n        selectedCategories.value = [];\n    }\n});\n\n// Отслеживаем изменения URL\nwatch(() => route.query.category, (newCategory) => {\n    // Сбрасываем все фильтры при смене категории\n    selectedProcessors.value = [];\n    selectedDiagonals.value = [];\n    \n    if (newCategory) {\n        selectedCategories.value = [newCategory as string];\n    } else {\n        selectedCategories.value = [];\n    }\n    page.value = 0; // Сбрасываем на первую страницу\n});\n</script>\n\n<template>\n    <MainContainer class=\"container\">\n        <div class=\"lg:grid grid-cols-[256px_1fr] lg:gap-[32px]\">\n            <ProductFilters v-if=\"isLargeScreen\" />\n\n            <div>\n                <ProductsGridFilterBar />\n                <ProductList class=\"list\">\n                    <ProductPreview v-for=\"product in products[page]\" :key=\"product.id\" :product=\"product as Product\">\n                        <template #like-btn>\n                            <ProductLikeAction :product-id=\"product.id\" />\n                        </template>\n                        <template #cart-btn>\n                            <AddProductToCartAction :product=\"product as Product\" />\n                        </template>\n                    </ProductPreview>\n                </ProductList>\n            </div>\n        </div>\n\n        <Paginator v-model:first=\"page\" :rows=\"1\" :total-records=\"products.length\" />\n    </MainContainer>\n</template>\n<style scoped>\n.container {\n    margin-top: 40px;\n    margin-bottom: 72px;\n}\n\n.list {\n    @media (width >= 1200px) {\n        grid-template-columns: repeat(3, 1fr);\n    }\n}\n</style>\n",
+      "start": 1761072563445,
+      "end": 1761072563487,
+      "sourcemaps": null
+    },
+    {
+      "name": "@tailwindcss/vite:generate:build",
+      "start": 1761072563487,
+      "end": 1761072563487,
+      "order": "pre"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761072563487,
+      "end": 1761072563487,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761072563487,
+      "end": 1761072563487,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "import _sfc_main from \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/widgets/ProductsGrid/ProductsGrid.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/widgets/ProductsGrid/ProductsGrid.vue?vue&type=script&setup=true&lang.ts\";\nimport \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/widgets/ProductsGrid/ProductsGrid.vue?vue&type=style&index=0&scoped=da1a08a1&lang.css\";\nimport _export_sfc from \"\\0plugin-vue:export-helper\";\nexport default /* @__PURE__ */ _export_sfc(_sfc_main, [[\"__scopeId\", \"data-v-da1a08a1\"]]);\n",
+      "start": 1761072563487,
+      "end": 1761072563527,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:define",
+      "start": 1761072563527,
+      "end": 1761072563527,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761072563527,
+      "end": 1761072563527,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761072563527,
+      "end": 1761072563527,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761072563527,
+      "end": 1761072563527,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761072563527,
+      "end": 1761072563527,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761072563527,
+      "end": 1761072563527,
+      "order": "normal-normal"
+    },
+    {
+      "name": "unplugin-vue-components",
+      "result": "/* unplugin-vue-components disabled */import _sfc_main from \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/widgets/ProductsGrid/ProductsGrid.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/widgets/ProductsGrid/ProductsGrid.vue?vue&type=script&setup=true&lang.ts\";\nimport \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/widgets/ProductsGrid/ProductsGrid.vue?vue&type=style&index=0&scoped=da1a08a1&lang.css\";\nimport _export_sfc from \"\\0plugin-vue:export-helper\";\nexport default /* @__PURE__ */ _export_sfc(_sfc_main, [[\"__scopeId\", \"data-v-da1a08a1\"]]);\n",
+      "start": 1761072563527,
+      "end": 1761072563528,
+      "order": "post",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/widgets/ProductsGrid/ProductsGrid.vue"
+        ],
+        "sourcesContent": [
+          "import _sfc_main from \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/widgets/ProductsGrid/ProductsGrid.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/widgets/ProductsGrid/ProductsGrid.vue?vue&type=script&setup=true&lang.ts\";\nimport \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/widgets/ProductsGrid/ProductsGrid.vue?vue&type=style&index=0&scoped=da1a08a1&lang.css\";\nimport _export_sfc from \"\\0plugin-vue:export-helper\";\nexport default /* @__PURE__ */ _export_sfc(_sfc_main, [[\"__scopeId\", \"data-v-da1a08a1\"]]);\n"
+        ],
+        "names": [],
+        "mappings": "sCAAA,MAAM,CAAC,SAAS,CAAC,IAAI,CAAC,CAAC,CAAC,CAAC,CAAC,KAAK,CAAC,KAAK,CAAC,QAAQ,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,EAAE,CAAC,GAAG,CAAC,OAAO,CAAC,YAAY,CAAC,YAAY,CAAC,GAAG,CAAC,GAAG,CAAC,IAAI,CAAC,MAAM,CAAC,KAAK,CAAC,IAAI,CAAC,IAAI,CAAC,EAAE,CAAC;AAC3K,MAAM,CAAC,CAAC,CAAC,IAAI,CAAC,CAAC,CAAC,CAAC,CAAC,KAAK,CAAC,KAAK,CAAC,QAAQ,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,EAAE,CAAC,GAAG,CAAC,OAAO,CAAC,YAAY,CAAC,YAAY,CAAC,GAAG,CAAC,GAAG,CAAC,IAAI,CAAC,MAAM,CAAC,KAAK,CAAC,IAAI,CAAC,IAAI,CAAC,EAAE,CAAC;AACnK,MAAM,CAAC,CAAC,CAAC,CAAC,CAAC,KAAK,CAAC,KAAK,CAAC,QAAQ,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,EAAE,CAAC,GAAG,CAAC,OAAO,CAAC,YAAY,CAAC,YAAY,CAAC,GAAG,CAAC,GAAG,CAAC,IAAI,CAAC,KAAK,CAAC,KAAK,CAAC,CAAC,CAAC,MAAM,CAAC,QAAQ,CAAC,IAAI,CAAC,GAAG,CAAC;AACzK,MAAM,CAAC,WAAW,CAAC,IAAI,CAAC,CAAC,CAAC,OAAO,CAAC,GAAG,CAAC,MAAM,CAAC,MAAM,CAAC;AACpD,MAAM,CAAC,OAAO,CAAC,CAAC,CAAC,CAAC,CAAC,QAAQ,CAAC,CAAC,CAAC,CAAC,WAAW,CAAC,SAAS,CAAC,CAAC,CAAC,CAAC,CAAC,SAAS,CAAC,CAAC,CAAC,CAAC,IAAI,CAAC,CAAC,CAAC,QAAQ,CAAC,CAAC,CAAC,CAAC;"
+      }
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761072563528,
+      "end": 1761072563528,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761072563528,
+      "end": 1761072563528,
+      "order": "normal"
+    }
+  ]
+}

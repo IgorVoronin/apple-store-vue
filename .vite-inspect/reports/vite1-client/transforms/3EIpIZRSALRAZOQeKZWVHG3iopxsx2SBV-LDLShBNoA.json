@@ -1,0 +1,90 @@
+{
+  "resolvedId": "C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/node_modules/@primeuix/styles/dist/overlaybadge/index.mjs",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "var style=\"\\n    .p-overlaybadge {\\n        position: relative;\\n    }\\n\\n    .p-overlaybadge .p-badge {\\n        position: absolute;\\n        inset-block-start: 0;\\n        inset-inline-end: 0;\\n        transform: translate(50%, -50%);\\n        transform-origin: 100% 0;\\n        margin: 0;\\n        outline-width: dt('overlaybadge.outline.width');\\n        outline-style: solid;\\n        outline-color: dt('overlaybadge.outline.color');\\n    }\\n\\n    .p-overlaybadge .p-badge:dir(rtl) {\\n        transform: translate(-50%, -50%);\\n    }\\n\";export{style};//# sourceMappingURL=index.mjs.map",
+      "start": 1761072564514,
+      "end": 1761072564525,
+      "sourcemaps": null
+    },
+    {
+      "name": "@tailwindcss/vite:generate:build",
+      "start": 1761072564525,
+      "end": 1761072564525,
+      "order": "pre"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761072564525,
+      "end": 1761072564525,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761072564525,
+      "end": 1761072564525,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1761072564525,
+      "end": 1761072564525,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761072564525,
+      "end": 1761072564525,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761072564525,
+      "end": 1761072564525,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761072564525,
+      "end": 1761072564525,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761072564525,
+      "end": 1761072564525,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761072564525,
+      "end": 1761072564525,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761072564525,
+      "end": 1761072564525,
+      "order": "normal-normal"
+    },
+    {
+      "name": "unplugin-vue-components",
+      "start": 1761072564525,
+      "end": 1761072564525,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761072564525,
+      "end": 1761072564525,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761072564525,
+      "end": 1761072564525,
+      "order": "normal"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "resolvedId": "C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/shared/api/methods.ts",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "export const HTTP_METHODS = {\n    GET: 'GET',\n    PUT: 'PUT',\n    POST: 'POST',\n    PATCH: 'PATCH',\n    DELETE: 'DELETE',\n} as const;\n",
+      "start": 1761072563447,
+      "end": 1761072563498,
+      "sourcemaps": null
+    },
+    {
+      "name": "@tailwindcss/vite:generate:build",
+      "start": 1761072563498,
+      "end": 1761072563498,
+      "order": "pre"
+    },
+    {
+      "name": "vite:esbuild",
+      "result": "export const HTTP_METHODS = {\n  GET: \"GET\",\n  PUT: \"PUT\",\n  POST: \"POST\",\n  PATCH: \"PATCH\",\n  DELETE: \"DELETE\"\n};\n",
+      "start": 1761072563498,
+      "end": 1761072563508,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/shared/api/methods.ts"
+        ],
+        "sourcesContent": [
+          "export const HTTP_METHODS = {\n    GET: 'GET',\n    PUT: 'PUT',\n    POST: 'POST',\n    PATCH: 'PATCH',\n    DELETE: 'DELETE',\n} as const;\n"
+        ],
+        "mappings": "AAAO,aAAM,eAAe;AAAA,EACxB,KAAK;AAAA,EACL,KAAK;AAAA,EACL,MAAM;AAAA,EACN,OAAO;AAAA,EACP,QAAQ;AACZ;",
+        "names": []
+      }
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761072563508,
+      "end": 1761072563508,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1761072563509,
+      "end": 1761072563509,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761072563509,
+      "end": 1761072563509,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761072563509,
+      "end": 1761072563509,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761072563509,
+      "end": 1761072563509,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761072563509,
+      "end": 1761072563509,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761072563509,
+      "end": 1761072563509,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761072563509,
+      "end": 1761072563509,
+      "order": "normal-normal"
+    },
+    {
+      "name": "unplugin-vue-components",
+      "start": 1761072563509,
+      "end": 1761072563509,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761072563509,
+      "end": 1761072563509,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761072563509,
+      "end": 1761072563509,
+      "order": "normal"
+    }
+  ]
+}

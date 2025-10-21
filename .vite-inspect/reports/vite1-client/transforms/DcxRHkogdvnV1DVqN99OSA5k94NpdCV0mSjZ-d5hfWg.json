@@ -1,0 +1,106 @@
+{
+  "resolvedId": "C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/pages/CartPage/CartPage.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<script setup lang=\"ts\">\nimport { useUnit } from 'effector-vue/composition';\n\nimport { API } from '@/shared/api';\nimport { normalNumberFormat, shuffled } from '@/shared/lib';\nimport { MainContainer } from '@/shared/ui';\n\nimport { ProductModel } from '@/entities/Product';\n\nimport { RootLayout } from '@/widgets/RootLayout';\n\nconst [cart, totalCartPrice] = useUnit([ProductModel.$productCart, ProductModel.$totalCartPrice]);\n\nconst [onAddProductToCart, onRemoveProductFromCart, onDeleteProduct, resetCart] = useUnit([\n    ProductModel.cartProductSettled,\n    ProductModel.cartProductRemoved,\n    ProductModel.cartProductDelete,\n    ProductModel.cartResettled,\n]);\n</script>\n<template>\n    <RootLayout>\n        <MainContainer class=\"py-10 lg:grid lg:grid-cols-2 lg:gap-[48px]\">\n            <div>\n                <h2 class=\"text-lg mb-10\">Shopping Cart</h2>\n                <ul class=\"py-10 grid gap-10\">\n                    <li\n                        v-for=\"{ product } in Object.values(cart)\"\n                        :key=\"product.id\"\n                        class=\"not-last-of-type:border-b border-solid border-gray-300\"\n                    >\n                        <RouterLink :to=\"`/product/${product.id}`\">\n                            <div class=\"pb-10 flex gap-4 items-center\">\n                                <Image width=\"90\" :src=\"API.BASE_URL + shuffled([...product.images])[0]\" />\n                                <div>\n                                    <p style=\"font-family: 'ABeeZee', sans-serif; font-weight: 400; font-style: italic; font-size: 16px; line-height: 24px;\">{{ product.name }}</p>\n                                    <p># {{ product.id }}</p>\n                                    <div class=\"flex items-center gap-6\">\n                                        <div class=\"flex gap-2 items-center\">\n                                            <Button\n                                                severity=\"contrast\"\n                                                text\n                                                size=\"large\"\n                                                class=\"text-xl\"\n                                                @click.stop.prevent=\"onRemoveProductFromCart(Object.assign(product))\"\n                                                >–</Button\n                                            >\n                                            <div\n                                                class=\"border w-[32px] text-center h-[32px] border-gray-100 leading-[1.85] rounded-md\"\n                                            >\n                                                {{ cart[product.id]?.count }}\n                                            </div>\n                                            <Button\n                                                severity=\"contrast\"\n                                                text\n                                                size=\"large\"\n                                                class=\"text-xl\"\n                                                @click.stop.prevent=\"onAddProductToCart(Object.assign(product))\"\n                                                >+</Button\n                                            >\n                                        </div>\n                                        <p style=\"font-family: 'ABeeZee', sans-serif; font-weight: 400; font-style: italic; font-size: 20px; line-height: 32px; letter-spacing: 0.03em;\">{{ normalNumberFormat(cart[product.id]?.product.price) }}</p>\n                                        <Button\n                                            text\n                                            severity=\"contrast\"\n                                            icon=\"pi pi-times\"\n                                            @click.stop.prevent=\"onDeleteProduct(Object.assign(product))\"\n                                        />\n                                    </div>\n                                </div>\n                            </div>\n                        </RouterLink>\n                    </li>\n                </ul>\n            </div>\n            <div class=\"border py-[56px] px-4 rounded-lg border-gray-200 flex flex-col\">\n                <h2 class=\"mb-10\" style=\"font-family: 'ABeeZee', sans-serif; font-weight: 400; font-style: italic; font-size: 20px; line-height: 16px;\">Order Summary</h2>\n                \n                <!-- Discount code -->\n                <div class=\"mb-6\">\n                    <label class=\"text-gray-600 mb-2 block\" style=\"font-family: 'ABeeZee', sans-serif; font-weight: 400; font-style: italic; font-size: 14px; line-height: 16px;\">Discount code / Promo code</label>\n                    <input \n                        type=\"text\" \n                        placeholder=\"Code\" \n                        class=\"w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-gray-400\"\n                    />\n                </div>\n                \n                <!-- Bonus card -->\n                <div class=\"mb-10\">\n                    <label class=\"text-gray-600 mb-2 block\" style=\"font-family: 'ABeeZee', sans-serif; font-weight: 400; font-style: italic; font-size: 14px; line-height: 16px;\">Your bonus card number</label>\n                    <div class=\"relative\">\n                        <input \n                            type=\"text\" \n                            placeholder=\"Enter Card Number\" \n                            class=\"w-full px-4 py-3 pr-20 border border-gray-300 rounded-lg focus:outline-none focus:border-gray-400\"\n                        />\n                        <button class=\"absolute right-2 top-1/2 -translate-y-1/2 px-4 py-1.5 border border-black rounded-lg text-sm hover:bg-gray-50\">\n                            Apply\n                        </button>\n                    </div>\n                </div>\n                \n                <!-- Price breakdown -->\n                <div class=\"space-y-4 mb-6\">\n                    <div class=\"flex justify-between\">\n                        <p class=\"font-semibold\" style=\"font-family: 'ABeeZee', sans-serif; font-weight: 400; font-style: italic; font-size: 16px; line-height: 24px; letter-spacing: 0.03em;\">Subtotal</p>\n                        <p class=\"font-semibold\" style=\"font-family: 'ABeeZee', sans-serif; font-weight: 400; font-style: italic; font-size: 16px; line-height: 32px; letter-spacing: 0.03em;\">{{ normalNumberFormat(totalCartPrice) }}</p>\n                    </div>\n                    <div class=\"flex justify-between\">\n                        <p class=\"text-gray-600\">Estimated Tax</p>\n                        <p class=\"font-medium\" style=\"font-family: 'ABeeZee', sans-serif; font-weight: 400; font-style: italic; font-size: 16px; line-height: 32px; letter-spacing: 0.03em;\">{{ normalNumberFormat(Math.round(totalCartPrice * 0.02)) }}</p>\n                    </div>\n                    <div class=\"flex justify-between\">\n                        <p class=\"text-gray-600\">Estimated shipping & Handling</p>\n                        <p class=\"font-medium\" style=\"font-family: 'ABeeZee', sans-serif; font-weight: 400; font-style: italic; font-size: 16px; line-height: 32px; letter-spacing: 0.03em;\">{{ normalNumberFormat(totalCartPrice > 0 ? 29 : 0) }}</p>\n                    </div>\n                </div>\n                \n                <!-- Total -->\n                <div class=\"flex justify-between mb-10 pt-4 border-t border-gray-200\">\n                    <p class=\"font-semibold\" style=\"font-family: 'ABeeZee', sans-serif; font-weight: 400; font-style: italic; font-size: 16px; line-height: 24px; letter-spacing: 0.03em;\">Total</p>\n                    <p class=\"font-semibold\" style=\"font-family: 'ABeeZee', sans-serif; font-weight: 400; font-style: italic; font-size: 16px; line-height: 32px; letter-spacing: 0.03em;\">{{ normalNumberFormat(totalCartPrice + Math.round(totalCartPrice * 0.02) + (totalCartPrice > 0 ? 29 : 0)) }}</p>\n                </div>\n                \n                <!-- Checkout button -->\n                <Button severity=\"contrast\" size=\"large\" class=\"w-full mt-auto\" @click=\"resetCart\">\n                    Checkout\n                </Button>\n            </div>\n        </MainContainer>\n    </RootLayout>\n</template>\n",
+      "start": 1761072563247,
+      "end": 1761072563276,
+      "sourcemaps": null
+    },
+    {
+      "name": "@tailwindcss/vite:generate:build",
+      "start": 1761072563276,
+      "end": 1761072563276,
+      "order": "pre"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761072563276,
+      "end": 1761072563276,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761072563276,
+      "end": 1761072563276,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "import _sfc_main from \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/pages/CartPage/CartPage.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/pages/CartPage/CartPage.vue?vue&type=script&setup=true&lang.ts\";\nexport default _sfc_main;\n",
+      "start": 1761072563276,
+      "end": 1761072563344,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:define",
+      "start": 1761072563344,
+      "end": 1761072563344,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761072563344,
+      "end": 1761072563344,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761072563344,
+      "end": 1761072563344,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761072563344,
+      "end": 1761072563344,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761072563344,
+      "end": 1761072563344,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761072563344,
+      "end": 1761072563344,
+      "order": "normal-normal"
+    },
+    {
+      "name": "unplugin-vue-components",
+      "result": "/* unplugin-vue-components disabled */import _sfc_main from \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/pages/CartPage/CartPage.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/pages/CartPage/CartPage.vue?vue&type=script&setup=true&lang.ts\";\nexport default _sfc_main;\n",
+      "start": 1761072563344,
+      "end": 1761072563345,
+      "order": "post",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/pages/CartPage/CartPage.vue"
+        ],
+        "sourcesContent": [
+          "import _sfc_main from \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/pages/CartPage/CartPage.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/pages/CartPage/CartPage.vue?vue&type=script&setup=true&lang.ts\";\nexport default _sfc_main;\n"
+        ],
+        "names": [],
+        "mappings": "sCAAA,MAAM,CAAC,SAAS,CAAC,IAAI,CAAC,CAAC,CAAC,CAAC,CAAC,KAAK,CAAC,KAAK,CAAC,QAAQ,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,EAAE,CAAC,GAAG,CAAC,KAAK,CAAC,QAAQ,CAAC,QAAQ,CAAC,GAAG,CAAC,GAAG,CAAC,IAAI,CAAC,MAAM,CAAC,KAAK,CAAC,IAAI,CAAC,IAAI,CAAC,EAAE,CAAC;AACjK,MAAM,CAAC,CAAC,CAAC,IAAI,CAAC,CAAC,CAAC,CAAC,CAAC,KAAK,CAAC,KAAK,CAAC,QAAQ,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,EAAE,CAAC,GAAG,CAAC,KAAK,CAAC,QAAQ,CAAC,QAAQ,CAAC,GAAG,CAAC,GAAG,CAAC,IAAI,CAAC,MAAM,CAAC,KAAK,CAAC,IAAI,CAAC,IAAI,CAAC,EAAE,CAAC;AACzJ,MAAM,CAAC,OAAO,CAAC,SAAS;"
+      }
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761072563345,
+      "end": 1761072563345,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761072563345,
+      "end": 1761072563345,
+      "order": "normal"
+    }
+  ]
+}

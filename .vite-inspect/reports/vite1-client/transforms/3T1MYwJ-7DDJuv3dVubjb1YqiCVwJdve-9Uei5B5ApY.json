@@ -1,0 +1,107 @@
+{
+  "resolvedId": "C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/entities/Product/ui/ProductPreview/ProductPreview.vue?vue&type=style&index=0&scoped=e7219afe&lang.css",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "\n.item {\n    border-radius: 1rem;\n    padding: 24px 12px;\n    text-align: center;\n    background-color: #f6f6f6;\n\n    @media (width >= 768px) {\n        padding: 24px 16px;\n    }\n}\n\n.action {\n    margin-bottom: 8px;\n    font-size: 32px;\n\n    @media (width >= 992px) {\n        margin-bottom: 16px;\n    }\n}\n\np {\n    margin: 0 0 1rem;\n    font-family: 'ABeeZee', sans-serif;\n    font-weight: 400;\n    font-style: italic;\n\n    &:first-of-type {\n        min-height: 48px;\n        font-size: 16px;\n        line-height: 24px;\n    }\n\n    &:last-of-type {\n        font-size: 24px;\n        line-height: 32px;\n    }\n}\n\nimg {\n    display: block;\n    margin: auto auto 8px;\n    width: 104px;\n    height: 104px;\n    mix-blend-mode: multiply;\n\n    @media (width >= 992px) {\n        margin-bottom: 16px;\n        width: 160px;\n        height: 160px;\n    }\n}\n",
+      "start": 1761072564080,
+      "end": 1761072564080
+    },
+    {
+      "name": "@tailwindcss/vite:generate:build",
+      "result": "\n.item {\n    border-radius: 1rem;\n    padding: 24px 12px;\n    text-align: center;\n    background-color: #f6f6f6;\n\n    @media (width >= 768px) {\n        padding: 24px 16px;\n    }\n}\n\n.action {\n    margin-bottom: 8px;\n    font-size: 32px;\n\n    @media (width >= 992px) {\n        margin-bottom: 16px;\n    }\n}\n\np {\n    margin: 0 0 1rem;\n    font-family: 'ABeeZee', sans-serif;\n    font-weight: 400;\n    font-style: italic;\n\n    &:first-of-type {\n        min-height: 48px;\n        font-size: 16px;\n        line-height: 24px;\n    }\n\n    &:last-of-type {\n        font-size: 24px;\n        line-height: 32px;\n    }\n}\n\nimg {\n    display: block;\n    margin: auto auto 8px;\n    width: 104px;\n    height: 104px;\n    mix-blend-mode: multiply;\n\n    @media (width >= 992px) {\n        margin-bottom: 16px;\n        width: 160px;\n        height: 160px;\n    }\n}\n",
+      "start": 1761072564080,
+      "end": 1761072564082,
+      "order": "pre",
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761072564083,
+      "end": 1761072564083,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761072564083,
+      "end": 1761072564083,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "\n.item[data-v-e7219afe] {\n    border-radius: 1rem;\n    padding: 24px 12px;\n    text-align: center;\n    background-color: #f6f6f6;\n@media (width >= 768px) {\n        padding: 24px 16px;\n}\n}\n.action[data-v-e7219afe] {\n    margin-bottom: 8px;\n    font-size: 32px;\n@media (width >= 992px) {\n        margin-bottom: 16px;\n}\n}\np {\n&[data-v-e7219afe] {\n    margin: 0 0 1rem;\n    font-family: 'ABeeZee', sans-serif;\n    font-weight: 400;\n    font-style: italic;\n    }\n&[data-v-e7219afe]:first-of-type {\n        min-height: 48px;\n        font-size: 16px;\n        line-height: 24px;\n}\n&[data-v-e7219afe]:last-of-type {\n        font-size: 24px;\n        line-height: 32px;\n}\n}\nimg[data-v-e7219afe] {\n    display: block;\n    margin: auto auto 8px;\n    width: 104px;\n    height: 104px;\n    mix-blend-mode: multiply;\n@media (width >= 992px) {\n        margin-bottom: 16px;\n        width: 160px;\n        height: 160px;\n}\n}\n",
+      "start": 1761072564083,
+      "end": 1761072564084,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:define",
+      "start": 1761072564084,
+      "end": 1761072564084,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761072564084,
+      "end": 1761072564084,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761072564084,
+      "end": 1761072564084,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761072564084,
+      "end": 1761072564084,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761072564084,
+      "end": 1761072564084,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761072564084,
+      "end": 1761072564084,
+      "order": "normal-normal"
+    },
+    {
+      "name": "unplugin-vue-components",
+      "result": "/* unplugin-vue-components disabled */",
+      "start": 1761072564084,
+      "end": 1761072564085,
+      "order": "post",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/entities/Product/ui/ProductPreview/ProductPreview.vue?vue&type=style&index=0&scoped=e7219afe&lang.css"
+        ],
+        "sourcesContent": [
+          ""
+        ],
+        "names": [],
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761072564085,
+      "end": 1761072564085,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761072564085,
+      "end": 1761072564085,
+      "order": "normal"
+    }
+  ]
+}

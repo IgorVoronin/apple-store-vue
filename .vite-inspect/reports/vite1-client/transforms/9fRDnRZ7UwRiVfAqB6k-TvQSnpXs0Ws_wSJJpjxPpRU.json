@@ -1,0 +1,113 @@
+{
+  "resolvedId": "C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/widgets/RootLayout/RootLayout.vue?vue&type=script&setup=true&lang.ts",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, createVNode as _createVNode, renderSlot as _renderSlot, createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\nconst _hoisted_1 = { class: \"app\" }\nconst _hoisted_2 = { class: \"main\" }\n\nimport { MainFooter, MainHeader } from './ui';\n\nexport default /*@__PURE__*/_defineComponent({\n  __name: 'RootLayout',\n  setup(__props) {\n\n\nreturn (_ctx: any,_cache: any) => {\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    _createVNode(_unref(MainHeader), { class: \"header\" }),\n    _createElementVNode(\"main\", _hoisted_2, [\n      _renderSlot(_ctx.$slots, \"default\", {}, undefined, true)\n    ]),\n    _createVNode(_unref(MainFooter), { class: \"footer\" })\n  ]))\n}\n}\n\n})",
+      "start": 1761072563571,
+      "end": 1761072563571
+    },
+    {
+      "name": "@tailwindcss/vite:generate:build",
+      "start": 1761072563571,
+      "end": 1761072563571,
+      "order": "pre"
+    },
+    {
+      "name": "vite:esbuild",
+      "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, createVNode as _createVNode, renderSlot as _renderSlot, createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\";\nconst _hoisted_1 = { class: \"app\" };\nconst _hoisted_2 = { class: \"main\" };\nimport { MainFooter, MainHeader } from \"./ui\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"RootLayout\",\n  setup(__props) {\n    return (_ctx, _cache) => {\n      return _openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n        _createVNode(_unref(MainHeader), { class: \"header\" }),\n        _createElementVNode(\"main\", _hoisted_2, [\n          _renderSlot(_ctx.$slots, \"default\", {}, void 0, true)\n        ]),\n        _createVNode(_unref(MainFooter), { class: \"footer\" })\n      ]);\n    };\n  }\n});\n",
+      "start": 1761072563572,
+      "end": 1761072563794,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/widgets/RootLayout/RootLayout.vue?vue&type=script&setup=true&lang.ts"
+        ],
+        "sourcesContent": [
+          "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, createVNode as _createVNode, renderSlot as _renderSlot, createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\nconst _hoisted_1 = { class: \"app\" }\nconst _hoisted_2 = { class: \"main\" }\n\nimport { MainFooter, MainHeader } from './ui';\n\nexport default /*@__PURE__*/_defineComponent({\n  __name: 'RootLayout',\n  setup(__props) {\n\n\nreturn (_ctx: any,_cache: any) => {\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    _createVNode(_unref(MainHeader), { class: \"header\" }),\n    _createElementVNode(\"main\", _hoisted_2, [\n      _renderSlot(_ctx.$slots, \"default\", {}, undefined, true)\n    ]),\n    _createVNode(_unref(MainFooter), { class: \"footer\" })\n  ]))\n}\n}\n\n})"
+        ],
+        "mappings": "AAAA,SAAS,mBAAmB,wBAAwB;AACpD,SAAS,SAAS,QAAQ,eAAe,cAAc,cAAc,aAAa,sBAAsB,qBAAqB,aAAa,YAAY,sBAAsB,2BAA2B;AAEvM,MAAM,aAAa,EAAE,OAAO,MAAM;AAClC,MAAM,aAAa,EAAE,OAAO,OAAO;AAEnC,SAAS,YAAY,kBAAkB;AAEvC,eAA4B,iCAAiB;AAAA,EAC3C,QAAQ;AAAA,EACR,MAAM,SAAS;AAGjB,WAAO,CAAC,MAAU,WAAgB;AAChC,aAAQ,WAAW,GAAG,oBAAoB,OAAO,YAAY;AAAA,QAC3D,aAAa,OAAO,UAAU,GAAG,EAAE,OAAO,SAAS,CAAC;AAAA,QACpD,oBAAoB,QAAQ,YAAY;AAAA,UACtC,YAAY,KAAK,QAAQ,WAAW,CAAC,GAAG,QAAW,IAAI;AAAA,QACzD,CAAC;AAAA,QACD,aAAa,OAAO,UAAU,GAAG,EAAE,OAAO,SAAS,CAAC;AAAA,MACtD,CAAC;AAAA,IACH;AAAA,EACA;AAEA,CAAC;",
+        "names": []
+      }
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761072563794,
+      "end": 1761072563794,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1761072563794,
+      "end": 1761072563794,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761072563794,
+      "end": 1761072563794,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761072563794,
+      "end": 1761072563794,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761072563794,
+      "end": 1761072563794,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761072563794,
+      "end": 1761072563794,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761072563794,
+      "end": 1761072563794,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761072563794,
+      "end": 1761072563794,
+      "order": "normal-normal"
+    },
+    {
+      "name": "unplugin-vue-components",
+      "result": "/* unplugin-vue-components disabled */import { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, createVNode as _createVNode, renderSlot as _renderSlot, createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\";\nconst _hoisted_1 = { class: \"app\" };\nconst _hoisted_2 = { class: \"main\" };\nimport { MainFooter, MainHeader } from \"./ui\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"RootLayout\",\n  setup(__props) {\n    return (_ctx, _cache) => {\n      return _openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n        _createVNode(_unref(MainHeader), { class: \"header\" }),\n        _createElementVNode(\"main\", _hoisted_2, [\n          _renderSlot(_ctx.$slots, \"default\", {}, void 0, true)\n        ]),\n        _createVNode(_unref(MainFooter), { class: \"footer\" })\n      ]);\n    };\n  }\n});\n",
+      "start": 1761072563794,
+      "end": 1761072563795,
+      "order": "post",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/widgets/RootLayout/RootLayout.vue?vue&type=script&setup=true&lang.ts"
+        ],
+        "sourcesContent": [
+          "import { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, createVNode as _createVNode, renderSlot as _renderSlot, createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\";\nconst _hoisted_1 = { class: \"app\" };\nconst _hoisted_2 = { class: \"main\" };\nimport { MainFooter, MainHeader } from \"./ui\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"RootLayout\",\n  setup(__props) {\n    return (_ctx, _cache) => {\n      return _openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n        _createVNode(_unref(MainHeader), { class: \"header\" }),\n        _createElementVNode(\"main\", _hoisted_2, [\n          _renderSlot(_ctx.$slots, \"default\", {}, void 0, true)\n        ]),\n        _createVNode(_unref(MainFooter), { class: \"footer\" })\n      ]);\n    };\n  }\n});\n"
+        ],
+        "names": [],
+        "mappings": "sCAAA,MAAM,CAAC,CAAC,CAAC,eAAe,CAAC,EAAE,CAAC,gBAAgB,CAAC,CAAC,CAAC,IAAI,CAAC,CAAC,GAAG,CAAC;AACzD,MAAM,CAAC,CAAC,CAAC,KAAK,CAAC,EAAE,CAAC,MAAM,CAAC,CAAC,WAAW,CAAC,EAAE,CAAC,YAAY,CAAC,CAAC,UAAU,CAAC,EAAE,CAAC,WAAW,CAAC,CAAC,kBAAkB,CAAC,EAAE,CAAC,mBAAmB,CAAC,CAAC,SAAS,CAAC,EAAE,CAAC,UAAU,CAAC,CAAC,kBAAkB,CAAC,EAAE,CAAC,mBAAmB,CAAC,CAAC,CAAC,IAAI,CAAC,CAAC,GAAG,CAAC;AAC5M,KAAK,CAAC,UAAU,CAAC,CAAC,CAAC,CAAC,CAAC,KAAK,CAAC,CAAC,CAAC,GAAG,CAAC,CAAC,CAAC;AACnC,KAAK,CAAC,UAAU,CAAC,CAAC,CAAC,CAAC,CAAC,KAAK,CAAC,CAAC,CAAC,IAAI,CAAC,CAAC,CAAC;AACpC,MAAM,CAAC,CAAC,CAAC,UAAU,CAAC,CAAC,UAAU,CAAC,CAAC,CAAC,IAAI,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC;AAC7C,MAAM,CAAC,OAAO,CAAC,CAAC,CAAC,CAAC,CAAC,QAAQ,CAAC,CAAC,CAAC,CAAC,gBAAgB,CAAC;AAChD,CAAC,CAAC,MAAM,CAAC,CAAC,CAAC,UAAU,CAAC;AACtB,CAAC,CAAC,KAAK,CAAC,OAAO,CAAC,CAAC;AACjB,CAAC,CAAC,CAAC,CAAC,MAAM,CAAC,CAAC,IAAI,CAAC,CAAC,MAAM,CAAC,CAAC,CAAC,CAAC,CAAC;AAC7B,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,MAAM,CAAC,UAAU,CAAC,CAAC,CAAC,CAAC,mBAAmB,CAAC,CAAC,GAAG,CAAC,CAAC,CAAC,UAAU,CAAC,CAAC;AAClE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,YAAY,CAAC,MAAM,CAAC,UAAU,CAAC,CAAC,CAAC,CAAC,CAAC,KAAK,CAAC,CAAC,CAAC,MAAM,CAAC,CAAC,CAAC,CAAC;AAC7D,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,mBAAmB,CAAC,CAAC,IAAI,CAAC,CAAC,CAAC,UAAU,CAAC,CAAC;AAChD,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,WAAW,CAAC,IAAI,CAAC,CAAC,KAAK,CAAC,CAAC,CAAC,OAAO,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,IAAI,CAAC,CAAC,CAAC,CAAC,IAAI;AAC9D,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACV,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,YAAY,CAAC,MAAM,CAAC,UAAU,CAAC,CAAC,CAAC,CAAC,CAAC,KAAK,CAAC,CAAC,CAAC,MAAM,CAAC,CAAC,CAAC;AAC5D,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACR,CAAC,CAAC,CAAC,CAAC,CAAC;AACL,CAAC,CAAC;AACF,CAAC,CAAC;"
+      }
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761072563795,
+      "end": 1761072563795,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761072563796,
+      "end": 1761072563796,
+      "order": "normal"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "resolvedId": "C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/node_modules/@primeuix/themes/dist/aura/panelmenu/index.mjs",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "var o={gap:\"0.5rem\",transitionDuration:\"{transition.duration}\"},r={background:\"{content.background}\",borderColor:\"{content.border.color}\",borderWidth:\"1px\",color:\"{content.color}\",padding:\"0.25rem 0.25rem\",borderRadius:\"{content.border.radius}\",first:{borderWidth:\"1px\",topBorderRadius:\"{content.border.radius}\"},last:{borderWidth:\"1px\",bottomBorderRadius:\"{content.border.radius}\"}},n={focusBackground:\"{navigation.item.focus.background}\",color:\"{navigation.item.color}\",focusColor:\"{navigation.item.focus.color}\",gap:\"0.5rem\",padding:\"{navigation.item.padding}\",borderRadius:\"{content.border.radius}\",icon:{color:\"{navigation.item.icon.color}\",focusColor:\"{navigation.item.icon.focus.color}\"}},i={indent:\"1rem\"},t={color:\"{navigation.submenu.icon.color}\",focusColor:\"{navigation.submenu.icon.focus.color}\"},a={root:o,panel:r,item:n,submenu:i,submenuIcon:t};export{a as default,n as item,r as panel,o as root,i as submenu,t as submenuIcon};//# sourceMappingURL=index.mjs.map",
+      "start": 1761072563105,
+      "end": 1761072563153,
+      "sourcemaps": null
+    },
+    {
+      "name": "@tailwindcss/vite:generate:build",
+      "start": 1761072563153,
+      "end": 1761072563153,
+      "order": "pre"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761072563153,
+      "end": 1761072563153,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761072563153,
+      "end": 1761072563153,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1761072563153,
+      "end": 1761072563153,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761072563153,
+      "end": 1761072563153,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761072563153,
+      "end": 1761072563153,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761072563153,
+      "end": 1761072563153,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761072563153,
+      "end": 1761072563153,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761072563153,
+      "end": 1761072563153,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761072563153,
+      "end": 1761072563153,
+      "order": "normal-normal"
+    },
+    {
+      "name": "unplugin-vue-components",
+      "start": 1761072563153,
+      "end": 1761072563153,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761072563153,
+      "end": 1761072563153,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761072563153,
+      "end": 1761072563153,
+      "order": "normal"
+    }
+  ]
+}

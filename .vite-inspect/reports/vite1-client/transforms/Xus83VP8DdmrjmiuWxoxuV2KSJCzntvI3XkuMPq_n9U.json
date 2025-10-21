@@ -1,0 +1,102 @@
+{
+  "resolvedId": "C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/main.ts",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "import { createApp } from 'vue';\nimport Aura from '@primeuix/themes/aura';\nimport PrimeVue from 'primevue/config';\n\nimport { router } from '@/pages/router';\n\nimport { appStarted } from '@/shared/services/appStarted.ts';\n\nimport App from './app/App.vue';\n\nimport '@fontsource/abel/index.css';\nimport './app/styles/style.css';\n\nappStarted();\n\nconst app = createApp(App);\napp.use(router)\n    .use(PrimeVue, {\n        theme: {\n            preset: Aura,\n            options: {\n                darkModeSelector: false,\n                cssLayer: {\n                    name: 'primevue',\n                    order: 'theme, base, primevue',\n                },\n            },\n        },\n    })\n    .mount('#app');\n",
+      "start": 1761072563032,
+      "end": 1761072563032,
+      "sourcemaps": null
+    },
+    {
+      "name": "@tailwindcss/vite:generate:build",
+      "start": 1761072563032,
+      "end": 1761072563032,
+      "order": "pre"
+    },
+    {
+      "name": "vite:esbuild",
+      "result": "import { createApp } from \"vue\";\nimport Aura from \"@primeuix/themes/aura\";\nimport PrimeVue from \"primevue/config\";\nimport { router } from \"@/pages/router\";\nimport { appStarted } from \"@/shared/services/appStarted.ts\";\nimport App from \"./app/App.vue\";\nimport \"@fontsource/abel/index.css\";\nimport \"./app/styles/style.css\";\nappStarted();\nconst app = createApp(App);\napp.use(router).use(PrimeVue, {\n  theme: {\n    preset: Aura,\n    options: {\n      darkModeSelector: false,\n      cssLayer: {\n        name: \"primevue\",\n        order: \"theme, base, primevue\"\n      }\n    }\n  }\n}).mount(\"#app\");\n",
+      "start": 1761072563032,
+      "end": 1761072563038,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/main.ts"
+        ],
+        "sourcesContent": [
+          "import { createApp } from 'vue';\nimport Aura from '@primeuix/themes/aura';\nimport PrimeVue from 'primevue/config';\n\nimport { router } from '@/pages/router';\n\nimport { appStarted } from '@/shared/services/appStarted.ts';\n\nimport App from './app/App.vue';\n\nimport '@fontsource/abel/index.css';\nimport './app/styles/style.css';\n\nappStarted();\n\nconst app = createApp(App);\napp.use(router)\n    .use(PrimeVue, {\n        theme: {\n            preset: Aura,\n            options: {\n                darkModeSelector: false,\n                cssLayer: {\n                    name: 'primevue',\n                    order: 'theme, base, primevue',\n                },\n            },\n        },\n    })\n    .mount('#app');\n"
+        ],
+        "mappings": "AAAA,SAAS,iBAAiB;AAC1B,OAAO,UAAU;AACjB,OAAO,cAAc;AAErB,SAAS,cAAc;AAEvB,SAAS,kBAAkB;AAE3B,OAAO,SAAS;AAEhB,OAAO;AACP,OAAO;AAEP,WAAW;AAEX,MAAM,MAAM,UAAU,GAAG;AACzB,IAAI,IAAI,MAAM,EACT,IAAI,UAAU;AAAA,EACX,OAAO;AAAA,IACH,QAAQ;AAAA,IACR,SAAS;AAAA,MACL,kBAAkB;AAAA,MAClB,UAAU;AAAA,QACN,MAAM;AAAA,QACN,OAAO;AAAA,MACX;AAAA,IACJ;AAAA,EACJ;AACJ,CAAC,EACA,MAAM,MAAM;",
+        "names": []
+      }
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761072563038,
+      "end": 1761072563038,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1761072563038,
+      "end": 1761072563038,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761072563038,
+      "end": 1761072563038,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761072563038,
+      "end": 1761072563038,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761072563038,
+      "end": 1761072563039,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761072563039,
+      "end": 1761072563039,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761072563039,
+      "end": 1761072563039,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761072563039,
+      "end": 1761072563039,
+      "order": "normal-normal"
+    },
+    {
+      "name": "unplugin-vue-components",
+      "start": 1761072563039,
+      "end": 1761072563039,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761072563039,
+      "end": 1761072563040,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761072563040,
+      "end": 1761072563040,
+      "order": "normal"
+    }
+  ]
+}

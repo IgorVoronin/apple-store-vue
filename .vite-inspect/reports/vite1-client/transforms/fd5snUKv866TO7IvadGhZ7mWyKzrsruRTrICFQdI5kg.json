@@ -1,0 +1,91 @@
+{
+  "resolvedId": "C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/index.html",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<!doctype html>\n<html lang=\"ru\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <link rel=\"icon\" type=\"image/svg+xml\" href=\"/logo.svg\" />\n    <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\" />\n    <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin />\n    <link href=\"https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap\" rel=\"stylesheet\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <meta name=\"description\" content=\"Apple Store - интернет-магазин техники Apple. iPhone, iPad, Mac, AirPods и аксессуары.\" />\n    <title>Apple Store | Интернет-магазин техники Apple</title>\n  </head>\n  <body>\n    <div id=\"app\"></div>\n    <script type=\"module\" src=\"/src/main.ts\"></script>\n  </body>\n</html>\n",
+      "start": 1761072563016,
+      "end": 1761072563016,
+      "sourcemaps": null
+    },
+    {
+      "name": "@tailwindcss/vite:generate:build",
+      "start": 1761072563017,
+      "end": 1761072563017,
+      "order": "pre"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761072563018,
+      "end": 1761072563018,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761072563018,
+      "end": 1761072563018,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1761072563018,
+      "end": 1761072563018,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761072563018,
+      "end": 1761072563018,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:build-html",
+      "result": "import \"vite/modulepreload-polyfill\";\n\nimport \"/src/main.ts\"",
+      "start": 1761072563019,
+      "end": 1761072563044,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761072563048,
+      "end": 1761072563048,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761072563048,
+      "end": 1761072563048,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761072563048,
+      "end": 1761072563048,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761072563048,
+      "end": 1761072563048,
+      "order": "normal-normal"
+    },
+    {
+      "name": "unplugin-vue-components",
+      "start": 1761072563048,
+      "end": 1761072563048,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761072563048,
+      "end": 1761072563048,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761072563048,
+      "end": 1761072563048,
+      "order": "normal"
+    }
+  ]
+}

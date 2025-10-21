@@ -1,0 +1,90 @@
+{
+  "resolvedId": "C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/node_modules/@primeuix/themes/dist/aura/divider/index.mjs",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "var r={borderColor:\"{content.border.color}\"},o={background:\"{content.background}\",color:\"{text.color}\"},n={margin:\"1rem 0\",padding:\"0 1rem\",content:{padding:\"0 0.5rem\"}},e={margin:\"0 1rem\",padding:\"0.5rem 0\",content:{padding:\"0.5rem 0\"}},t={root:r,content:o,horizontal:n,vertical:e};export{o as content,t as default,n as horizontal,r as root,e as vertical};//# sourceMappingURL=index.mjs.map",
+      "start": 1761072563105,
+      "end": 1761072563149,
+      "sourcemaps": null
+    },
+    {
+      "name": "@tailwindcss/vite:generate:build",
+      "start": 1761072563149,
+      "end": 1761072563149,
+      "order": "pre"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761072563149,
+      "end": 1761072563149,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761072563149,
+      "end": 1761072563149,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1761072563149,
+      "end": 1761072563149,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761072563149,
+      "end": 1761072563149,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761072563149,
+      "end": 1761072563149,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761072563149,
+      "end": 1761072563149,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761072563149,
+      "end": 1761072563149,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761072563149,
+      "end": 1761072563149,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761072563149,
+      "end": 1761072563149,
+      "order": "normal-normal"
+    },
+    {
+      "name": "unplugin-vue-components",
+      "start": 1761072563149,
+      "end": 1761072563149,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761072563149,
+      "end": 1761072563149,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761072563149,
+      "end": 1761072563149,
+      "order": "normal"
+    }
+  ]
+}

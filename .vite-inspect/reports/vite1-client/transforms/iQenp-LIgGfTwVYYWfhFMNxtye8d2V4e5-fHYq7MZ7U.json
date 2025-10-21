@@ -1,0 +1,102 @@
+{
+  "resolvedId": "C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/widgets/MainProducts/ui/NewArrivals/index.ts",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "export { default as NewArrivals } from './NewArrivals.vue';\n",
+      "start": 1761072563984,
+      "end": 1761072564028,
+      "sourcemaps": null
+    },
+    {
+      "name": "@tailwindcss/vite:generate:build",
+      "start": 1761072564028,
+      "end": 1761072564028,
+      "order": "pre"
+    },
+    {
+      "name": "vite:esbuild",
+      "result": "export { default as NewArrivals } from \"./NewArrivals.vue\";\n",
+      "start": 1761072564028,
+      "end": 1761072564062,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/widgets/MainProducts/ui/NewArrivals/index.ts"
+        ],
+        "sourcesContent": [
+          "export { default as NewArrivals } from './NewArrivals.vue';\n"
+        ],
+        "mappings": "AAAA,SAAS,WAAW,mBAAmB;",
+        "names": []
+      }
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761072564062,
+      "end": 1761072564062,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1761072564062,
+      "end": 1761072564062,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761072564062,
+      "end": 1761072564062,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761072564063,
+      "end": 1761072564063,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761072564063,
+      "end": 1761072564063,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761072564063,
+      "end": 1761072564063,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761072564063,
+      "end": 1761072564063,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761072564063,
+      "end": 1761072564063,
+      "order": "normal-normal"
+    },
+    {
+      "name": "unplugin-vue-components",
+      "start": 1761072564063,
+      "end": 1761072564063,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761072564063,
+      "end": 1761072564064,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761072564064,
+      "end": 1761072564064,
+      "order": "normal"
+    }
+  ]
+}

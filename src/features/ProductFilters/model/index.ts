@@ -1,4 +1,4 @@
-import { combine, createEvent, createStore } from 'effector';
+import { combine, createStore } from 'effector';
 
 import { atom } from '@/shared/factories';
 

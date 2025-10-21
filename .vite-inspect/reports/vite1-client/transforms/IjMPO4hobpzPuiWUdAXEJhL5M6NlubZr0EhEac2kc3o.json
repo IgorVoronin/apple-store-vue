@@ -1,0 +1,113 @@
+{
+  "resolvedId": "C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/widgets/ProductGallery/ProductGallery.vue?vue&type=script&setup=true&lang.ts",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, createElementVNode as _createElementVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\nconst _hoisted_1 = { class: \"justify-center flex py-[40px] mb-[53px]\" }\nconst _hoisted_2 = [\"src\", \"alt\"]\nconst _hoisted_3 = [\"src\", \"alt\"]\n\nimport { ref } from 'vue';\nimport { useUnit } from 'effector-vue/composition';\n\nimport { API } from '@/shared/api';\nimport { isLargeScreen } from '@/shared/lib';\n\nimport { getProductByIdQuery } from '@/entities/Product';\n\n\nexport default /*@__PURE__*/_defineComponent({\n  __name: 'ProductGallery',\n  setup(__props) {\n\nconst { data: product } = useUnit(getProductByIdQuery);\n\nconst responsiveOptions = ref([\n    {\n        breakpoint: '1300px',\n        numVisible: 4,\n    },\n    {\n        breakpoint: '575px',\n        numVisible: 1,\n    },\n]);\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_Galleria = _resolveComponent(\"Galleria\")!\n\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    _createVNode(_component_Galleria, {\n      \"show-thumbnail-navigators\": false,\n      \"thumbnails-position\": _unref(isLargeScreen) ? 'left' : 'bottom',\n      value: [_unref(product).images ?? ''],\n      \"responsive-options\": responsiveOptions.value,\n      \"num-visible\": 5,\n      \"container-style\": `max-width: ${_unref(isLargeScreen) ? 546 : 343}px; border: 0;`\n    }, {\n      item: _withCtx((slotProps) => [\n        _createElementVNode(\"img\", {\n          width: \"265\",\n          src: _unref(API).BASE_URL + slotProps.item,\n          alt: slotProps.item.alt,\n          style: {\"width\":\"100%\"}\n        }, null, 8, _hoisted_2)\n      ]),\n      thumbnail: _withCtx((slotProps) => [\n        _createElementVNode(\"img\", {\n          src: _unref(API).BASE_URL + slotProps.item,\n          alt: slotProps.item.alt,\n          width: \"80\"\n        }, null, 8, _hoisted_3)\n      ]),\n      _: 1\n    }, 8, [\"thumbnails-position\", \"value\", \"responsive-options\", \"container-style\"])\n  ]))\n}\n}\n\n})",
+      "start": 1761072563545,
+      "end": 1761072563545
+    },
+    {
+      "name": "@tailwindcss/vite:generate:build",
+      "start": 1761072563545,
+      "end": 1761072563545,
+      "order": "pre"
+    },
+    {
+      "name": "vite:esbuild",
+      "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, createElementVNode as _createElementVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\";\nconst _hoisted_1 = { class: \"justify-center flex py-[40px] mb-[53px]\" };\nconst _hoisted_2 = [\"src\", \"alt\"];\nconst _hoisted_3 = [\"src\", \"alt\"];\nimport { ref } from \"vue\";\nimport { useUnit } from \"effector-vue/composition\";\nimport { API } from \"@/shared/api\";\nimport { isLargeScreen } from \"@/shared/lib\";\nimport { getProductByIdQuery } from \"@/entities/Product\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"ProductGallery\",\n  setup(__props) {\n    const { data: product } = useUnit(getProductByIdQuery);\n    const responsiveOptions = ref([\n      {\n        breakpoint: \"1300px\",\n        numVisible: 4\n      },\n      {\n        breakpoint: \"575px\",\n        numVisible: 1\n      }\n    ]);\n    return (_ctx, _cache) => {\n      const _component_Galleria = _resolveComponent(\"Galleria\");\n      return _openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n        _createVNode(_component_Galleria, {\n          \"show-thumbnail-navigators\": false,\n          \"thumbnails-position\": _unref(isLargeScreen) ? \"left\" : \"bottom\",\n          value: [_unref(product).images ?? \"\"],\n          \"responsive-options\": responsiveOptions.value,\n          \"num-visible\": 5,\n          \"container-style\": `max-width: ${_unref(isLargeScreen) ? 546 : 343}px; border: 0;`\n        }, {\n          item: _withCtx((slotProps) => [\n            _createElementVNode(\"img\", {\n              width: \"265\",\n              src: _unref(API).BASE_URL + slotProps.item,\n              alt: slotProps.item.alt,\n              style: { \"width\": \"100%\" }\n            }, null, 8, _hoisted_2)\n          ]),\n          thumbnail: _withCtx((slotProps) => [\n            _createElementVNode(\"img\", {\n              src: _unref(API).BASE_URL + slotProps.item,\n              alt: slotProps.item.alt,\n              width: \"80\"\n            }, null, 8, _hoisted_3)\n          ]),\n          _: 1\n        }, 8, [\"thumbnails-position\", \"value\", \"responsive-options\", \"container-style\"])\n      ]);\n    };\n  }\n});\n",
+      "start": 1761072563545,
+      "end": 1761072563797,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/widgets/ProductGallery/ProductGallery.vue?vue&type=script&setup=true&lang.ts"
+        ],
+        "sourcesContent": [
+          "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, createElementVNode as _createElementVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\nconst _hoisted_1 = { class: \"justify-center flex py-[40px] mb-[53px]\" }\nconst _hoisted_2 = [\"src\", \"alt\"]\nconst _hoisted_3 = [\"src\", \"alt\"]\n\nimport { ref } from 'vue';\nimport { useUnit } from 'effector-vue/composition';\n\nimport { API } from '@/shared/api';\nimport { isLargeScreen } from '@/shared/lib';\n\nimport { getProductByIdQuery } from '@/entities/Product';\n\n\nexport default /*@__PURE__*/_defineComponent({\n  __name: 'ProductGallery',\n  setup(__props) {\n\nconst { data: product } = useUnit(getProductByIdQuery);\n\nconst responsiveOptions = ref([\n    {\n        breakpoint: '1300px',\n        numVisible: 4,\n    },\n    {\n        breakpoint: '575px',\n        numVisible: 1,\n    },\n]);\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_Galleria = _resolveComponent(\"Galleria\")!\n\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    _createVNode(_component_Galleria, {\n      \"show-thumbnail-navigators\": false,\n      \"thumbnails-position\": _unref(isLargeScreen) ? 'left' : 'bottom',\n      value: [_unref(product).images ?? ''],\n      \"responsive-options\": responsiveOptions.value,\n      \"num-visible\": 5,\n      \"container-style\": `max-width: ${_unref(isLargeScreen) ? 546 : 343}px; border: 0;`\n    }, {\n      item: _withCtx((slotProps) => [\n        _createElementVNode(\"img\", {\n          width: \"265\",\n          src: _unref(API).BASE_URL + slotProps.item,\n          alt: slotProps.item.alt,\n          style: {\"width\":\"100%\"}\n        }, null, 8, _hoisted_2)\n      ]),\n      thumbnail: _withCtx((slotProps) => [\n        _createElementVNode(\"img\", {\n          src: _unref(API).BASE_URL + slotProps.item,\n          alt: slotProps.item.alt,\n          width: \"80\"\n        }, null, 8, _hoisted_3)\n      ]),\n      _: 1\n    }, 8, [\"thumbnails-position\", \"value\", \"responsive-options\", \"container-style\"])\n  ]))\n}\n}\n\n})"
+        ],
+        "mappings": "AAAA,SAAS,mBAAmB,wBAAwB;AACpD,SAAS,SAAS,QAAQ,sBAAsB,qBAAqB,oBAAoB,mBAAmB,WAAW,UAAU,eAAe,cAAc,aAAa,YAAY,sBAAsB,2BAA2B;AAExO,MAAM,aAAa,EAAE,OAAO,0CAA0C;AACtE,MAAM,aAAa,CAAC,OAAO,KAAK;AAChC,MAAM,aAAa,CAAC,OAAO,KAAK;AAEhC,SAAS,WAAW;AACpB,SAAS,eAAe;AAExB,SAAS,WAAW;AACpB,SAAS,qBAAqB;AAE9B,SAAS,2BAA2B;AAGpC,eAA4B,iCAAiB;AAAA,EAC3C,QAAQ;AAAA,EACR,MAAM,SAAS;AAEjB,UAAM,EAAE,MAAM,QAAQ,IAAI,QAAQ,mBAAmB;AAErD,UAAM,oBAAoB,IAAI;AAAA,MAC1B;AAAA,QACI,YAAY;AAAA,QACZ,YAAY;AAAA,MAChB;AAAA,MACA;AAAA,QACI,YAAY;AAAA,QACZ,YAAY;AAAA,MAChB;AAAA,IACJ,CAAC;AAED,WAAO,CAAC,MAAU,WAAgB;AAChC,YAAM,sBAAsB,kBAAkB,UAAU;AAExD,aAAQ,WAAW,GAAG,oBAAoB,OAAO,YAAY;AAAA,QAC3D,aAAa,qBAAqB;AAAA,UAChC,6BAA6B;AAAA,UAC7B,uBAAuB,OAAO,aAAa,IAAI,SAAS;AAAA,UACxD,OAAO,CAAC,OAAO,OAAO,EAAE,UAAU,EAAE;AAAA,UACpC,sBAAsB,kBAAkB;AAAA,UACxC,eAAe;AAAA,UACf,mBAAmB,cAAc,OAAO,aAAa,IAAI,MAAM,GAAG;AAAA,QACpE,GAAG;AAAA,UACD,MAAM,SAAS,CAAC,cAAc;AAAA,YAC5B,oBAAoB,OAAO;AAAA,cACzB,OAAO;AAAA,cACP,KAAK,OAAO,GAAG,EAAE,WAAW,UAAU;AAAA,cACtC,KAAK,UAAU,KAAK;AAAA,cACpB,OAAO,EAAC,SAAQ,OAAM;AAAA,YACxB,GAAG,MAAM,GAAG,UAAU;AAAA,UACxB,CAAC;AAAA,UACD,WAAW,SAAS,CAAC,cAAc;AAAA,YACjC,oBAAoB,OAAO;AAAA,cACzB,KAAK,OAAO,GAAG,EAAE,WAAW,UAAU;AAAA,cACtC,KAAK,UAAU,KAAK;AAAA,cACpB,OAAO;AAAA,YACT,GAAG,MAAM,GAAG,UAAU;AAAA,UACxB,CAAC;AAAA,UACD,GAAG;AAAA,QACL,GAAG,GAAG,CAAC,uBAAuB,SAAS,sBAAsB,iBAAiB,CAAC;AAAA,MACjF,CAAC;AAAA,IACH;AAAA,EACA;AAEA,CAAC;",
+        "names": []
+      }
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761072563797,
+      "end": 1761072563797,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1761072563797,
+      "end": 1761072563797,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761072563797,
+      "end": 1761072563797,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761072563797,
+      "end": 1761072563797,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761072563797,
+      "end": 1761072563797,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761072563797,
+      "end": 1761072563797,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761072563797,
+      "end": 1761072563797,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761072563797,
+      "end": 1761072563797,
+      "order": "normal-normal"
+    },
+    {
+      "name": "unplugin-vue-components",
+      "result": "/* unplugin-vue-components disabled */import __unplugin_components_0 from 'primevue/galleria';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, createElementVNode as _createElementVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\";\nconst _hoisted_1 = { class: \"justify-center flex py-[40px] mb-[53px]\" };\nconst _hoisted_2 = [\"src\", \"alt\"];\nconst _hoisted_3 = [\"src\", \"alt\"];\nimport { ref } from \"vue\";\nimport { useUnit } from \"effector-vue/composition\";\nimport { API } from \"@/shared/api\";\nimport { isLargeScreen } from \"@/shared/lib\";\nimport { getProductByIdQuery } from \"@/entities/Product\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"ProductGallery\",\n  setup(__props) {\n    const { data: product } = useUnit(getProductByIdQuery);\n    const responsiveOptions = ref([\n      {\n        breakpoint: \"1300px\",\n        numVisible: 4\n      },\n      {\n        breakpoint: \"575px\",\n        numVisible: 1\n      }\n    ]);\n    return (_ctx, _cache) => {\n      const _component_Galleria = __unplugin_components_0;\n      return _openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n        _createVNode(_component_Galleria, {\n          \"show-thumbnail-navigators\": false,\n          \"thumbnails-position\": _unref(isLargeScreen) ? \"left\" : \"bottom\",\n          value: [_unref(product).images ?? \"\"],\n          \"responsive-options\": responsiveOptions.value,\n          \"num-visible\": 5,\n          \"container-style\": `max-width: ${_unref(isLargeScreen) ? 546 : 343}px; border: 0;`\n        }, {\n          item: _withCtx((slotProps) => [\n            _createElementVNode(\"img\", {\n              width: \"265\",\n              src: _unref(API).BASE_URL + slotProps.item,\n              alt: slotProps.item.alt,\n              style: { \"width\": \"100%\" }\n            }, null, 8, _hoisted_2)\n          ]),\n          thumbnail: _withCtx((slotProps) => [\n            _createElementVNode(\"img\", {\n              src: _unref(API).BASE_URL + slotProps.item,\n              alt: slotProps.item.alt,\n              width: \"80\"\n            }, null, 8, _hoisted_3)\n          ]),\n          _: 1\n        }, 8, [\"thumbnails-position\", \"value\", \"responsive-options\", \"container-style\"])\n      ]);\n    };\n  }\n});\n",
+      "start": 1761072563797,
+      "end": 1761072563798,
+      "order": "post",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/widgets/ProductGallery/ProductGallery.vue?vue&type=script&setup=true&lang.ts"
+        ],
+        "sourcesContent": [
+          "import { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, createElementVNode as _createElementVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\";\nconst _hoisted_1 = { class: \"justify-center flex py-[40px] mb-[53px]\" };\nconst _hoisted_2 = [\"src\", \"alt\"];\nconst _hoisted_3 = [\"src\", \"alt\"];\nimport { ref } from \"vue\";\nimport { useUnit } from \"effector-vue/composition\";\nimport { API } from \"@/shared/api\";\nimport { isLargeScreen } from \"@/shared/lib\";\nimport { getProductByIdQuery } from \"@/entities/Product\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"ProductGallery\",\n  setup(__props) {\n    const { data: product } = useUnit(getProductByIdQuery);\n    const responsiveOptions = ref([\n      {\n        breakpoint: \"1300px\",\n        numVisible: 4\n      },\n      {\n        breakpoint: \"575px\",\n        numVisible: 1\n      }\n    ]);\n    return (_ctx, _cache) => {\n      const _component_Galleria = _resolveComponent(\"Galleria\");\n      return _openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n        _createVNode(_component_Galleria, {\n          \"show-thumbnail-navigators\": false,\n          \"thumbnails-position\": _unref(isLargeScreen) ? \"left\" : \"bottom\",\n          value: [_unref(product).images ?? \"\"],\n          \"responsive-options\": responsiveOptions.value,\n          \"num-visible\": 5,\n          \"container-style\": `max-width: ${_unref(isLargeScreen) ? 546 : 343}px; border: 0;`\n        }, {\n          item: _withCtx((slotProps) => [\n            _createElementVNode(\"img\", {\n              width: \"265\",\n              src: _unref(API).BASE_URL + slotProps.item,\n              alt: slotProps.item.alt,\n              style: { \"width\": \"100%\" }\n            }, null, 8, _hoisted_2)\n          ]),\n          thumbnail: _withCtx((slotProps) => [\n            _createElementVNode(\"img\", {\n              src: _unref(API).BASE_URL + slotProps.item,\n              alt: slotProps.item.alt,\n              width: \"80\"\n            }, null, 8, _hoisted_3)\n          ]),\n          _: 1\n        }, 8, [\"thumbnails-position\", \"value\", \"responsive-options\", \"container-style\"])\n      ]);\n    };\n  }\n});\n"
+        ],
+        "names": [],
+        "mappings": "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"
+      }
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761072563798,
+      "end": 1761072563798,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761072563798,
+      "end": 1761072563798,
+      "order": "normal"
+    }
+  ]
+}

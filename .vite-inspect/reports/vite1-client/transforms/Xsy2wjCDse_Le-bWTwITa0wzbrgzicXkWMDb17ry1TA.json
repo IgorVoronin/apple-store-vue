@@ -1,0 +1,90 @@
+{
+  "resolvedId": "C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/node_modules/primevue/accordion/style/index.mjs",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "import { style } from '@primeuix/styles/accordion';\nimport BaseStyle from '@primevue/core/base/style';\n\nvar classes = {\n  root: 'p-accordion p-component'\n};\nvar AccordionStyle = BaseStyle.extend({\n  name: 'accordion',\n  style: style,\n  classes: classes\n});\n\nexport { AccordionStyle as default };\n//# sourceMappingURL=index.mjs.map\n",
+      "start": 1761072564403,
+      "end": 1761072564482,
+      "sourcemaps": null
+    },
+    {
+      "name": "@tailwindcss/vite:generate:build",
+      "start": 1761072564482,
+      "end": 1761072564482,
+      "order": "pre"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761072564482,
+      "end": 1761072564482,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761072564482,
+      "end": 1761072564482,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1761072564482,
+      "end": 1761072564482,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761072564482,
+      "end": 1761072564482,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761072564482,
+      "end": 1761072564482,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761072564482,
+      "end": 1761072564482,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761072564482,
+      "end": 1761072564482,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761072564482,
+      "end": 1761072564482,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761072564482,
+      "end": 1761072564482,
+      "order": "normal-normal"
+    },
+    {
+      "name": "unplugin-vue-components",
+      "start": 1761072564482,
+      "end": 1761072564482,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761072564482,
+      "end": 1761072564482,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761072564482,
+      "end": 1761072564482,
+      "order": "normal"
+    }
+  ]
+}

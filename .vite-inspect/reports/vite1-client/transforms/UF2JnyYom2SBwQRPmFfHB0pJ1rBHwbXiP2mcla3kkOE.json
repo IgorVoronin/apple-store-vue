@@ -1,0 +1,113 @@
+{
+  "resolvedId": "C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/features/RedirectToShopPage/RedirectToShopPage.vue?vue&type=script&setup=true&lang.ts",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, normalizeClass as _normalizeClass, withCtx as _withCtx, createVNode as _createVNode, openBlock as _openBlock, createBlock as _createBlock } from \"vue\"\n\n\nexport default /*@__PURE__*/_defineComponent({\n  __name: 'RedirectToShopPage',\n  props: {\n    className: {}\n  },\n  setup(__props: any) {\n\n\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_RouterLink = _resolveComponent(\"RouterLink\")!\n  const _component_Button = _resolveComponent(\"Button\")!\n\n  return (_openBlock(), _createBlock(_component_Button, {\n    outlined: \"\",\n    \"as-child\": \"\",\n    plain: \"\",\n    size: \"large\"\n  }, {\n    default: _withCtx((slotProps) => [\n      _createVNode(_component_RouterLink, {\n        class: _normalizeClass([`${__props.className} ${slotProps.class}`, \"text-white hover:text-black flex justify-center max-w-[173px]\"]),\n        to: \"/products\"\n      }, {\n        default: _withCtx(() => [...(_cache[0] || (_cache[0] = [\n          _createTextVNode(\" Shop Now \", -1)\n        ]))]),\n        _: 1\n      }, 8, [\"class\"])\n    ]),\n    _: 1\n  }))\n}\n}\n\n})",
+      "start": 1761072564353,
+      "end": 1761072564353
+    },
+    {
+      "name": "@tailwindcss/vite:generate:build",
+      "start": 1761072564353,
+      "end": 1761072564353,
+      "order": "pre"
+    },
+    {
+      "name": "vite:esbuild",
+      "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, normalizeClass as _normalizeClass, withCtx as _withCtx, createVNode as _createVNode, openBlock as _openBlock, createBlock as _createBlock } from \"vue\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"RedirectToShopPage\",\n  props: {\n    className: {}\n  },\n  setup(__props) {\n    return (_ctx, _cache) => {\n      const _component_RouterLink = _resolveComponent(\"RouterLink\");\n      const _component_Button = _resolveComponent(\"Button\");\n      return _openBlock(), _createBlock(_component_Button, {\n        outlined: \"\",\n        \"as-child\": \"\",\n        plain: \"\",\n        size: \"large\"\n      }, {\n        default: _withCtx((slotProps) => [\n          _createVNode(_component_RouterLink, {\n            class: _normalizeClass([`${__props.className} ${slotProps.class}`, \"text-white hover:text-black flex justify-center max-w-[173px]\"]),\n            to: \"/products\"\n          }, {\n            default: _withCtx(() => [..._cache[0] || (_cache[0] = [\n              _createTextVNode(\" Shop Now \", -1)\n            ])]),\n            _: 1\n          }, 8, [\"class\"])\n        ]),\n        _: 1\n      });\n    };\n  }\n});\n",
+      "start": 1761072564353,
+      "end": 1761072564358,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/features/RedirectToShopPage/RedirectToShopPage.vue?vue&type=script&setup=true&lang.ts"
+        ],
+        "sourcesContent": [
+          "import { defineComponent as _defineComponent } from 'vue'\nimport { createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, normalizeClass as _normalizeClass, withCtx as _withCtx, createVNode as _createVNode, openBlock as _openBlock, createBlock as _createBlock } from \"vue\"\n\n\nexport default /*@__PURE__*/_defineComponent({\n  __name: 'RedirectToShopPage',\n  props: {\n    className: {}\n  },\n  setup(__props: any) {\n\n\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_RouterLink = _resolveComponent(\"RouterLink\")!\n  const _component_Button = _resolveComponent(\"Button\")!\n\n  return (_openBlock(), _createBlock(_component_Button, {\n    outlined: \"\",\n    \"as-child\": \"\",\n    plain: \"\",\n    size: \"large\"\n  }, {\n    default: _withCtx((slotProps) => [\n      _createVNode(_component_RouterLink, {\n        class: _normalizeClass([`${__props.className} ${slotProps.class}`, \"text-white hover:text-black flex justify-center max-w-[173px]\"]),\n        to: \"/products\"\n      }, {\n        default: _withCtx(() => [...(_cache[0] || (_cache[0] = [\n          _createTextVNode(\" Shop Now \", -1)\n        ]))]),\n        _: 1\n      }, 8, [\"class\"])\n    ]),\n    _: 1\n  }))\n}\n}\n\n})"
+        ],
+        "mappings": "AAAA,SAAS,mBAAmB,wBAAwB;AACpD,SAAS,mBAAmB,kBAAkB,oBAAoB,mBAAmB,kBAAkB,iBAAiB,WAAW,UAAU,eAAe,cAAc,aAAa,YAAY,eAAe,oBAAoB;AAGtO,eAA4B,iCAAiB;AAAA,EAC3C,QAAQ;AAAA,EACR,OAAO;AAAA,IACL,WAAW,CAAC;AAAA,EACd;AAAA,EACA,MAAM,SAAc;AAItB,WAAO,CAAC,MAAU,WAAgB;AAChC,YAAM,wBAAwB,kBAAkB,YAAY;AAC5D,YAAM,oBAAoB,kBAAkB,QAAQ;AAEpD,aAAQ,WAAW,GAAG,aAAa,mBAAmB;AAAA,QACpD,UAAU;AAAA,QACV,YAAY;AAAA,QACZ,OAAO;AAAA,QACP,MAAM;AAAA,MACR,GAAG;AAAA,QACD,SAAS,SAAS,CAAC,cAAc;AAAA,UAC/B,aAAa,uBAAuB;AAAA,YAClC,OAAO,gBAAgB,CAAC,GAAG,QAAQ,SAAS,IAAI,UAAU,KAAK,IAAI,+DAA+D,CAAC;AAAA,YACnI,IAAI;AAAA,UACN,GAAG;AAAA,YACD,SAAS,SAAS,MAAM,CAAC,GAAI,OAAO,CAAC,MAAM,OAAO,CAAC,IAAI;AAAA,cACrD,iBAAiB,cAAc,EAAE;AAAA,YACnC,EAAG,CAAC;AAAA,YACJ,GAAG;AAAA,UACL,GAAG,GAAG,CAAC,OAAO,CAAC;AAAA,QACjB,CAAC;AAAA,QACD,GAAG;AAAA,MACL,CAAC;AAAA,IACH;AAAA,EACA;AAEA,CAAC;",
+        "names": []
+      }
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761072564358,
+      "end": 1761072564358,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1761072564358,
+      "end": 1761072564358,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761072564358,
+      "end": 1761072564358,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761072564358,
+      "end": 1761072564358,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761072564358,
+      "end": 1761072564358,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761072564358,
+      "end": 1761072564358,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761072564358,
+      "end": 1761072564358,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761072564359,
+      "end": 1761072564359,
+      "order": "normal-normal"
+    },
+    {
+      "name": "unplugin-vue-components",
+      "result": "/* unplugin-vue-components disabled */import __unplugin_components_0 from 'primevue/button';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, normalizeClass as _normalizeClass, withCtx as _withCtx, createVNode as _createVNode, openBlock as _openBlock, createBlock as _createBlock } from \"vue\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"RedirectToShopPage\",\n  props: {\n    className: {}\n  },\n  setup(__props) {\n    return (_ctx, _cache) => {\n      const _component_RouterLink = _resolveComponent(\"RouterLink\");\n      const _component_Button = __unplugin_components_0;\n      return _openBlock(), _createBlock(_component_Button, {\n        outlined: \"\",\n        \"as-child\": \"\",\n        plain: \"\",\n        size: \"large\"\n      }, {\n        default: _withCtx((slotProps) => [\n          _createVNode(_component_RouterLink, {\n            class: _normalizeClass([`${__props.className} ${slotProps.class}`, \"text-white hover:text-black flex justify-center max-w-[173px]\"]),\n            to: \"/products\"\n          }, {\n            default: _withCtx(() => [..._cache[0] || (_cache[0] = [\n              _createTextVNode(\" Shop Now \", -1)\n            ])]),\n            _: 1\n          }, 8, [\"class\"])\n        ]),\n        _: 1\n      });\n    };\n  }\n});\n",
+      "start": 1761072564359,
+      "end": 1761072564359,
+      "order": "post",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/features/RedirectToShopPage/RedirectToShopPage.vue?vue&type=script&setup=true&lang.ts"
+        ],
+        "sourcesContent": [
+          "import { defineComponent as _defineComponent } from \"vue\";\nimport { createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, normalizeClass as _normalizeClass, withCtx as _withCtx, createVNode as _createVNode, openBlock as _openBlock, createBlock as _createBlock } from \"vue\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"RedirectToShopPage\",\n  props: {\n    className: {}\n  },\n  setup(__props) {\n    return (_ctx, _cache) => {\n      const _component_RouterLink = _resolveComponent(\"RouterLink\");\n      const _component_Button = _resolveComponent(\"Button\");\n      return _openBlock(), _createBlock(_component_Button, {\n        outlined: \"\",\n        \"as-child\": \"\",\n        plain: \"\",\n        size: \"large\"\n      }, {\n        default: _withCtx((slotProps) => [\n          _createVNode(_component_RouterLink, {\n            class: _normalizeClass([`${__props.className} ${slotProps.class}`, \"text-white hover:text-black flex justify-center max-w-[173px]\"]),\n            to: \"/products\"\n          }, {\n            default: _withCtx(() => [..._cache[0] || (_cache[0] = [\n              _createTextVNode(\" Shop Now \", -1)\n            ])]),\n            _: 1\n          }, 8, [\"class\"])\n        ]),\n        _: 1\n      });\n    };\n  }\n});\n"
+        ],
+        "names": [],
+        "mappings": "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"
+      }
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761072564359,
+      "end": 1761072564359,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761072564359,
+      "end": 1761072564359,
+      "order": "normal"
+    }
+  ]
+}

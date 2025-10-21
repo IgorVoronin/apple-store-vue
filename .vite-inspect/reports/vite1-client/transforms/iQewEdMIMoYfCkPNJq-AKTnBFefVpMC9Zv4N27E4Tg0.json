@@ -1,0 +1,113 @@
+{
+  "resolvedId": "C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/pages/ProductPage/ProductPage.vue?vue&type=script&setup=true&lang.ts",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, createVNode as _createVNode, createElementVNode as _createElementVNode, withCtx as _withCtx, createElementBlock as _createElementBlock } from \"vue\"\n\nconst _hoisted_1 = { key: 1 }\nconst _hoisted_2 = { class: \"lg:flex lg:gap-[48px]\" }\n\nimport { watch } from 'vue';\nimport { useRoute } from 'vue-router';\nimport { useUnit } from 'effector-vue/composition';\n\nimport { MainContainer } from '@/shared/ui';\n\nimport { getAllProductsQuery, getProductByIdQuery } from '@/entities/Product';\n\nimport { ProductGallery } from '@/widgets/ProductGallery';\nimport { ProductInfo } from '@/widgets/ProductInfo';\nimport { ProductDetails } from '@/widgets/ProductDetails';\nimport { RelatedProducts } from '@/widgets/RelatedProducts';\nimport { RootLayout } from '@/widgets/RootLayout';\n\n\nexport default /*@__PURE__*/_defineComponent({\n  __name: 'ProductPage',\n  setup(__props) {\n\nconst { pending } = useUnit(getAllProductsQuery);\n\nconst route = useRoute();\n\n// При смене ID товара загружаем новый и скроллим вверх\nwatch(\n    () => route.params.id as string,\n    (id) => {\n        getProductByIdQuery.start(id);\n        // Скролл вверх страницы\n        window.scrollTo({ top: 0, behavior: 'smooth' });\n    },\n    { immediate: true }\n);\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_ProgressSpinner = _resolveComponent(\"ProgressSpinner\")!\n\n  return (_openBlock(), _createBlock(_unref(RootLayout), null, {\n    default: _withCtx(() => [\n      (_unref(pending))\n        ? (_openBlock(), _createBlock(_component_ProgressSpinner, {\n            key: 0,\n            class: \"m-auto flex mt-[20%]\"\n          }))\n        : _createCommentVNode(\"\", true),\n      (!_unref(pending))\n        ? (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n            _createVNode(_unref(MainContainer), { class: \"py-10\" }, {\n              default: _withCtx(() => [\n                _createElementVNode(\"div\", _hoisted_2, [\n                  _createVNode(_unref(ProductGallery)),\n                  _createVNode(_unref(ProductInfo))\n                ])\n              ]),\n              _: 1\n            }),\n            _createVNode(_unref(ProductDetails)),\n            _createVNode(_unref(RelatedProducts))\n          ]))\n        : _createCommentVNode(\"\", true)\n    ]),\n    _: 1\n  }))\n}\n}\n\n})",
+      "start": 1761072563354,
+      "end": 1761072563354
+    },
+    {
+      "name": "@tailwindcss/vite:generate:build",
+      "start": 1761072563354,
+      "end": 1761072563354,
+      "order": "pre"
+    },
+    {
+      "name": "vite:esbuild",
+      "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, createVNode as _createVNode, createElementVNode as _createElementVNode, withCtx as _withCtx, createElementBlock as _createElementBlock } from \"vue\";\nconst _hoisted_1 = { key: 1 };\nconst _hoisted_2 = { class: \"lg:flex lg:gap-[48px]\" };\nimport { watch } from \"vue\";\nimport { useRoute } from \"vue-router\";\nimport { useUnit } from \"effector-vue/composition\";\nimport { MainContainer } from \"@/shared/ui\";\nimport { getAllProductsQuery, getProductByIdQuery } from \"@/entities/Product\";\nimport { ProductGallery } from \"@/widgets/ProductGallery\";\nimport { ProductInfo } from \"@/widgets/ProductInfo\";\nimport { ProductDetails } from \"@/widgets/ProductDetails\";\nimport { RelatedProducts } from \"@/widgets/RelatedProducts\";\nimport { RootLayout } from \"@/widgets/RootLayout\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"ProductPage\",\n  setup(__props) {\n    const { pending } = useUnit(getAllProductsQuery);\n    const route = useRoute();\n    watch(\n      () => route.params.id,\n      (id) => {\n        getProductByIdQuery.start(id);\n        window.scrollTo({ top: 0, behavior: \"smooth\" });\n      },\n      { immediate: true }\n    );\n    return (_ctx, _cache) => {\n      const _component_ProgressSpinner = _resolveComponent(\"ProgressSpinner\");\n      return _openBlock(), _createBlock(_unref(RootLayout), null, {\n        default: _withCtx(() => [\n          _unref(pending) ? (_openBlock(), _createBlock(_component_ProgressSpinner, {\n            key: 0,\n            class: \"m-auto flex mt-[20%]\"\n          })) : _createCommentVNode(\"\", true),\n          !_unref(pending) ? (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n            _createVNode(_unref(MainContainer), { class: \"py-10\" }, {\n              default: _withCtx(() => [\n                _createElementVNode(\"div\", _hoisted_2, [\n                  _createVNode(_unref(ProductGallery)),\n                  _createVNode(_unref(ProductInfo))\n                ])\n              ]),\n              _: 1\n            }),\n            _createVNode(_unref(ProductDetails)),\n            _createVNode(_unref(RelatedProducts))\n          ])) : _createCommentVNode(\"\", true)\n        ]),\n        _: 1\n      });\n    };\n  }\n});\n",
+      "start": 1761072563354,
+      "end": 1761072563364,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/pages/ProductPage/ProductPage.vue?vue&type=script&setup=true&lang.ts"
+        ],
+        "sourcesContent": [
+          "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, createVNode as _createVNode, createElementVNode as _createElementVNode, withCtx as _withCtx, createElementBlock as _createElementBlock } from \"vue\"\n\nconst _hoisted_1 = { key: 1 }\nconst _hoisted_2 = { class: \"lg:flex lg:gap-[48px]\" }\n\nimport { watch } from 'vue';\nimport { useRoute } from 'vue-router';\nimport { useUnit } from 'effector-vue/composition';\n\nimport { MainContainer } from '@/shared/ui';\n\nimport { getAllProductsQuery, getProductByIdQuery } from '@/entities/Product';\n\nimport { ProductGallery } from '@/widgets/ProductGallery';\nimport { ProductInfo } from '@/widgets/ProductInfo';\nimport { ProductDetails } from '@/widgets/ProductDetails';\nimport { RelatedProducts } from '@/widgets/RelatedProducts';\nimport { RootLayout } from '@/widgets/RootLayout';\n\n\nexport default /*@__PURE__*/_defineComponent({\n  __name: 'ProductPage',\n  setup(__props) {\n\nconst { pending } = useUnit(getAllProductsQuery);\n\nconst route = useRoute();\n\n// При смене ID товара загружаем новый и скроллим вверх\nwatch(\n    () => route.params.id as string,\n    (id) => {\n        getProductByIdQuery.start(id);\n        // Скролл вверх страницы\n        window.scrollTo({ top: 0, behavior: 'smooth' });\n    },\n    { immediate: true }\n);\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_ProgressSpinner = _resolveComponent(\"ProgressSpinner\")!\n\n  return (_openBlock(), _createBlock(_unref(RootLayout), null, {\n    default: _withCtx(() => [\n      (_unref(pending))\n        ? (_openBlock(), _createBlock(_component_ProgressSpinner, {\n            key: 0,\n            class: \"m-auto flex mt-[20%]\"\n          }))\n        : _createCommentVNode(\"\", true),\n      (!_unref(pending))\n        ? (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n            _createVNode(_unref(MainContainer), { class: \"py-10\" }, {\n              default: _withCtx(() => [\n                _createElementVNode(\"div\", _hoisted_2, [\n                  _createVNode(_unref(ProductGallery)),\n                  _createVNode(_unref(ProductInfo))\n                ])\n              ]),\n              _: 1\n            }),\n            _createVNode(_unref(ProductDetails)),\n            _createVNode(_unref(RelatedProducts))\n          ]))\n        : _createCommentVNode(\"\", true)\n    ]),\n    _: 1\n  }))\n}\n}\n\n})"
+        ],
+        "mappings": "AAAA,SAAS,mBAAmB,wBAAwB;AACpD,SAAS,SAAS,QAAQ,oBAAoB,mBAAmB,aAAa,YAAY,eAAe,cAAc,sBAAsB,qBAAqB,eAAe,cAAc,sBAAsB,qBAAqB,WAAW,UAAU,sBAAsB,2BAA2B;AAEhT,MAAM,aAAa,EAAE,KAAK,EAAE;AAC5B,MAAM,aAAa,EAAE,OAAO,wBAAwB;AAEpD,SAAS,aAAa;AACtB,SAAS,gBAAgB;AACzB,SAAS,eAAe;AAExB,SAAS,qBAAqB;AAE9B,SAAS,qBAAqB,2BAA2B;AAEzD,SAAS,sBAAsB;AAC/B,SAAS,mBAAmB;AAC5B,SAAS,sBAAsB;AAC/B,SAAS,uBAAuB;AAChC,SAAS,kBAAkB;AAG3B,eAA4B,iCAAiB;AAAA,EAC3C,QAAQ;AAAA,EACR,MAAM,SAAS;AAEjB,UAAM,EAAE,QAAQ,IAAI,QAAQ,mBAAmB;AAE/C,UAAM,QAAQ,SAAS;AAGvB;AAAA,MACI,MAAM,MAAM,OAAO;AAAA,MACnB,CAAC,OAAO;AACJ,4BAAoB,MAAM,EAAE;AAE5B,eAAO,SAAS,EAAE,KAAK,GAAG,UAAU,SAAS,CAAC;AAAA,MAClD;AAAA,MACA,EAAE,WAAW,KAAK;AAAA,IACtB;AAEA,WAAO,CAAC,MAAU,WAAgB;AAChC,YAAM,6BAA6B,kBAAkB,iBAAiB;AAEtE,aAAQ,WAAW,GAAG,aAAa,OAAO,UAAU,GAAG,MAAM;AAAA,QAC3D,SAAS,SAAS,MAAM;AAAA,UACrB,OAAO,OAAO,KACV,WAAW,GAAG,aAAa,4BAA4B;AAAA,YACtD,KAAK;AAAA,YACL,OAAO;AAAA,UACT,CAAC,KACD,oBAAoB,IAAI,IAAI;AAAA,UAC/B,CAAC,OAAO,OAAO,KACX,WAAW,GAAG,oBAAoB,OAAO,YAAY;AAAA,YACpD,aAAa,OAAO,aAAa,GAAG,EAAE,OAAO,QAAQ,GAAG;AAAA,cACtD,SAAS,SAAS,MAAM;AAAA,gBACtB,oBAAoB,OAAO,YAAY;AAAA,kBACrC,aAAa,OAAO,cAAc,CAAC;AAAA,kBACnC,aAAa,OAAO,WAAW,CAAC;AAAA,gBAClC,CAAC;AAAA,cACH,CAAC;AAAA,cACD,GAAG;AAAA,YACL,CAAC;AAAA,YACD,aAAa,OAAO,cAAc,CAAC;AAAA,YACnC,aAAa,OAAO,eAAe,CAAC;AAAA,UACtC,CAAC,KACD,oBAAoB,IAAI,IAAI;AAAA,QAClC,CAAC;AAAA,QACD,GAAG;AAAA,MACL,CAAC;AAAA,IACH;AAAA,EACA;AAEA,CAAC;",
+        "names": []
+      }
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761072563364,
+      "end": 1761072563364,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1761072563364,
+      "end": 1761072563364,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761072563364,
+      "end": 1761072563364,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761072563364,
+      "end": 1761072563364,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761072563364,
+      "end": 1761072563364,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761072563364,
+      "end": 1761072563364,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761072563364,
+      "end": 1761072563364,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761072563364,
+      "end": 1761072563364,
+      "order": "normal-normal"
+    },
+    {
+      "name": "unplugin-vue-components",
+      "result": "/* unplugin-vue-components disabled */import __unplugin_components_0 from 'primevue/progressspinner';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, createVNode as _createVNode, createElementVNode as _createElementVNode, withCtx as _withCtx, createElementBlock as _createElementBlock } from \"vue\";\nconst _hoisted_1 = { key: 1 };\nconst _hoisted_2 = { class: \"lg:flex lg:gap-[48px]\" };\nimport { watch } from \"vue\";\nimport { useRoute } from \"vue-router\";\nimport { useUnit } from \"effector-vue/composition\";\nimport { MainContainer } from \"@/shared/ui\";\nimport { getAllProductsQuery, getProductByIdQuery } from \"@/entities/Product\";\nimport { ProductGallery } from \"@/widgets/ProductGallery\";\nimport { ProductInfo } from \"@/widgets/ProductInfo\";\nimport { ProductDetails } from \"@/widgets/ProductDetails\";\nimport { RelatedProducts } from \"@/widgets/RelatedProducts\";\nimport { RootLayout } from \"@/widgets/RootLayout\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"ProductPage\",\n  setup(__props) {\n    const { pending } = useUnit(getAllProductsQuery);\n    const route = useRoute();\n    watch(\n      () => route.params.id,\n      (id) => {\n        getProductByIdQuery.start(id);\n        window.scrollTo({ top: 0, behavior: \"smooth\" });\n      },\n      { immediate: true }\n    );\n    return (_ctx, _cache) => {\n      const _component_ProgressSpinner = __unplugin_components_0;\n      return _openBlock(), _createBlock(_unref(RootLayout), null, {\n        default: _withCtx(() => [\n          _unref(pending) ? (_openBlock(), _createBlock(_component_ProgressSpinner, {\n            key: 0,\n            class: \"m-auto flex mt-[20%]\"\n          })) : _createCommentVNode(\"\", true),\n          !_unref(pending) ? (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n            _createVNode(_unref(MainContainer), { class: \"py-10\" }, {\n              default: _withCtx(() => [\n                _createElementVNode(\"div\", _hoisted_2, [\n                  _createVNode(_unref(ProductGallery)),\n                  _createVNode(_unref(ProductInfo))\n                ])\n              ]),\n              _: 1\n            }),\n            _createVNode(_unref(ProductDetails)),\n            _createVNode(_unref(RelatedProducts))\n          ])) : _createCommentVNode(\"\", true)\n        ]),\n        _: 1\n      });\n    };\n  }\n});\n",
+      "start": 1761072563365,
+      "end": 1761072563366,
+      "order": "post",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/pages/ProductPage/ProductPage.vue?vue&type=script&setup=true&lang.ts"
+        ],
+        "sourcesContent": [
+          "import { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, createVNode as _createVNode, createElementVNode as _createElementVNode, withCtx as _withCtx, createElementBlock as _createElementBlock } from \"vue\";\nconst _hoisted_1 = { key: 1 };\nconst _hoisted_2 = { class: \"lg:flex lg:gap-[48px]\" };\nimport { watch } from \"vue\";\nimport { useRoute } from \"vue-router\";\nimport { useUnit } from \"effector-vue/composition\";\nimport { MainContainer } from \"@/shared/ui\";\nimport { getAllProductsQuery, getProductByIdQuery } from \"@/entities/Product\";\nimport { ProductGallery } from \"@/widgets/ProductGallery\";\nimport { ProductInfo } from \"@/widgets/ProductInfo\";\nimport { ProductDetails } from \"@/widgets/ProductDetails\";\nimport { RelatedProducts } from \"@/widgets/RelatedProducts\";\nimport { RootLayout } from \"@/widgets/RootLayout\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"ProductPage\",\n  setup(__props) {\n    const { pending } = useUnit(getAllProductsQuery);\n    const route = useRoute();\n    watch(\n      () => route.params.id,\n      (id) => {\n        getProductByIdQuery.start(id);\n        window.scrollTo({ top: 0, behavior: \"smooth\" });\n      },\n      { immediate: true }\n    );\n    return (_ctx, _cache) => {\n      const _component_ProgressSpinner = _resolveComponent(\"ProgressSpinner\");\n      return _openBlock(), _createBlock(_unref(RootLayout), null, {\n        default: _withCtx(() => [\n          _unref(pending) ? (_openBlock(), _createBlock(_component_ProgressSpinner, {\n            key: 0,\n            class: \"m-auto flex mt-[20%]\"\n          })) : _createCommentVNode(\"\", true),\n          !_unref(pending) ? (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n            _createVNode(_unref(MainContainer), { class: \"py-10\" }, {\n              default: _withCtx(() => [\n                _createElementVNode(\"div\", _hoisted_2, [\n                  _createVNode(_unref(ProductGallery)),\n                  _createVNode(_unref(ProductInfo))\n                ])\n              ]),\n              _: 1\n            }),\n            _createVNode(_unref(ProductDetails)),\n            _createVNode(_unref(RelatedProducts))\n          ])) : _createCommentVNode(\"\", true)\n        ]),\n        _: 1\n      });\n    };\n  }\n});\n"
+        ],
+        "names": [],
+        "mappings": "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"
+      }
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761072563369,
+      "end": 1761072563369,
+      "order": "normal-normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761072563369,
+      "end": 1761072563369,
+      "order": "normal"
+    }
+  ]
+}
