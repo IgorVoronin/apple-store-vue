@@ -17,6 +17,11 @@ const [onAddProductToCart, onRemoveProductFromCart, onDeleteProduct, resetCart] 
     ProductModel.cartProductDelete,
     ProductModel.cartResettled,
 ]);
+
+const handleCheckout = () => {
+    localStorage.setItem('cart-products', JSON.stringify({}));
+    resetCart();
+};
 </script>
 <template>
     <RootLayout>
@@ -124,7 +129,7 @@ const [onAddProductToCart, onRemoveProductFromCart, onDeleteProduct, resetCart] 
                 </div>
                 
                 <!-- Checkout button -->
-                <Button severity="contrast" size="large" class="w-full mt-auto" @click="resetCart">
+                <Button severity="contrast" size="large" class="w-full mt-auto" @click="handleCheckout">
                     Checkout
                 </Button>
             </div>

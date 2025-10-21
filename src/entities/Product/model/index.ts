@@ -33,7 +33,7 @@ export const ProductModel = atom(() => {
 
     const cartProductSettled = createEvent<Product>();
     const cartProductRemoved = createEvent<Product>();
-    const cartProductDelete = createEvent<Product>();
+    const cartProductDelete = createEvent<TProduct>();
     const cartResettled = createEvent();
     const $productCart = createStore<{
         [K: ID]: {
@@ -149,14 +149,6 @@ export const ProductModel = atom(() => {
         pickup: appStarted,
         store: $productCart,
         key: 'cart-products',
-    });
-
-    // Очищаем localStorage при сбросе корзины
-    sample({
-        clock: cartResettled,
-        fn: () => {
-            localStorage.removeItem('cart-products');
-        },
     });
 
     sample({
