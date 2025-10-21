@@ -2,15 +2,18 @@
 defineProps<{
     label: string;
     icon: string;
+    category: string;
 }>();
 </script>
 
 <template>
     <li class="root">
-        <span :class="icon" />
-        <p>
-            {{ label }}
-        </p>
+        <RouterLink :to="{ path: '/products', query: { category } }" class="card-link">
+            <span :class="icon" />
+            <p>
+                {{ label }}
+            </p>
+        </RouterLink>
     </li>
 </template>
 
@@ -18,22 +21,37 @@ defineProps<{
 .root {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     border-radius: 1rem;
-    padding: 24px;
     font-size: 16px;
     text-align: center;
     background-color: #ededed;
-    gap: 8px;
+    transition: all 0.3s ease;
 
-    span {
-        font-size: 48px;
+    &:hover {
+        background-color: #d0d0d0;
+        transform: translateY(-2px);
     }
 
     @media (width >= 1200px) {
         width: 100%;
         max-width: 160px;
+    }
+}
+
+.card-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    gap: 8px;
+    width: 100%;
+    height: 100%;
+    color: inherit;
+    text-decoration: none;
+
+    span {
+        font-size: 48px;
     }
 }
 </style>

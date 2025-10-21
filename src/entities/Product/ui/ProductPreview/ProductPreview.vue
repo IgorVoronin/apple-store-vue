@@ -11,7 +11,7 @@ defineProps<{
 <template>
     <li class="item">
         <slot class="action" name="like-btn" />
-        <RouterLink :to="`product/${product.id}`">
+        <RouterLink :to="`/product/${product.id}`">
             <img aria-hidden="true" alt="" :src="API.BASE_URL + shuffled([...product.images])[0]" />
             <p class="line-clamp-2">{{ product.name }}</p>
             <p>{{ normalNumberFormat(product.price) }}</p>
@@ -42,17 +42,19 @@ defineProps<{
 
 p {
     margin: 0 0 1rem;
-    font-family:
-        ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
-        'Noto Color Emoji';
+    font-family: 'ABeeZee', sans-serif;
+    font-weight: 400;
+    font-style: italic;
 
     &:first-of-type {
         min-height: 48px;
+        font-size: 16px;
+        line-height: 24px;
     }
 
     &:last-of-type {
         font-size: 24px;
-        line-height: 1;
+        line-height: 32px;
     }
 }
 

@@ -5,6 +5,7 @@ import { MainContainer } from '@/shared/ui';
 
 import { type Product, ProductList, ProductModel, ProductPreview } from '@/entities/Product';
 
+import { AddProductToCartAction } from '@/features/AddProductToCartAction';
 import { ProductLikeAction } from '@/features/ProductLikeAction';
 
 const [discountedItems] = useUnit([ProductModel.$discountedItems]);
@@ -17,6 +18,9 @@ const [discountedItems] = useUnit([ProductModel.$discountedItems]);
                 <ProductPreview v-for="product of discountedItems" :key="product.id" :product="product as Product">
                     <template #like-btn>
                         <ProductLikeAction :product-id="product.id" />
+                    </template>
+                    <template #cart-btn>
+                        <AddProductToCartAction :product="product as Product" />
                     </template>
                 </ProductPreview>
             </ProductList>

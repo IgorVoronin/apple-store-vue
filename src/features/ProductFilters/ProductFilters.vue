@@ -1,21 +1,41 @@
 <script setup lang="ts">
 import { useUnit, useVModel } from 'effector-vue/composition';
 
+import { CATEGORIES_MAP } from '@/entities/Product/lib/mapCategories';
 import { ProductModel } from '@/entities/Product';
 
-const [characteristics, allProcessors, allProducts, allDiagonals] = useUnit([
+const [characteristics, allProcessors, allProducts, allDiagonals, allCategories] = useUnit([
     ProductModel.$allCharacteristicsNames,
     ProductModel.$allProcessorTypes,
     ProductModel.$availableProducts,
     ProductModel.$allDiagonalTypes,
+    ProductModel.$allCategories,
 ]);
 
 const selectedDiagonals = useVModel(ProductModel.$selectedDiagonals);
 const selectedProcessors = useVModel(ProductModel.$selectedProcessors);
+const selectedCategories = useVModel(ProductModel.$selectedCategories);
 </script>
 
 <template>
-    <Accordion :value="['Процессор']" multiple>
+    <Accordion :value="['Категория']" multiple>
+        <!-- Фильтр по категориям -->
+        <AccordionPanel value="Категория">
+            <AccordionHeader>Категория</AccordionHeader>
+            <AccordionContent>
+                <div v-for="category in allCategories" :key="category" class="flex items-center gap-2 mb-4">
+                    <Checkbox v-model="selectedCategories" :input-id="category" :value="category" class="m-0" />
+                    <label :for="category">
+                        {{ CATEGORIES_MAP[category] || category }}
+                        <span class="text-gray-400">
+                            {{ allProducts.filter((product) => product.category === category).length }}
+                        </span>
+                    </label>
+                </div>
+            </AccordionContent>
+        </AccordionPanel>
+
+        <!-- Фильтры по характеристикам -->
         <AccordionPanel v-for="tab in characteristics" :key="tab" :value="tab">
             <AccordionHeader>{{ tab }}</AccordionHeader>
             <AccordionContent v-if="tab === 'Процессор'">

@@ -33,4 +33,8 @@ const routes = [
 export const router = createRouter({
     history: createWebHistory(),
     routes,
+    scrollBehavior() {
+        // Всегда скроллим вверх при переходе на новую страницу
+        return { top: 0 };
+    },
 });

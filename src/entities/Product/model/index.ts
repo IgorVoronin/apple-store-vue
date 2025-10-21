@@ -119,9 +119,16 @@ export const ProductModel = atom(() => {
     const $allProcessorTypes = $availableProducts.map((products) => filterCategoryByKey(products, 'Процессор'));
     const $allDiagonalTypes = $availableProducts.map((products) => filterCategoryByKey(products, 'Диагональ'));
 
+    // Все уникальные категории товаров
+    const $allCategories = $availableProducts.map((products) => {
+        const categories = products.map((p) => p.category);
+        return [...new Set(categories)].sort();
+    });
+
     // V-models
     const $selectedProcessors = createStore<string[]>([]);
     const $selectedDiagonals = createStore<string[]>([]);
+    const $selectedCategories = createStore<string[]>([]);
 
     const $allMemoryTypes = $availableProducts.map((products) =>
         filterCategoryByKey(products, 'Объем встроенной памяти').sort((a, b) => (Number(a) > Number(b) ? 1 : -1))
@@ -171,5 +178,7 @@ export const ProductModel = atom(() => {
         cartResettled,
         $allDiagonalTypes,
         $selectedDiagonals,
+        $allCategories,
+        $selectedCategories,
     };
 });

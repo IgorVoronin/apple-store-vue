@@ -1,4 +1,4 @@
-import { combine, createStore } from 'effector';
+import { combine, createEvent, createStore } from 'effector';
 
 import { atom } from '@/shared/factories';
 
@@ -16,8 +16,9 @@ export const ProductFiltersModel = atom(() => {
             sort: $sortBy,
             processors: ProductModel.$selectedProcessors,
             diagonals: ProductModel.$selectedDiagonals,
+            categories: ProductModel.$selectedCategories,
         },
-        ({ products, sort, processors, diagonals }) => {
+        ({ products, sort, processors, diagonals, categories }) => {
             const currentProducts = [...products].filter((product) => {
                 const currentProcessor =
                     product.characteristics.find((char) => char.characteristic === 'Процессор')?.value ?? '';
@@ -28,8 +29,9 @@ export const ProductFiltersModel = atom(() => {
                 // Проверяем соответствие фильтрам
                 const matchesProcessor = processors.length === 0 || processors.includes(currentProcessor);
                 const matchesDiagonal = diagonals.length === 0 || diagonals.includes(currentDiagonals);
+                const matchesCategory = categories.length === 0 || categories.includes(product.category);
 
-                return matchesProcessor && matchesDiagonal;
+                return matchesProcessor && matchesDiagonal && matchesCategory;
             });
 
             switch (sort.code) {

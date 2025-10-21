@@ -18,6 +18,7 @@ const [categories, isLoading] = useUnit([ProductModel.$categories, getAllProduct
                     :key="category.id"
                     :label="category.label"
                     :icon="category.icon"
+                    :category="category.category"
                 />
             </ul>
         </MainContainer>

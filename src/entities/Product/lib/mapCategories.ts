@@ -22,9 +22,11 @@ export const mapCategoriesLabels = (
     label: string;
     id: number;
     icon: string;
+    category: string;
 }[] =>
     categories.map((category, idx) => ({
         label: CATEGORIES_MAP[category],
         id: idx,
         icon: CATEGORY_ICON_MAP[category],
+        category: category,
     }));
