@@ -4,20 +4,20 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { resolveComponent as _resolveComponent, createVNode as _createVNode, createElementVNode as _createElementVNode, unref as _unref, renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, toDisplayString as _toDisplayString, normalizeClass as _normalizeClass, withCtx as _withCtx } from \"vue\"\n\nconst _hoisted_1 = { class: \"footer\" }\nconst _hoisted_2 = { class: \"top\" }\nconst _hoisted_3 = { class: \"menu services\" }\nconst _hoisted_4 = [\"href\"]\nconst _hoisted_5 = { class: \"menu assistance\" }\nconst _hoisted_6 = [\"href\"]\nconst _hoisted_7 = { class: \"socials\" }\nconst _hoisted_8 = [\"href\"]\n\nimport { MainContainer } from '@/shared/ui';\n\nimport { ASSISTANCE_MENU, SERVICES_MENU, SOCIAL_MENU } from '@/widgets/RootLayout/ui/Footer/const.ts';\n\nexport default /*@__PURE__*/_defineComponent({\n  __name: 'MainFooter',\n  setup(__props) {\n\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_Image = _resolveComponent(\"Image\")!\n\n  return (_openBlock(), _createElementBlock(\"footer\", _hoisted_1, [\n    _createVNode(_unref(MainContainer), { class: \"container\" }, {\n      default: _withCtx(() => [\n        _createElementVNode(\"div\", _hoisted_2, [\n          _createVNode(_component_Image, {\n            class: \"logo\",\n            src: \"/logo-white.svg\",\n            width: \"65\"\n          }),\n          _cache[0] || (_cache[0] = _createElementVNode(\"p\", null, \" We are a residential interior design firm located in Portland. Our boutique-studio offers more than \", -1))\n        ]),\n        _createElementVNode(\"nav\", _hoisted_3, [\n          _cache[1] || (_cache[1] = _createElementVNode(\"h5\", { class: \"title\" }, \"Services\", -1)),\n          _createElementVNode(\"ul\", null, [\n            (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(_unref(SERVICES_MENU), (service) => {\n              return (_openBlock(), _createElementBlock(\"li\", {\n                key: service.id\n              }, [\n                _createElementVNode(\"a\", {\n                  class: \"link\",\n                  href: service.href\n                }, _toDisplayString(service.label), 9, _hoisted_4)\n              ]))\n            }), 128))\n          ])\n        ]),\n        _createElementVNode(\"nav\", _hoisted_5, [\n          _cache[2] || (_cache[2] = _createElementVNode(\"h5\", { class: \"title\" }, \"Assistance to the buyer\", -1)),\n          _createElementVNode(\"ul\", null, [\n            (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(_unref(ASSISTANCE_MENU), (service) => {\n              return (_openBlock(), _createElementBlock(\"li\", {\n                key: service.id\n              }, [\n                _createElementVNode(\"a\", {\n                  class: \"link\",\n                  href: service.href\n                }, _toDisplayString(service.label), 9, _hoisted_6)\n              ]))\n            }), 128))\n          ])\n        ]),\n        _createElementVNode(\"ul\", _hoisted_7, [\n          (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(_unref(SOCIAL_MENU), (service) => {\n            return (_openBlock(), _createElementBlock(\"li\", {\n              key: service.id\n            }, [\n              _createElementVNode(\"a\", {\n                class: \"link\",\n                href: service.href\n              }, [\n                _createElementVNode(\"span\", {\n                  class: _normalizeClass(service.icon)\n                }, null, 2)\n              ], 8, _hoisted_8)\n            ]))\n          }), 128))\n        ])\n      ]),\n      _: 1\n    })\n  ]))\n}\n}\n\n})",
-      "start": 1761072564365,
-      "end": 1761072564365
+      "start": 1761073703843,
+      "end": 1761073703843
     },
     {
       "name": "@tailwindcss/vite:generate:build",
-      "start": 1761072564365,
-      "end": 1761072564365,
+      "start": 1761073703843,
+      "end": 1761073703843,
       "order": "pre"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { resolveComponent as _resolveComponent, createVNode as _createVNode, createElementVNode as _createElementVNode, unref as _unref, renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, toDisplayString as _toDisplayString, normalizeClass as _normalizeClass, withCtx as _withCtx } from \"vue\";\nconst _hoisted_1 = { class: \"footer\" };\nconst _hoisted_2 = { class: \"top\" };\nconst _hoisted_3 = { class: \"menu services\" };\nconst _hoisted_4 = [\"href\"];\nconst _hoisted_5 = { class: \"menu assistance\" };\nconst _hoisted_6 = [\"href\"];\nconst _hoisted_7 = { class: \"socials\" };\nconst _hoisted_8 = [\"href\"];\nimport { MainContainer } from \"@/shared/ui\";\nimport { ASSISTANCE_MENU, SERVICES_MENU, SOCIAL_MENU } from \"@/widgets/RootLayout/ui/Footer/const.ts\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"MainFooter\",\n  setup(__props) {\n    return (_ctx, _cache) => {\n      const _component_Image = _resolveComponent(\"Image\");\n      return _openBlock(), _createElementBlock(\"footer\", _hoisted_1, [\n        _createVNode(_unref(MainContainer), { class: \"container\" }, {\n          default: _withCtx(() => [\n            _createElementVNode(\"div\", _hoisted_2, [\n              _createVNode(_component_Image, {\n                class: \"logo\",\n                src: \"/logo-white.svg\",\n                width: \"65\"\n              }),\n              _cache[0] || (_cache[0] = _createElementVNode(\"p\", null, \" We are a residential interior design firm located in Portland. Our boutique-studio offers more than \", -1))\n            ]),\n            _createElementVNode(\"nav\", _hoisted_3, [\n              _cache[1] || (_cache[1] = _createElementVNode(\"h5\", { class: \"title\" }, \"Services\", -1)),\n              _createElementVNode(\"ul\", null, [\n                (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(_unref(SERVICES_MENU), (service) => {\n                  return _openBlock(), _createElementBlock(\"li\", {\n                    key: service.id\n                  }, [\n                    _createElementVNode(\"a\", {\n                      class: \"link\",\n                      href: service.href\n                    }, _toDisplayString(service.label), 9, _hoisted_4)\n                  ]);\n                }), 128))\n              ])\n            ]),\n            _createElementVNode(\"nav\", _hoisted_5, [\n              _cache[2] || (_cache[2] = _createElementVNode(\"h5\", { class: \"title\" }, \"Assistance to the buyer\", -1)),\n              _createElementVNode(\"ul\", null, [\n                (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(_unref(ASSISTANCE_MENU), (service) => {\n                  return _openBlock(), _createElementBlock(\"li\", {\n                    key: service.id\n                  }, [\n                    _createElementVNode(\"a\", {\n                      class: \"link\",\n                      href: service.href\n                    }, _toDisplayString(service.label), 9, _hoisted_6)\n                  ]);\n                }), 128))\n              ])\n            ]),\n            _createElementVNode(\"ul\", _hoisted_7, [\n              (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(_unref(SOCIAL_MENU), (service) => {\n                return _openBlock(), _createElementBlock(\"li\", {\n                  key: service.id\n                }, [\n                  _createElementVNode(\"a\", {\n                    class: \"link\",\n                    href: service.href\n                  }, [\n                    _createElementVNode(\"span\", {\n                      class: _normalizeClass(service.icon)\n                    }, null, 2)\n                  ], 8, _hoisted_8)\n                ]);\n              }), 128))\n            ])\n          ]),\n          _: 1\n        })\n      ]);\n    };\n  }\n});\n",
-      "start": 1761072564366,
-      "end": 1761072564372,
+      "start": 1761073703844,
+      "end": 1761073703862,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -33,57 +33,57 @@
     },
     {
       "name": "vite:worker",
-      "start": 1761072564372,
-      "end": 1761072564372,
+      "start": 1761073703862,
+      "end": 1761073703862,
       "order": "normal-normal"
     },
     {
       "name": "vite:vue",
-      "start": 1761072564372,
-      "end": 1761072564372,
+      "start": 1761073703862,
+      "end": 1761073703862,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1761072564372,
-      "end": 1761072564372,
+      "start": 1761073703862,
+      "end": 1761073703862,
       "order": "normal-normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1761072564372,
-      "end": 1761072564372,
+      "start": 1761073703862,
+      "end": 1761073703862,
       "order": "normal-normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1761072564372,
-      "end": 1761072564372,
+      "start": 1761073703862,
+      "end": 1761073703862,
       "order": "normal-normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1761072564372,
-      "end": 1761072564372,
+      "start": 1761073703862,
+      "end": 1761073703862,
       "order": "normal-normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1761072564373,
-      "end": 1761072564373,
+      "start": 1761073703862,
+      "end": 1761073703862,
       "order": "normal-normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1761072564373,
-      "end": 1761072564373,
+      "start": 1761073703862,
+      "end": 1761073703862,
       "order": "normal-normal"
     },
     {
       "name": "unplugin-vue-components",
       "result": "/* unplugin-vue-components disabled */import __unplugin_components_0 from 'primevue/image';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { resolveComponent as _resolveComponent, createVNode as _createVNode, createElementVNode as _createElementVNode, unref as _unref, renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, toDisplayString as _toDisplayString, normalizeClass as _normalizeClass, withCtx as _withCtx } from \"vue\";\nconst _hoisted_1 = { class: \"footer\" };\nconst _hoisted_2 = { class: \"top\" };\nconst _hoisted_3 = { class: \"menu services\" };\nconst _hoisted_4 = [\"href\"];\nconst _hoisted_5 = { class: \"menu assistance\" };\nconst _hoisted_6 = [\"href\"];\nconst _hoisted_7 = { class: \"socials\" };\nconst _hoisted_8 = [\"href\"];\nimport { MainContainer } from \"@/shared/ui\";\nimport { ASSISTANCE_MENU, SERVICES_MENU, SOCIAL_MENU } from \"@/widgets/RootLayout/ui/Footer/const.ts\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"MainFooter\",\n  setup(__props) {\n    return (_ctx, _cache) => {\n      const _component_Image = __unplugin_components_0;\n      return _openBlock(), _createElementBlock(\"footer\", _hoisted_1, [\n        _createVNode(_unref(MainContainer), { class: \"container\" }, {\n          default: _withCtx(() => [\n            _createElementVNode(\"div\", _hoisted_2, [\n              _createVNode(_component_Image, {\n                class: \"logo\",\n                src: \"/logo-white.svg\",\n                width: \"65\"\n              }),\n              _cache[0] || (_cache[0] = _createElementVNode(\"p\", null, \" We are a residential interior design firm located in Portland. Our boutique-studio offers more than \", -1))\n            ]),\n            _createElementVNode(\"nav\", _hoisted_3, [\n              _cache[1] || (_cache[1] = _createElementVNode(\"h5\", { class: \"title\" }, \"Services\", -1)),\n              _createElementVNode(\"ul\", null, [\n                (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(_unref(SERVICES_MENU), (service) => {\n                  return _openBlock(), _createElementBlock(\"li\", {\n                    key: service.id\n                  }, [\n                    _createElementVNode(\"a\", {\n                      class: \"link\",\n                      href: service.href\n                    }, _toDisplayString(service.label), 9, _hoisted_4)\n                  ]);\n                }), 128))\n              ])\n            ]),\n            _createElementVNode(\"nav\", _hoisted_5, [\n              _cache[2] || (_cache[2] = _createElementVNode(\"h5\", { class: \"title\" }, \"Assistance to the buyer\", -1)),\n              _createElementVNode(\"ul\", null, [\n                (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(_unref(ASSISTANCE_MENU), (service) => {\n                  return _openBlock(), _createElementBlock(\"li\", {\n                    key: service.id\n                  }, [\n                    _createElementVNode(\"a\", {\n                      class: \"link\",\n                      href: service.href\n                    }, _toDisplayString(service.label), 9, _hoisted_6)\n                  ]);\n                }), 128))\n              ])\n            ]),\n            _createElementVNode(\"ul\", _hoisted_7, [\n              (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(_unref(SOCIAL_MENU), (service) => {\n                return _openBlock(), _createElementBlock(\"li\", {\n                  key: service.id\n                }, [\n                  _createElementVNode(\"a\", {\n                    class: \"link\",\n                    href: service.href\n                  }, [\n                    _createElementVNode(\"span\", {\n                      class: _normalizeClass(service.icon)\n                    }, null, 2)\n                  ], 8, _hoisted_8)\n                ]);\n              }), 128))\n            ])\n          ]),\n          _: 1\n        })\n      ]);\n    };\n  }\n});\n",
-      "start": 1761072564373,
-      "end": 1761072564373,
+      "start": 1761073703862,
+      "end": 1761073703862,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -99,14 +99,14 @@
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1761072564374,
-      "end": 1761072564374,
+      "start": 1761073703862,
+      "end": 1761073703863,
       "order": "normal-normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1761072564374,
-      "end": 1761072564374,
+      "start": 1761073703863,
+      "end": 1761073703863,
       "order": "normal"
     }
   ]

@@ -4,33 +4,33 @@
     {
       "name": "vite:load-fallback",
       "result": "<script setup lang=\"ts\">\nimport { ref } from 'vue';\nimport { useUnit } from 'effector-vue/composition';\n\nimport { isLargeScreen } from '@/shared/lib';\nimport { MainContainer } from '@/shared/ui';\n\nimport { ProductModel } from '@/entities/Product';\n\nimport { Search } from '@/features/Search';\n\nimport { NAVIGATION_ITEMS } from '../../const';\n\nconst items = ref(NAVIGATION_ITEMS);\n\nconst [likes, cart] = useUnit([ProductModel.$likedProducts, ProductModel.$productCartCount]);\n</script>\n<template>\n    <header class=\"lg:m-auto bg-white mb-4 w-full\">\n        <MainContainer>\n            <Menubar class=\"menubar justify-between border-0 p-0 py-6 pb-2 xl:pb-4\" :model=\"items\">\n                <template #start>\n                    <RouterLink to=\"/\">\n                        <Image v-if=\"!isLargeScreen\" draggable=\"false\" src=\"/logo.svg\" width=\"65\" alt=\"Cyber Logo\" />\n                        <Image\n                            v-if=\"isLargeScreen\"\n                            draggable=\"false\"\n                            class=\"mr-75 shrink-0\"\n                            src=\"/logo-desktop.svg\"\n                            width=\"95\"\n                            alt=\"Cyber Logo\"\n                        />\n                    </RouterLink>\n                    <Search class=\"xl:mr-55\" />\n                </template>\n                <template #item=\"{ item, props }\">\n                    <RouterLink\n                        v-ripple\n                        :to=\"item.label === 'Favorites' ? '/fav' : '/cart'\"\n                        class=\"gap-1 flex items-center\"\n                        v-bind=\"props.action\"\n                    >\n                        <span class=\"gap-2 align-center flex pt-2\">\n                            <OverlayBadge\n                                v-if=\"item.label !== 'Products'\"\n                                :value=\"item.label === 'Favorites' ? likes.length : cart\"\n                                size=\"small\"\n                                :severity=\"null\"\n                            >\n                                <span :class=\"item.icon\" />\n                            </OverlayBadge>\n                            <span v-if=\"!isLargeScreen\" class=\"label\">{{ item.label }}</span>\n                        </span>\n                    </RouterLink>\n                </template>\n            </Menubar>\n        </MainContainer>\n    </header>\n</template>\n<style scoped>\n.menubar {\n    --p-icon-size: 20px;\n    --p-menubar-mobile-button-size: 40px;\n}\n</style>\n",
-      "start": 1761072564086,
-      "end": 1761072564120,
+      "start": 1761073703505,
+      "end": 1761073703812,
       "sourcemaps": null
     },
     {
       "name": "@tailwindcss/vite:generate:build",
-      "start": 1761072564120,
-      "end": 1761072564120,
+      "start": 1761073703812,
+      "end": 1761073703812,
       "order": "pre"
     },
     {
       "name": "vite:esbuild",
-      "start": 1761072564120,
-      "end": 1761072564120,
+      "start": 1761073703812,
+      "end": 1761073703812,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1761072564120,
-      "end": 1761072564120,
+      "start": 1761073703812,
+      "end": 1761073703812,
       "order": "normal-normal"
     },
     {
       "name": "vite:vue",
       "result": "import _sfc_main from \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/widgets/RootLayout/ui/Header/MainHeader.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/widgets/RootLayout/ui/Header/MainHeader.vue?vue&type=script&setup=true&lang.ts\";\nimport \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/widgets/RootLayout/ui/Header/MainHeader.vue?vue&type=style&index=0&scoped=2663d7bf&lang.css\";\nimport _export_sfc from \"\\0plugin-vue:export-helper\";\nexport default /* @__PURE__ */ _export_sfc(_sfc_main, [[\"__scopeId\", \"data-v-2663d7bf\"]]);\n",
-      "start": 1761072564120,
-      "end": 1761072564372,
+      "start": 1761073703812,
+      "end": 1761073703841,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -38,45 +38,45 @@
     },
     {
       "name": "vite:define",
-      "start": 1761072564372,
-      "end": 1761072564372,
+      "start": 1761073703841,
+      "end": 1761073703841,
       "order": "normal-normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1761072564372,
-      "end": 1761072564372,
+      "start": 1761073703841,
+      "end": 1761073703841,
       "order": "normal-normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1761072564372,
-      "end": 1761072564372,
+      "start": 1761073703841,
+      "end": 1761073703841,
       "order": "normal-normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1761072564372,
-      "end": 1761072564372,
+      "start": 1761073703841,
+      "end": 1761073703841,
       "order": "normal-normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1761072564372,
-      "end": 1761072564372,
+      "start": 1761073703841,
+      "end": 1761073703841,
       "order": "normal-normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1761072564372,
-      "end": 1761072564372,
+      "start": 1761073703841,
+      "end": 1761073703841,
       "order": "normal-normal"
     },
     {
       "name": "unplugin-vue-components",
       "result": "/* unplugin-vue-components disabled */import _sfc_main from \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/widgets/RootLayout/ui/Header/MainHeader.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/widgets/RootLayout/ui/Header/MainHeader.vue?vue&type=script&setup=true&lang.ts\";\nimport \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/widgets/RootLayout/ui/Header/MainHeader.vue?vue&type=style&index=0&scoped=2663d7bf&lang.css\";\nimport _export_sfc from \"\\0plugin-vue:export-helper\";\nexport default /* @__PURE__ */ _export_sfc(_sfc_main, [[\"__scopeId\", \"data-v-2663d7bf\"]]);\n",
-      "start": 1761072564372,
-      "end": 1761072564373,
+      "start": 1761073703841,
+      "end": 1761073703841,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -92,14 +92,14 @@
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1761072564373,
-      "end": 1761072564373,
+      "start": 1761073703841,
+      "end": 1761073703841,
       "order": "normal-normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1761072564373,
-      "end": 1761072564373,
+      "start": 1761073703841,
+      "end": 1761073703841,
       "order": "normal"
     }
   ]

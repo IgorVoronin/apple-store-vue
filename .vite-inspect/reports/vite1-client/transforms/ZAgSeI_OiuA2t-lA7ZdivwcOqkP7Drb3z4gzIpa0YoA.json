@@ -4,33 +4,33 @@
     {
       "name": "vite:load-fallback",
       "result": "<script setup lang=\"ts\">\nimport { API } from '@/shared/api';\nimport { normalNumberFormat, shuffled } from '@/shared/lib';\n\nimport type { Product } from '../../types';\n\ndefineProps<{\n    product: Product;\n}>();\n</script>\n<template>\n    <li class=\"item\">\n        <slot class=\"action\" name=\"like-btn\" />\n        <RouterLink :to=\"`/product/${product.id}`\">\n            <img aria-hidden=\"true\" alt=\"\" :src=\"API.BASE_URL + shuffled([...product.images])[0]\" />\n            <p class=\"line-clamp-2\">{{ product.name }}</p>\n            <p>{{ normalNumberFormat(product.price) }}</p>\n        </RouterLink>\n        <slot name=\"cart-btn\" />\n    </li>\n</template>\n<style scoped>\n.item {\n    border-radius: 1rem;\n    padding: 24px 12px;\n    text-align: center;\n    background-color: #f6f6f6;\n\n    @media (width >= 768px) {\n        padding: 24px 16px;\n    }\n}\n\n.action {\n    margin-bottom: 8px;\n    font-size: 32px;\n\n    @media (width >= 992px) {\n        margin-bottom: 16px;\n    }\n}\n\np {\n    margin: 0 0 1rem;\n    font-family: 'ABeeZee', sans-serif;\n    font-weight: 400;\n    font-style: italic;\n\n    &:first-of-type {\n        min-height: 48px;\n        font-size: 16px;\n        line-height: 24px;\n    }\n\n    &:last-of-type {\n        font-size: 24px;\n        line-height: 32px;\n    }\n}\n\nimg {\n    display: block;\n    margin: auto auto 8px;\n    width: 104px;\n    height: 104px;\n    mix-blend-mode: multiply;\n\n    @media (width >= 992px) {\n        margin-bottom: 16px;\n        width: 160px;\n        height: 160px;\n    }\n}\n</style>\n",
-      "start": 1761072563844,
-      "end": 1761072563899,
+      "start": 1761073703244,
+      "end": 1761073703285,
       "sourcemaps": null
     },
     {
       "name": "@tailwindcss/vite:generate:build",
-      "start": 1761072563899,
-      "end": 1761072563899,
+      "start": 1761073703285,
+      "end": 1761073703285,
       "order": "pre"
     },
     {
       "name": "vite:esbuild",
-      "start": 1761072563899,
-      "end": 1761072563899,
+      "start": 1761073703285,
+      "end": 1761073703285,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1761072563899,
-      "end": 1761072563899,
+      "start": 1761073703285,
+      "end": 1761073703285,
       "order": "normal-normal"
     },
     {
       "name": "vite:vue",
       "result": "import _sfc_main from \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/entities/Product/ui/ProductPreview/ProductPreview.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/entities/Product/ui/ProductPreview/ProductPreview.vue?vue&type=script&setup=true&lang.ts\";\nimport \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/entities/Product/ui/ProductPreview/ProductPreview.vue?vue&type=style&index=0&scoped=e7219afe&lang.css\";\nimport _export_sfc from \"\\0plugin-vue:export-helper\";\nexport default /* @__PURE__ */ _export_sfc(_sfc_main, [[\"__scopeId\", \"data-v-e7219afe\"]]);\n",
-      "start": 1761072563899,
-      "end": 1761072564062,
+      "start": 1761073703285,
+      "end": 1761073703450,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -38,45 +38,45 @@
     },
     {
       "name": "vite:define",
-      "start": 1761072564062,
-      "end": 1761072564062,
+      "start": 1761073703450,
+      "end": 1761073703450,
       "order": "normal-normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1761072564062,
-      "end": 1761072564062,
+      "start": 1761073703450,
+      "end": 1761073703450,
       "order": "normal-normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1761072564062,
-      "end": 1761072564062,
+      "start": 1761073703450,
+      "end": 1761073703450,
       "order": "normal-normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1761072564063,
-      "end": 1761072564063,
+      "start": 1761073703450,
+      "end": 1761073703450,
       "order": "normal-normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1761072564063,
-      "end": 1761072564063,
+      "start": 1761073703450,
+      "end": 1761073703450,
       "order": "normal-normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1761072564063,
-      "end": 1761072564063,
+      "start": 1761073703450,
+      "end": 1761073703450,
       "order": "normal-normal"
     },
     {
       "name": "unplugin-vue-components",
       "result": "/* unplugin-vue-components disabled */import _sfc_main from \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/entities/Product/ui/ProductPreview/ProductPreview.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/entities/Product/ui/ProductPreview/ProductPreview.vue?vue&type=script&setup=true&lang.ts\";\nimport \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/entities/Product/ui/ProductPreview/ProductPreview.vue?vue&type=style&index=0&scoped=e7219afe&lang.css\";\nimport _export_sfc from \"\\0plugin-vue:export-helper\";\nexport default /* @__PURE__ */ _export_sfc(_sfc_main, [[\"__scopeId\", \"data-v-e7219afe\"]]);\n",
-      "start": 1761072564063,
-      "end": 1761072564063,
+      "start": 1761073703450,
+      "end": 1761073703450,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -92,14 +92,14 @@
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1761072564063,
-      "end": 1761072564063,
+      "start": 1761073703450,
+      "end": 1761073703450,
       "order": "normal-normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1761072564063,
-      "end": 1761072564063,
+      "start": 1761073703450,
+      "end": 1761073703450,
       "order": "normal"
     }
   ]

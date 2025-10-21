@@ -4,20 +4,20 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock } from \"vue\"\n\nimport 'primeicons/primeicons.css';\n\nexport default /*@__PURE__*/_defineComponent({\n  __name: 'App',\n  setup(__props) {\n\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_RouterView = _resolveComponent(\"RouterView\")!\n\n  return (_openBlock(), _createBlock(_component_RouterView))\n}\n}\n\n})",
-      "start": 1761072563347,
-      "end": 1761072563348
+      "start": 1761073702700,
+      "end": 1761073702700
     },
     {
       "name": "@tailwindcss/vite:generate:build",
-      "start": 1761072563348,
-      "end": 1761072563348,
+      "start": 1761073702700,
+      "end": 1761073702700,
       "order": "pre"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock } from \"vue\";\nimport \"primeicons/primeicons.css\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"App\",\n  setup(__props) {\n    return (_ctx, _cache) => {\n      const _component_RouterView = _resolveComponent(\"RouterView\");\n      return _openBlock(), _createBlock(_component_RouterView);\n    };\n  }\n});\n",
-      "start": 1761072563348,
-      "end": 1761072563364,
+      "start": 1761073702700,
+      "end": 1761073702708,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -33,57 +33,57 @@
     },
     {
       "name": "vite:worker",
-      "start": 1761072563364,
-      "end": 1761072563364,
+      "start": 1761073702708,
+      "end": 1761073702708,
       "order": "normal-normal"
     },
     {
       "name": "vite:vue",
-      "start": 1761072563364,
-      "end": 1761072563364,
+      "start": 1761073702708,
+      "end": 1761073702708,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1761072563364,
-      "end": 1761072563364,
+      "start": 1761073702708,
+      "end": 1761073702708,
       "order": "normal-normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1761072563364,
-      "end": 1761072563364,
+      "start": 1761073702708,
+      "end": 1761073702708,
       "order": "normal-normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1761072563364,
-      "end": 1761072563364,
+      "start": 1761073702708,
+      "end": 1761073702708,
       "order": "normal-normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1761072563364,
-      "end": 1761072563364,
+      "start": 1761073702708,
+      "end": 1761073702708,
       "order": "normal-normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1761072563364,
-      "end": 1761072563364,
+      "start": 1761073702709,
+      "end": 1761073702709,
       "order": "normal-normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1761072563364,
-      "end": 1761072563364,
+      "start": 1761073702709,
+      "end": 1761073702709,
       "order": "normal-normal"
     },
     {
       "name": "unplugin-vue-components",
       "result": "/* unplugin-vue-components disabled */import { defineComponent as _defineComponent } from \"vue\";\nimport { resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock } from \"vue\";\nimport \"primeicons/primeicons.css\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"App\",\n  setup(__props) {\n    return (_ctx, _cache) => {\n      const _component_RouterView = _resolveComponent(\"RouterView\");\n      return _openBlock(), _createBlock(_component_RouterView);\n    };\n  }\n});\n",
-      "start": 1761072563364,
-      "end": 1761072563366,
+      "start": 1761073702709,
+      "end": 1761073702710,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -99,14 +99,14 @@
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1761072563369,
-      "end": 1761072563369,
+      "start": 1761073702711,
+      "end": 1761073702711,
       "order": "normal-normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1761072563369,
-      "end": 1761072563369,
+      "start": 1761073702711,
+      "end": 1761073702711,
       "order": "normal"
     }
   ]

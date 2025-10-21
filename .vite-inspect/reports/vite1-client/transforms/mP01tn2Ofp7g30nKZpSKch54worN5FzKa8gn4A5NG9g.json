@@ -4,21 +4,21 @@
     {
       "name": "vite:load-fallback",
       "result": "import { createRouter, createWebHistory } from 'vue-router';\n\nimport { CartPage } from '@/pages/CartPage';\nimport { FavPage } from '@/pages/FavPage';\nimport { IndexPage } from '@/pages/IndexPage';\nimport { ProductPage } from '@/pages/ProductPage';\nimport { ProductsPage } from '@/pages/ProductsPage';\n\nconst routes = [\n    {\n        path: '/',\n        component: IndexPage,\n    },\n    {\n        path: '/products',\n        component: ProductsPage,\n    },\n    {\n        path: '/product/:id',\n        component: ProductPage,\n        props: true,\n    },\n    {\n        path: '/fav',\n        component: FavPage,\n    },\n    {\n        path: '/cart',\n        component: CartPage,\n    },\n];\n\nexport const router = createRouter({\n    history: createWebHistory(),\n    routes,\n    scrollBehavior() {\n        // Всегда скроллим вверх при переходе на новую страницу\n        return { top: 0 };\n    },\n});\n",
-      "start": 1761072563051,
-      "end": 1761072563072,
+      "start": 1761073702438,
+      "end": 1761073702451,
       "sourcemaps": null
     },
     {
       "name": "@tailwindcss/vite:generate:build",
-      "start": 1761072563072,
-      "end": 1761072563072,
+      "start": 1761073702451,
+      "end": 1761073702451,
       "order": "pre"
     },
     {
       "name": "vite:esbuild",
       "result": "import { createRouter, createWebHistory } from \"vue-router\";\nimport { CartPage } from \"@/pages/CartPage\";\nimport { FavPage } from \"@/pages/FavPage\";\nimport { IndexPage } from \"@/pages/IndexPage\";\nimport { ProductPage } from \"@/pages/ProductPage\";\nimport { ProductsPage } from \"@/pages/ProductsPage\";\nconst routes = [\n  {\n    path: \"/\",\n    component: IndexPage\n  },\n  {\n    path: \"/products\",\n    component: ProductsPage\n  },\n  {\n    path: \"/product/:id\",\n    component: ProductPage,\n    props: true\n  },\n  {\n    path: \"/fav\",\n    component: FavPage\n  },\n  {\n    path: \"/cart\",\n    component: CartPage\n  }\n];\nexport const router = createRouter({\n  history: createWebHistory(),\n  routes,\n  scrollBehavior() {\n    return { top: 0 };\n  }\n});\n",
-      "start": 1761072563072,
-      "end": 1761072563118,
+      "start": 1761073702451,
+      "end": 1761073702493,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -34,68 +34,68 @@
     },
     {
       "name": "vite:worker",
-      "start": 1761072563118,
-      "end": 1761072563118,
+      "start": 1761073702493,
+      "end": 1761073702493,
       "order": "normal-normal"
     },
     {
       "name": "vite:vue",
-      "start": 1761072563118,
-      "end": 1761072563118,
+      "start": 1761073702493,
+      "end": 1761073702493,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1761072563118,
-      "end": 1761072563118,
+      "start": 1761073702493,
+      "end": 1761073702493,
       "order": "normal-normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1761072563118,
-      "end": 1761072563118,
+      "start": 1761073702493,
+      "end": 1761073702493,
       "order": "normal-normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1761072563118,
-      "end": 1761072563118,
+      "start": 1761073702493,
+      "end": 1761073702493,
       "order": "normal-normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1761072563118,
-      "end": 1761072563118,
+      "start": 1761073702493,
+      "end": 1761073702493,
       "order": "normal-normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1761072563118,
-      "end": 1761072563118,
+      "start": 1761073702493,
+      "end": 1761073702493,
       "order": "normal-normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1761072563118,
-      "end": 1761072563118,
+      "start": 1761073702493,
+      "end": 1761073702493,
       "order": "normal-normal"
     },
     {
       "name": "unplugin-vue-components",
-      "start": 1761072563118,
-      "end": 1761072563118,
+      "start": 1761073702493,
+      "end": 1761073702493,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1761072563118,
-      "end": 1761072563118,
+      "start": 1761073702493,
+      "end": 1761073702493,
       "order": "normal-normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1761072563118,
-      "end": 1761072563118,
+      "start": 1761073702493,
+      "end": 1761073702493,
       "order": "normal"
     }
   ]

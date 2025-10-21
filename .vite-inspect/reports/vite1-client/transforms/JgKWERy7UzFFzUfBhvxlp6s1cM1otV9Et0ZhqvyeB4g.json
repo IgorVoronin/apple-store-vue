@@ -4,20 +4,20 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, withCtx as _withCtx, createVNode as _createVNode, normalizeClass as _normalizeClass, createElementVNode as _createElementVNode, toDisplayString as _toDisplayString, createElementBlock as _createElementBlock, mergeProps as _mergeProps, resolveDirective as _resolveDirective, withDirectives as _withDirectives } from \"vue\"\n\nconst _hoisted_1 = { class: \"lg:m-auto bg-white mb-4 w-full\" }\nconst _hoisted_2 = { class: \"gap-2 align-center flex pt-2\" }\nconst _hoisted_3 = {\n  key: 1,\n  class: \"label\"\n}\n\nimport { ref } from 'vue';\nimport { useUnit } from 'effector-vue/composition';\n\nimport { isLargeScreen } from '@/shared/lib';\nimport { MainContainer } from '@/shared/ui';\n\nimport { ProductModel } from '@/entities/Product';\n\nimport { Search } from '@/features/Search';\n\nimport { NAVIGATION_ITEMS } from '../../const';\n\n\nexport default /*@__PURE__*/_defineComponent({\n  __name: 'MainHeader',\n  setup(__props) {\n\nconst items = ref(NAVIGATION_ITEMS);\n\nconst [likes, cart] = useUnit([ProductModel.$likedProducts, ProductModel.$productCartCount]);\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_Image = _resolveComponent(\"Image\")!\n  const _component_RouterLink = _resolveComponent(\"RouterLink\")!\n  const _component_OverlayBadge = _resolveComponent(\"OverlayBadge\")!\n  const _component_Menubar = _resolveComponent(\"Menubar\")!\n  const _directive_ripple = _resolveDirective(\"ripple\")!\n\n  return (_openBlock(), _createElementBlock(\"header\", _hoisted_1, [\n    _createVNode(_unref(MainContainer), null, {\n      default: _withCtx(() => [\n        _createVNode(_component_Menubar, {\n          class: \"menubar justify-between border-0 p-0 py-6 pb-2 xl:pb-4\",\n          model: items.value\n        }, {\n          start: _withCtx(() => [\n            _createVNode(_component_RouterLink, { to: \"/\" }, {\n              default: _withCtx(() => [\n                (!_unref(isLargeScreen))\n                  ? (_openBlock(), _createBlock(_component_Image, {\n                      key: 0,\n                      draggable: \"false\",\n                      src: \"/logo.svg\",\n                      width: \"65\",\n                      alt: \"Cyber Logo\"\n                    }))\n                  : _createCommentVNode(\"\", true),\n                (_unref(isLargeScreen))\n                  ? (_openBlock(), _createBlock(_component_Image, {\n                      key: 1,\n                      draggable: \"false\",\n                      class: \"mr-75 shrink-0\",\n                      src: \"/logo-desktop.svg\",\n                      width: \"95\",\n                      alt: \"Cyber Logo\"\n                    }))\n                  : _createCommentVNode(\"\", true)\n              ]),\n              _: 1\n            }),\n            _createVNode(_unref(Search), { class: \"xl:mr-55\" })\n          ]),\n          item: _withCtx(({ item, props }) => [\n            _withDirectives((_openBlock(), _createBlock(_component_RouterLink, _mergeProps({\n              to: item.label === 'Favorites' ? '/fav' : '/cart',\n              class: \"gap-1 flex items-center\"\n            }, props.action), {\n              default: _withCtx(() => [\n                _createElementVNode(\"span\", _hoisted_2, [\n                  (item.label !== 'Products')\n                    ? (_openBlock(), _createBlock(_component_OverlayBadge, {\n                        key: 0,\n                        value: item.label === 'Favorites' ? _unref(likes).length : _unref(cart),\n                        size: \"small\",\n                        severity: null\n                      }, {\n                        default: _withCtx(() => [\n                          _createElementVNode(\"span\", {\n                            class: _normalizeClass(item.icon)\n                          }, null, 2)\n                        ]),\n                        _: 2\n                      }, 1032, [\"value\"]))\n                    : _createCommentVNode(\"\", true),\n                  (!_unref(isLargeScreen))\n                    ? (_openBlock(), _createElementBlock(\"span\", _hoisted_3, _toDisplayString(item.label), 1))\n                    : _createCommentVNode(\"\", true)\n                ])\n              ]),\n              _: 2\n            }, 1040, [\"to\"])), [\n              [_directive_ripple]\n            ])\n          ]),\n          _: 1\n        }, 8, [\"model\"])\n      ]),\n      _: 1\n    })\n  ]))\n}\n}\n\n})",
-      "start": 1761072564378,
-      "end": 1761072564378
+      "start": 1761073703850,
+      "end": 1761073703850
     },
     {
       "name": "@tailwindcss/vite:generate:build",
-      "start": 1761072564379,
-      "end": 1761072564379,
+      "start": 1761073703850,
+      "end": 1761073703850,
       "order": "pre"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, withCtx as _withCtx, createVNode as _createVNode, normalizeClass as _normalizeClass, createElementVNode as _createElementVNode, toDisplayString as _toDisplayString, createElementBlock as _createElementBlock, mergeProps as _mergeProps, resolveDirective as _resolveDirective, withDirectives as _withDirectives } from \"vue\";\nconst _hoisted_1 = { class: \"lg:m-auto bg-white mb-4 w-full\" };\nconst _hoisted_2 = { class: \"gap-2 align-center flex pt-2\" };\nconst _hoisted_3 = {\n  key: 1,\n  class: \"label\"\n};\nimport { ref } from \"vue\";\nimport { useUnit } from \"effector-vue/composition\";\nimport { isLargeScreen } from \"@/shared/lib\";\nimport { MainContainer } from \"@/shared/ui\";\nimport { ProductModel } from \"@/entities/Product\";\nimport { Search } from \"@/features/Search\";\nimport { NAVIGATION_ITEMS } from \"../../const\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"MainHeader\",\n  setup(__props) {\n    const items = ref(NAVIGATION_ITEMS);\n    const [likes, cart] = useUnit([ProductModel.$likedProducts, ProductModel.$productCartCount]);\n    return (_ctx, _cache) => {\n      const _component_Image = _resolveComponent(\"Image\");\n      const _component_RouterLink = _resolveComponent(\"RouterLink\");\n      const _component_OverlayBadge = _resolveComponent(\"OverlayBadge\");\n      const _component_Menubar = _resolveComponent(\"Menubar\");\n      const _directive_ripple = _resolveDirective(\"ripple\");\n      return _openBlock(), _createElementBlock(\"header\", _hoisted_1, [\n        _createVNode(_unref(MainContainer), null, {\n          default: _withCtx(() => [\n            _createVNode(_component_Menubar, {\n              class: \"menubar justify-between border-0 p-0 py-6 pb-2 xl:pb-4\",\n              model: items.value\n            }, {\n              start: _withCtx(() => [\n                _createVNode(_component_RouterLink, { to: \"/\" }, {\n                  default: _withCtx(() => [\n                    !_unref(isLargeScreen) ? (_openBlock(), _createBlock(_component_Image, {\n                      key: 0,\n                      draggable: \"false\",\n                      src: \"/logo.svg\",\n                      width: \"65\",\n                      alt: \"Cyber Logo\"\n                    })) : _createCommentVNode(\"\", true),\n                    _unref(isLargeScreen) ? (_openBlock(), _createBlock(_component_Image, {\n                      key: 1,\n                      draggable: \"false\",\n                      class: \"mr-75 shrink-0\",\n                      src: \"/logo-desktop.svg\",\n                      width: \"95\",\n                      alt: \"Cyber Logo\"\n                    })) : _createCommentVNode(\"\", true)\n                  ]),\n                  _: 1\n                }),\n                _createVNode(_unref(Search), { class: \"xl:mr-55\" })\n              ]),\n              item: _withCtx(({ item, props }) => [\n                _withDirectives((_openBlock(), _createBlock(_component_RouterLink, _mergeProps({\n                  to: item.label === \"Favorites\" ? \"/fav\" : \"/cart\",\n                  class: \"gap-1 flex items-center\"\n                }, props.action), {\n                  default: _withCtx(() => [\n                    _createElementVNode(\"span\", _hoisted_2, [\n                      item.label !== \"Products\" ? (_openBlock(), _createBlock(_component_OverlayBadge, {\n                        key: 0,\n                        value: item.label === \"Favorites\" ? _unref(likes).length : _unref(cart),\n                        size: \"small\",\n                        severity: null\n                      }, {\n                        default: _withCtx(() => [\n                          _createElementVNode(\"span\", {\n                            class: _normalizeClass(item.icon)\n                          }, null, 2)\n                        ]),\n                        _: 2\n                      }, 1032, [\"value\"])) : _createCommentVNode(\"\", true),\n                      !_unref(isLargeScreen) ? (_openBlock(), _createElementBlock(\"span\", _hoisted_3, _toDisplayString(item.label), 1)) : _createCommentVNode(\"\", true)\n                    ])\n                  ]),\n                  _: 2\n                }, 1040, [\"to\"])), [\n                  [_directive_ripple]\n                ])\n              ]),\n              _: 1\n            }, 8, [\"model\"])\n          ]),\n          _: 1\n        })\n      ]);\n    };\n  }\n});\n",
-      "start": 1761072564379,
-      "end": 1761072564387,
+      "start": 1761073703851,
+      "end": 1761073703867,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -33,57 +33,57 @@
     },
     {
       "name": "vite:worker",
-      "start": 1761072564387,
-      "end": 1761072564387,
+      "start": 1761073703867,
+      "end": 1761073703867,
       "order": "normal-normal"
     },
     {
       "name": "vite:vue",
-      "start": 1761072564387,
-      "end": 1761072564387,
+      "start": 1761073703867,
+      "end": 1761073703867,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1761072564387,
-      "end": 1761072564387,
+      "start": 1761073703867,
+      "end": 1761073703867,
       "order": "normal-normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1761072564387,
-      "end": 1761072564387,
+      "start": 1761073703867,
+      "end": 1761073703867,
       "order": "normal-normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1761072564387,
-      "end": 1761072564387,
+      "start": 1761073703867,
+      "end": 1761073703867,
       "order": "normal-normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1761072564387,
-      "end": 1761072564387,
+      "start": 1761073703867,
+      "end": 1761073703867,
       "order": "normal-normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1761072564387,
-      "end": 1761072564387,
+      "start": 1761073703867,
+      "end": 1761073703867,
       "order": "normal-normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1761072564387,
-      "end": 1761072564387,
+      "start": 1761073703867,
+      "end": 1761073703867,
       "order": "normal-normal"
     },
     {
       "name": "unplugin-vue-components",
       "result": "/* unplugin-vue-components disabled */import __unplugin_directives_0 from 'primevue/ripple';\nimport __unplugin_components_2 from 'primevue/menubar';\nimport __unplugin_components_1 from 'primevue/overlaybadge';\nimport __unplugin_components_0 from 'primevue/image';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, withCtx as _withCtx, createVNode as _createVNode, normalizeClass as _normalizeClass, createElementVNode as _createElementVNode, toDisplayString as _toDisplayString, createElementBlock as _createElementBlock, mergeProps as _mergeProps, resolveDirective as _resolveDirective, withDirectives as _withDirectives } from \"vue\";\nconst _hoisted_1 = { class: \"lg:m-auto bg-white mb-4 w-full\" };\nconst _hoisted_2 = { class: \"gap-2 align-center flex pt-2\" };\nconst _hoisted_3 = {\n  key: 1,\n  class: \"label\"\n};\nimport { ref } from \"vue\";\nimport { useUnit } from \"effector-vue/composition\";\nimport { isLargeScreen } from \"@/shared/lib\";\nimport { MainContainer } from \"@/shared/ui\";\nimport { ProductModel } from \"@/entities/Product\";\nimport { Search } from \"@/features/Search\";\nimport { NAVIGATION_ITEMS } from \"../../const\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"MainHeader\",\n  setup(__props) {\n    const items = ref(NAVIGATION_ITEMS);\n    const [likes, cart] = useUnit([ProductModel.$likedProducts, ProductModel.$productCartCount]);\n    return (_ctx, _cache) => {\n      const _component_Image = __unplugin_components_0;\n      const _component_RouterLink = _resolveComponent(\"RouterLink\");\n      const _component_OverlayBadge = __unplugin_components_1;\n      const _component_Menubar = __unplugin_components_2;\n      const _directive_ripple = __unplugin_directives_0;\n      return _openBlock(), _createElementBlock(\"header\", _hoisted_1, [\n        _createVNode(_unref(MainContainer), null, {\n          default: _withCtx(() => [\n            _createVNode(_component_Menubar, {\n              class: \"menubar justify-between border-0 p-0 py-6 pb-2 xl:pb-4\",\n              model: items.value\n            }, {\n              start: _withCtx(() => [\n                _createVNode(_component_RouterLink, { to: \"/\" }, {\n                  default: _withCtx(() => [\n                    !_unref(isLargeScreen) ? (_openBlock(), _createBlock(_component_Image, {\n                      key: 0,\n                      draggable: \"false\",\n                      src: \"/logo.svg\",\n                      width: \"65\",\n                      alt: \"Cyber Logo\"\n                    })) : _createCommentVNode(\"\", true),\n                    _unref(isLargeScreen) ? (_openBlock(), _createBlock(_component_Image, {\n                      key: 1,\n                      draggable: \"false\",\n                      class: \"mr-75 shrink-0\",\n                      src: \"/logo-desktop.svg\",\n                      width: \"95\",\n                      alt: \"Cyber Logo\"\n                    })) : _createCommentVNode(\"\", true)\n                  ]),\n                  _: 1\n                }),\n                _createVNode(_unref(Search), { class: \"xl:mr-55\" })\n              ]),\n              item: _withCtx(({ item, props }) => [\n                _withDirectives((_openBlock(), _createBlock(_component_RouterLink, _mergeProps({\n                  to: item.label === \"Favorites\" ? \"/fav\" : \"/cart\",\n                  class: \"gap-1 flex items-center\"\n                }, props.action), {\n                  default: _withCtx(() => [\n                    _createElementVNode(\"span\", _hoisted_2, [\n                      item.label !== \"Products\" ? (_openBlock(), _createBlock(_component_OverlayBadge, {\n                        key: 0,\n                        value: item.label === \"Favorites\" ? _unref(likes).length : _unref(cart),\n                        size: \"small\",\n                        severity: null\n                      }, {\n                        default: _withCtx(() => [\n                          _createElementVNode(\"span\", {\n                            class: _normalizeClass(item.icon)\n                          }, null, 2)\n                        ]),\n                        _: 2\n                      }, 1032, [\"value\"])) : _createCommentVNode(\"\", true),\n                      !_unref(isLargeScreen) ? (_openBlock(), _createElementBlock(\"span\", _hoisted_3, _toDisplayString(item.label), 1)) : _createCommentVNode(\"\", true)\n                    ])\n                  ]),\n                  _: 2\n                }, 1040, [\"to\"])), [\n                  [_directive_ripple]\n                ])\n              ]),\n              _: 1\n            }, 8, [\"model\"])\n          ]),\n          _: 1\n        })\n      ]);\n    };\n  }\n});\n",
-      "start": 1761072564387,
-      "end": 1761072564388,
+      "start": 1761073703867,
+      "end": 1761073703868,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -99,14 +99,14 @@
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1761072564388,
-      "end": 1761072564388,
+      "start": 1761073703868,
+      "end": 1761073703868,
       "order": "normal-normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1761072564389,
-      "end": 1761072564389,
+      "start": 1761073703869,
+      "end": 1761073703869,
       "order": "normal"
     }
   ]

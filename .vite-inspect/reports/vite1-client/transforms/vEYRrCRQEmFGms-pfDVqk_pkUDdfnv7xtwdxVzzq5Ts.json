@@ -4,86 +4,86 @@
     {
       "name": "vite:load-fallback",
       "result": "import { style } from '@primeuix/styles/checkbox';\nimport BaseStyle from '@primevue/core/base/style';\n\nvar classes = {\n  root: function root(_ref) {\n    var instance = _ref.instance,\n      props = _ref.props;\n    return ['p-checkbox p-component', {\n      'p-checkbox-checked': instance.checked,\n      'p-disabled': props.disabled,\n      'p-invalid': instance.$pcCheckboxGroup ? instance.$pcCheckboxGroup.$invalid : instance.$invalid,\n      'p-variant-filled': instance.$variant === 'filled',\n      'p-checkbox-sm p-inputfield-sm': props.size === 'small',\n      'p-checkbox-lg p-inputfield-lg': props.size === 'large'\n    }];\n  },\n  box: 'p-checkbox-box',\n  input: 'p-checkbox-input',\n  icon: 'p-checkbox-icon'\n};\nvar CheckboxStyle = BaseStyle.extend({\n  name: 'checkbox',\n  style: style,\n  classes: classes\n});\n\nexport { CheckboxStyle as default };\n//# sourceMappingURL=index.mjs.map\n",
-      "start": 1761072564400,
-      "end": 1761072564481,
+      "start": 1761073703859,
+      "end": 1761073703872,
       "sourcemaps": null
     },
     {
       "name": "@tailwindcss/vite:generate:build",
-      "start": 1761072564481,
-      "end": 1761072564481,
+      "start": 1761073703872,
+      "end": 1761073703872,
       "order": "pre"
     },
     {
       "name": "vite:esbuild",
-      "start": 1761072564482,
-      "end": 1761072564482,
+      "start": 1761073703872,
+      "end": 1761073703872,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1761072564482,
-      "end": 1761072564482,
+      "start": 1761073703872,
+      "end": 1761073703872,
       "order": "normal-normal"
     },
     {
       "name": "vite:vue",
-      "start": 1761072564482,
-      "end": 1761072564482,
+      "start": 1761073703872,
+      "end": 1761073703872,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1761072564482,
-      "end": 1761072564482,
+      "start": 1761073703872,
+      "end": 1761073703872,
       "order": "normal-normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1761072564482,
-      "end": 1761072564482,
+      "start": 1761073703872,
+      "end": 1761073703872,
       "order": "normal-normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1761072564482,
-      "end": 1761072564482,
+      "start": 1761073703872,
+      "end": 1761073703872,
       "order": "normal-normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1761072564482,
-      "end": 1761072564482,
+      "start": 1761073703872,
+      "end": 1761073703872,
       "order": "normal-normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1761072564482,
-      "end": 1761072564482,
+      "start": 1761073703872,
+      "end": 1761073703872,
       "order": "normal-normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1761072564482,
-      "end": 1761072564482,
+      "start": 1761073703872,
+      "end": 1761073703872,
       "order": "normal-normal"
     },
     {
       "name": "unplugin-vue-components",
-      "start": 1761072564482,
-      "end": 1761072564482,
+      "start": 1761073703872,
+      "end": 1761073703872,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1761072564482,
-      "end": 1761072564482,
+      "start": 1761073703872,
+      "end": 1761073703872,
       "order": "normal-normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1761072564482,
-      "end": 1761072564482,
+      "start": 1761073703872,
+      "end": 1761073703872,
       "order": "normal"
     }
   ]

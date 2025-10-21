@@ -4,20 +4,20 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { renderSlot as _renderSlot, unref as _unref, createElementVNode as _createElementVNode, toDisplayString as _toDisplayString, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\nconst _hoisted_1 = { class: \"item\" }\nconst _hoisted_2 = [\"src\"]\nconst _hoisted_3 = { class: \"line-clamp-2\" }\n\nimport { API } from '@/shared/api';\nimport { normalNumberFormat, shuffled } from '@/shared/lib';\n\nimport type { Product } from '../../types';\n\n\nexport default /*@__PURE__*/_defineComponent({\n  __name: 'ProductPreview',\n  props: {\n    product: {}\n  },\n  setup(__props: any) {\n\n\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_RouterLink = _resolveComponent(\"RouterLink\")!\n\n  return (_openBlock(), _createElementBlock(\"li\", _hoisted_1, [\n    _renderSlot(_ctx.$slots, \"like-btn\", { class: \"action\" }, undefined, true),\n    _createVNode(_component_RouterLink, {\n      to: `/product/${__props.product.id}`\n    }, {\n      default: _withCtx(() => [\n        _createElementVNode(\"img\", {\n          \"aria-hidden\": \"true\",\n          alt: \"\",\n          src: _unref(API).BASE_URL + _unref(shuffled)([...__props.product.images])[0]\n        }, null, 8, _hoisted_2),\n        _createElementVNode(\"p\", _hoisted_3, _toDisplayString(__props.product.name), 1),\n        _createElementVNode(\"p\", null, _toDisplayString(_unref(normalNumberFormat)(__props.product.price)), 1)\n      ]),\n      _: 1\n    }, 8, [\"to\"]),\n    _renderSlot(_ctx.$slots, \"cart-btn\", {}, undefined, true)\n  ]))\n}\n}\n\n})",
-      "start": 1761072564080,
-      "end": 1761072564080
+      "start": 1761073703454,
+      "end": 1761073703454
     },
     {
       "name": "@tailwindcss/vite:generate:build",
-      "start": 1761072564080,
-      "end": 1761072564080,
+      "start": 1761073703454,
+      "end": 1761073703454,
       "order": "pre"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { renderSlot as _renderSlot, unref as _unref, createElementVNode as _createElementVNode, toDisplayString as _toDisplayString, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\";\nconst _hoisted_1 = { class: \"item\" };\nconst _hoisted_2 = [\"src\"];\nconst _hoisted_3 = { class: \"line-clamp-2\" };\nimport { API } from \"@/shared/api\";\nimport { normalNumberFormat, shuffled } from \"@/shared/lib\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"ProductPreview\",\n  props: {\n    product: {}\n  },\n  setup(__props) {\n    return (_ctx, _cache) => {\n      const _component_RouterLink = _resolveComponent(\"RouterLink\");\n      return _openBlock(), _createElementBlock(\"li\", _hoisted_1, [\n        _renderSlot(_ctx.$slots, \"like-btn\", { class: \"action\" }, void 0, true),\n        _createVNode(_component_RouterLink, {\n          to: `/product/${__props.product.id}`\n        }, {\n          default: _withCtx(() => [\n            _createElementVNode(\"img\", {\n              \"aria-hidden\": \"true\",\n              alt: \"\",\n              src: _unref(API).BASE_URL + _unref(shuffled)([...__props.product.images])[0]\n            }, null, 8, _hoisted_2),\n            _createElementVNode(\"p\", _hoisted_3, _toDisplayString(__props.product.name), 1),\n            _createElementVNode(\"p\", null, _toDisplayString(_unref(normalNumberFormat)(__props.product.price)), 1)\n          ]),\n          _: 1\n        }, 8, [\"to\"]),\n        _renderSlot(_ctx.$slots, \"cart-btn\", {}, void 0, true)\n      ]);\n    };\n  }\n});\n",
-      "start": 1761072564082,
-      "end": 1761072564094,
+      "start": 1761073703456,
+      "end": 1761073703469,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -33,57 +33,57 @@
     },
     {
       "name": "vite:worker",
-      "start": 1761072564094,
-      "end": 1761072564094,
+      "start": 1761073703469,
+      "end": 1761073703469,
       "order": "normal-normal"
     },
     {
       "name": "vite:vue",
-      "start": 1761072564094,
-      "end": 1761072564094,
+      "start": 1761073703469,
+      "end": 1761073703469,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1761072564095,
-      "end": 1761072564095,
+      "start": 1761073703469,
+      "end": 1761073703469,
       "order": "normal-normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1761072564095,
-      "end": 1761072564095,
+      "start": 1761073703470,
+      "end": 1761073703470,
       "order": "normal-normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1761072564095,
-      "end": 1761072564095,
+      "start": 1761073703470,
+      "end": 1761073703470,
       "order": "normal-normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1761072564095,
-      "end": 1761072564095,
+      "start": 1761073703470,
+      "end": 1761073703470,
       "order": "normal-normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1761072564095,
-      "end": 1761072564095,
+      "start": 1761073703470,
+      "end": 1761073703470,
       "order": "normal-normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1761072564095,
-      "end": 1761072564095,
+      "start": 1761073703470,
+      "end": 1761073703470,
       "order": "normal-normal"
     },
     {
       "name": "unplugin-vue-components",
       "result": "/* unplugin-vue-components disabled */import { defineComponent as _defineComponent } from \"vue\";\nimport { renderSlot as _renderSlot, unref as _unref, createElementVNode as _createElementVNode, toDisplayString as _toDisplayString, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\";\nconst _hoisted_1 = { class: \"item\" };\nconst _hoisted_2 = [\"src\"];\nconst _hoisted_3 = { class: \"line-clamp-2\" };\nimport { API } from \"@/shared/api\";\nimport { normalNumberFormat, shuffled } from \"@/shared/lib\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"ProductPreview\",\n  props: {\n    product: {}\n  },\n  setup(__props) {\n    return (_ctx, _cache) => {\n      const _component_RouterLink = _resolveComponent(\"RouterLink\");\n      return _openBlock(), _createElementBlock(\"li\", _hoisted_1, [\n        _renderSlot(_ctx.$slots, \"like-btn\", { class: \"action\" }, void 0, true),\n        _createVNode(_component_RouterLink, {\n          to: `/product/${__props.product.id}`\n        }, {\n          default: _withCtx(() => [\n            _createElementVNode(\"img\", {\n              \"aria-hidden\": \"true\",\n              alt: \"\",\n              src: _unref(API).BASE_URL + _unref(shuffled)([...__props.product.images])[0]\n            }, null, 8, _hoisted_2),\n            _createElementVNode(\"p\", _hoisted_3, _toDisplayString(__props.product.name), 1),\n            _createElementVNode(\"p\", null, _toDisplayString(_unref(normalNumberFormat)(__props.product.price)), 1)\n          ]),\n          _: 1\n        }, 8, [\"to\"]),\n        _renderSlot(_ctx.$slots, \"cart-btn\", {}, void 0, true)\n      ]);\n    };\n  }\n});\n",
-      "start": 1761072564095,
-      "end": 1761072564095,
+      "start": 1761073703470,
+      "end": 1761073703470,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -99,14 +99,14 @@
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1761072564096,
-      "end": 1761072564096,
+      "start": 1761073703471,
+      "end": 1761073703471,
       "order": "normal-normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1761072564096,
-      "end": 1761072564096,
+      "start": 1761073703471,
+      "end": 1761073703471,
       "order": "normal"
     }
   ]

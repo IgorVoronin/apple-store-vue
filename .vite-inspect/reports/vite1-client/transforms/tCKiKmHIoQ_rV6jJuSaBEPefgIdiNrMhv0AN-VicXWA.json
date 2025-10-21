@@ -4,33 +4,33 @@
     {
       "name": "vite:load-fallback",
       "result": "<script setup lang=\"ts\">\r\nimport { computed } from 'vue';\r\nimport { useUnit } from 'effector-vue/composition';\r\n\r\nimport { type Product, ProductList, ProductPreview, getProductByIdQuery } from '@/entities/Product';\r\nimport { ProductModel } from '@/entities/Product';\r\n\r\nimport { AddProductToCartAction } from '@/features/AddProductToCartAction';\r\nimport { ProductLikeAction } from '@/features/ProductLikeAction';\r\n\r\nconst { data: currentProduct } = useUnit(getProductByIdQuery);\r\nconst [allProducts] = useUnit([ProductModel.$availableProducts]);\r\n\r\n// Находим похожие товары той же категории (исключая текущий товар)\r\nconst relatedProducts = computed(() => {\r\n    if (!currentProduct.value?.category) return [];\r\n    \r\n    return allProducts.value\r\n        .filter(product => \r\n            product.category === currentProduct.value.category && \r\n            product.id !== currentProduct.value.id\r\n        )\r\n        .slice(0, 4); // Показываем 4 товара\r\n});\r\n</script>\r\n\r\n<template>\r\n    <section v-if=\"relatedProducts.length > 0\" class=\"related-section\">\r\n        <div class=\"related-container\">\r\n            <h2 class=\"related-title\">Related Products</h2>\r\n            \r\n            <ProductList class=\"related-grid\">\r\n                <ProductPreview \r\n                    v-for=\"product in relatedProducts\" \r\n                    :key=\"product.id\" \r\n                    :product=\"product as Product\"\r\n                >\r\n                    <template #like-btn>\r\n                        <ProductLikeAction :product-id=\"product.id\" />\r\n                    </template>\r\n                    <template #cart-btn>\r\n                        <AddProductToCartAction :product=\"product as Product\" />\r\n                    </template>\r\n                </ProductPreview>\r\n            </ProductList>\r\n        </div>\r\n    </section>\r\n</template>\r\n\r\n<style scoped>\r\n.related-section {\r\n    width: 100%;\r\n    padding: 80px 160px;\r\n    background: #FFFFFF;\r\n}\r\n\r\n.related-container {\r\n    max-width: 1440px;\r\n    margin: 0 auto;\r\n    display: flex;\r\n    flex-direction: column;\r\n    gap: 32px;\r\n}\r\n\r\n.related-title {\r\n    font-family: 'ABeeZee', sans-serif;\r\n    font-weight: 400;\r\n    font-style: italic;\r\n    font-size: 24px;\r\n    line-height: 32px;\r\n    letter-spacing: 0;\r\n    margin: 0;\r\n}\r\n\r\n.related-grid {\r\n    display: grid;\r\n    grid-template-columns: repeat(4, 1fr);\r\n    gap: 16px;\r\n}\r\n\r\n/* Адаптивность */\r\n@media (max-width: 768px) {\r\n    .related-section {\r\n        padding: 40px 20px;\r\n    }\r\n    \r\n    .related-grid {\r\n        grid-template-columns: repeat(1, 1fr);\r\n    }\r\n}\r\n\r\n@media (max-width: 1024px) {\r\n    .related-grid {\r\n        grid-template-columns: repeat(2, 1fr);\r\n    }\r\n}\r\n\r\n@media (max-width: 1200px) {\r\n    .related-section {\r\n        padding: 60px 80px;\r\n    }\r\n    \r\n    .related-grid {\r\n        grid-template-columns: repeat(3, 1fr);\r\n    }\r\n}\r\n</style>\r\n",
-      "start": 1761072563446,
-      "end": 1761072563495,
+      "start": 1761073702807,
+      "end": 1761073702862,
       "sourcemaps": null
     },
     {
       "name": "@tailwindcss/vite:generate:build",
-      "start": 1761072563495,
-      "end": 1761072563495,
+      "start": 1761073702862,
+      "end": 1761073702862,
       "order": "pre"
     },
     {
       "name": "vite:esbuild",
-      "start": 1761072563495,
-      "end": 1761072563495,
+      "start": 1761073702862,
+      "end": 1761073702862,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1761072563495,
-      "end": 1761072563495,
+      "start": 1761073702862,
+      "end": 1761073702862,
       "order": "normal-normal"
     },
     {
       "name": "vite:vue",
       "result": "import _sfc_main from \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/widgets/RelatedProducts/RelatedProducts.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/widgets/RelatedProducts/RelatedProducts.vue?vue&type=script&setup=true&lang.ts\";\nimport \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/widgets/RelatedProducts/RelatedProducts.vue?vue&type=style&index=0&scoped=ace7bd6f&lang.css\";\nimport _export_sfc from \"\\0plugin-vue:export-helper\";\nexport default /* @__PURE__ */ _export_sfc(_sfc_main, [[\"__scopeId\", \"data-v-ace7bd6f\"]]);\n",
-      "start": 1761072563495,
-      "end": 1761072563527,
+      "start": 1761073702862,
+      "end": 1761073702894,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -38,45 +38,45 @@
     },
     {
       "name": "vite:define",
-      "start": 1761072563527,
-      "end": 1761072563527,
+      "start": 1761073702894,
+      "end": 1761073702894,
       "order": "normal-normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1761072563527,
-      "end": 1761072563527,
+      "start": 1761073702894,
+      "end": 1761073702894,
       "order": "normal-normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1761072563527,
-      "end": 1761072563527,
+      "start": 1761073702894,
+      "end": 1761073702894,
       "order": "normal-normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1761072563527,
-      "end": 1761072563527,
+      "start": 1761073702894,
+      "end": 1761073702894,
       "order": "normal-normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1761072563527,
-      "end": 1761072563527,
+      "start": 1761073702894,
+      "end": 1761073702894,
       "order": "normal-normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1761072563527,
-      "end": 1761072563527,
+      "start": 1761073702894,
+      "end": 1761073702894,
       "order": "normal-normal"
     },
     {
       "name": "unplugin-vue-components",
       "result": "/* unplugin-vue-components disabled */import _sfc_main from \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/widgets/RelatedProducts/RelatedProducts.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/widgets/RelatedProducts/RelatedProducts.vue?vue&type=script&setup=true&lang.ts\";\nimport \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/widgets/RelatedProducts/RelatedProducts.vue?vue&type=style&index=0&scoped=ace7bd6f&lang.css\";\nimport _export_sfc from \"\\0plugin-vue:export-helper\";\nexport default /* @__PURE__ */ _export_sfc(_sfc_main, [[\"__scopeId\", \"data-v-ace7bd6f\"]]);\n",
-      "start": 1761072563527,
-      "end": 1761072563528,
+      "start": 1761073702894,
+      "end": 1761073702895,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -92,14 +92,14 @@
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1761072563528,
-      "end": 1761072563528,
+      "start": 1761073702895,
+      "end": 1761073702896,
       "order": "normal-normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1761072563528,
-      "end": 1761072563528,
+      "start": 1761073702896,
+      "end": 1761073702896,
       "order": "normal"
     }
   ]

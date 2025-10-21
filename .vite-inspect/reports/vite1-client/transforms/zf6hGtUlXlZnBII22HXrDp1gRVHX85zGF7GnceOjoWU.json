@@ -4,88 +4,88 @@
     {
       "name": "vite:load-fallback",
       "result": "@import url(\"tailwindcss\");\n@import url(\"tailwindcss-primeui\");\n\n@theme {\n  --font-sans: \"Abel\", sans-serif;\n}\n\n/* Стиль для всех черных кнопок */\n.p-button.p-button-contrast,\n.p-button.bg-black,\nbutton.bg-black,\nbutton[class*=\"bg-black\"],\n.p-button[severity=\"contrast\"] {\n  font-family: 'ABeeZee', sans-serif !important;\n  font-weight: 400 !important;\n  font-style: italic !important;\n  font-size: 14px !important;\n  line-height: 24px !important;\n  letter-spacing: 0 !important;\n  text-align: center !important;\n}\n\n/* Стиль для всех белых кнопок */\n.p-button.p-button-outlined,\n.p-button.bg-white,\nbutton.bg-white,\nbutton[class*=\"bg-white\"],\n.p-button[outlined] {\n  font-family: 'ABeeZee', sans-serif !important;\n  font-weight: 400 !important;\n  font-style: italic !important;\n  font-size: 16px !important;\n  line-height: 24px !important;\n  letter-spacing: 0 !important;\n  text-align: center !important;\n}\n",
-      "start": 1761072563051,
-      "end": 1761072563062,
+      "start": 1761073702438,
+      "end": 1761073702460,
       "sourcemaps": null
     },
     {
       "name": "@tailwindcss/vite:generate:build",
       "result": "@import url(\"tailwindcss\");\n@import url(\"tailwindcss-primeui\");\n\n@theme {\n  --font-sans: \"Abel\", sans-serif;\n}\n\n/* Стиль для всех черных кнопок */\n.p-button.p-button-contrast,\n.p-button.bg-black,\nbutton.bg-black,\nbutton[class*=\"bg-black\"],\n.p-button[severity=\"contrast\"] {\n  font-family: 'ABeeZee', sans-serif !important;\n  font-weight: 400 !important;\n  font-style: italic !important;\n  font-size: 14px !important;\n  line-height: 24px !important;\n  letter-spacing: 0 !important;\n  text-align: center !important;\n}\n\n/* Стиль для всех белых кнопок */\n.p-button.p-button-outlined,\n.p-button.bg-white,\nbutton.bg-white,\nbutton[class*=\"bg-white\"],\n.p-button[outlined] {\n  font-family: 'ABeeZee', sans-serif !important;\n  font-weight: 400 !important;\n  font-style: italic !important;\n  font-size: 16px !important;\n  line-height: 24px !important;\n  letter-spacing: 0 !important;\n  text-align: center !important;\n}\n",
-      "start": 1761072563062,
-      "end": 1761072563071,
+      "start": 1761073702461,
+      "end": 1761073702462,
       "order": "pre",
       "sourcemaps": null
     },
     {
       "name": "vite:esbuild",
-      "start": 1761072564350,
-      "end": 1761072564350,
+      "start": 1761073703805,
+      "end": 1761073703805,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1761072564350,
-      "end": 1761072564350,
+      "start": 1761073703805,
+      "end": 1761073703805,
       "order": "normal-normal"
     },
     {
       "name": "vite:vue",
-      "start": 1761072564350,
-      "end": 1761072564350,
+      "start": 1761073703805,
+      "end": 1761073703805,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1761072564350,
-      "end": 1761072564350,
+      "start": 1761073703805,
+      "end": 1761073703805,
       "order": "normal-normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1761072564350,
-      "end": 1761072564350,
+      "start": 1761073703805,
+      "end": 1761073703805,
       "order": "normal-normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1761072564350,
-      "end": 1761072564350,
+      "start": 1761073703805,
+      "end": 1761073703805,
       "order": "normal-normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1761072564350,
-      "end": 1761072564350,
+      "start": 1761073703805,
+      "end": 1761073703805,
       "order": "normal-normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1761072564350,
-      "end": 1761072564350,
+      "start": 1761073703805,
+      "end": 1761073703805,
       "order": "normal-normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1761072564350,
-      "end": 1761072564350,
+      "start": 1761073703805,
+      "end": 1761073703805,
       "order": "normal-normal"
     },
     {
       "name": "unplugin-vue-components",
-      "start": 1761072564350,
-      "end": 1761072564350,
+      "start": 1761073703805,
+      "end": 1761073703805,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1761072564350,
-      "end": 1761072564350,
+      "start": 1761073703805,
+      "end": 1761073703805,
       "order": "normal-normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1761072564350,
-      "end": 1761072564350,
+      "start": 1761073703805,
+      "end": 1761073703805,
       "order": "normal"
     }
   ]

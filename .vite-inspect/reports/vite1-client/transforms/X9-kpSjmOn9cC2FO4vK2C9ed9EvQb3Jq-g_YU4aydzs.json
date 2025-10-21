@@ -4,21 +4,21 @@
     {
       "name": "vite:load-fallback",
       "result": "import { createQuery } from '@farfetched/core';\n\nimport { API, createCommonRequestFx } from '@/shared/api';\n\nimport type { Product } from '../types';\n\nexport const getAllProductsQuery = createQuery({\n    effect: createCommonRequestFx<void, Product[]>(() => ({\n        url: API.products.all,\n    })),\n    initialData: [],\n});\n\nexport const getProductByIdQuery = createQuery({\n    effect: createCommonRequestFx<string, Product>((id) => ({\n        url: API.products.product(id),\n    })),\n    initialData: {} as Product,\n});\n",
-      "start": 1761072563444,
-      "end": 1761072563482,
+      "start": 1761073702810,
+      "end": 1761073702864,
       "sourcemaps": null
     },
     {
       "name": "@tailwindcss/vite:generate:build",
-      "start": 1761072563482,
-      "end": 1761072563482,
+      "start": 1761073702864,
+      "end": 1761073702864,
       "order": "pre"
     },
     {
       "name": "vite:esbuild",
       "result": "import { createQuery } from \"@farfetched/core\";\nimport { API, createCommonRequestFx } from \"@/shared/api\";\nexport const getAllProductsQuery = createQuery({\n  effect: createCommonRequestFx(() => ({\n    url: API.products.all\n  })),\n  initialData: []\n});\nexport const getProductByIdQuery = createQuery({\n  effect: createCommonRequestFx((id) => ({\n    url: API.products.product(id)\n  })),\n  initialData: {}\n});\n",
-      "start": 1761072563482,
-      "end": 1761072563508,
+      "start": 1761073702864,
+      "end": 1761073702879,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -34,68 +34,68 @@
     },
     {
       "name": "vite:worker",
-      "start": 1761072563508,
-      "end": 1761072563508,
+      "start": 1761073702879,
+      "end": 1761073702879,
       "order": "normal-normal"
     },
     {
       "name": "vite:vue",
-      "start": 1761072563509,
-      "end": 1761072563509,
+      "start": 1761073702879,
+      "end": 1761073702879,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1761072563509,
-      "end": 1761072563509,
+      "start": 1761073702879,
+      "end": 1761073702879,
       "order": "normal-normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1761072563509,
-      "end": 1761072563509,
+      "start": 1761073702879,
+      "end": 1761073702879,
       "order": "normal-normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1761072563509,
-      "end": 1761072563509,
+      "start": 1761073702879,
+      "end": 1761073702879,
       "order": "normal-normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1761072563509,
-      "end": 1761072563509,
+      "start": 1761073702879,
+      "end": 1761073702879,
       "order": "normal-normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1761072563509,
-      "end": 1761072563509,
+      "start": 1761073702879,
+      "end": 1761073702879,
       "order": "normal-normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1761072563509,
-      "end": 1761072563509,
+      "start": 1761073702879,
+      "end": 1761073702879,
       "order": "normal-normal"
     },
     {
       "name": "unplugin-vue-components",
-      "start": 1761072563509,
-      "end": 1761072563509,
+      "start": 1761073702880,
+      "end": 1761073702880,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1761072563509,
-      "end": 1761072563509,
+      "start": 1761073702880,
+      "end": 1761073702880,
       "order": "normal-normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1761072563509,
-      "end": 1761072563509,
+      "start": 1761073702880,
+      "end": 1761073702880,
       "order": "normal"
     }
   ]

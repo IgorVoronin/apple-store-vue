@@ -4,33 +4,33 @@
     {
       "name": "vite:load-fallback",
       "result": "<script setup lang=\"ts\">\nimport { watch } from 'vue';\nimport { useRoute } from 'vue-router';\nimport { useUnit } from 'effector-vue/composition';\n\nimport { MainContainer } from '@/shared/ui';\n\nimport { getAllProductsQuery, getProductByIdQuery } from '@/entities/Product';\n\nimport { ProductGallery } from '@/widgets/ProductGallery';\nimport { ProductInfo } from '@/widgets/ProductInfo';\nimport { ProductDetails } from '@/widgets/ProductDetails';\nimport { RelatedProducts } from '@/widgets/RelatedProducts';\nimport { RootLayout } from '@/widgets/RootLayout';\n\nconst { pending } = useUnit(getAllProductsQuery);\n\nconst route = useRoute();\n\n// При смене ID товара загружаем новый и скроллим вверх\nwatch(\n    () => route.params.id as string,\n    (id) => {\n        getProductByIdQuery.start(id);\n        // Скролл вверх страницы\n        window.scrollTo({ top: 0, behavior: 'smooth' });\n    },\n    { immediate: true }\n);\n</script>\n<template>\n    <RootLayout>\n        <ProgressSpinner v-if=\"pending\" class=\"m-auto flex mt-[20%]\" />\n        <div v-if=\"!pending\">\n            <MainContainer class=\"py-10\">\n                <div class=\"lg:flex lg:gap-[48px]\">\n                    <ProductGallery />\n                    <ProductInfo />\n                </div>\n            </MainContainer>\n            <ProductDetails />\n            <RelatedProducts />\n        </div>\n    </RootLayout>\n</template>\n",
-      "start": 1761072563248,
-      "end": 1761072563286,
+      "start": 1761073702625,
+      "end": 1761073702668,
       "sourcemaps": null
     },
     {
       "name": "@tailwindcss/vite:generate:build",
-      "start": 1761072563286,
-      "end": 1761072563286,
+      "start": 1761073702668,
+      "end": 1761073702668,
       "order": "pre"
     },
     {
       "name": "vite:esbuild",
-      "start": 1761072563286,
-      "end": 1761072563286,
+      "start": 1761073702668,
+      "end": 1761073702668,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1761072563286,
-      "end": 1761072563286,
+      "start": 1761073702668,
+      "end": 1761073702668,
       "order": "normal-normal"
     },
     {
       "name": "vite:vue",
       "result": "import _sfc_main from \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/pages/ProductPage/ProductPage.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/pages/ProductPage/ProductPage.vue?vue&type=script&setup=true&lang.ts\";\nexport default _sfc_main;\n",
-      "start": 1761072563286,
-      "end": 1761072563344,
+      "start": 1761073702668,
+      "end": 1761073702708,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -38,45 +38,45 @@
     },
     {
       "name": "vite:define",
-      "start": 1761072563344,
-      "end": 1761072563344,
+      "start": 1761073702708,
+      "end": 1761073702708,
       "order": "normal-normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1761072563344,
-      "end": 1761072563344,
+      "start": 1761073702708,
+      "end": 1761073702708,
       "order": "normal-normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1761072563344,
-      "end": 1761072563344,
+      "start": 1761073702708,
+      "end": 1761073702708,
       "order": "normal-normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1761072563344,
-      "end": 1761072563344,
+      "start": 1761073702708,
+      "end": 1761073702708,
       "order": "normal-normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1761072563344,
-      "end": 1761072563344,
+      "start": 1761073702708,
+      "end": 1761073702708,
       "order": "normal-normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1761072563344,
-      "end": 1761072563344,
+      "start": 1761073702708,
+      "end": 1761073702708,
       "order": "normal-normal"
     },
     {
       "name": "unplugin-vue-components",
       "result": "/* unplugin-vue-components disabled */import _sfc_main from \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/pages/ProductPage/ProductPage.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/pages/ProductPage/ProductPage.vue?vue&type=script&setup=true&lang.ts\";\nexport default _sfc_main;\n",
-      "start": 1761072563344,
-      "end": 1761072563345,
+      "start": 1761073702708,
+      "end": 1761073702709,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -92,14 +92,14 @@
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1761072563345,
-      "end": 1761072563345,
+      "start": 1761073702709,
+      "end": 1761073702709,
       "order": "normal-normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1761072563345,
-      "end": 1761072563345,
+      "start": 1761073702710,
+      "end": 1761073702710,
       "order": "normal"
     }
   ]

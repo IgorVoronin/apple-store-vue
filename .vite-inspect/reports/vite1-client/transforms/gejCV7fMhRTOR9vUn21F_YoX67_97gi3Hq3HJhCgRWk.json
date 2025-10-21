@@ -4,33 +4,33 @@
     {
       "name": "vite:load-fallback",
       "result": "<script setup lang=\"ts\">\ndefineProps<{\n    label: string;\n    icon: string;\n    category: string;\n}>();\n</script>\n\n<template>\n    <li class=\"root\">\n        <RouterLink :to=\"{ path: '/products', query: { category } }\" class=\"card-link\">\n            <span :class=\"icon\" />\n            <p>\n                {{ label }}\n            </p>\n        </RouterLink>\n    </li>\n</template>\n\n<style scoped>\n.root {\n    display: flex;\n    flex-direction: column;\n    border-radius: 1rem;\n    font-size: 16px;\n    text-align: center;\n    background-color: #ededed;\n    transition: all 0.3s ease;\n\n    &:hover {\n        background-color: #d0d0d0;\n        transform: translateY(-2px);\n    }\n\n    @media (width >= 1200px) {\n        width: 100%;\n        max-width: 160px;\n    }\n}\n\n.card-link {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    padding: 24px;\n    gap: 8px;\n    width: 100%;\n    height: 100%;\n    color: inherit;\n    text-decoration: none;\n\n    span {\n        font-size: 48px;\n    }\n}\n</style>\n",
-      "start": 1761072563843,
-      "end": 1761072563896,
+      "start": 1761073703243,
+      "end": 1761073703279,
       "sourcemaps": null
     },
     {
       "name": "@tailwindcss/vite:generate:build",
-      "start": 1761072563896,
-      "end": 1761072563896,
+      "start": 1761073703279,
+      "end": 1761073703279,
       "order": "pre"
     },
     {
       "name": "vite:esbuild",
-      "start": 1761072563896,
-      "end": 1761072563896,
+      "start": 1761073703279,
+      "end": 1761073703279,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1761072563896,
-      "end": 1761072563896,
+      "start": 1761073703279,
+      "end": 1761073703279,
       "order": "normal-normal"
     },
     {
       "name": "vite:vue",
       "result": "import _sfc_main from \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/entities/Product/ui/CategoryCard/CategoryCard.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/entities/Product/ui/CategoryCard/CategoryCard.vue?vue&type=script&setup=true&lang.ts\";\nimport \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/entities/Product/ui/CategoryCard/CategoryCard.vue?vue&type=style&index=0&scoped=58f4de79&lang.css\";\nimport _export_sfc from \"\\0plugin-vue:export-helper\";\nexport default /* @__PURE__ */ _export_sfc(_sfc_main, [[\"__scopeId\", \"data-v-58f4de79\"]]);\n",
-      "start": 1761072563896,
-      "end": 1761072564062,
+      "start": 1761073703279,
+      "end": 1761073703432,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -38,45 +38,45 @@
     },
     {
       "name": "vite:define",
-      "start": 1761072564062,
-      "end": 1761072564062,
+      "start": 1761073703432,
+      "end": 1761073703432,
       "order": "normal-normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1761072564062,
-      "end": 1761072564062,
+      "start": 1761073703432,
+      "end": 1761073703432,
       "order": "normal-normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1761072564062,
-      "end": 1761072564062,
+      "start": 1761073703432,
+      "end": 1761073703432,
       "order": "normal-normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1761072564062,
-      "end": 1761072564063,
+      "start": 1761073703432,
+      "end": 1761073703432,
       "order": "normal-normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1761072564063,
-      "end": 1761072564063,
+      "start": 1761073703432,
+      "end": 1761073703432,
       "order": "normal-normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1761072564063,
-      "end": 1761072564063,
+      "start": 1761073703432,
+      "end": 1761073703432,
       "order": "normal-normal"
     },
     {
       "name": "unplugin-vue-components",
       "result": "/* unplugin-vue-components disabled */import _sfc_main from \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/entities/Product/ui/CategoryCard/CategoryCard.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/entities/Product/ui/CategoryCard/CategoryCard.vue?vue&type=script&setup=true&lang.ts\";\nimport \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/entities/Product/ui/CategoryCard/CategoryCard.vue?vue&type=style&index=0&scoped=58f4de79&lang.css\";\nimport _export_sfc from \"\\0plugin-vue:export-helper\";\nexport default /* @__PURE__ */ _export_sfc(_sfc_main, [[\"__scopeId\", \"data-v-58f4de79\"]]);\n",
-      "start": 1761072564063,
-      "end": 1761072564063,
+      "start": 1761073703432,
+      "end": 1761073703432,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -92,14 +92,14 @@
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1761072564063,
-      "end": 1761072564063,
+      "start": 1761073703432,
+      "end": 1761073703432,
       "order": "normal-normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1761072564063,
-      "end": 1761072564063,
+      "start": 1761073703432,
+      "end": 1761073703432,
       "order": "normal"
     }
   ]

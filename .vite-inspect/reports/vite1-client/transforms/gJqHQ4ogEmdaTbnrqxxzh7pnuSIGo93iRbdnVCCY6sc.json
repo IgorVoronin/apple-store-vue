@@ -4,20 +4,20 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, createVNode as _createVNode, renderList as _renderList, Fragment as _Fragment, createElementBlock as _createElementBlock, withCtx as _withCtx, createElementVNode as _createElementVNode, resolveComponent as _resolveComponent } from \"vue\"\n\nconst _hoisted_1 = { class: \"lg:grid grid-cols-[256px_1fr] lg:gap-[32px]\" }\n\nimport { onMounted, ref, watch } from 'vue';\nimport { useRoute } from 'vue-router';\nimport { useUnit, useVModel } from 'effector-vue/composition';\n\nimport { isLargeScreen } from '@/shared/lib';\nimport { MainContainer } from '@/shared/ui';\n\nimport { type Product, ProductList, ProductModel, ProductPreview } from '@/entities/Product';\n\nimport { AddProductToCartAction } from '@/features/AddProductToCartAction';\nimport { ProductFilters, ProductFiltersModel } from '@/features/ProductFilters';\nimport { ProductLikeAction } from '@/features/ProductLikeAction';\n\nimport { ProductsGridFilterBar } from '@/widgets/ProductsGrid';\n\n\nexport default /*@__PURE__*/_defineComponent({\n  __name: 'ProductsGrid',\n  setup(__props) {\n\nconst route = useRoute();\nconst [products] = useUnit([ProductFiltersModel.$paginatedProducts]);\nconst selectedCategories = useVModel(ProductModel.$selectedCategories);\nconst selectedProcessors = useVModel(ProductModel.$selectedProcessors);\nconst selectedDiagonals = useVModel(ProductModel.$selectedDiagonals);\n\nconst page = ref(0);\n\n// Сбрасываем все фильтры и устанавливаем категорию из URL\nonMounted(() => {\n    const category = route.query.category as string;\n    // Сбрасываем все фильтры\n    selectedProcessors.value = [];\n    selectedDiagonals.value = [];\n    \n    if (category) {\n        selectedCategories.value = [category];\n    } else {\n        selectedCategories.value = [];\n    }\n});\n\n// Отслеживаем изменения URL\nwatch(() => route.query.category, (newCategory) => {\n    // Сбрасываем все фильтры при смене категории\n    selectedProcessors.value = [];\n    selectedDiagonals.value = [];\n    \n    if (newCategory) {\n        selectedCategories.value = [newCategory as string];\n    } else {\n        selectedCategories.value = [];\n    }\n    page.value = 0; // Сбрасываем на первую страницу\n});\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_Paginator = _resolveComponent(\"Paginator\")!\n\n  return (_openBlock(), _createBlock(_unref(MainContainer), { class: \"container\" }, {\n    default: _withCtx(() => [\n      _createElementVNode(\"div\", _hoisted_1, [\n        (_unref(isLargeScreen))\n          ? (_openBlock(), _createBlock(_unref(ProductFilters), { key: 0 }))\n          : _createCommentVNode(\"\", true),\n        _createElementVNode(\"div\", null, [\n          _createVNode(_unref(ProductsGridFilterBar)),\n          _createVNode(_unref(ProductList), { class: \"list\" }, {\n            default: _withCtx(() => [\n              (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(_unref(products)[page.value], (product) => {\n                return (_openBlock(), _createBlock(_unref(ProductPreview), {\n                  key: product.id,\n                  product: product as Product\n                }, {\n                  \"like-btn\": _withCtx(() => [\n                    _createVNode(_unref(ProductLikeAction), {\n                      \"product-id\": product.id\n                    }, null, 8, [\"product-id\"])\n                  ]),\n                  \"cart-btn\": _withCtx(() => [\n                    _createVNode(_unref(AddProductToCartAction), {\n                      product: product as Product\n                    }, null, 8, [\"product\"])\n                  ]),\n                  _: 2\n                }, 1032, [\"product\"]))\n              }), 128))\n            ]),\n            _: 1\n          })\n        ])\n      ]),\n      _createVNode(_component_Paginator, {\n        first: page.value,\n        \"onUpdate:first\": _cache[0] || (_cache[0] = ($event: any) => ((page).value = $event)),\n        rows: 1,\n        \"total-records\": _unref(products).length\n      }, null, 8, [\"first\", \"total-records\"])\n    ]),\n    _: 1\n  }))\n}\n}\n\n})",
-      "start": 1761072563546,
-      "end": 1761072563546
+      "start": 1761073702937,
+      "end": 1761073702937
     },
     {
       "name": "@tailwindcss/vite:generate:build",
-      "start": 1761072563546,
-      "end": 1761072563546,
+      "start": 1761073702937,
+      "end": 1761073702938,
       "order": "pre"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, createVNode as _createVNode, renderList as _renderList, Fragment as _Fragment, createElementBlock as _createElementBlock, withCtx as _withCtx, createElementVNode as _createElementVNode, resolveComponent as _resolveComponent } from \"vue\";\nconst _hoisted_1 = { class: \"lg:grid grid-cols-[256px_1fr] lg:gap-[32px]\" };\nimport { onMounted, ref, watch } from \"vue\";\nimport { useRoute } from \"vue-router\";\nimport { useUnit, useVModel } from \"effector-vue/composition\";\nimport { isLargeScreen } from \"@/shared/lib\";\nimport { MainContainer } from \"@/shared/ui\";\nimport { ProductList, ProductModel, ProductPreview } from \"@/entities/Product\";\nimport { AddProductToCartAction } from \"@/features/AddProductToCartAction\";\nimport { ProductFilters, ProductFiltersModel } from \"@/features/ProductFilters\";\nimport { ProductLikeAction } from \"@/features/ProductLikeAction\";\nimport { ProductsGridFilterBar } from \"@/widgets/ProductsGrid\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"ProductsGrid\",\n  setup(__props) {\n    const route = useRoute();\n    const [products] = useUnit([ProductFiltersModel.$paginatedProducts]);\n    const selectedCategories = useVModel(ProductModel.$selectedCategories);\n    const selectedProcessors = useVModel(ProductModel.$selectedProcessors);\n    const selectedDiagonals = useVModel(ProductModel.$selectedDiagonals);\n    const page = ref(0);\n    onMounted(() => {\n      const category = route.query.category;\n      selectedProcessors.value = [];\n      selectedDiagonals.value = [];\n      if (category) {\n        selectedCategories.value = [category];\n      } else {\n        selectedCategories.value = [];\n      }\n    });\n    watch(() => route.query.category, (newCategory) => {\n      selectedProcessors.value = [];\n      selectedDiagonals.value = [];\n      if (newCategory) {\n        selectedCategories.value = [newCategory];\n      } else {\n        selectedCategories.value = [];\n      }\n      page.value = 0;\n    });\n    return (_ctx, _cache) => {\n      const _component_Paginator = _resolveComponent(\"Paginator\");\n      return _openBlock(), _createBlock(_unref(MainContainer), { class: \"container\" }, {\n        default: _withCtx(() => [\n          _createElementVNode(\"div\", _hoisted_1, [\n            _unref(isLargeScreen) ? (_openBlock(), _createBlock(_unref(ProductFilters), { key: 0 })) : _createCommentVNode(\"\", true),\n            _createElementVNode(\"div\", null, [\n              _createVNode(_unref(ProductsGridFilterBar)),\n              _createVNode(_unref(ProductList), { class: \"list\" }, {\n                default: _withCtx(() => [\n                  (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(_unref(products)[page.value], (product) => {\n                    return _openBlock(), _createBlock(_unref(ProductPreview), {\n                      key: product.id,\n                      product\n                    }, {\n                      \"like-btn\": _withCtx(() => [\n                        _createVNode(_unref(ProductLikeAction), {\n                          \"product-id\": product.id\n                        }, null, 8, [\"product-id\"])\n                      ]),\n                      \"cart-btn\": _withCtx(() => [\n                        _createVNode(_unref(AddProductToCartAction), {\n                          product\n                        }, null, 8, [\"product\"])\n                      ]),\n                      _: 2\n                    }, 1032, [\"product\"]);\n                  }), 128))\n                ]),\n                _: 1\n              })\n            ])\n          ]),\n          _createVNode(_component_Paginator, {\n            first: page.value,\n            \"onUpdate:first\": _cache[0] || (_cache[0] = ($event) => page.value = $event),\n            rows: 1,\n            \"total-records\": _unref(products).length\n          }, null, 8, [\"first\", \"total-records\"])\n        ]),\n        _: 1\n      });\n    };\n  }\n});\n",
-      "start": 1761072563552,
-      "end": 1761072563797,
+      "start": 1761073702939,
+      "end": 1761073703214,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -33,57 +33,57 @@
     },
     {
       "name": "vite:worker",
-      "start": 1761072563797,
-      "end": 1761072563797,
+      "start": 1761073703214,
+      "end": 1761073703214,
       "order": "normal-normal"
     },
     {
       "name": "vite:vue",
-      "start": 1761072563797,
-      "end": 1761072563797,
+      "start": 1761073703214,
+      "end": 1761073703214,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1761072563797,
-      "end": 1761072563797,
+      "start": 1761073703214,
+      "end": 1761073703214,
       "order": "normal-normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1761072563797,
-      "end": 1761072563797,
+      "start": 1761073703214,
+      "end": 1761073703214,
       "order": "normal-normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1761072563797,
-      "end": 1761072563797,
+      "start": 1761073703214,
+      "end": 1761073703214,
       "order": "normal-normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1761072563797,
-      "end": 1761072563797,
+      "start": 1761073703214,
+      "end": 1761073703214,
       "order": "normal-normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1761072563797,
-      "end": 1761072563797,
+      "start": 1761073703214,
+      "end": 1761073703214,
       "order": "normal-normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1761072563797,
-      "end": 1761072563797,
+      "start": 1761073703214,
+      "end": 1761073703214,
       "order": "normal-normal"
     },
     {
       "name": "unplugin-vue-components",
       "result": "/* unplugin-vue-components disabled */import __unplugin_components_0 from 'primevue/paginator';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, createVNode as _createVNode, renderList as _renderList, Fragment as _Fragment, createElementBlock as _createElementBlock, withCtx as _withCtx, createElementVNode as _createElementVNode, resolveComponent as _resolveComponent } from \"vue\";\nconst _hoisted_1 = { class: \"lg:grid grid-cols-[256px_1fr] lg:gap-[32px]\" };\nimport { onMounted, ref, watch } from \"vue\";\nimport { useRoute } from \"vue-router\";\nimport { useUnit, useVModel } from \"effector-vue/composition\";\nimport { isLargeScreen } from \"@/shared/lib\";\nimport { MainContainer } from \"@/shared/ui\";\nimport { ProductList, ProductModel, ProductPreview } from \"@/entities/Product\";\nimport { AddProductToCartAction } from \"@/features/AddProductToCartAction\";\nimport { ProductFilters, ProductFiltersModel } from \"@/features/ProductFilters\";\nimport { ProductLikeAction } from \"@/features/ProductLikeAction\";\nimport { ProductsGridFilterBar } from \"@/widgets/ProductsGrid\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"ProductsGrid\",\n  setup(__props) {\n    const route = useRoute();\n    const [products] = useUnit([ProductFiltersModel.$paginatedProducts]);\n    const selectedCategories = useVModel(ProductModel.$selectedCategories);\n    const selectedProcessors = useVModel(ProductModel.$selectedProcessors);\n    const selectedDiagonals = useVModel(ProductModel.$selectedDiagonals);\n    const page = ref(0);\n    onMounted(() => {\n      const category = route.query.category;\n      selectedProcessors.value = [];\n      selectedDiagonals.value = [];\n      if (category) {\n        selectedCategories.value = [category];\n      } else {\n        selectedCategories.value = [];\n      }\n    });\n    watch(() => route.query.category, (newCategory) => {\n      selectedProcessors.value = [];\n      selectedDiagonals.value = [];\n      if (newCategory) {\n        selectedCategories.value = [newCategory];\n      } else {\n        selectedCategories.value = [];\n      }\n      page.value = 0;\n    });\n    return (_ctx, _cache) => {\n      const _component_Paginator = __unplugin_components_0;\n      return _openBlock(), _createBlock(_unref(MainContainer), { class: \"container\" }, {\n        default: _withCtx(() => [\n          _createElementVNode(\"div\", _hoisted_1, [\n            _unref(isLargeScreen) ? (_openBlock(), _createBlock(_unref(ProductFilters), { key: 0 })) : _createCommentVNode(\"\", true),\n            _createElementVNode(\"div\", null, [\n              _createVNode(_unref(ProductsGridFilterBar)),\n              _createVNode(_unref(ProductList), { class: \"list\" }, {\n                default: _withCtx(() => [\n                  (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(_unref(products)[page.value], (product) => {\n                    return _openBlock(), _createBlock(_unref(ProductPreview), {\n                      key: product.id,\n                      product\n                    }, {\n                      \"like-btn\": _withCtx(() => [\n                        _createVNode(_unref(ProductLikeAction), {\n                          \"product-id\": product.id\n                        }, null, 8, [\"product-id\"])\n                      ]),\n                      \"cart-btn\": _withCtx(() => [\n                        _createVNode(_unref(AddProductToCartAction), {\n                          product\n                        }, null, 8, [\"product\"])\n                      ]),\n                      _: 2\n                    }, 1032, [\"product\"]);\n                  }), 128))\n                ]),\n                _: 1\n              })\n            ])\n          ]),\n          _createVNode(_component_Paginator, {\n            first: page.value,\n            \"onUpdate:first\": _cache[0] || (_cache[0] = ($event) => page.value = $event),\n            rows: 1,\n            \"total-records\": _unref(products).length\n          }, null, 8, [\"first\", \"total-records\"])\n        ]),\n        _: 1\n      });\n    };\n  }\n});\n",
-      "start": 1761072563797,
-      "end": 1761072563798,
+      "start": 1761073703214,
+      "end": 1761073703215,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -99,14 +99,14 @@
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1761072563798,
-      "end": 1761072563798,
+      "start": 1761073703215,
+      "end": 1761073703215,
       "order": "normal-normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1761072563798,
-      "end": 1761072563798,
+      "start": 1761073703215,
+      "end": 1761073703215,
       "order": "normal"
     }
   ]

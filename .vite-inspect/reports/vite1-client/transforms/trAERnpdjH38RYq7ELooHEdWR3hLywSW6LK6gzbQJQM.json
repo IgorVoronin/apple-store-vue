@@ -4,20 +4,20 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, createVNode as _createVNode, withCtx as _withCtx, createBlock as _createBlock } from \"vue\"\n\nimport { useUnit } from 'effector-vue/composition';\n\nimport { type Product, ProductList, ProductModel, ProductPreview } from '@/entities/Product';\n\nimport { AddProductToCartAction } from '@/features/AddProductToCartAction';\nimport { ProductLikeAction } from '@/features/ProductLikeAction';\n\n\nexport default /*@__PURE__*/_defineComponent({\n  __name: 'FeaturedProducts',\n  setup(__props) {\n\nconst [products] = useUnit([ProductModel.$featuredProducts]);\n\nreturn (_ctx: any,_cache: any) => {\n  return (_openBlock(), _createBlock(_unref(ProductList), null, {\n    default: _withCtx(() => [\n      (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(_unref(products), (product) => {\n        return (_openBlock(), _createBlock(_unref(ProductPreview), {\n          key: product.id,\n          product: product as Product\n        }, {\n          \"like-btn\": _withCtx(() => [\n            _createVNode(_unref(ProductLikeAction), {\n              \"product-id\": product.id\n            }, null, 8, [\"product-id\"])\n          ]),\n          \"cart-btn\": _withCtx(() => [\n            _createVNode(_unref(AddProductToCartAction), {\n              product: product as Product\n            }, null, 8, [\"product\"])\n          ]),\n          _: 2\n        }, 1032, [\"product\"]))\n      }), 128))\n    ]),\n    _: 1\n  }))\n}\n}\n\n})",
-      "start": 1761072564370,
-      "end": 1761072564370
+      "start": 1761073703849,
+      "end": 1761073703849
     },
     {
       "name": "@tailwindcss/vite:generate:build",
-      "start": 1761072564370,
-      "end": 1761072564370,
+      "start": 1761073703849,
+      "end": 1761073703849,
       "order": "pre"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, createVNode as _createVNode, withCtx as _withCtx, createBlock as _createBlock } from \"vue\";\nimport { useUnit } from \"effector-vue/composition\";\nimport { ProductList, ProductModel, ProductPreview } from \"@/entities/Product\";\nimport { AddProductToCartAction } from \"@/features/AddProductToCartAction\";\nimport { ProductLikeAction } from \"@/features/ProductLikeAction\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"FeaturedProducts\",\n  setup(__props) {\n    const [products] = useUnit([ProductModel.$featuredProducts]);\n    return (_ctx, _cache) => {\n      return _openBlock(), _createBlock(_unref(ProductList), null, {\n        default: _withCtx(() => [\n          (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(_unref(products), (product) => {\n            return _openBlock(), _createBlock(_unref(ProductPreview), {\n              key: product.id,\n              product\n            }, {\n              \"like-btn\": _withCtx(() => [\n                _createVNode(_unref(ProductLikeAction), {\n                  \"product-id\": product.id\n                }, null, 8, [\"product-id\"])\n              ]),\n              \"cart-btn\": _withCtx(() => [\n                _createVNode(_unref(AddProductToCartAction), {\n                  product\n                }, null, 8, [\"product\"])\n              ]),\n              _: 2\n            }, 1032, [\"product\"]);\n          }), 128))\n        ]),\n        _: 1\n      });\n    };\n  }\n});\n",
-      "start": 1761072564370,
-      "end": 1761072564387,
+      "start": 1761073703849,
+      "end": 1761073703867,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -33,57 +33,57 @@
     },
     {
       "name": "vite:worker",
-      "start": 1761072564387,
-      "end": 1761072564387,
+      "start": 1761073703867,
+      "end": 1761073703867,
       "order": "normal-normal"
     },
     {
       "name": "vite:vue",
-      "start": 1761072564387,
-      "end": 1761072564387,
+      "start": 1761073703867,
+      "end": 1761073703867,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1761072564387,
-      "end": 1761072564387,
+      "start": 1761073703867,
+      "end": 1761073703867,
       "order": "normal-normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1761072564387,
-      "end": 1761072564387,
+      "start": 1761073703867,
+      "end": 1761073703867,
       "order": "normal-normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1761072564387,
-      "end": 1761072564387,
+      "start": 1761073703867,
+      "end": 1761073703867,
       "order": "normal-normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1761072564387,
-      "end": 1761072564387,
+      "start": 1761073703867,
+      "end": 1761073703867,
       "order": "normal-normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1761072564387,
-      "end": 1761072564387,
+      "start": 1761073703867,
+      "end": 1761073703867,
       "order": "normal-normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1761072564387,
-      "end": 1761072564387,
+      "start": 1761073703867,
+      "end": 1761073703867,
       "order": "normal-normal"
     },
     {
       "name": "unplugin-vue-components",
       "result": "/* unplugin-vue-components disabled */import { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, createVNode as _createVNode, withCtx as _withCtx, createBlock as _createBlock } from \"vue\";\nimport { useUnit } from \"effector-vue/composition\";\nimport { ProductList, ProductModel, ProductPreview } from \"@/entities/Product\";\nimport { AddProductToCartAction } from \"@/features/AddProductToCartAction\";\nimport { ProductLikeAction } from \"@/features/ProductLikeAction\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"FeaturedProducts\",\n  setup(__props) {\n    const [products] = useUnit([ProductModel.$featuredProducts]);\n    return (_ctx, _cache) => {\n      return _openBlock(), _createBlock(_unref(ProductList), null, {\n        default: _withCtx(() => [\n          (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(_unref(products), (product) => {\n            return _openBlock(), _createBlock(_unref(ProductPreview), {\n              key: product.id,\n              product\n            }, {\n              \"like-btn\": _withCtx(() => [\n                _createVNode(_unref(ProductLikeAction), {\n                  \"product-id\": product.id\n                }, null, 8, [\"product-id\"])\n              ]),\n              \"cart-btn\": _withCtx(() => [\n                _createVNode(_unref(AddProductToCartAction), {\n                  product\n                }, null, 8, [\"product\"])\n              ]),\n              _: 2\n            }, 1032, [\"product\"]);\n          }), 128))\n        ]),\n        _: 1\n      });\n    };\n  }\n});\n",
-      "start": 1761072564387,
-      "end": 1761072564388,
+      "start": 1761073703867,
+      "end": 1761073703867,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -99,14 +99,14 @@
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1761072564388,
-      "end": 1761072564388,
+      "start": 1761073703868,
+      "end": 1761073703868,
       "order": "normal-normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1761072564388,
-      "end": 1761072564388,
+      "start": 1761073703868,
+      "end": 1761073703868,
       "order": "normal"
     }
   ]

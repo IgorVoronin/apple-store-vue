@@ -4,20 +4,20 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, createVNode as _createVNode, createElementVNode as _createElementVNode, withCtx as _withCtx, createElementBlock as _createElementBlock } from \"vue\"\n\nconst _hoisted_1 = { key: 1 }\nconst _hoisted_2 = { class: \"lg:flex lg:gap-[48px]\" }\n\nimport { watch } from 'vue';\nimport { useRoute } from 'vue-router';\nimport { useUnit } from 'effector-vue/composition';\n\nimport { MainContainer } from '@/shared/ui';\n\nimport { getAllProductsQuery, getProductByIdQuery } from '@/entities/Product';\n\nimport { ProductGallery } from '@/widgets/ProductGallery';\nimport { ProductInfo } from '@/widgets/ProductInfo';\nimport { ProductDetails } from '@/widgets/ProductDetails';\nimport { RelatedProducts } from '@/widgets/RelatedProducts';\nimport { RootLayout } from '@/widgets/RootLayout';\n\n\nexport default /*@__PURE__*/_defineComponent({\n  __name: 'ProductPage',\n  setup(__props) {\n\nconst { pending } = useUnit(getAllProductsQuery);\n\nconst route = useRoute();\n\n// При смене ID товара загружаем новый и скроллим вверх\nwatch(\n    () => route.params.id as string,\n    (id) => {\n        getProductByIdQuery.start(id);\n        // Скролл вверх страницы\n        window.scrollTo({ top: 0, behavior: 'smooth' });\n    },\n    { immediate: true }\n);\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_ProgressSpinner = _resolveComponent(\"ProgressSpinner\")!\n\n  return (_openBlock(), _createBlock(_unref(RootLayout), null, {\n    default: _withCtx(() => [\n      (_unref(pending))\n        ? (_openBlock(), _createBlock(_component_ProgressSpinner, {\n            key: 0,\n            class: \"m-auto flex mt-[20%]\"\n          }))\n        : _createCommentVNode(\"\", true),\n      (!_unref(pending))\n        ? (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n            _createVNode(_unref(MainContainer), { class: \"py-10\" }, {\n              default: _withCtx(() => [\n                _createElementVNode(\"div\", _hoisted_2, [\n                  _createVNode(_unref(ProductGallery)),\n                  _createVNode(_unref(ProductInfo))\n                ])\n              ]),\n              _: 1\n            }),\n            _createVNode(_unref(ProductDetails)),\n            _createVNode(_unref(RelatedProducts))\n          ]))\n        : _createCommentVNode(\"\", true)\n    ]),\n    _: 1\n  }))\n}\n}\n\n})",
-      "start": 1761072563354,
-      "end": 1761072563354
+      "start": 1761073702714,
+      "end": 1761073702715
     },
     {
       "name": "@tailwindcss/vite:generate:build",
-      "start": 1761072563354,
-      "end": 1761072563354,
+      "start": 1761073702715,
+      "end": 1761073702715,
       "order": "pre"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, createVNode as _createVNode, createElementVNode as _createElementVNode, withCtx as _withCtx, createElementBlock as _createElementBlock } from \"vue\";\nconst _hoisted_1 = { key: 1 };\nconst _hoisted_2 = { class: \"lg:flex lg:gap-[48px]\" };\nimport { watch } from \"vue\";\nimport { useRoute } from \"vue-router\";\nimport { useUnit } from \"effector-vue/composition\";\nimport { MainContainer } from \"@/shared/ui\";\nimport { getAllProductsQuery, getProductByIdQuery } from \"@/entities/Product\";\nimport { ProductGallery } from \"@/widgets/ProductGallery\";\nimport { ProductInfo } from \"@/widgets/ProductInfo\";\nimport { ProductDetails } from \"@/widgets/ProductDetails\";\nimport { RelatedProducts } from \"@/widgets/RelatedProducts\";\nimport { RootLayout } from \"@/widgets/RootLayout\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"ProductPage\",\n  setup(__props) {\n    const { pending } = useUnit(getAllProductsQuery);\n    const route = useRoute();\n    watch(\n      () => route.params.id,\n      (id) => {\n        getProductByIdQuery.start(id);\n        window.scrollTo({ top: 0, behavior: \"smooth\" });\n      },\n      { immediate: true }\n    );\n    return (_ctx, _cache) => {\n      const _component_ProgressSpinner = _resolveComponent(\"ProgressSpinner\");\n      return _openBlock(), _createBlock(_unref(RootLayout), null, {\n        default: _withCtx(() => [\n          _unref(pending) ? (_openBlock(), _createBlock(_component_ProgressSpinner, {\n            key: 0,\n            class: \"m-auto flex mt-[20%]\"\n          })) : _createCommentVNode(\"\", true),\n          !_unref(pending) ? (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n            _createVNode(_unref(MainContainer), { class: \"py-10\" }, {\n              default: _withCtx(() => [\n                _createElementVNode(\"div\", _hoisted_2, [\n                  _createVNode(_unref(ProductGallery)),\n                  _createVNode(_unref(ProductInfo))\n                ])\n              ]),\n              _: 1\n            }),\n            _createVNode(_unref(ProductDetails)),\n            _createVNode(_unref(RelatedProducts))\n          ])) : _createCommentVNode(\"\", true)\n        ]),\n        _: 1\n      });\n    };\n  }\n});\n",
-      "start": 1761072563354,
-      "end": 1761072563364,
+      "start": 1761073702715,
+      "end": 1761073702729,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -33,57 +33,57 @@
     },
     {
       "name": "vite:worker",
-      "start": 1761072563364,
-      "end": 1761072563364,
+      "start": 1761073702729,
+      "end": 1761073702729,
       "order": "normal-normal"
     },
     {
       "name": "vite:vue",
-      "start": 1761072563364,
-      "end": 1761072563364,
+      "start": 1761073702729,
+      "end": 1761073702729,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1761072563364,
-      "end": 1761072563364,
+      "start": 1761073702729,
+      "end": 1761073702729,
       "order": "normal-normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1761072563364,
-      "end": 1761072563364,
+      "start": 1761073702729,
+      "end": 1761073702729,
       "order": "normal-normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1761072563364,
-      "end": 1761072563364,
+      "start": 1761073702729,
+      "end": 1761073702729,
       "order": "normal-normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1761072563364,
-      "end": 1761072563364,
+      "start": 1761073702729,
+      "end": 1761073702729,
       "order": "normal-normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1761072563364,
-      "end": 1761072563364,
+      "start": 1761073702729,
+      "end": 1761073702729,
       "order": "normal-normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1761072563364,
-      "end": 1761072563364,
+      "start": 1761073702729,
+      "end": 1761073702729,
       "order": "normal-normal"
     },
     {
       "name": "unplugin-vue-components",
       "result": "/* unplugin-vue-components disabled */import __unplugin_components_0 from 'primevue/progressspinner';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, createVNode as _createVNode, createElementVNode as _createElementVNode, withCtx as _withCtx, createElementBlock as _createElementBlock } from \"vue\";\nconst _hoisted_1 = { key: 1 };\nconst _hoisted_2 = { class: \"lg:flex lg:gap-[48px]\" };\nimport { watch } from \"vue\";\nimport { useRoute } from \"vue-router\";\nimport { useUnit } from \"effector-vue/composition\";\nimport { MainContainer } from \"@/shared/ui\";\nimport { getAllProductsQuery, getProductByIdQuery } from \"@/entities/Product\";\nimport { ProductGallery } from \"@/widgets/ProductGallery\";\nimport { ProductInfo } from \"@/widgets/ProductInfo\";\nimport { ProductDetails } from \"@/widgets/ProductDetails\";\nimport { RelatedProducts } from \"@/widgets/RelatedProducts\";\nimport { RootLayout } from \"@/widgets/RootLayout\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"ProductPage\",\n  setup(__props) {\n    const { pending } = useUnit(getAllProductsQuery);\n    const route = useRoute();\n    watch(\n      () => route.params.id,\n      (id) => {\n        getProductByIdQuery.start(id);\n        window.scrollTo({ top: 0, behavior: \"smooth\" });\n      },\n      { immediate: true }\n    );\n    return (_ctx, _cache) => {\n      const _component_ProgressSpinner = __unplugin_components_0;\n      return _openBlock(), _createBlock(_unref(RootLayout), null, {\n        default: _withCtx(() => [\n          _unref(pending) ? (_openBlock(), _createBlock(_component_ProgressSpinner, {\n            key: 0,\n            class: \"m-auto flex mt-[20%]\"\n          })) : _createCommentVNode(\"\", true),\n          !_unref(pending) ? (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n            _createVNode(_unref(MainContainer), { class: \"py-10\" }, {\n              default: _withCtx(() => [\n                _createElementVNode(\"div\", _hoisted_2, [\n                  _createVNode(_unref(ProductGallery)),\n                  _createVNode(_unref(ProductInfo))\n                ])\n              ]),\n              _: 1\n            }),\n            _createVNode(_unref(ProductDetails)),\n            _createVNode(_unref(RelatedProducts))\n          ])) : _createCommentVNode(\"\", true)\n        ]),\n        _: 1\n      });\n    };\n  }\n});\n",
-      "start": 1761072563365,
-      "end": 1761072563366,
+      "start": 1761073702729,
+      "end": 1761073702731,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -99,14 +99,14 @@
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1761072563369,
-      "end": 1761072563369,
+      "start": 1761073702734,
+      "end": 1761073702734,
       "order": "normal-normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1761072563369,
-      "end": 1761072563369,
+      "start": 1761073702734,
+      "end": 1761073702734,
       "order": "normal"
     }
   ]

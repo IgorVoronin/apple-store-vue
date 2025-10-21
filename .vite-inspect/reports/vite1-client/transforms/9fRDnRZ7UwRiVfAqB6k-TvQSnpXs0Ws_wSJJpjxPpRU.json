@@ -4,20 +4,20 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, createVNode as _createVNode, renderSlot as _renderSlot, createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\nconst _hoisted_1 = { class: \"app\" }\nconst _hoisted_2 = { class: \"main\" }\n\nimport { MainFooter, MainHeader } from './ui';\n\nexport default /*@__PURE__*/_defineComponent({\n  __name: 'RootLayout',\n  setup(__props) {\n\n\nreturn (_ctx: any,_cache: any) => {\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    _createVNode(_unref(MainHeader), { class: \"header\" }),\n    _createElementVNode(\"main\", _hoisted_2, [\n      _renderSlot(_ctx.$slots, \"default\", {}, undefined, true)\n    ]),\n    _createVNode(_unref(MainFooter), { class: \"footer\" })\n  ]))\n}\n}\n\n})",
-      "start": 1761072563571,
-      "end": 1761072563571
+      "start": 1761073702920,
+      "end": 1761073702920
     },
     {
       "name": "@tailwindcss/vite:generate:build",
-      "start": 1761072563571,
-      "end": 1761072563571,
+      "start": 1761073702920,
+      "end": 1761073702920,
       "order": "pre"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, createVNode as _createVNode, renderSlot as _renderSlot, createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\";\nconst _hoisted_1 = { class: \"app\" };\nconst _hoisted_2 = { class: \"main\" };\nimport { MainFooter, MainHeader } from \"./ui\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"RootLayout\",\n  setup(__props) {\n    return (_ctx, _cache) => {\n      return _openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n        _createVNode(_unref(MainHeader), { class: \"header\" }),\n        _createElementVNode(\"main\", _hoisted_2, [\n          _renderSlot(_ctx.$slots, \"default\", {}, void 0, true)\n        ]),\n        _createVNode(_unref(MainFooter), { class: \"footer\" })\n      ]);\n    };\n  }\n});\n",
-      "start": 1761072563572,
-      "end": 1761072563794,
+      "start": 1761073702921,
+      "end": 1761073703210,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -33,57 +33,57 @@
     },
     {
       "name": "vite:worker",
-      "start": 1761072563794,
-      "end": 1761072563794,
+      "start": 1761073703210,
+      "end": 1761073703210,
       "order": "normal-normal"
     },
     {
       "name": "vite:vue",
-      "start": 1761072563794,
-      "end": 1761072563794,
+      "start": 1761073703210,
+      "end": 1761073703210,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1761072563794,
-      "end": 1761072563794,
+      "start": 1761073703211,
+      "end": 1761073703211,
       "order": "normal-normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1761072563794,
-      "end": 1761072563794,
+      "start": 1761073703211,
+      "end": 1761073703211,
       "order": "normal-normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1761072563794,
-      "end": 1761072563794,
+      "start": 1761073703211,
+      "end": 1761073703211,
       "order": "normal-normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1761072563794,
-      "end": 1761072563794,
+      "start": 1761073703211,
+      "end": 1761073703211,
       "order": "normal-normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1761072563794,
-      "end": 1761072563794,
+      "start": 1761073703211,
+      "end": 1761073703211,
       "order": "normal-normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1761072563794,
-      "end": 1761072563794,
+      "start": 1761073703211,
+      "end": 1761073703211,
       "order": "normal-normal"
     },
     {
       "name": "unplugin-vue-components",
       "result": "/* unplugin-vue-components disabled */import { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, createVNode as _createVNode, renderSlot as _renderSlot, createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\";\nconst _hoisted_1 = { class: \"app\" };\nconst _hoisted_2 = { class: \"main\" };\nimport { MainFooter, MainHeader } from \"./ui\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"RootLayout\",\n  setup(__props) {\n    return (_ctx, _cache) => {\n      return _openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n        _createVNode(_unref(MainHeader), { class: \"header\" }),\n        _createElementVNode(\"main\", _hoisted_2, [\n          _renderSlot(_ctx.$slots, \"default\", {}, void 0, true)\n        ]),\n        _createVNode(_unref(MainFooter), { class: \"footer\" })\n      ]);\n    };\n  }\n});\n",
-      "start": 1761072563794,
-      "end": 1761072563795,
+      "start": 1761073703211,
+      "end": 1761073703212,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -99,14 +99,14 @@
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1761072563795,
-      "end": 1761072563795,
+      "start": 1761073703212,
+      "end": 1761073703213,
       "order": "normal-normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1761072563796,
-      "end": 1761072563796,
+      "start": 1761073703213,
+      "end": 1761073703213,
       "order": "normal"
     }
   ]

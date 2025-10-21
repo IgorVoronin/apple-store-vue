@@ -4,86 +4,86 @@
     {
       "name": "vite:load-fallback",
       "result": "import Badge from 'primevue/badge';\nimport OverlayBadgeStyle from 'primevue/overlaybadge/style';\nimport { resolveComponent, createElementBlock, openBlock, mergeProps, renderSlot, createVNode } from 'vue';\n\nvar script$1 = {\n  name: 'OverlayBadge',\n  \"extends\": Badge,\n  style: OverlayBadgeStyle,\n  provide: function provide() {\n    return {\n      $pcOverlayBadge: this,\n      $parentInstance: this\n    };\n  }\n};\n\nvar script = {\n  name: 'OverlayBadge',\n  \"extends\": script$1,\n  inheritAttrs: false,\n  components: {\n    Badge: Badge\n  }\n};\n\nfunction render(_ctx, _cache, $props, $setup, $data, $options) {\n  var _component_Badge = resolveComponent(\"Badge\");\n  return openBlock(), createElementBlock(\"div\", mergeProps({\n    \"class\": _ctx.cx('root')\n  }, _ctx.ptmi('root')), [renderSlot(_ctx.$slots, \"default\"), createVNode(_component_Badge, mergeProps(_ctx.$props, {\n    pt: _ctx.ptm('pcBadge')\n  }), null, 16, [\"pt\"])], 16);\n}\n\nscript.render = render;\n\nexport { script as default };\n//# sourceMappingURL=index.mjs.map\n",
-      "start": 1761072564396,
-      "end": 1761072564405,
+      "start": 1761073703878,
+      "end": 1761073703883,
       "sourcemaps": null
     },
     {
       "name": "@tailwindcss/vite:generate:build",
-      "start": 1761072564405,
-      "end": 1761072564405,
+      "start": 1761073703883,
+      "end": 1761073703883,
       "order": "pre"
     },
     {
       "name": "vite:esbuild",
-      "start": 1761072564405,
-      "end": 1761072564405,
+      "start": 1761073703883,
+      "end": 1761073703883,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1761072564405,
-      "end": 1761072564405,
+      "start": 1761073703883,
+      "end": 1761073703883,
       "order": "normal-normal"
     },
     {
       "name": "vite:vue",
-      "start": 1761072564405,
-      "end": 1761072564405,
+      "start": 1761073703883,
+      "end": 1761073703883,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1761072564405,
-      "end": 1761072564405,
+      "start": 1761073703883,
+      "end": 1761073703883,
       "order": "normal-normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1761072564405,
-      "end": 1761072564405,
+      "start": 1761073703883,
+      "end": 1761073703883,
       "order": "normal-normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1761072564405,
-      "end": 1761072564405,
+      "start": 1761073703883,
+      "end": 1761073703883,
       "order": "normal-normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1761072564405,
-      "end": 1761072564405,
+      "start": 1761073703883,
+      "end": 1761073703883,
       "order": "normal-normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1761072564405,
-      "end": 1761072564405,
+      "start": 1761073703883,
+      "end": 1761073703883,
       "order": "normal-normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1761072564405,
-      "end": 1761072564405,
+      "start": 1761073703883,
+      "end": 1761073703883,
       "order": "normal-normal"
     },
     {
       "name": "unplugin-vue-components",
-      "start": 1761072564405,
-      "end": 1761072564405,
+      "start": 1761073703883,
+      "end": 1761073703883,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1761072564405,
-      "end": 1761072564405,
+      "start": 1761073703883,
+      "end": 1761073703883,
       "order": "normal-normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1761072564405,
-      "end": 1761072564405,
+      "start": 1761073703883,
+      "end": 1761073703883,
       "order": "normal"
     }
   ]

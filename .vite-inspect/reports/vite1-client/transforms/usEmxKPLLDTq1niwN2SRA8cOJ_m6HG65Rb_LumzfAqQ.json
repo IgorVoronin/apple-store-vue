@@ -4,33 +4,33 @@
     {
       "name": "vite:load-fallback",
       "result": "<template>\n    <div class=\"max-w-[1152px] px-4 m-auto\">\n        <slot />\n    </div>\n</template>\n",
-      "start": 1761072563442,
-      "end": 1761072563475,
+      "start": 1761073702801,
+      "end": 1761073702832,
       "sourcemaps": null
     },
     {
       "name": "@tailwindcss/vite:generate:build",
-      "start": 1761072563475,
-      "end": 1761072563475,
+      "start": 1761073702832,
+      "end": 1761073702832,
       "order": "pre"
     },
     {
       "name": "vite:esbuild",
-      "start": 1761072563475,
-      "end": 1761072563475,
+      "start": 1761073702832,
+      "end": 1761073702832,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1761072563475,
-      "end": 1761072563475,
+      "start": 1761073702832,
+      "end": 1761073702832,
       "order": "normal-normal"
     },
     {
       "name": "vite:vue",
       "result": "const _sfc_main = {  }\nimport { renderSlot as _renderSlot, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\nconst _hoisted_1 = { class: \"max-w-[1152px] px-4 m-auto\" }\n\nfunction _sfc_render(_ctx, _cache) {\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    _renderSlot(_ctx.$slots, \"default\")\n  ]))\n}\n\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render]])",
-      "start": 1761072563475,
-      "end": 1761072563476,
+      "start": 1761073702832,
+      "end": 1761073702833,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -38,45 +38,45 @@
     },
     {
       "name": "vite:define",
-      "start": 1761072563476,
-      "end": 1761072563476,
+      "start": 1761073702833,
+      "end": 1761073702833,
       "order": "normal-normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1761072563476,
-      "end": 1761072563476,
+      "start": 1761073702833,
+      "end": 1761073702833,
       "order": "normal-normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1761072563476,
-      "end": 1761072563476,
+      "start": 1761073702833,
+      "end": 1761073702833,
       "order": "normal-normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1761072563476,
-      "end": 1761072563476,
+      "start": 1761073702833,
+      "end": 1761073702833,
       "order": "normal-normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1761072563476,
-      "end": 1761072563476,
+      "start": 1761073702833,
+      "end": 1761073702833,
       "order": "normal-normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1761072563476,
-      "end": 1761072563476,
+      "start": 1761073702833,
+      "end": 1761073702833,
       "order": "normal-normal"
     },
     {
       "name": "unplugin-vue-components",
       "result": "/* unplugin-vue-components disabled */const _sfc_main = {  }\nimport { renderSlot as _renderSlot, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\nconst _hoisted_1 = { class: \"max-w-[1152px] px-4 m-auto\" }\n\nfunction _sfc_render(_ctx, _cache) {\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    _renderSlot(_ctx.$slots, \"default\")\n  ]))\n}\n\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render]])",
-      "start": 1761072563476,
-      "end": 1761072563476,
+      "start": 1761073702833,
+      "end": 1761073702833,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -92,14 +92,14 @@
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1761072563476,
-      "end": 1761072563476,
+      "start": 1761073702833,
+      "end": 1761073702833,
       "order": "normal-normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1761072563476,
-      "end": 1761072563476,
+      "start": 1761073702833,
+      "end": 1761073702833,
       "order": "normal"
     }
   ]

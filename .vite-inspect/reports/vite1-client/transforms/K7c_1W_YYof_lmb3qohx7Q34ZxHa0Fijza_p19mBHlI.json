@@ -4,33 +4,33 @@
     {
       "name": "vite:load-fallback",
       "result": "<script setup lang=\"ts\">\nimport { MainBanners } from '@/widgets/Banners';\nimport { CategoriesView } from '@/widgets/CategoriesView';\nimport { DiscountedItems } from '@/widgets/DiscountItems';\nimport { MainBanner } from '@/widgets/MainBanner';\nimport { MainProducts } from '@/widgets/MainProducts';\nimport { RootLayout } from '@/widgets/RootLayout';\nimport { SaleBanner } from '@/widgets/SaleBanner';\n</script>\n\n<template>\n    <RootLayout>\n        <MainBanner />\n        <MainBanners />\n        <CategoriesView />\n        <MainProducts />\n        <DiscountedItems />\n        <SaleBanner />\n    </RootLayout>\n</template>\n",
-      "start": 1761072563247,
-      "end": 1761072563285,
+      "start": 1761073702624,
+      "end": 1761073702646,
       "sourcemaps": null
     },
     {
       "name": "@tailwindcss/vite:generate:build",
-      "start": 1761072563285,
-      "end": 1761072563285,
+      "start": 1761073702646,
+      "end": 1761073702646,
       "order": "pre"
     },
     {
       "name": "vite:esbuild",
-      "start": 1761072563285,
-      "end": 1761072563285,
+      "start": 1761073702646,
+      "end": 1761073702646,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1761072563285,
-      "end": 1761072563285,
+      "start": 1761073702646,
+      "end": 1761073702646,
       "order": "normal-normal"
     },
     {
       "name": "vite:vue",
       "result": "import _sfc_main from \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/pages/IndexPage/IndexPage.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/pages/IndexPage/IndexPage.vue?vue&type=script&setup=true&lang.ts\";\nexport default _sfc_main;\n",
-      "start": 1761072563285,
-      "end": 1761072563343,
+      "start": 1761073702646,
+      "end": 1761073702708,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -38,45 +38,45 @@
     },
     {
       "name": "vite:define",
-      "start": 1761072563344,
-      "end": 1761072563344,
+      "start": 1761073702708,
+      "end": 1761073702708,
       "order": "normal-normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1761072563344,
-      "end": 1761072563344,
+      "start": 1761073702708,
+      "end": 1761073702708,
       "order": "normal-normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1761072563344,
-      "end": 1761072563344,
+      "start": 1761073702708,
+      "end": 1761073702708,
       "order": "normal-normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1761072563344,
-      "end": 1761072563344,
+      "start": 1761073702708,
+      "end": 1761073702708,
       "order": "normal-normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1761072563344,
-      "end": 1761072563344,
+      "start": 1761073702708,
+      "end": 1761073702708,
       "order": "normal-normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1761072563344,
-      "end": 1761072563344,
+      "start": 1761073702708,
+      "end": 1761073702708,
       "order": "normal-normal"
     },
     {
       "name": "unplugin-vue-components",
       "result": "/* unplugin-vue-components disabled */import _sfc_main from \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/pages/IndexPage/IndexPage.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/pages/IndexPage/IndexPage.vue?vue&type=script&setup=true&lang.ts\";\nexport default _sfc_main;\n",
-      "start": 1761072563344,
-      "end": 1761072563345,
+      "start": 1761073702708,
+      "end": 1761073702709,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -92,14 +92,14 @@
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1761072563345,
-      "end": 1761072563345,
+      "start": 1761073702709,
+      "end": 1761073702709,
       "order": "normal-normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1761072563345,
-      "end": 1761072563345,
+      "start": 1761073702710,
+      "end": 1761073702710,
       "order": "normal"
     }
   ]

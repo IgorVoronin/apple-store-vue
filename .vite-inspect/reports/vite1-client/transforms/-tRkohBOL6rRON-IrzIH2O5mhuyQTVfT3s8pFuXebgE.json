@@ -4,34 +4,34 @@
     {
       "name": "vite:vue",
       "result": "\n.list {\n    display: grid;\n    grid-template-columns: repeat(1, 1fr);\n    gap: 1rem;\n\n    @media (width >= 414px) {\n        grid-template-columns: repeat(2, 1fr);\n    }\n\n    @media (width >= 992px) {\n        grid-template-columns: repeat(3, 1fr);\n    }\n\n    @media (width >= 1200px) {\n        display: flex;\n        gap: 32px;\n    }\n}\n",
-      "start": 1761072563557,
-      "end": 1761072563557
+      "start": 1761073702942,
+      "end": 1761073702942
     },
     {
       "name": "@tailwindcss/vite:generate:build",
       "result": "\n.list {\n    display: grid;\n    grid-template-columns: repeat(1, 1fr);\n    gap: 1rem;\n\n    @media (width >= 414px) {\n        grid-template-columns: repeat(2, 1fr);\n    }\n\n    @media (width >= 992px) {\n        grid-template-columns: repeat(3, 1fr);\n    }\n\n    @media (width >= 1200px) {\n        display: flex;\n        gap: 32px;\n    }\n}\n",
-      "start": 1761072563557,
-      "end": 1761072563558,
+      "start": 1761073702942,
+      "end": 1761073702943,
       "order": "pre",
       "sourcemaps": null
     },
     {
       "name": "vite:esbuild",
-      "start": 1761072563559,
-      "end": 1761072563559,
+      "start": 1761073702944,
+      "end": 1761073702944,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1761072563559,
-      "end": 1761072563559,
+      "start": 1761073702944,
+      "end": 1761073702944,
       "order": "normal-normal"
     },
     {
       "name": "vite:vue",
       "result": "\n.list[data-v-3be81e2a] {\n    display: grid;\n    grid-template-columns: repeat(1, 1fr);\n    gap: 1rem;\n@media (width >= 414px) {\n        grid-template-columns: repeat(2, 1fr);\n}\n@media (width >= 992px) {\n        grid-template-columns: repeat(3, 1fr);\n}\n@media (width >= 1200px) {\n        display: flex;\n        gap: 32px;\n}\n}\n",
-      "start": 1761072563559,
-      "end": 1761072563560,
+      "start": 1761073702944,
+      "end": 1761073702944,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -39,45 +39,45 @@
     },
     {
       "name": "vite:define",
-      "start": 1761072563560,
-      "end": 1761072563560,
+      "start": 1761073702944,
+      "end": 1761073702944,
       "order": "normal-normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1761072563560,
-      "end": 1761072563560,
+      "start": 1761073702944,
+      "end": 1761073702944,
       "order": "normal-normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1761072563560,
-      "end": 1761072563560,
+      "start": 1761073702944,
+      "end": 1761073702944,
       "order": "normal-normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1761072563560,
-      "end": 1761072563560,
+      "start": 1761073702944,
+      "end": 1761073702944,
       "order": "normal-normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1761072563560,
-      "end": 1761072563560,
+      "start": 1761073702944,
+      "end": 1761073702944,
       "order": "normal-normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1761072563560,
-      "end": 1761072563560,
+      "start": 1761073702944,
+      "end": 1761073702944,
       "order": "normal-normal"
     },
     {
       "name": "unplugin-vue-components",
       "result": "/* unplugin-vue-components disabled */",
-      "start": 1761072563560,
-      "end": 1761072563560,
+      "start": 1761073702944,
+      "end": 1761073702944,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -93,14 +93,14 @@
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1761072563560,
-      "end": 1761072563560,
+      "start": 1761073702944,
+      "end": 1761073702944,
       "order": "normal-normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1761072563560,
-      "end": 1761072563560,
+      "start": 1761073702944,
+      "end": 1761073702944,
       "order": "normal"
     }
   ]

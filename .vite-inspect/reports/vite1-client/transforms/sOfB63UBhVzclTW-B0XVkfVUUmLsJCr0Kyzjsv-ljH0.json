@@ -4,34 +4,34 @@
     {
       "name": "vite:vue",
       "result": "\r\n.details-section {\r\n    width: 100%;\r\n    background: #FAFAFA;\r\n    padding: 80px 160px;\r\n}\r\n\r\n.details-container {\r\n    max-width: 1440px;\r\n    margin: 0 auto;\r\n}\r\n\r\n.details-content {\r\n    background: #FFFFFF;\r\n    border-radius: 8px;\r\n    padding: 48px 40px;\r\n    display: flex;\r\n    flex-direction: column;\r\n    gap: 32px;\r\n}\r\n\r\n.details-title {\r\n    font-family: 'ABeeZee', sans-serif;\r\n    font-weight: 400;\r\n    font-style: italic;\r\n    font-size: 20px;\r\n    line-height: 24px;\r\n    letter-spacing: 0;\r\n    margin: 0;\r\n}\r\n\r\n.details-description {\r\n    font-family: 'ABeeZee', sans-serif;\r\n    font-weight: 400;\r\n    font-style: italic;\r\n    font-size: 14px;\r\n    line-height: 24px;\r\n    letter-spacing: 0;\r\n    color: #6C6C6C;\r\n    margin: 0;\r\n}\r\n\r\n.characteristics-grid {\r\n    display: flex;\r\n    flex-direction: column;\r\n    gap: 16px;\r\n}\r\n\r\n.characteristic-row {\r\n    display: flex;\r\n    justify-content: space-between;\r\n    align-items: center;\r\n    padding-bottom: 16px;\r\n    border-bottom: 1px solid #EDEDED;\r\n}\r\n\r\n.characteristic-row:last-child {\r\n    border-bottom: none;\r\n}\r\n\r\n.characteristic-label {\r\n    font-family: 'Abel', sans-serif;\r\n    font-weight: 400;\r\n    font-style: normal;\r\n    font-size: 16px;\r\n    line-height: 24px;\r\n    letter-spacing: 0;\r\n    color: #6C6C6C;\r\n}\r\n\r\n.characteristic-value {\r\n    font-family: 'Abel', sans-serif;\r\n    font-weight: 400;\r\n    font-style: normal;\r\n    font-size: 16px;\r\n    line-height: 24px;\r\n    letter-spacing: 0;\r\n    color: #000000;\r\n    text-align: right;\r\n}\r\n\r\n/* Адаптивность для мобильных */\r\n@media (max-width: 768px) {\r\n    .details-section {\r\n        padding: 40px 20px;\r\n    }\r\n    \r\n    .details-content {\r\n        padding: 24px 20px;\r\n    }\r\n}\r\n\r\n@media (max-width: 1200px) {\r\n    .details-section {\r\n        padding: 60px 80px;\r\n    }\r\n}\r\n",
-      "start": 1761072563532,
-      "end": 1761072563532
+      "start": 1761073702915,
+      "end": 1761073702915
     },
     {
       "name": "@tailwindcss/vite:generate:build",
       "result": "\r\n.details-section {\r\n    width: 100%;\r\n    background: #FAFAFA;\r\n    padding: 80px 160px;\r\n}\r\n\r\n.details-container {\r\n    max-width: 1440px;\r\n    margin: 0 auto;\r\n}\r\n\r\n.details-content {\r\n    background: #FFFFFF;\r\n    border-radius: 8px;\r\n    padding: 48px 40px;\r\n    display: flex;\r\n    flex-direction: column;\r\n    gap: 32px;\r\n}\r\n\r\n.details-title {\r\n    font-family: 'ABeeZee', sans-serif;\r\n    font-weight: 400;\r\n    font-style: italic;\r\n    font-size: 20px;\r\n    line-height: 24px;\r\n    letter-spacing: 0;\r\n    margin: 0;\r\n}\r\n\r\n.details-description {\r\n    font-family: 'ABeeZee', sans-serif;\r\n    font-weight: 400;\r\n    font-style: italic;\r\n    font-size: 14px;\r\n    line-height: 24px;\r\n    letter-spacing: 0;\r\n    color: #6C6C6C;\r\n    margin: 0;\r\n}\r\n\r\n.characteristics-grid {\r\n    display: flex;\r\n    flex-direction: column;\r\n    gap: 16px;\r\n}\r\n\r\n.characteristic-row {\r\n    display: flex;\r\n    justify-content: space-between;\r\n    align-items: center;\r\n    padding-bottom: 16px;\r\n    border-bottom: 1px solid #EDEDED;\r\n}\r\n\r\n.characteristic-row:last-child {\r\n    border-bottom: none;\r\n}\r\n\r\n.characteristic-label {\r\n    font-family: 'Abel', sans-serif;\r\n    font-weight: 400;\r\n    font-style: normal;\r\n    font-size: 16px;\r\n    line-height: 24px;\r\n    letter-spacing: 0;\r\n    color: #6C6C6C;\r\n}\r\n\r\n.characteristic-value {\r\n    font-family: 'Abel', sans-serif;\r\n    font-weight: 400;\r\n    font-style: normal;\r\n    font-size: 16px;\r\n    line-height: 24px;\r\n    letter-spacing: 0;\r\n    color: #000000;\r\n    text-align: right;\r\n}\r\n\r\n/* Адаптивность для мобильных */\r\n@media (max-width: 768px) {\r\n    .details-section {\r\n        padding: 40px 20px;\r\n    }\r\n    \r\n    .details-content {\r\n        padding: 24px 20px;\r\n    }\r\n}\r\n\r\n@media (max-width: 1200px) {\r\n    .details-section {\r\n        padding: 60px 80px;\r\n    }\r\n}\r\n",
-      "start": 1761072563533,
-      "end": 1761072563535,
+      "start": 1761073702915,
+      "end": 1761073702916,
       "order": "pre",
       "sourcemaps": null
     },
     {
       "name": "vite:esbuild",
-      "start": 1761072563538,
-      "end": 1761072563538,
+      "start": 1761073702918,
+      "end": 1761073702918,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1761072563538,
-      "end": 1761072563538,
+      "start": 1761073702918,
+      "end": 1761073702918,
       "order": "normal-normal"
     },
     {
       "name": "vite:vue",
       "result": "\n.details-section[data-v-3158e0c7] {\r\n    width: 100%;\r\n    background: #FAFAFA;\r\n    padding: 80px 160px;\n}\n.details-container[data-v-3158e0c7] {\r\n    max-width: 1440px;\r\n    margin: 0 auto;\n}\n.details-content[data-v-3158e0c7] {\r\n    background: #FFFFFF;\r\n    border-radius: 8px;\r\n    padding: 48px 40px;\r\n    display: flex;\r\n    flex-direction: column;\r\n    gap: 32px;\n}\n.details-title[data-v-3158e0c7] {\r\n    font-family: 'ABeeZee', sans-serif;\r\n    font-weight: 400;\r\n    font-style: italic;\r\n    font-size: 20px;\r\n    line-height: 24px;\r\n    letter-spacing: 0;\r\n    margin: 0;\n}\n.details-description[data-v-3158e0c7] {\r\n    font-family: 'ABeeZee', sans-serif;\r\n    font-weight: 400;\r\n    font-style: italic;\r\n    font-size: 14px;\r\n    line-height: 24px;\r\n    letter-spacing: 0;\r\n    color: #6C6C6C;\r\n    margin: 0;\n}\n.characteristics-grid[data-v-3158e0c7] {\r\n    display: flex;\r\n    flex-direction: column;\r\n    gap: 16px;\n}\n.characteristic-row[data-v-3158e0c7] {\r\n    display: flex;\r\n    justify-content: space-between;\r\n    align-items: center;\r\n    padding-bottom: 16px;\r\n    border-bottom: 1px solid #EDEDED;\n}\n.characteristic-row[data-v-3158e0c7]:last-child {\r\n    border-bottom: none;\n}\n.characteristic-label[data-v-3158e0c7] {\r\n    font-family: 'Abel', sans-serif;\r\n    font-weight: 400;\r\n    font-style: normal;\r\n    font-size: 16px;\r\n    line-height: 24px;\r\n    letter-spacing: 0;\r\n    color: #6C6C6C;\n}\n.characteristic-value[data-v-3158e0c7] {\r\n    font-family: 'Abel', sans-serif;\r\n    font-weight: 400;\r\n    font-style: normal;\r\n    font-size: 16px;\r\n    line-height: 24px;\r\n    letter-spacing: 0;\r\n    color: #000000;\r\n    text-align: right;\n}\r\n\r\n/* Адаптивность для мобильных */\n@media (max-width: 768px) {\n.details-section[data-v-3158e0c7] {\r\n        padding: 40px 20px;\n}\n.details-content[data-v-3158e0c7] {\r\n        padding: 24px 20px;\n}\n}\n@media (max-width: 1200px) {\n.details-section[data-v-3158e0c7] {\r\n        padding: 60px 80px;\n}\n}\r\n",
-      "start": 1761072563538,
-      "end": 1761072563543,
+      "start": 1761073702918,
+      "end": 1761073702919,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -39,45 +39,45 @@
     },
     {
       "name": "vite:define",
-      "start": 1761072563543,
-      "end": 1761072563543,
+      "start": 1761073702919,
+      "end": 1761073702919,
       "order": "normal-normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1761072563543,
-      "end": 1761072563543,
+      "start": 1761073702919,
+      "end": 1761073702919,
       "order": "normal-normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1761072563543,
-      "end": 1761072563543,
+      "start": 1761073702919,
+      "end": 1761073702919,
       "order": "normal-normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1761072563543,
-      "end": 1761072563543,
+      "start": 1761073702919,
+      "end": 1761073702919,
       "order": "normal-normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1761072563543,
-      "end": 1761072563543,
+      "start": 1761073702919,
+      "end": 1761073702919,
       "order": "normal-normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1761072563543,
-      "end": 1761072563543,
+      "start": 1761073702919,
+      "end": 1761073702919,
       "order": "normal-normal"
     },
     {
       "name": "unplugin-vue-components",
       "result": "/* unplugin-vue-components disabled */",
-      "start": 1761072563543,
-      "end": 1761072563544,
+      "start": 1761073702919,
+      "end": 1761073702919,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -93,14 +93,14 @@
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1761072563544,
-      "end": 1761072563544,
+      "start": 1761073702919,
+      "end": 1761073702919,
       "order": "normal-normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1761072563544,
-      "end": 1761072563544,
+      "start": 1761073702919,
+      "end": 1761073702919,
       "order": "normal"
     }
   ]

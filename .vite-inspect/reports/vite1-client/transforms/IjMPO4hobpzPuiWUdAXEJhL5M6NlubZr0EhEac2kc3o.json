@@ -4,20 +4,20 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, createElementVNode as _createElementVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\nconst _hoisted_1 = { class: \"justify-center flex py-[40px] mb-[53px]\" }\nconst _hoisted_2 = [\"src\", \"alt\"]\nconst _hoisted_3 = [\"src\", \"alt\"]\n\nimport { ref } from 'vue';\nimport { useUnit } from 'effector-vue/composition';\n\nimport { API } from '@/shared/api';\nimport { isLargeScreen } from '@/shared/lib';\n\nimport { getProductByIdQuery } from '@/entities/Product';\n\n\nexport default /*@__PURE__*/_defineComponent({\n  __name: 'ProductGallery',\n  setup(__props) {\n\nconst { data: product } = useUnit(getProductByIdQuery);\n\nconst responsiveOptions = ref([\n    {\n        breakpoint: '1300px',\n        numVisible: 4,\n    },\n    {\n        breakpoint: '575px',\n        numVisible: 1,\n    },\n]);\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_Galleria = _resolveComponent(\"Galleria\")!\n\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    _createVNode(_component_Galleria, {\n      \"show-thumbnail-navigators\": false,\n      \"thumbnails-position\": _unref(isLargeScreen) ? 'left' : 'bottom',\n      value: [_unref(product).images ?? ''],\n      \"responsive-options\": responsiveOptions.value,\n      \"num-visible\": 5,\n      \"container-style\": `max-width: ${_unref(isLargeScreen) ? 546 : 343}px; border: 0;`\n    }, {\n      item: _withCtx((slotProps) => [\n        _createElementVNode(\"img\", {\n          width: \"265\",\n          src: _unref(API).BASE_URL + slotProps.item,\n          alt: slotProps.item.alt,\n          style: {\"width\":\"100%\"}\n        }, null, 8, _hoisted_2)\n      ]),\n      thumbnail: _withCtx((slotProps) => [\n        _createElementVNode(\"img\", {\n          src: _unref(API).BASE_URL + slotProps.item,\n          alt: slotProps.item.alt,\n          width: \"80\"\n        }, null, 8, _hoisted_3)\n      ]),\n      _: 1\n    }, 8, [\"thumbnails-position\", \"value\", \"responsive-options\", \"container-style\"])\n  ]))\n}\n}\n\n})",
-      "start": 1761072563545,
-      "end": 1761072563545
+      "start": 1761073702898,
+      "end": 1761073702898
     },
     {
       "name": "@tailwindcss/vite:generate:build",
-      "start": 1761072563545,
-      "end": 1761072563545,
+      "start": 1761073702898,
+      "end": 1761073702898,
       "order": "pre"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, createElementVNode as _createElementVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\";\nconst _hoisted_1 = { class: \"justify-center flex py-[40px] mb-[53px]\" };\nconst _hoisted_2 = [\"src\", \"alt\"];\nconst _hoisted_3 = [\"src\", \"alt\"];\nimport { ref } from \"vue\";\nimport { useUnit } from \"effector-vue/composition\";\nimport { API } from \"@/shared/api\";\nimport { isLargeScreen } from \"@/shared/lib\";\nimport { getProductByIdQuery } from \"@/entities/Product\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"ProductGallery\",\n  setup(__props) {\n    const { data: product } = useUnit(getProductByIdQuery);\n    const responsiveOptions = ref([\n      {\n        breakpoint: \"1300px\",\n        numVisible: 4\n      },\n      {\n        breakpoint: \"575px\",\n        numVisible: 1\n      }\n    ]);\n    return (_ctx, _cache) => {\n      const _component_Galleria = _resolveComponent(\"Galleria\");\n      return _openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n        _createVNode(_component_Galleria, {\n          \"show-thumbnail-navigators\": false,\n          \"thumbnails-position\": _unref(isLargeScreen) ? \"left\" : \"bottom\",\n          value: [_unref(product).images ?? \"\"],\n          \"responsive-options\": responsiveOptions.value,\n          \"num-visible\": 5,\n          \"container-style\": `max-width: ${_unref(isLargeScreen) ? 546 : 343}px; border: 0;`\n        }, {\n          item: _withCtx((slotProps) => [\n            _createElementVNode(\"img\", {\n              width: \"265\",\n              src: _unref(API).BASE_URL + slotProps.item,\n              alt: slotProps.item.alt,\n              style: { \"width\": \"100%\" }\n            }, null, 8, _hoisted_2)\n          ]),\n          thumbnail: _withCtx((slotProps) => [\n            _createElementVNode(\"img\", {\n              src: _unref(API).BASE_URL + slotProps.item,\n              alt: slotProps.item.alt,\n              width: \"80\"\n            }, null, 8, _hoisted_3)\n          ]),\n          _: 1\n        }, 8, [\"thumbnails-position\", \"value\", \"responsive-options\", \"container-style\"])\n      ]);\n    };\n  }\n});\n",
-      "start": 1761072563545,
-      "end": 1761072563797,
+      "start": 1761073702898,
+      "end": 1761073703210,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -33,57 +33,57 @@
     },
     {
       "name": "vite:worker",
-      "start": 1761072563797,
-      "end": 1761072563797,
+      "start": 1761073703210,
+      "end": 1761073703210,
       "order": "normal-normal"
     },
     {
       "name": "vite:vue",
-      "start": 1761072563797,
-      "end": 1761072563797,
+      "start": 1761073703210,
+      "end": 1761073703210,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1761072563797,
-      "end": 1761072563797,
+      "start": 1761073703211,
+      "end": 1761073703211,
       "order": "normal-normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1761072563797,
-      "end": 1761072563797,
+      "start": 1761073703211,
+      "end": 1761073703211,
       "order": "normal-normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1761072563797,
-      "end": 1761072563797,
+      "start": 1761073703211,
+      "end": 1761073703211,
       "order": "normal-normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1761072563797,
-      "end": 1761072563797,
+      "start": 1761073703211,
+      "end": 1761073703211,
       "order": "normal-normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1761072563797,
-      "end": 1761072563797,
+      "start": 1761073703211,
+      "end": 1761073703211,
       "order": "normal-normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1761072563797,
-      "end": 1761072563797,
+      "start": 1761073703211,
+      "end": 1761073703211,
       "order": "normal-normal"
     },
     {
       "name": "unplugin-vue-components",
       "result": "/* unplugin-vue-components disabled */import __unplugin_components_0 from 'primevue/galleria';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, createElementVNode as _createElementVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\";\nconst _hoisted_1 = { class: \"justify-center flex py-[40px] mb-[53px]\" };\nconst _hoisted_2 = [\"src\", \"alt\"];\nconst _hoisted_3 = [\"src\", \"alt\"];\nimport { ref } from \"vue\";\nimport { useUnit } from \"effector-vue/composition\";\nimport { API } from \"@/shared/api\";\nimport { isLargeScreen } from \"@/shared/lib\";\nimport { getProductByIdQuery } from \"@/entities/Product\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"ProductGallery\",\n  setup(__props) {\n    const { data: product } = useUnit(getProductByIdQuery);\n    const responsiveOptions = ref([\n      {\n        breakpoint: \"1300px\",\n        numVisible: 4\n      },\n      {\n        breakpoint: \"575px\",\n        numVisible: 1\n      }\n    ]);\n    return (_ctx, _cache) => {\n      const _component_Galleria = __unplugin_components_0;\n      return _openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n        _createVNode(_component_Galleria, {\n          \"show-thumbnail-navigators\": false,\n          \"thumbnails-position\": _unref(isLargeScreen) ? \"left\" : \"bottom\",\n          value: [_unref(product).images ?? \"\"],\n          \"responsive-options\": responsiveOptions.value,\n          \"num-visible\": 5,\n          \"container-style\": `max-width: ${_unref(isLargeScreen) ? 546 : 343}px; border: 0;`\n        }, {\n          item: _withCtx((slotProps) => [\n            _createElementVNode(\"img\", {\n              width: \"265\",\n              src: _unref(API).BASE_URL + slotProps.item,\n              alt: slotProps.item.alt,\n              style: { \"width\": \"100%\" }\n            }, null, 8, _hoisted_2)\n          ]),\n          thumbnail: _withCtx((slotProps) => [\n            _createElementVNode(\"img\", {\n              src: _unref(API).BASE_URL + slotProps.item,\n              alt: slotProps.item.alt,\n              width: \"80\"\n            }, null, 8, _hoisted_3)\n          ]),\n          _: 1\n        }, 8, [\"thumbnails-position\", \"value\", \"responsive-options\", \"container-style\"])\n      ]);\n    };\n  }\n});\n",
-      "start": 1761072563797,
-      "end": 1761072563798,
+      "start": 1761073703211,
+      "end": 1761073703212,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -99,14 +99,14 @@
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1761072563798,
-      "end": 1761072563798,
+      "start": 1761073703213,
+      "end": 1761073703213,
       "order": "normal-normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1761072563798,
-      "end": 1761072563798,
+      "start": 1761073703213,
+      "end": 1761073703213,
       "order": "normal"
     }
   ]

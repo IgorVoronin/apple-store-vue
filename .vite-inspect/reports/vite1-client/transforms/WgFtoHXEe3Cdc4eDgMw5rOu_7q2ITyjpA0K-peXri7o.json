@@ -4,86 +4,86 @@
     {
       "name": "vite:load-fallback",
       "result": "import { style } from '@primeuix/styles/paginator';\nimport BaseStyle from '@primevue/core/base/style';\n\nfunction _typeof(o) { \"@babel/helpers - typeof\"; return _typeof = \"function\" == typeof Symbol && \"symbol\" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && \"function\" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? \"symbol\" : typeof o; }, _typeof(o); }\nfunction _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: true, configurable: true, writable: true }) : e[r] = t, e; }\nfunction _toPropertyKey(t) { var i = _toPrimitive(t, \"string\"); return \"symbol\" == _typeof(i) ? i : i + \"\"; }\nfunction _toPrimitive(t, r) { if (\"object\" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r); if (\"object\" != _typeof(i)) return i; throw new TypeError(\"@@toPrimitive must return a primitive value.\"); } return (\"string\" === r ? String : Number)(t); }\nvar classes = {\n  paginator: function paginator(_ref) {\n    var instance = _ref.instance,\n      key = _ref.key;\n    return ['p-paginator p-component', _defineProperty({\n      'p-paginator-default': !instance.hasBreakpoints()\n    }, \"p-paginator-\".concat(key), instance.hasBreakpoints())];\n  },\n  content: 'p-paginator-content',\n  contentStart: 'p-paginator-content-start',\n  contentEnd: 'p-paginator-content-end',\n  first: function first(_ref3) {\n    var instance = _ref3.instance;\n    return ['p-paginator-first', {\n      'p-disabled': instance.$attrs.disabled\n    }];\n  },\n  firstIcon: 'p-paginator-first-icon',\n  prev: function prev(_ref4) {\n    var instance = _ref4.instance;\n    return ['p-paginator-prev', {\n      'p-disabled': instance.$attrs.disabled\n    }];\n  },\n  prevIcon: 'p-paginator-prev-icon',\n  next: function next(_ref5) {\n    var instance = _ref5.instance;\n    return ['p-paginator-next', {\n      'p-disabled': instance.$attrs.disabled\n    }];\n  },\n  nextIcon: 'p-paginator-next-icon',\n  last: function last(_ref6) {\n    var instance = _ref6.instance;\n    return ['p-paginator-last', {\n      'p-disabled': instance.$attrs.disabled\n    }];\n  },\n  lastIcon: 'p-paginator-last-icon',\n  pages: 'p-paginator-pages',\n  page: function page(_ref7) {\n    var props = _ref7.props,\n      pageLink = _ref7.pageLink;\n    return ['p-paginator-page', {\n      'p-paginator-page-selected': pageLink - 1 === props.page\n    }];\n  },\n  current: 'p-paginator-current',\n  pcRowPerPageDropdown: 'p-paginator-rpp-dropdown',\n  pcJumpToPageDropdown: 'p-paginator-jtp-dropdown',\n  pcJumpToPageInputText: 'p-paginator-jtp-input'\n};\nvar PaginatorStyle = BaseStyle.extend({\n  name: 'paginator',\n  style: style,\n  classes: classes\n});\n\nexport { PaginatorStyle as default };\n//# sourceMappingURL=index.mjs.map\n",
-      "start": 1761072563886,
-      "end": 1761072563993,
+      "start": 1761073703277,
+      "end": 1761073703354,
       "sourcemaps": null
     },
     {
       "name": "@tailwindcss/vite:generate:build",
-      "start": 1761072563993,
-      "end": 1761072563993,
+      "start": 1761073703354,
+      "end": 1761073703354,
       "order": "pre"
     },
     {
       "name": "vite:esbuild",
-      "start": 1761072563993,
-      "end": 1761072563993,
+      "start": 1761073703354,
+      "end": 1761073703354,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1761072563993,
-      "end": 1761072563993,
+      "start": 1761073703354,
+      "end": 1761073703354,
       "order": "normal-normal"
     },
     {
       "name": "vite:vue",
-      "start": 1761072563993,
-      "end": 1761072563993,
+      "start": 1761073703354,
+      "end": 1761073703354,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1761072563993,
-      "end": 1761072563993,
+      "start": 1761073703354,
+      "end": 1761073703354,
       "order": "normal-normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1761072563993,
-      "end": 1761072563993,
+      "start": 1761073703354,
+      "end": 1761073703354,
       "order": "normal-normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1761072563993,
-      "end": 1761072563993,
+      "start": 1761073703354,
+      "end": 1761073703354,
       "order": "normal-normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1761072563993,
-      "end": 1761072563993,
+      "start": 1761073703354,
+      "end": 1761073703354,
       "order": "normal-normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1761072563993,
-      "end": 1761072563993,
+      "start": 1761073703354,
+      "end": 1761073703354,
       "order": "normal-normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1761072563993,
-      "end": 1761072563993,
+      "start": 1761073703354,
+      "end": 1761073703354,
       "order": "normal-normal"
     },
     {
       "name": "unplugin-vue-components",
-      "start": 1761072563993,
-      "end": 1761072563993,
+      "start": 1761073703354,
+      "end": 1761073703354,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1761072563993,
-      "end": 1761072563993,
+      "start": 1761073703354,
+      "end": 1761073703354,
       "order": "normal-normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1761072563993,
-      "end": 1761072563993,
+      "start": 1761073703354,
+      "end": 1761073703354,
       "order": "normal"
     }
   ]

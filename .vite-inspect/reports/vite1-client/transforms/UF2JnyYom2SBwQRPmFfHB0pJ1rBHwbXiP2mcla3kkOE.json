@@ -4,20 +4,20 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, normalizeClass as _normalizeClass, withCtx as _withCtx, createVNode as _createVNode, openBlock as _openBlock, createBlock as _createBlock } from \"vue\"\n\n\nexport default /*@__PURE__*/_defineComponent({\n  __name: 'RedirectToShopPage',\n  props: {\n    className: {}\n  },\n  setup(__props: any) {\n\n\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_RouterLink = _resolveComponent(\"RouterLink\")!\n  const _component_Button = _resolveComponent(\"Button\")!\n\n  return (_openBlock(), _createBlock(_component_Button, {\n    outlined: \"\",\n    \"as-child\": \"\",\n    plain: \"\",\n    size: \"large\"\n  }, {\n    default: _withCtx((slotProps) => [\n      _createVNode(_component_RouterLink, {\n        class: _normalizeClass([`${__props.className} ${slotProps.class}`, \"text-white hover:text-black flex justify-center max-w-[173px]\"]),\n        to: \"/products\"\n      }, {\n        default: _withCtx(() => [...(_cache[0] || (_cache[0] = [\n          _createTextVNode(\" Shop Now \", -1)\n        ]))]),\n        _: 1\n      }, 8, [\"class\"])\n    ]),\n    _: 1\n  }))\n}\n}\n\n})",
-      "start": 1761072564353,
-      "end": 1761072564353
+      "start": 1761073703503,
+      "end": 1761073703503
     },
     {
       "name": "@tailwindcss/vite:generate:build",
-      "start": 1761072564353,
-      "end": 1761072564353,
+      "start": 1761073703503,
+      "end": 1761073703503,
       "order": "pre"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, normalizeClass as _normalizeClass, withCtx as _withCtx, createVNode as _createVNode, openBlock as _openBlock, createBlock as _createBlock } from \"vue\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"RedirectToShopPage\",\n  props: {\n    className: {}\n  },\n  setup(__props) {\n    return (_ctx, _cache) => {\n      const _component_RouterLink = _resolveComponent(\"RouterLink\");\n      const _component_Button = _resolveComponent(\"Button\");\n      return _openBlock(), _createBlock(_component_Button, {\n        outlined: \"\",\n        \"as-child\": \"\",\n        plain: \"\",\n        size: \"large\"\n      }, {\n        default: _withCtx((slotProps) => [\n          _createVNode(_component_RouterLink, {\n            class: _normalizeClass([`${__props.className} ${slotProps.class}`, \"text-white hover:text-black flex justify-center max-w-[173px]\"]),\n            to: \"/products\"\n          }, {\n            default: _withCtx(() => [..._cache[0] || (_cache[0] = [\n              _createTextVNode(\" Shop Now \", -1)\n            ])]),\n            _: 1\n          }, 8, [\"class\"])\n        ]),\n        _: 1\n      });\n    };\n  }\n});\n",
-      "start": 1761072564353,
-      "end": 1761072564358,
+      "start": 1761073703503,
+      "end": 1761073703559,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -33,57 +33,57 @@
     },
     {
       "name": "vite:worker",
-      "start": 1761072564358,
-      "end": 1761072564358,
+      "start": 1761073703559,
+      "end": 1761073703559,
       "order": "normal-normal"
     },
     {
       "name": "vite:vue",
-      "start": 1761072564358,
-      "end": 1761072564358,
+      "start": 1761073703559,
+      "end": 1761073703559,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1761072564358,
-      "end": 1761072564358,
+      "start": 1761073703559,
+      "end": 1761073703559,
       "order": "normal-normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1761072564358,
-      "end": 1761072564358,
+      "start": 1761073703559,
+      "end": 1761073703559,
       "order": "normal-normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1761072564358,
-      "end": 1761072564358,
+      "start": 1761073703559,
+      "end": 1761073703559,
       "order": "normal-normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1761072564358,
-      "end": 1761072564358,
+      "start": 1761073703559,
+      "end": 1761073703559,
       "order": "normal-normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1761072564358,
-      "end": 1761072564358,
+      "start": 1761073703560,
+      "end": 1761073703560,
       "order": "normal-normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1761072564359,
-      "end": 1761072564359,
+      "start": 1761073703560,
+      "end": 1761073703560,
       "order": "normal-normal"
     },
     {
       "name": "unplugin-vue-components",
       "result": "/* unplugin-vue-components disabled */import __unplugin_components_0 from 'primevue/button';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, normalizeClass as _normalizeClass, withCtx as _withCtx, createVNode as _createVNode, openBlock as _openBlock, createBlock as _createBlock } from \"vue\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"RedirectToShopPage\",\n  props: {\n    className: {}\n  },\n  setup(__props) {\n    return (_ctx, _cache) => {\n      const _component_RouterLink = _resolveComponent(\"RouterLink\");\n      const _component_Button = __unplugin_components_0;\n      return _openBlock(), _createBlock(_component_Button, {\n        outlined: \"\",\n        \"as-child\": \"\",\n        plain: \"\",\n        size: \"large\"\n      }, {\n        default: _withCtx((slotProps) => [\n          _createVNode(_component_RouterLink, {\n            class: _normalizeClass([`${__props.className} ${slotProps.class}`, \"text-white hover:text-black flex justify-center max-w-[173px]\"]),\n            to: \"/products\"\n          }, {\n            default: _withCtx(() => [..._cache[0] || (_cache[0] = [\n              _createTextVNode(\" Shop Now \", -1)\n            ])]),\n            _: 1\n          }, 8, [\"class\"])\n        ]),\n        _: 1\n      });\n    };\n  }\n});\n",
-      "start": 1761072564359,
-      "end": 1761072564359,
+      "start": 1761073703560,
+      "end": 1761073703561,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -99,14 +99,14 @@
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1761072564359,
-      "end": 1761072564359,
+      "start": 1761073703561,
+      "end": 1761073703561,
       "order": "normal-normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1761072564359,
-      "end": 1761072564359,
+      "start": 1761073703561,
+      "end": 1761073703561,
       "order": "normal"
     }
   ]

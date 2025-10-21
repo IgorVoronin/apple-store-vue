@@ -4,33 +4,33 @@
     {
       "name": "vite:load-fallback",
       "result": "<script setup lang=\"ts\">\nconst { productId } = defineProps<{\n    productId: number;\n    text?: string;\n}>();\nimport { useStoreMap, useUnit } from 'effector-vue/composition';\n\nimport { ProductModel } from '@/entities/Product/index.js';\n\nconst [onProductLikeClick] = useUnit([ProductModel.productLikeSettled]);\n\nconst isLiked = useStoreMap({\n    store: ProductModel.$likedProducts,\n    keys: () => productId,\n    fn: (products, productId) => products.includes(`${productId}`),\n});\n</script>\n<template>\n    <Button\n        size=\"large\"\n        type=\"button\"\n        :variant=\"text ? 'outlined' : 'text'\"\n        severity=\"contrast\"\n        :icon=\"`${text ? null : `pi ${isLiked ? 'pi-heart-fill' : 'pi-heart '}`}`\"\n        aria-label=\"Set Like for a product\"\n        class=\"flex p-2\"\n        :class=\"`text-(${isLiked ? 'red-500' : 'gray-400'}) ${text ? 'w-full m-0 justify-center' : 'ml-auto justify-end mt-[-0.5rem] mr-[-0.5rem] w-fit'}`\"\n        :label=\"text ? text : ''\"\n        @click=\"\n            onProductLikeClick({\n                id: `${productId}`,\n            })\n        \"\n    />\n</template>\n",
-      "start": 1761072563984,
-      "end": 1761072564028,
+      "start": 1761073703350,
+      "end": 1761073703435,
       "sourcemaps": null
     },
     {
       "name": "@tailwindcss/vite:generate:build",
-      "start": 1761072564028,
-      "end": 1761072564028,
+      "start": 1761073703436,
+      "end": 1761073703436,
       "order": "pre"
     },
     {
       "name": "vite:esbuild",
-      "start": 1761072564028,
-      "end": 1761072564028,
+      "start": 1761073703436,
+      "end": 1761073703436,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1761072564028,
-      "end": 1761072564028,
+      "start": 1761073703436,
+      "end": 1761073703436,
       "order": "normal-normal"
     },
     {
       "name": "vite:vue",
       "result": "import _sfc_main from \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/features/ProductLikeAction/ui/ProductLike.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/features/ProductLikeAction/ui/ProductLike.vue?vue&type=script&setup=true&lang.ts\";\nexport default _sfc_main;\n",
-      "start": 1761072564028,
-      "end": 1761072564173,
+      "start": 1761073703436,
+      "end": 1761073703559,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -38,45 +38,45 @@
     },
     {
       "name": "vite:define",
-      "start": 1761072564173,
-      "end": 1761072564173,
+      "start": 1761073703559,
+      "end": 1761073703559,
       "order": "normal-normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1761072564173,
-      "end": 1761072564173,
+      "start": 1761073703559,
+      "end": 1761073703559,
       "order": "normal-normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1761072564173,
-      "end": 1761072564173,
+      "start": 1761073703559,
+      "end": 1761073703559,
       "order": "normal-normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1761072564173,
-      "end": 1761072564173,
+      "start": 1761073703559,
+      "end": 1761073703559,
       "order": "normal-normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1761072564173,
-      "end": 1761072564173,
+      "start": 1761073703559,
+      "end": 1761073703559,
       "order": "normal-normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1761072564173,
-      "end": 1761072564174,
+      "start": 1761073703559,
+      "end": 1761073703559,
       "order": "normal-normal"
     },
     {
       "name": "unplugin-vue-components",
       "result": "/* unplugin-vue-components disabled */import _sfc_main from \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/features/ProductLikeAction/ui/ProductLike.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/features/ProductLikeAction/ui/ProductLike.vue?vue&type=script&setup=true&lang.ts\";\nexport default _sfc_main;\n",
-      "start": 1761072564174,
-      "end": 1761072564174,
+      "start": 1761073703559,
+      "end": 1761073703560,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -92,14 +92,14 @@
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1761072564174,
-      "end": 1761072564174,
+      "start": 1761073703560,
+      "end": 1761073703560,
       "order": "normal-normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1761072564174,
-      "end": 1761072564174,
+      "start": 1761073703560,
+      "end": 1761073703560,
       "order": "normal"
     }
   ]

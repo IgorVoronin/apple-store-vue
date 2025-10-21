@@ -4,21 +4,21 @@
     {
       "name": "vite:load-fallback",
       "result": "export const CATEGORIES_MAP: Record<string, string> = {\n    Смартфоны: 'Phones',\n    Компьютеры: 'Computers',\n    Планшеты: 'Tablets',\n    Часы: 'Smart Watches',\n    Гаджеты: 'Gadgets',\n    Аксессуары: 'Accessories',\n};\n\nconst CATEGORY_ICON_MAP: Record<string, string> = {\n    Смартфоны: 'pi pi-mobile ',\n    Компьютеры: 'pi pi-desktop',\n    Планшеты: 'pi pi-tablet',\n    Часы: 'pi pi-clock',\n    Гаджеты: 'pi pi-gauge',\n    Аксессуары: 'pi pi-headphones',\n};\n\nexport const mapCategoriesLabels = (\n    categories: string[]\n): {\n    label: string;\n    id: number;\n    icon: string;\n    category: string;\n}[] =>\n    categories.map((category, idx) => ({\n        label: CATEGORIES_MAP[category],\n        id: idx,\n        icon: CATEGORY_ICON_MAP[category],\n        category: category,\n    }));\n",
-      "start": 1761072563857,
-      "end": 1761072563980,
+      "start": 1761073703247,
+      "end": 1761073703348,
       "sourcemaps": null
     },
     {
       "name": "@tailwindcss/vite:generate:build",
-      "start": 1761072563980,
-      "end": 1761072563980,
+      "start": 1761073703348,
+      "end": 1761073703348,
       "order": "pre"
     },
     {
       "name": "vite:esbuild",
       "result": "export const CATEGORIES_MAP = {\n  Смартфоны: \"Phones\",\n  Компьютеры: \"Computers\",\n  Планшеты: \"Tablets\",\n  Часы: \"Smart Watches\",\n  Гаджеты: \"Gadgets\",\n  Аксессуары: \"Accessories\"\n};\nconst CATEGORY_ICON_MAP = {\n  Смартфоны: \"pi pi-mobile \",\n  Компьютеры: \"pi pi-desktop\",\n  Планшеты: \"pi pi-tablet\",\n  Часы: \"pi pi-clock\",\n  Гаджеты: \"pi pi-gauge\",\n  Аксессуары: \"pi pi-headphones\"\n};\nexport const mapCategoriesLabels = (categories) => categories.map((category, idx) => ({\n  label: CATEGORIES_MAP[category],\n  id: idx,\n  icon: CATEGORY_ICON_MAP[category],\n  category\n}));\n",
-      "start": 1761072563980,
-      "end": 1761072564021,
+      "start": 1761073703348,
+      "end": 1761073703356,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -34,68 +34,68 @@
     },
     {
       "name": "vite:worker",
-      "start": 1761072564021,
-      "end": 1761072564021,
+      "start": 1761073703356,
+      "end": 1761073703356,
       "order": "normal-normal"
     },
     {
       "name": "vite:vue",
-      "start": 1761072564022,
-      "end": 1761072564022,
+      "start": 1761073703356,
+      "end": 1761073703356,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1761072564022,
-      "end": 1761072564022,
+      "start": 1761073703356,
+      "end": 1761073703356,
       "order": "normal-normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1761072564022,
-      "end": 1761072564022,
+      "start": 1761073703356,
+      "end": 1761073703356,
       "order": "normal-normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1761072564022,
-      "end": 1761072564022,
+      "start": 1761073703356,
+      "end": 1761073703356,
       "order": "normal-normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1761072564022,
-      "end": 1761072564022,
+      "start": 1761073703356,
+      "end": 1761073703356,
       "order": "normal-normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1761072564022,
-      "end": 1761072564022,
+      "start": 1761073703356,
+      "end": 1761073703356,
       "order": "normal-normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1761072564022,
-      "end": 1761072564022,
+      "start": 1761073703356,
+      "end": 1761073703356,
       "order": "normal-normal"
     },
     {
       "name": "unplugin-vue-components",
-      "start": 1761072564022,
-      "end": 1761072564022,
+      "start": 1761073703356,
+      "end": 1761073703356,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1761072564022,
-      "end": 1761072564022,
+      "start": 1761073703356,
+      "end": 1761073703356,
       "order": "normal-normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1761072564022,
-      "end": 1761072564022,
+      "start": 1761073703356,
+      "end": 1761073703356,
       "order": "normal"
     }
   ]

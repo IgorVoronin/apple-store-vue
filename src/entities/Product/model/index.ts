@@ -151,6 +151,14 @@ export const ProductModel = atom(() => {
         key: 'cart-products',
     });
 
+    // Очищаем localStorage при сбросе корзины
+    sample({
+        clock: cartResettled,
+        fn: () => {
+            localStorage.removeItem('cart-products');
+        },
+    });
+
     sample({
         clock: appStarted,
         target: [getAllProductsQuery.start],

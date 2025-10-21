@@ -4,33 +4,33 @@
     {
       "name": "vite:load-fallback",
       "result": "<script setup lang=\"ts\">\nimport { ref } from 'vue';\nimport { useUnit } from 'effector-vue/composition';\nimport type { AutoCompleteCompleteEvent, AutoCompleteOptionSelectEvent } from 'primevue/autocomplete';\n\nimport { router } from '@/pages/router';\n\nimport { isLargeScreen } from '@/shared/lib';\n\nimport { ProductModel } from '@/entities/Product';\n\nconst [products] = useUnit([ProductModel.$availableProducts]);\nconst filteredProducts = ref();\n\nconst search = (event: AutoCompleteCompleteEvent) => {\n    if (!event.query.trim().length) {\n        filteredProducts.value = [...products.value];\n    } else {\n        filteredProducts.value = products.value.filter((product) =>\n            product.name.toLowerCase().startsWith(event.query.toLowerCase())\n        );\n    }\n};\n\nconst select = (event: AutoCompleteOptionSelectEvent) => {\n    router.push({\n        path: `/product/${event.value.id}`,\n    });\n};\n</script>\n<template>\n    <IconField v-if=\"isLargeScreen\">\n        <InputIcon class=\"pi pi-search\" />\n        <AutoComplete\n            :suggestions=\"filteredProducts\"\n            option-label=\"name\"\n            size=\"large\"\n            class=\"input min-w-[372px] placeholder-shown:border-transparent focus-visible:border-green-600 placeholder-shown:italic placeholder-gray-400 text-md\"\n            variant=\"filled\"\n            placeholder=\"Search\"\n            @complete=\"search\"\n            @option-select=\"select\"\n        />\n    </IconField>\n</template>\n<style scoped>\n.input > * {\n    width: 100%;\n}\n</style>\n",
-      "start": 1761072564483,
-      "end": 1761072564507,
+      "start": 1761073703891,
+      "end": 1761073703894,
       "sourcemaps": null
     },
     {
       "name": "@tailwindcss/vite:generate:build",
-      "start": 1761072564507,
-      "end": 1761072564507,
+      "start": 1761073703894,
+      "end": 1761073703894,
       "order": "pre"
     },
     {
       "name": "vite:esbuild",
-      "start": 1761072564507,
-      "end": 1761072564507,
+      "start": 1761073703894,
+      "end": 1761073703894,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1761072564507,
-      "end": 1761072564507,
+      "start": 1761073703894,
+      "end": 1761073703894,
       "order": "normal-normal"
     },
     {
       "name": "vite:vue",
       "result": "import _sfc_main from \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/features/Search/ProductSearch.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/features/Search/ProductSearch.vue?vue&type=script&setup=true&lang.ts\";\nimport \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/features/Search/ProductSearch.vue?vue&type=style&index=0&scoped=ce40c725&lang.css\";\nimport _export_sfc from \"\\0plugin-vue:export-helper\";\nexport default /* @__PURE__ */ _export_sfc(_sfc_main, [[\"__scopeId\", \"data-v-ce40c725\"]]);\n",
-      "start": 1761072564507,
-      "end": 1761072564525,
+      "start": 1761073703894,
+      "end": 1761073703897,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -38,45 +38,45 @@
     },
     {
       "name": "vite:define",
-      "start": 1761072564525,
-      "end": 1761072564525,
+      "start": 1761073703897,
+      "end": 1761073703897,
       "order": "normal-normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1761072564525,
-      "end": 1761072564525,
+      "start": 1761073703897,
+      "end": 1761073703897,
       "order": "normal-normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1761072564525,
-      "end": 1761072564525,
+      "start": 1761073703897,
+      "end": 1761073703897,
       "order": "normal-normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1761072564525,
-      "end": 1761072564525,
+      "start": 1761073703897,
+      "end": 1761073703897,
       "order": "normal-normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1761072564525,
-      "end": 1761072564525,
+      "start": 1761073703897,
+      "end": 1761073703897,
       "order": "normal-normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1761072564525,
-      "end": 1761072564525,
+      "start": 1761073703897,
+      "end": 1761073703897,
       "order": "normal-normal"
     },
     {
       "name": "unplugin-vue-components",
       "result": "/* unplugin-vue-components disabled */import _sfc_main from \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/features/Search/ProductSearch.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/features/Search/ProductSearch.vue?vue&type=script&setup=true&lang.ts\";\nimport \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/features/Search/ProductSearch.vue?vue&type=style&index=0&scoped=ce40c725&lang.css\";\nimport _export_sfc from \"\\0plugin-vue:export-helper\";\nexport default /* @__PURE__ */ _export_sfc(_sfc_main, [[\"__scopeId\", \"data-v-ce40c725\"]]);\n",
-      "start": 1761072564525,
-      "end": 1761072564526,
+      "start": 1761073703897,
+      "end": 1761073703897,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -92,14 +92,14 @@
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1761072564526,
-      "end": 1761072564526,
+      "start": 1761073703897,
+      "end": 1761073703897,
       "order": "normal-normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1761072564526,
-      "end": 1761072564526,
+      "start": 1761073703897,
+      "end": 1761073703897,
       "order": "normal"
     }
   ]

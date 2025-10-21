@@ -4,21 +4,21 @@
     {
       "name": "vite:load-fallback",
       "result": "import { combine, createStore } from 'effector';\n\nimport { atom } from '@/shared/factories';\n\nimport { type Product, ProductModel } from '@/entities/Product';\n\nexport const ProductFiltersModel = atom(() => {\n    const $sortBy = createStore<{\n        code: string;\n        name: string;\n    }>({} as { code: string; name: string });\n\n    const $paginatedProducts = combine(\n        {\n            products: ProductModel.$availableProducts,\n            sort: $sortBy,\n            processors: ProductModel.$selectedProcessors,\n            diagonals: ProductModel.$selectedDiagonals,\n            categories: ProductModel.$selectedCategories,\n        },\n        ({ products, sort, processors, diagonals, categories }) => {\n            const currentProducts = [...products].filter((product) => {\n                const currentProcessor =\n                    product.characteristics.find((char) => char.characteristic === 'Процессор')?.value ?? '';\n\n                const currentDiagonals =\n                    product.characteristics.find((char) => char.characteristic === 'Диагональ')?.value ?? '';\n\n                // Проверяем соответствие фильтрам\n                const matchesProcessor = processors.length === 0 || processors.includes(currentProcessor);\n                const matchesDiagonal = diagonals.length === 0 || diagonals.includes(currentDiagonals);\n                const matchesCategory = categories.length === 0 || categories.includes(product.category);\n\n                return matchesProcessor && matchesDiagonal && matchesCategory;\n            });\n\n            switch (sort.code) {\n                case 'rating':\n                    currentProducts.sort((a, b) => (a.rating > b.rating ? 1 : -1));\n                    break;\n                case 'data':\n                    currentProducts.sort((a, b) => (a.createdAt > b.createdAt ? 1 : -1));\n                    break;\n                case 'price':\n                    currentProducts.sort((a, b) => (a.price > b.price ? 1 : -1));\n                    break;\n                default:\n                    break;\n            }\n\n            const size = 9;\n            const subarray: Product[][] = [];\n            for (let i = 0; i < Math.ceil(currentProducts.length / size); i++) {\n                subarray[i] = currentProducts.slice(i * size, i * size + size);\n            }\n\n            return subarray;\n        }\n    );\n\n    const $totalFilteredProducts = $paginatedProducts.map((el) => el.flat(Infinity).length);\n\n    return {\n        $sortBy,\n        $paginatedProducts,\n        $totalFilteredProducts,\n    };\n});\n",
-      "start": 1761072563992,
-      "end": 1761072564032,
+      "start": 1761073703353,
+      "end": 1761073703443,
       "sourcemaps": null
     },
     {
       "name": "@tailwindcss/vite:generate:build",
-      "start": 1761072564032,
-      "end": 1761072564032,
+      "start": 1761073703443,
+      "end": 1761073703443,
       "order": "pre"
     },
     {
       "name": "vite:esbuild",
       "result": "import { combine, createStore } from \"effector\";\nimport { atom } from \"@/shared/factories\";\nimport { ProductModel } from \"@/entities/Product\";\nexport const ProductFiltersModel = atom(() => {\n  const $sortBy = createStore({});\n  const $paginatedProducts = combine(\n    {\n      products: ProductModel.$availableProducts,\n      sort: $sortBy,\n      processors: ProductModel.$selectedProcessors,\n      diagonals: ProductModel.$selectedDiagonals,\n      categories: ProductModel.$selectedCategories\n    },\n    ({ products, sort, processors, diagonals, categories }) => {\n      const currentProducts = [...products].filter((product) => {\n        const currentProcessor = product.characteristics.find((char) => char.characteristic === \"Процессор\")?.value ?? \"\";\n        const currentDiagonals = product.characteristics.find((char) => char.characteristic === \"Диагональ\")?.value ?? \"\";\n        const matchesProcessor = processors.length === 0 || processors.includes(currentProcessor);\n        const matchesDiagonal = diagonals.length === 0 || diagonals.includes(currentDiagonals);\n        const matchesCategory = categories.length === 0 || categories.includes(product.category);\n        return matchesProcessor && matchesDiagonal && matchesCategory;\n      });\n      switch (sort.code) {\n        case \"rating\":\n          currentProducts.sort((a, b) => a.rating > b.rating ? 1 : -1);\n          break;\n        case \"data\":\n          currentProducts.sort((a, b) => a.createdAt > b.createdAt ? 1 : -1);\n          break;\n        case \"price\":\n          currentProducts.sort((a, b) => a.price > b.price ? 1 : -1);\n          break;\n        default:\n          break;\n      }\n      const size = 9;\n      const subarray = [];\n      for (let i = 0; i < Math.ceil(currentProducts.length / size); i++) {\n        subarray[i] = currentProducts.slice(i * size, i * size + size);\n      }\n      return subarray;\n    }\n  );\n  const $totalFilteredProducts = $paginatedProducts.map((el) => el.flat(Infinity).length);\n  return {\n    $sortBy,\n    $paginatedProducts,\n    $totalFilteredProducts\n  };\n});\n",
-      "start": 1761072564032,
-      "end": 1761072564062,
+      "start": 1761073703443,
+      "end": 1761073703469,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -34,68 +34,68 @@
     },
     {
       "name": "vite:worker",
-      "start": 1761072564062,
-      "end": 1761072564062,
+      "start": 1761073703469,
+      "end": 1761073703469,
       "order": "normal-normal"
     },
     {
       "name": "vite:vue",
-      "start": 1761072564062,
-      "end": 1761072564062,
+      "start": 1761073703469,
+      "end": 1761073703469,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1761072564062,
-      "end": 1761072564062,
+      "start": 1761073703469,
+      "end": 1761073703469,
       "order": "normal-normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1761072564063,
-      "end": 1761072564063,
+      "start": 1761073703470,
+      "end": 1761073703470,
       "order": "normal-normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1761072564063,
-      "end": 1761072564063,
+      "start": 1761073703470,
+      "end": 1761073703470,
       "order": "normal-normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1761072564063,
-      "end": 1761072564063,
+      "start": 1761073703470,
+      "end": 1761073703470,
       "order": "normal-normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1761072564063,
-      "end": 1761072564063,
+      "start": 1761073703470,
+      "end": 1761073703470,
       "order": "normal-normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1761072564063,
-      "end": 1761072564063,
+      "start": 1761073703470,
+      "end": 1761073703470,
       "order": "normal-normal"
     },
     {
       "name": "unplugin-vue-components",
-      "start": 1761072564063,
-      "end": 1761072564063,
+      "start": 1761073703470,
+      "end": 1761073703470,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1761072564064,
-      "end": 1761072564064,
+      "start": 1761073703470,
+      "end": 1761073703471,
       "order": "normal-normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1761072564064,
-      "end": 1761072564064,
+      "start": 1761073703471,
+      "end": 1761073703471,
       "order": "normal"
     }
   ]

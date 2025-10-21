@@ -4,20 +4,20 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveComponent as _resolveComponent, createVNode as _createVNode, withCtx as _withCtx, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode } from \"vue\"\n\nimport { ref } from 'vue';\nimport { useUnit } from 'effector-vue/composition';\nimport type { AutoCompleteCompleteEvent, AutoCompleteOptionSelectEvent } from 'primevue/autocomplete';\n\nimport { router } from '@/pages/router';\n\nimport { isLargeScreen } from '@/shared/lib';\n\nimport { ProductModel } from '@/entities/Product';\n\n\nexport default /*@__PURE__*/_defineComponent({\n  __name: 'ProductSearch',\n  setup(__props) {\n\nconst [products] = useUnit([ProductModel.$availableProducts]);\nconst filteredProducts = ref();\n\nconst search = (event: AutoCompleteCompleteEvent) => {\n    if (!event.query.trim().length) {\n        filteredProducts.value = [...products.value];\n    } else {\n        filteredProducts.value = products.value.filter((product) =>\n            product.name.toLowerCase().startsWith(event.query.toLowerCase())\n        );\n    }\n};\n\nconst select = (event: AutoCompleteOptionSelectEvent) => {\n    router.push({\n        path: `/product/${event.value.id}`,\n    });\n};\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_InputIcon = _resolveComponent(\"InputIcon\")!\n  const _component_AutoComplete = _resolveComponent(\"AutoComplete\")!\n  const _component_IconField = _resolveComponent(\"IconField\")!\n\n  return (_unref(isLargeScreen))\n    ? (_openBlock(), _createBlock(_component_IconField, { key: 0 }, {\n        default: _withCtx(() => [\n          _createVNode(_component_InputIcon, { class: \"pi pi-search\" }),\n          _createVNode(_component_AutoComplete, {\n            suggestions: filteredProducts.value,\n            \"option-label\": \"name\",\n            size: \"large\",\n            class: \"input min-w-[372px] placeholder-shown:border-transparent focus-visible:border-green-600 placeholder-shown:italic placeholder-gray-400 text-md\",\n            variant: \"filled\",\n            placeholder: \"Search\",\n            onComplete: search,\n            onOptionSelect: select\n          }, null, 8, [\"suggestions\"])\n        ]),\n        _: 1\n      }))\n    : _createCommentVNode(\"\", true)\n}\n}\n\n})",
-      "start": 1761072564527,
-      "end": 1761072564527
+      "start": 1761073703898,
+      "end": 1761073703898
     },
     {
       "name": "@tailwindcss/vite:generate:build",
-      "start": 1761072564527,
-      "end": 1761072564527,
+      "start": 1761073703898,
+      "end": 1761073703898,
       "order": "pre"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, createVNode as _createVNode, withCtx as _withCtx, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode } from \"vue\";\nimport { ref } from \"vue\";\nimport { useUnit } from \"effector-vue/composition\";\nimport { router } from \"@/pages/router\";\nimport { isLargeScreen } from \"@/shared/lib\";\nimport { ProductModel } from \"@/entities/Product\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"ProductSearch\",\n  setup(__props) {\n    const [products] = useUnit([ProductModel.$availableProducts]);\n    const filteredProducts = ref();\n    const search = (event) => {\n      if (!event.query.trim().length) {\n        filteredProducts.value = [...products.value];\n      } else {\n        filteredProducts.value = products.value.filter(\n          (product) => product.name.toLowerCase().startsWith(event.query.toLowerCase())\n        );\n      }\n    };\n    const select = (event) => {\n      router.push({\n        path: `/product/${event.value.id}`\n      });\n    };\n    return (_ctx, _cache) => {\n      const _component_InputIcon = _resolveComponent(\"InputIcon\");\n      const _component_AutoComplete = _resolveComponent(\"AutoComplete\");\n      const _component_IconField = _resolveComponent(\"IconField\");\n      return _unref(isLargeScreen) ? (_openBlock(), _createBlock(_component_IconField, { key: 0 }, {\n        default: _withCtx(() => [\n          _createVNode(_component_InputIcon, { class: \"pi pi-search\" }),\n          _createVNode(_component_AutoComplete, {\n            suggestions: filteredProducts.value,\n            \"option-label\": \"name\",\n            size: \"large\",\n            class: \"input min-w-[372px] placeholder-shown:border-transparent focus-visible:border-green-600 placeholder-shown:italic placeholder-gray-400 text-md\",\n            variant: \"filled\",\n            placeholder: \"Search\",\n            onComplete: search,\n            onOptionSelect: select\n          }, null, 8, [\"suggestions\"])\n        ]),\n        _: 1\n      })) : _createCommentVNode(\"\", true);\n    };\n  }\n});\n",
-      "start": 1761072564528,
-      "end": 1761072564530,
+      "start": 1761073703899,
+      "end": 1761073703904,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -33,57 +33,57 @@
     },
     {
       "name": "vite:worker",
-      "start": 1761072564530,
-      "end": 1761072564530,
+      "start": 1761073703904,
+      "end": 1761073703904,
       "order": "normal-normal"
     },
     {
       "name": "vite:vue",
-      "start": 1761072564530,
-      "end": 1761072564530,
+      "start": 1761073703904,
+      "end": 1761073703904,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1761072564530,
-      "end": 1761072564530,
+      "start": 1761073703904,
+      "end": 1761073703904,
       "order": "normal-normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1761072564530,
-      "end": 1761072564530,
+      "start": 1761073703904,
+      "end": 1761073703904,
       "order": "normal-normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1761072564530,
-      "end": 1761072564530,
+      "start": 1761073703904,
+      "end": 1761073703904,
       "order": "normal-normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1761072564530,
-      "end": 1761072564530,
+      "start": 1761073703904,
+      "end": 1761073703904,
       "order": "normal-normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1761072564530,
-      "end": 1761072564530,
+      "start": 1761073703904,
+      "end": 1761073703904,
       "order": "normal-normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1761072564530,
-      "end": 1761072564530,
+      "start": 1761073703904,
+      "end": 1761073703904,
       "order": "normal-normal"
     },
     {
       "name": "unplugin-vue-components",
       "result": "/* unplugin-vue-components disabled */import __unplugin_components_2 from 'primevue/iconfield';\nimport __unplugin_components_1 from 'primevue/autocomplete';\nimport __unplugin_components_0 from 'primevue/inputicon';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, createVNode as _createVNode, withCtx as _withCtx, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode } from \"vue\";\nimport { ref } from \"vue\";\nimport { useUnit } from \"effector-vue/composition\";\nimport { router } from \"@/pages/router\";\nimport { isLargeScreen } from \"@/shared/lib\";\nimport { ProductModel } from \"@/entities/Product\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"ProductSearch\",\n  setup(__props) {\n    const [products] = useUnit([ProductModel.$availableProducts]);\n    const filteredProducts = ref();\n    const search = (event) => {\n      if (!event.query.trim().length) {\n        filteredProducts.value = [...products.value];\n      } else {\n        filteredProducts.value = products.value.filter(\n          (product) => product.name.toLowerCase().startsWith(event.query.toLowerCase())\n        );\n      }\n    };\n    const select = (event) => {\n      router.push({\n        path: `/product/${event.value.id}`\n      });\n    };\n    return (_ctx, _cache) => {\n      const _component_InputIcon = __unplugin_components_0;\n      const _component_AutoComplete = __unplugin_components_1;\n      const _component_IconField = __unplugin_components_2;\n      return _unref(isLargeScreen) ? (_openBlock(), _createBlock(_component_IconField, { key: 0 }, {\n        default: _withCtx(() => [\n          _createVNode(_component_InputIcon, { class: \"pi pi-search\" }),\n          _createVNode(_component_AutoComplete, {\n            suggestions: filteredProducts.value,\n            \"option-label\": \"name\",\n            size: \"large\",\n            class: \"input min-w-[372px] placeholder-shown:border-transparent focus-visible:border-green-600 placeholder-shown:italic placeholder-gray-400 text-md\",\n            variant: \"filled\",\n            placeholder: \"Search\",\n            onComplete: search,\n            onOptionSelect: select\n          }, null, 8, [\"suggestions\"])\n        ]),\n        _: 1\n      })) : _createCommentVNode(\"\", true);\n    };\n  }\n});\n",
-      "start": 1761072564530,
-      "end": 1761072564530,
+      "start": 1761073703904,
+      "end": 1761073703904,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -99,14 +99,14 @@
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1761072564530,
-      "end": 1761072564531,
+      "start": 1761073703904,
+      "end": 1761073703904,
       "order": "normal-normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1761072564531,
-      "end": 1761072564531,
+      "start": 1761073703904,
+      "end": 1761073703904,
       "order": "normal"
     }
   ]

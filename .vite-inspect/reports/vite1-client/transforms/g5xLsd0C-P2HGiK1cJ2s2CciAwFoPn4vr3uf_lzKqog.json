@@ -4,34 +4,34 @@
     {
       "name": "vite:vue",
       "result": "\r\n.related-section {\r\n    width: 100%;\r\n    padding: 80px 160px;\r\n    background: #FFFFFF;\r\n}\r\n\r\n.related-container {\r\n    max-width: 1440px;\r\n    margin: 0 auto;\r\n    display: flex;\r\n    flex-direction: column;\r\n    gap: 32px;\r\n}\r\n\r\n.related-title {\r\n    font-family: 'ABeeZee', sans-serif;\r\n    font-weight: 400;\r\n    font-style: italic;\r\n    font-size: 24px;\r\n    line-height: 32px;\r\n    letter-spacing: 0;\r\n    margin: 0;\r\n}\r\n\r\n.related-grid {\r\n    display: grid;\r\n    grid-template-columns: repeat(4, 1fr);\r\n    gap: 16px;\r\n}\r\n\r\n/* Адаптивность */\r\n@media (max-width: 768px) {\r\n    .related-section {\r\n        padding: 40px 20px;\r\n    }\r\n    \r\n    .related-grid {\r\n        grid-template-columns: repeat(1, 1fr);\r\n    }\r\n}\r\n\r\n@media (max-width: 1024px) {\r\n    .related-grid {\r\n        grid-template-columns: repeat(2, 1fr);\r\n    }\r\n}\r\n\r\n@media (max-width: 1200px) {\r\n    .related-section {\r\n        padding: 60px 80px;\r\n    }\r\n    \r\n    .related-grid {\r\n        grid-template-columns: repeat(3, 1fr);\r\n    }\r\n}\r\n",
-      "start": 1761072563560,
-      "end": 1761072563560
+      "start": 1761073702929,
+      "end": 1761073702929
     },
     {
       "name": "@tailwindcss/vite:generate:build",
       "result": "\r\n.related-section {\r\n    width: 100%;\r\n    padding: 80px 160px;\r\n    background: #FFFFFF;\r\n}\r\n\r\n.related-container {\r\n    max-width: 1440px;\r\n    margin: 0 auto;\r\n    display: flex;\r\n    flex-direction: column;\r\n    gap: 32px;\r\n}\r\n\r\n.related-title {\r\n    font-family: 'ABeeZee', sans-serif;\r\n    font-weight: 400;\r\n    font-style: italic;\r\n    font-size: 24px;\r\n    line-height: 32px;\r\n    letter-spacing: 0;\r\n    margin: 0;\r\n}\r\n\r\n.related-grid {\r\n    display: grid;\r\n    grid-template-columns: repeat(4, 1fr);\r\n    gap: 16px;\r\n}\r\n\r\n/* Адаптивность */\r\n@media (max-width: 768px) {\r\n    .related-section {\r\n        padding: 40px 20px;\r\n    }\r\n    \r\n    .related-grid {\r\n        grid-template-columns: repeat(1, 1fr);\r\n    }\r\n}\r\n\r\n@media (max-width: 1024px) {\r\n    .related-grid {\r\n        grid-template-columns: repeat(2, 1fr);\r\n    }\r\n}\r\n\r\n@media (max-width: 1200px) {\r\n    .related-section {\r\n        padding: 60px 80px;\r\n    }\r\n    \r\n    .related-grid {\r\n        grid-template-columns: repeat(3, 1fr);\r\n    }\r\n}\r\n",
-      "start": 1761072563560,
-      "end": 1761072563561,
+      "start": 1761073702929,
+      "end": 1761073702930,
       "order": "pre",
       "sourcemaps": null
     },
     {
       "name": "vite:esbuild",
-      "start": 1761072563562,
-      "end": 1761072563562,
+      "start": 1761073702932,
+      "end": 1761073702932,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1761072563562,
-      "end": 1761072563562,
+      "start": 1761073702932,
+      "end": 1761073702932,
       "order": "normal-normal"
     },
     {
       "name": "vite:vue",
       "result": "\n.related-section[data-v-ace7bd6f] {\r\n    width: 100%;\r\n    padding: 80px 160px;\r\n    background: #FFFFFF;\n}\n.related-container[data-v-ace7bd6f] {\r\n    max-width: 1440px;\r\n    margin: 0 auto;\r\n    display: flex;\r\n    flex-direction: column;\r\n    gap: 32px;\n}\n.related-title[data-v-ace7bd6f] {\r\n    font-family: 'ABeeZee', sans-serif;\r\n    font-weight: 400;\r\n    font-style: italic;\r\n    font-size: 24px;\r\n    line-height: 32px;\r\n    letter-spacing: 0;\r\n    margin: 0;\n}\n.related-grid[data-v-ace7bd6f] {\r\n    display: grid;\r\n    grid-template-columns: repeat(4, 1fr);\r\n    gap: 16px;\n}\r\n\r\n/* Адаптивность */\n@media (max-width: 768px) {\n.related-section[data-v-ace7bd6f] {\r\n        padding: 40px 20px;\n}\n.related-grid[data-v-ace7bd6f] {\r\n        grid-template-columns: repeat(1, 1fr);\n}\n}\n@media (max-width: 1024px) {\n.related-grid[data-v-ace7bd6f] {\r\n        grid-template-columns: repeat(2, 1fr);\n}\n}\n@media (max-width: 1200px) {\n.related-section[data-v-ace7bd6f] {\r\n        padding: 60px 80px;\n}\n.related-grid[data-v-ace7bd6f] {\r\n        grid-template-columns: repeat(3, 1fr);\n}\n}\r\n",
-      "start": 1761072563562,
-      "end": 1761072563563,
+      "start": 1761073702932,
+      "end": 1761073702933,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -39,45 +39,45 @@
     },
     {
       "name": "vite:define",
-      "start": 1761072563563,
-      "end": 1761072563563,
+      "start": 1761073702933,
+      "end": 1761073702933,
       "order": "normal-normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1761072563563,
-      "end": 1761072563563,
+      "start": 1761073702933,
+      "end": 1761073702933,
       "order": "normal-normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1761072563563,
-      "end": 1761072563563,
+      "start": 1761073702933,
+      "end": 1761073702933,
       "order": "normal-normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1761072563563,
-      "end": 1761072563563,
+      "start": 1761073702933,
+      "end": 1761073702933,
       "order": "normal-normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1761072563563,
-      "end": 1761072563563,
+      "start": 1761073702933,
+      "end": 1761073702933,
       "order": "normal-normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1761072563563,
-      "end": 1761072563563,
+      "start": 1761073702933,
+      "end": 1761073702933,
       "order": "normal-normal"
     },
     {
       "name": "unplugin-vue-components",
       "result": "/* unplugin-vue-components disabled */",
-      "start": 1761072563563,
-      "end": 1761072563563,
+      "start": 1761073702933,
+      "end": 1761073702933,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -93,14 +93,14 @@
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1761072563563,
-      "end": 1761072563563,
+      "start": 1761073702933,
+      "end": 1761073702933,
       "order": "normal-normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1761072563563,
-      "end": 1761072563563,
+      "start": 1761073702933,
+      "end": 1761073702933,
       "order": "normal"
     }
   ]

@@ -4,20 +4,20 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, normalizeClass as _normalizeClass, createBlock as _createBlock } from \"vue\"\n\nconst _hoisted_1 = { class: \"banners\" }\n\nimport { isLargeScreen } from '@/shared/lib';\n\nimport { BANNERS } from './const';\nimport { BannerWrapper } from './ui';\n\nexport default /*@__PURE__*/_defineComponent({\n  __name: 'MainBanners',\n  setup(__props) {\n\n\nreturn (_ctx: any,_cache: any) => {\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(_unref(BANNERS), (banner) => {\n      return (_openBlock(), _createBlock(_unref(BannerWrapper), {\n        key: banner.id,\n        width: _unref(isLargeScreen) && banner.widthLarge ? banner.widthLarge : banner.width,\n        class: _normalizeClass(`item item-${banner.id} ${banner.className}`),\n        title: banner.title,\n        img: banner.img,\n        description: banner.description,\n        \"is-last\": banner.id === _unref(BANNERS)[_unref(BANNERS).length - 1].id\n      }, null, 8, [\"width\", \"class\", \"title\", \"img\", \"description\", \"is-last\"]))\n    }), 128))\n  ]))\n}\n}\n\n})",
-      "start": 1761072563555,
-      "end": 1761072563555
+      "start": 1761073702923,
+      "end": 1761073702923
     },
     {
       "name": "@tailwindcss/vite:generate:build",
-      "start": 1761072563555,
-      "end": 1761072563555,
+      "start": 1761073702923,
+      "end": 1761073702923,
       "order": "pre"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, normalizeClass as _normalizeClass, createBlock as _createBlock } from \"vue\";\nconst _hoisted_1 = { class: \"banners\" };\nimport { isLargeScreen } from \"@/shared/lib\";\nimport { BANNERS } from \"./const\";\nimport { BannerWrapper } from \"./ui\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"MainBanners\",\n  setup(__props) {\n    return (_ctx, _cache) => {\n      return _openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n        (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(_unref(BANNERS), (banner) => {\n          return _openBlock(), _createBlock(_unref(BannerWrapper), {\n            key: banner.id,\n            width: _unref(isLargeScreen) && banner.widthLarge ? banner.widthLarge : banner.width,\n            class: _normalizeClass(`item item-${banner.id} ${banner.className}`),\n            title: banner.title,\n            img: banner.img,\n            description: banner.description,\n            \"is-last\": banner.id === _unref(BANNERS)[_unref(BANNERS).length - 1].id\n          }, null, 8, [\"width\", \"class\", \"title\", \"img\", \"description\", \"is-last\"]);\n        }), 128))\n      ]);\n    };\n  }\n});\n",
-      "start": 1761072563557,
-      "end": 1761072563794,
+      "start": 1761073702924,
+      "end": 1761073703210,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -33,57 +33,57 @@
     },
     {
       "name": "vite:worker",
-      "start": 1761072563794,
-      "end": 1761072563794,
+      "start": 1761073703210,
+      "end": 1761073703210,
       "order": "normal-normal"
     },
     {
       "name": "vite:vue",
-      "start": 1761072563794,
-      "end": 1761072563794,
+      "start": 1761073703210,
+      "end": 1761073703210,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1761072563794,
-      "end": 1761072563794,
+      "start": 1761073703211,
+      "end": 1761073703211,
       "order": "normal-normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1761072563794,
-      "end": 1761072563794,
+      "start": 1761073703211,
+      "end": 1761073703211,
       "order": "normal-normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1761072563794,
-      "end": 1761072563794,
+      "start": 1761073703211,
+      "end": 1761073703211,
       "order": "normal-normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1761072563794,
-      "end": 1761072563794,
+      "start": 1761073703211,
+      "end": 1761073703211,
       "order": "normal-normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1761072563794,
-      "end": 1761072563794,
+      "start": 1761073703211,
+      "end": 1761073703211,
       "order": "normal-normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1761072563794,
-      "end": 1761072563794,
+      "start": 1761073703211,
+      "end": 1761073703211,
       "order": "normal-normal"
     },
     {
       "name": "unplugin-vue-components",
       "result": "/* unplugin-vue-components disabled */import { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, normalizeClass as _normalizeClass, createBlock as _createBlock } from \"vue\";\nconst _hoisted_1 = { class: \"banners\" };\nimport { isLargeScreen } from \"@/shared/lib\";\nimport { BANNERS } from \"./const\";\nimport { BannerWrapper } from \"./ui\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"MainBanners\",\n  setup(__props) {\n    return (_ctx, _cache) => {\n      return _openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n        (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(_unref(BANNERS), (banner) => {\n          return _openBlock(), _createBlock(_unref(BannerWrapper), {\n            key: banner.id,\n            width: _unref(isLargeScreen) && banner.widthLarge ? banner.widthLarge : banner.width,\n            class: _normalizeClass(`item item-${banner.id} ${banner.className}`),\n            title: banner.title,\n            img: banner.img,\n            description: banner.description,\n            \"is-last\": banner.id === _unref(BANNERS)[_unref(BANNERS).length - 1].id\n          }, null, 8, [\"width\", \"class\", \"title\", \"img\", \"description\", \"is-last\"]);\n        }), 128))\n      ]);\n    };\n  }\n});\n",
-      "start": 1761072563794,
-      "end": 1761072563795,
+      "start": 1761073703211,
+      "end": 1761073703212,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -99,14 +99,14 @@
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1761072563795,
-      "end": 1761072563795,
+      "start": 1761073703212,
+      "end": 1761073703213,
       "order": "normal-normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1761072563796,
-      "end": 1761072563796,
+      "start": 1761073703213,
+      "end": 1761073703213,
       "order": "normal"
     }
   ]

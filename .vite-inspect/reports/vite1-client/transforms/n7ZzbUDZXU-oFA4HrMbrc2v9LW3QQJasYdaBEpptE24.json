@@ -4,20 +4,20 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, createVNode as _createVNode, withCtx as _withCtx, openBlock as _openBlock, createBlock as _createBlock } from \"vue\"\n\nimport { MainBanners } from '@/widgets/Banners';\nimport { CategoriesView } from '@/widgets/CategoriesView';\nimport { DiscountedItems } from '@/widgets/DiscountItems';\nimport { MainBanner } from '@/widgets/MainBanner';\nimport { MainProducts } from '@/widgets/MainProducts';\nimport { RootLayout } from '@/widgets/RootLayout';\nimport { SaleBanner } from '@/widgets/SaleBanner';\n\nexport default /*@__PURE__*/_defineComponent({\n  __name: 'IndexPage',\n  setup(__props) {\n\n\nreturn (_ctx: any,_cache: any) => {\n  return (_openBlock(), _createBlock(_unref(RootLayout), null, {\n    default: _withCtx(() => [\n      _createVNode(_unref(MainBanner)),\n      _createVNode(_unref(MainBanners)),\n      _createVNode(_unref(CategoriesView)),\n      _createVNode(_unref(MainProducts)),\n      _createVNode(_unref(DiscountedItems)),\n      _createVNode(_unref(SaleBanner))\n    ]),\n    _: 1\n  }))\n}\n}\n\n})",
-      "start": 1761072563348,
-      "end": 1761072563349
+      "start": 1761073702713,
+      "end": 1761073702713
     },
     {
       "name": "@tailwindcss/vite:generate:build",
-      "start": 1761072563349,
-      "end": 1761072563349,
+      "start": 1761073702713,
+      "end": 1761073702713,
       "order": "pre"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, createVNode as _createVNode, withCtx as _withCtx, openBlock as _openBlock, createBlock as _createBlock } from \"vue\";\nimport { MainBanners } from \"@/widgets/Banners\";\nimport { CategoriesView } from \"@/widgets/CategoriesView\";\nimport { DiscountedItems } from \"@/widgets/DiscountItems\";\nimport { MainBanner } from \"@/widgets/MainBanner\";\nimport { MainProducts } from \"@/widgets/MainProducts\";\nimport { RootLayout } from \"@/widgets/RootLayout\";\nimport { SaleBanner } from \"@/widgets/SaleBanner\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"IndexPage\",\n  setup(__props) {\n    return (_ctx, _cache) => {\n      return _openBlock(), _createBlock(_unref(RootLayout), null, {\n        default: _withCtx(() => [\n          _createVNode(_unref(MainBanner)),\n          _createVNode(_unref(MainBanners)),\n          _createVNode(_unref(CategoriesView)),\n          _createVNode(_unref(MainProducts)),\n          _createVNode(_unref(DiscountedItems)),\n          _createVNode(_unref(SaleBanner))\n        ]),\n        _: 1\n      });\n    };\n  }\n});\n",
-      "start": 1761072563349,
-      "end": 1761072563356,
+      "start": 1761073702713,
+      "end": 1761073702729,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -33,57 +33,57 @@
     },
     {
       "name": "vite:worker",
-      "start": 1761072563356,
-      "end": 1761072563356,
+      "start": 1761073702729,
+      "end": 1761073702729,
       "order": "normal-normal"
     },
     {
       "name": "vite:vue",
-      "start": 1761072563356,
-      "end": 1761072563356,
+      "start": 1761073702729,
+      "end": 1761073702729,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1761072563356,
-      "end": 1761072563356,
+      "start": 1761073702729,
+      "end": 1761073702729,
       "order": "normal-normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1761072563356,
-      "end": 1761072563356,
+      "start": 1761073702729,
+      "end": 1761073702729,
       "order": "normal-normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1761072563356,
-      "end": 1761072563356,
+      "start": 1761073702729,
+      "end": 1761073702729,
       "order": "normal-normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1761072563356,
-      "end": 1761072563356,
+      "start": 1761073702729,
+      "end": 1761073702729,
       "order": "normal-normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1761072563356,
-      "end": 1761072563356,
+      "start": 1761073702729,
+      "end": 1761073702729,
       "order": "normal-normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1761072563356,
-      "end": 1761072563356,
+      "start": 1761073702729,
+      "end": 1761073702729,
       "order": "normal-normal"
     },
     {
       "name": "unplugin-vue-components",
       "result": "/* unplugin-vue-components disabled */import { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, createVNode as _createVNode, withCtx as _withCtx, openBlock as _openBlock, createBlock as _createBlock } from \"vue\";\nimport { MainBanners } from \"@/widgets/Banners\";\nimport { CategoriesView } from \"@/widgets/CategoriesView\";\nimport { DiscountedItems } from \"@/widgets/DiscountItems\";\nimport { MainBanner } from \"@/widgets/MainBanner\";\nimport { MainProducts } from \"@/widgets/MainProducts\";\nimport { RootLayout } from \"@/widgets/RootLayout\";\nimport { SaleBanner } from \"@/widgets/SaleBanner\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"IndexPage\",\n  setup(__props) {\n    return (_ctx, _cache) => {\n      return _openBlock(), _createBlock(_unref(RootLayout), null, {\n        default: _withCtx(() => [\n          _createVNode(_unref(MainBanner)),\n          _createVNode(_unref(MainBanners)),\n          _createVNode(_unref(CategoriesView)),\n          _createVNode(_unref(MainProducts)),\n          _createVNode(_unref(DiscountedItems)),\n          _createVNode(_unref(SaleBanner))\n        ]),\n        _: 1\n      });\n    };\n  }\n});\n",
-      "start": 1761072563356,
-      "end": 1761072563356,
+      "start": 1761073702729,
+      "end": 1761073702730,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -99,14 +99,14 @@
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1761072563357,
-      "end": 1761072563357,
+      "start": 1761073702734,
+      "end": 1761073702734,
       "order": "normal-normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1761072563357,
-      "end": 1761072563357,
+      "start": 1761073702734,
+      "end": 1761073702734,
       "order": "normal"
     }
   ]

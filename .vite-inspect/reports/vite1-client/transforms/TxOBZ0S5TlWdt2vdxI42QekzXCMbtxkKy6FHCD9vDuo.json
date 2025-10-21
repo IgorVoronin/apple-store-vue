@@ -4,20 +4,20 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { createElementVNode as _createElementVNode, unref as _unref, renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, createVNode as _createVNode, withCtx as _withCtx, createBlock as _createBlock } from \"vue\"\n\nconst _hoisted_1 = { class: \"root\" }\n\nimport { useUnit } from 'effector-vue/composition';\n\nimport { MainContainer } from '@/shared/ui';\n\nimport { type Product, ProductList, ProductModel, ProductPreview } from '@/entities/Product';\n\nimport { AddProductToCartAction } from '@/features/AddProductToCartAction';\nimport { ProductLikeAction } from '@/features/ProductLikeAction';\n\n\nexport default /*@__PURE__*/_defineComponent({\n  __name: 'DicsountItems',\n  setup(__props) {\n\nconst [discountedItems] = useUnit([ProductModel.$discountedItems]);\n\nreturn (_ctx: any,_cache: any) => {\n  return (_openBlock(), _createElementBlock(\"section\", _hoisted_1, [\n    _createVNode(_unref(MainContainer), null, {\n      default: _withCtx(() => [\n        _cache[0] || (_cache[0] = _createElementVNode(\"h3\", { class: \"title\" }, \"Discounts up to -50%\", -1)),\n        _createVNode(_unref(ProductList), null, {\n          default: _withCtx(() => [\n            (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(_unref(discountedItems), (product) => {\n              return (_openBlock(), _createBlock(_unref(ProductPreview), {\n                key: product.id,\n                product: product as Product\n              }, {\n                \"like-btn\": _withCtx(() => [\n                  _createVNode(_unref(ProductLikeAction), {\n                    \"product-id\": product.id\n                  }, null, 8, [\"product-id\"])\n                ]),\n                \"cart-btn\": _withCtx(() => [\n                  _createVNode(_unref(AddProductToCartAction), {\n                    product: product as Product\n                  }, null, 8, [\"product\"])\n                ]),\n                _: 2\n              }, 1032, [\"product\"]))\n            }), 128))\n          ]),\n          _: 1\n        })\n      ]),\n      _: 1\n    })\n  ]))\n}\n}\n\n})",
-      "start": 1761072563568,
-      "end": 1761072563568
+      "start": 1761073702911,
+      "end": 1761073702911
     },
     {
       "name": "@tailwindcss/vite:generate:build",
-      "start": 1761072563568,
-      "end": 1761072563569,
+      "start": 1761073702911,
+      "end": 1761073702911,
       "order": "pre"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { createElementVNode as _createElementVNode, unref as _unref, renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, createVNode as _createVNode, withCtx as _withCtx, createBlock as _createBlock } from \"vue\";\nconst _hoisted_1 = { class: \"root\" };\nimport { useUnit } from \"effector-vue/composition\";\nimport { MainContainer } from \"@/shared/ui\";\nimport { ProductList, ProductModel, ProductPreview } from \"@/entities/Product\";\nimport { AddProductToCartAction } from \"@/features/AddProductToCartAction\";\nimport { ProductLikeAction } from \"@/features/ProductLikeAction\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"DicsountItems\",\n  setup(__props) {\n    const [discountedItems] = useUnit([ProductModel.$discountedItems]);\n    return (_ctx, _cache) => {\n      return _openBlock(), _createElementBlock(\"section\", _hoisted_1, [\n        _createVNode(_unref(MainContainer), null, {\n          default: _withCtx(() => [\n            _cache[0] || (_cache[0] = _createElementVNode(\"h3\", { class: \"title\" }, \"Discounts up to -50%\", -1)),\n            _createVNode(_unref(ProductList), null, {\n              default: _withCtx(() => [\n                (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(_unref(discountedItems), (product) => {\n                  return _openBlock(), _createBlock(_unref(ProductPreview), {\n                    key: product.id,\n                    product\n                  }, {\n                    \"like-btn\": _withCtx(() => [\n                      _createVNode(_unref(ProductLikeAction), {\n                        \"product-id\": product.id\n                      }, null, 8, [\"product-id\"])\n                    ]),\n                    \"cart-btn\": _withCtx(() => [\n                      _createVNode(_unref(AddProductToCartAction), {\n                        product\n                      }, null, 8, [\"product\"])\n                    ]),\n                    _: 2\n                  }, 1032, [\"product\"]);\n                }), 128))\n              ]),\n              _: 1\n            })\n          ]),\n          _: 1\n        })\n      ]);\n    };\n  }\n});\n",
-      "start": 1761072563569,
-      "end": 1761072563794,
+      "start": 1761073702912,
+      "end": 1761073703210,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -33,57 +33,57 @@
     },
     {
       "name": "vite:worker",
-      "start": 1761072563794,
-      "end": 1761072563794,
+      "start": 1761073703210,
+      "end": 1761073703210,
       "order": "normal-normal"
     },
     {
       "name": "vite:vue",
-      "start": 1761072563794,
-      "end": 1761072563794,
+      "start": 1761073703210,
+      "end": 1761073703210,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1761072563794,
-      "end": 1761072563794,
+      "start": 1761073703211,
+      "end": 1761073703211,
       "order": "normal-normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1761072563794,
-      "end": 1761072563794,
+      "start": 1761073703211,
+      "end": 1761073703211,
       "order": "normal-normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1761072563794,
-      "end": 1761072563794,
+      "start": 1761073703211,
+      "end": 1761073703211,
       "order": "normal-normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1761072563794,
-      "end": 1761072563794,
+      "start": 1761073703211,
+      "end": 1761073703211,
       "order": "normal-normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1761072563794,
-      "end": 1761072563794,
+      "start": 1761073703211,
+      "end": 1761073703211,
       "order": "normal-normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1761072563794,
-      "end": 1761072563794,
+      "start": 1761073703211,
+      "end": 1761073703211,
       "order": "normal-normal"
     },
     {
       "name": "unplugin-vue-components",
       "result": "/* unplugin-vue-components disabled */import { defineComponent as _defineComponent } from \"vue\";\nimport { createElementVNode as _createElementVNode, unref as _unref, renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, createVNode as _createVNode, withCtx as _withCtx, createBlock as _createBlock } from \"vue\";\nconst _hoisted_1 = { class: \"root\" };\nimport { useUnit } from \"effector-vue/composition\";\nimport { MainContainer } from \"@/shared/ui\";\nimport { ProductList, ProductModel, ProductPreview } from \"@/entities/Product\";\nimport { AddProductToCartAction } from \"@/features/AddProductToCartAction\";\nimport { ProductLikeAction } from \"@/features/ProductLikeAction\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"DicsountItems\",\n  setup(__props) {\n    const [discountedItems] = useUnit([ProductModel.$discountedItems]);\n    return (_ctx, _cache) => {\n      return _openBlock(), _createElementBlock(\"section\", _hoisted_1, [\n        _createVNode(_unref(MainContainer), null, {\n          default: _withCtx(() => [\n            _cache[0] || (_cache[0] = _createElementVNode(\"h3\", { class: \"title\" }, \"Discounts up to -50%\", -1)),\n            _createVNode(_unref(ProductList), null, {\n              default: _withCtx(() => [\n                (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(_unref(discountedItems), (product) => {\n                  return _openBlock(), _createBlock(_unref(ProductPreview), {\n                    key: product.id,\n                    product\n                  }, {\n                    \"like-btn\": _withCtx(() => [\n                      _createVNode(_unref(ProductLikeAction), {\n                        \"product-id\": product.id\n                      }, null, 8, [\"product-id\"])\n                    ]),\n                    \"cart-btn\": _withCtx(() => [\n                      _createVNode(_unref(AddProductToCartAction), {\n                        product\n                      }, null, 8, [\"product\"])\n                    ]),\n                    _: 2\n                  }, 1032, [\"product\"]);\n                }), 128))\n              ]),\n              _: 1\n            })\n          ]),\n          _: 1\n        })\n      ]);\n    };\n  }\n});\n",
-      "start": 1761072563794,
-      "end": 1761072563795,
+      "start": 1761073703211,
+      "end": 1761073703212,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -99,14 +99,14 @@
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1761072563795,
-      "end": 1761072563795,
+      "start": 1761073703212,
+      "end": 1761073703213,
       "order": "normal-normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1761072563796,
-      "end": 1761072563796,
+      "start": 1761073703213,
+      "end": 1761073703213,
       "order": "normal"
     }
   ]

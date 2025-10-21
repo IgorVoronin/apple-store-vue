@@ -4,20 +4,20 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { createElementVNode as _createElementVNode, unref as _unref, renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, resolveComponent as _resolveComponent, createVNode as _createVNode, toDisplayString as _toDisplayString, withCtx as _withCtx, createBlock as _createBlock } from \"vue\"\n\nconst _hoisted_1 = { class: \"py-10 grid gap-10\" }\nconst _hoisted_2 = { class: \"flex gap-4 items-center\" }\n\nimport { useStoreMap, useUnit } from 'effector-vue/composition';\n\nimport { API } from '@/shared/api';\nimport { shuffled } from '@/shared/lib';\nimport { MainContainer } from '@/shared/ui';\n\nimport { ProductModel } from '@/entities/Product';\n\nimport { RootLayout } from '@/widgets/RootLayout';\n\n\nexport default /*@__PURE__*/_defineComponent({\n  __name: 'FavPage',\n  setup(__props) {\n\nconst [likedProducts] = useUnit([ProductModel.$likedProducts]);\n\nconst products = useStoreMap({\n    store: ProductModel.$availableProducts,\n    keys: () => likedProducts,\n    fn: (products, likedProducts) => products.filter((product) => likedProducts.value.includes(`${product.id}`)),\n});\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_Image = _resolveComponent(\"Image\")!\n  const _component_RouterLink = _resolveComponent(\"RouterLink\")!\n\n  return (_openBlock(), _createBlock(_unref(RootLayout), null, {\n    default: _withCtx(() => [\n      _createVNode(_unref(MainContainer), { class: \"py-[40px] lg:max-w-[350px]\" }, {\n        default: _withCtx(() => [\n          _createElementVNode(\"div\", null, [\n            _cache[0] || (_cache[0] = _createElementVNode(\"h2\", { class: \"text-xl pb-10 border-b-gray-200 border-b-1\" }, \"Favorite\", -1)),\n            _createElementVNode(\"ul\", _hoisted_1, [\n              (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(_unref(products), (product) => {\n                return (_openBlock(), _createElementBlock(\"li\", {\n                  key: product.id\n                }, [\n                  _createVNode(_component_RouterLink, {\n                    to: `/product/${product.id}`\n                  }, {\n                    default: _withCtx(() => [\n                      _createElementVNode(\"div\", _hoisted_2, [\n                        _createVNode(_component_Image, {\n                          width: \"90\",\n                          src: _unref(API).BASE_URL + _unref(shuffled)(product.images)[0]\n                        }, null, 8, [\"src\"]),\n                        _createElementVNode(\"div\", null, [\n                          _createElementVNode(\"p\", null, _toDisplayString(product.name), 1),\n                          _createElementVNode(\"p\", null, \"# \" + _toDisplayString(product.id), 1)\n                        ])\n                      ])\n                    ]),\n                    _: 2\n                  }, 1032, [\"to\"])\n                ]))\n              }), 128))\n            ])\n          ])\n        ]),\n        _: 1\n      })\n    ]),\n    _: 1\n  }))\n}\n}\n\n})",
-      "start": 1761072563354,
-      "end": 1761072563354
+      "start": 1761073702712,
+      "end": 1761073702712
     },
     {
       "name": "@tailwindcss/vite:generate:build",
-      "start": 1761072563354,
-      "end": 1761072563354,
+      "start": 1761073702712,
+      "end": 1761073702712,
       "order": "pre"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { createElementVNode as _createElementVNode, unref as _unref, renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, resolveComponent as _resolveComponent, createVNode as _createVNode, toDisplayString as _toDisplayString, withCtx as _withCtx, createBlock as _createBlock } from \"vue\";\nconst _hoisted_1 = { class: \"py-10 grid gap-10\" };\nconst _hoisted_2 = { class: \"flex gap-4 items-center\" };\nimport { useStoreMap, useUnit } from \"effector-vue/composition\";\nimport { API } from \"@/shared/api\";\nimport { shuffled } from \"@/shared/lib\";\nimport { MainContainer } from \"@/shared/ui\";\nimport { ProductModel } from \"@/entities/Product\";\nimport { RootLayout } from \"@/widgets/RootLayout\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"FavPage\",\n  setup(__props) {\n    const [likedProducts] = useUnit([ProductModel.$likedProducts]);\n    const products = useStoreMap({\n      store: ProductModel.$availableProducts,\n      keys: () => likedProducts,\n      fn: (products2, likedProducts2) => products2.filter((product) => likedProducts2.value.includes(`${product.id}`))\n    });\n    return (_ctx, _cache) => {\n      const _component_Image = _resolveComponent(\"Image\");\n      const _component_RouterLink = _resolveComponent(\"RouterLink\");\n      return _openBlock(), _createBlock(_unref(RootLayout), null, {\n        default: _withCtx(() => [\n          _createVNode(_unref(MainContainer), { class: \"py-[40px] lg:max-w-[350px]\" }, {\n            default: _withCtx(() => [\n              _createElementVNode(\"div\", null, [\n                _cache[0] || (_cache[0] = _createElementVNode(\"h2\", { class: \"text-xl pb-10 border-b-gray-200 border-b-1\" }, \"Favorite\", -1)),\n                _createElementVNode(\"ul\", _hoisted_1, [\n                  (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(_unref(products), (product) => {\n                    return _openBlock(), _createElementBlock(\"li\", {\n                      key: product.id\n                    }, [\n                      _createVNode(_component_RouterLink, {\n                        to: `/product/${product.id}`\n                      }, {\n                        default: _withCtx(() => [\n                          _createElementVNode(\"div\", _hoisted_2, [\n                            _createVNode(_component_Image, {\n                              width: \"90\",\n                              src: _unref(API).BASE_URL + _unref(shuffled)(product.images)[0]\n                            }, null, 8, [\"src\"]),\n                            _createElementVNode(\"div\", null, [\n                              _createElementVNode(\"p\", null, _toDisplayString(product.name), 1),\n                              _createElementVNode(\"p\", null, \"# \" + _toDisplayString(product.id), 1)\n                            ])\n                          ])\n                        ]),\n                        _: 2\n                      }, 1032, [\"to\"])\n                    ]);\n                  }), 128))\n                ])\n              ])\n            ]),\n            _: 1\n          })\n        ]),\n        _: 1\n      });\n    };\n  }\n});\n",
-      "start": 1761072563354,
-      "end": 1761072563364,
+      "start": 1761073702712,
+      "end": 1761073702729,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -36,57 +36,57 @@
     },
     {
       "name": "vite:worker",
-      "start": 1761072563364,
-      "end": 1761072563364,
+      "start": 1761073702729,
+      "end": 1761073702729,
       "order": "normal-normal"
     },
     {
       "name": "vite:vue",
-      "start": 1761072563364,
-      "end": 1761072563364,
+      "start": 1761073702729,
+      "end": 1761073702729,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1761072563364,
-      "end": 1761072563364,
+      "start": 1761073702729,
+      "end": 1761073702729,
       "order": "normal-normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1761072563364,
-      "end": 1761072563364,
+      "start": 1761073702729,
+      "end": 1761073702729,
       "order": "normal-normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1761072563364,
-      "end": 1761072563364,
+      "start": 1761073702729,
+      "end": 1761073702729,
       "order": "normal-normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1761072563364,
-      "end": 1761072563364,
+      "start": 1761073702729,
+      "end": 1761073702729,
       "order": "normal-normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1761072563364,
-      "end": 1761072563364,
+      "start": 1761073702729,
+      "end": 1761073702729,
       "order": "normal-normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1761072563364,
-      "end": 1761072563364,
+      "start": 1761073702729,
+      "end": 1761073702729,
       "order": "normal-normal"
     },
     {
       "name": "unplugin-vue-components",
       "result": "/* unplugin-vue-components disabled */import __unplugin_components_0 from 'primevue/image';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { createElementVNode as _createElementVNode, unref as _unref, renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, resolveComponent as _resolveComponent, createVNode as _createVNode, toDisplayString as _toDisplayString, withCtx as _withCtx, createBlock as _createBlock } from \"vue\";\nconst _hoisted_1 = { class: \"py-10 grid gap-10\" };\nconst _hoisted_2 = { class: \"flex gap-4 items-center\" };\nimport { useStoreMap, useUnit } from \"effector-vue/composition\";\nimport { API } from \"@/shared/api\";\nimport { shuffled } from \"@/shared/lib\";\nimport { MainContainer } from \"@/shared/ui\";\nimport { ProductModel } from \"@/entities/Product\";\nimport { RootLayout } from \"@/widgets/RootLayout\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"FavPage\",\n  setup(__props) {\n    const [likedProducts] = useUnit([ProductModel.$likedProducts]);\n    const products = useStoreMap({\n      store: ProductModel.$availableProducts,\n      keys: () => likedProducts,\n      fn: (products2, likedProducts2) => products2.filter((product) => likedProducts2.value.includes(`${product.id}`))\n    });\n    return (_ctx, _cache) => {\n      const _component_Image = __unplugin_components_0;\n      const _component_RouterLink = _resolveComponent(\"RouterLink\");\n      return _openBlock(), _createBlock(_unref(RootLayout), null, {\n        default: _withCtx(() => [\n          _createVNode(_unref(MainContainer), { class: \"py-[40px] lg:max-w-[350px]\" }, {\n            default: _withCtx(() => [\n              _createElementVNode(\"div\", null, [\n                _cache[0] || (_cache[0] = _createElementVNode(\"h2\", { class: \"text-xl pb-10 border-b-gray-200 border-b-1\" }, \"Favorite\", -1)),\n                _createElementVNode(\"ul\", _hoisted_1, [\n                  (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(_unref(products), (product) => {\n                    return _openBlock(), _createElementBlock(\"li\", {\n                      key: product.id\n                    }, [\n                      _createVNode(_component_RouterLink, {\n                        to: `/product/${product.id}`\n                      }, {\n                        default: _withCtx(() => [\n                          _createElementVNode(\"div\", _hoisted_2, [\n                            _createVNode(_component_Image, {\n                              width: \"90\",\n                              src: _unref(API).BASE_URL + _unref(shuffled)(product.images)[0]\n                            }, null, 8, [\"src\"]),\n                            _createElementVNode(\"div\", null, [\n                              _createElementVNode(\"p\", null, _toDisplayString(product.name), 1),\n                              _createElementVNode(\"p\", null, \"# \" + _toDisplayString(product.id), 1)\n                            ])\n                          ])\n                        ]),\n                        _: 2\n                      }, 1032, [\"to\"])\n                    ]);\n                  }), 128))\n                ])\n              ])\n            ]),\n            _: 1\n          })\n        ]),\n        _: 1\n      });\n    };\n  }\n});\n",
-      "start": 1761072563365,
-      "end": 1761072563366,
+      "start": 1761073702729,
+      "end": 1761073702732,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -102,14 +102,14 @@
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1761072563369,
-      "end": 1761072563369,
+      "start": 1761073702734,
+      "end": 1761073702734,
       "order": "normal-normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1761072563369,
-      "end": 1761072563369,
+      "start": 1761073702734,
+      "end": 1761073702734,
       "order": "normal"
     }
   ]

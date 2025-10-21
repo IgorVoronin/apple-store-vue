@@ -4,20 +4,20 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { createElementVNode as _createElementVNode, unref as _unref, renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, toDisplayString as _toDisplayString } from \"vue\"\n\nconst _hoisted_1 = { class: \"details-section\" }\nconst _hoisted_2 = { class: \"details-container\" }\nconst _hoisted_3 = { class: \"details-content\" }\nconst _hoisted_4 = { class: \"characteristics-grid\" }\nconst _hoisted_5 = { class: \"characteristic-label\" }\nconst _hoisted_6 = { class: \"characteristic-value\" }\n\nimport { useUnit } from 'effector-vue/composition';\r\n\r\nimport { getProductByIdQuery } from '@/entities/Product';\r\n\r\n\nexport default /*@__PURE__*/_defineComponent({\n  __name: 'ProductDetails',\n  setup(__props) {\n\r\nconst { data: product } = useUnit(getProductByIdQuery);\r\n\nreturn (_ctx: any,_cache: any) => {\n  return (_openBlock(), _createElementBlock(\"section\", _hoisted_1, [\n    _createElementVNode(\"div\", _hoisted_2, [\n      _createElementVNode(\"div\", _hoisted_3, [\n        _cache[0] || (_cache[0] = _createElementVNode(\"h2\", { class: \"details-title\" }, \"Details\", -1)),\n        _cache[1] || (_cache[1] = _createElementVNode(\"p\", { class: \"details-description\" }, \" Just as a book is judged by its cover, the first thing you notice when you pick up a modern smartphone is the display. Nothing surprising, because advanced technologies allow you to practically level the display frames and cutouts for the front camera and speaker, making it look like a solid piece of glass. And how good that in such routes both Apple and Samsung are the pioneers. Both companies last year for the first time in the world, release aphone with a giant screen, while the body is made very compact. Also from the reviews is the camera is just a blessing, clean pictures, every smallest detail. And selfie is just super. The phone is very light yet premium. And the larger the screen, the more space is available for the content placed on it. \", -1)),\n        _createElementVNode(\"div\", _hoisted_4, [\n          (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(_unref(product).characteristics, (char, index) => {\n            return (_openBlock(), _createElementBlock(\"div\", {\n              key: index,\n              class: \"characteristic-row\"\n            }, [\n              _createElementVNode(\"span\", _hoisted_5, _toDisplayString(char.characteristic), 1),\n              _createElementVNode(\"span\", _hoisted_6, _toDisplayString(char.value) + \" \" + _toDisplayString(char.unit_type !== 'значение' ? char.unit_type : ''), 1)\n            ]))\n          }), 128))\n        ])\n      ])\n    ])\n  ]))\n}\n}\n\n})",
-      "start": 1761072563532,
-      "end": 1761072563532
+      "start": 1761073702915,
+      "end": 1761073702915
     },
     {
       "name": "@tailwindcss/vite:generate:build",
-      "start": 1761072563533,
-      "end": 1761072563533,
+      "start": 1761073702915,
+      "end": 1761073702915,
       "order": "pre"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { createElementVNode as _createElementVNode, unref as _unref, renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, toDisplayString as _toDisplayString } from \"vue\";\nconst _hoisted_1 = { class: \"details-section\" };\nconst _hoisted_2 = { class: \"details-container\" };\nconst _hoisted_3 = { class: \"details-content\" };\nconst _hoisted_4 = { class: \"characteristics-grid\" };\nconst _hoisted_5 = { class: \"characteristic-label\" };\nconst _hoisted_6 = { class: \"characteristic-value\" };\nimport { useUnit } from \"effector-vue/composition\";\nimport { getProductByIdQuery } from \"@/entities/Product\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"ProductDetails\",\n  setup(__props) {\n    const { data: product } = useUnit(getProductByIdQuery);\n    return (_ctx, _cache) => {\n      return _openBlock(), _createElementBlock(\"section\", _hoisted_1, [\n        _createElementVNode(\"div\", _hoisted_2, [\n          _createElementVNode(\"div\", _hoisted_3, [\n            _cache[0] || (_cache[0] = _createElementVNode(\"h2\", { class: \"details-title\" }, \"Details\", -1)),\n            _cache[1] || (_cache[1] = _createElementVNode(\"p\", { class: \"details-description\" }, \" Just as a book is judged by its cover, the first thing you notice when you pick up a modern smartphone is the display. Nothing surprising, because advanced technologies allow you to practically level the display frames and cutouts for the front camera and speaker, making it look like a solid piece of glass. And how good that in such routes both Apple and Samsung are the pioneers. Both companies last year for the first time in the world, release aphone with a giant screen, while the body is made very compact. Also from the reviews is the camera is just a blessing, clean pictures, every smallest detail. And selfie is just super. The phone is very light yet premium. And the larger the screen, the more space is available for the content placed on it. \", -1)),\n            _createElementVNode(\"div\", _hoisted_4, [\n              (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(_unref(product).characteristics, (char, index) => {\n                return _openBlock(), _createElementBlock(\"div\", {\n                  key: index,\n                  class: \"characteristic-row\"\n                }, [\n                  _createElementVNode(\"span\", _hoisted_5, _toDisplayString(char.characteristic), 1),\n                  _createElementVNode(\"span\", _hoisted_6, _toDisplayString(char.value) + \" \" + _toDisplayString(char.unit_type !== \"значение\" ? char.unit_type : \"\"), 1)\n                ]);\n              }), 128))\n            ])\n          ])\n        ])\n      ]);\n    };\n  }\n});\n",
-      "start": 1761072563535,
-      "end": 1761072563794,
+      "start": 1761073702916,
+      "end": 1761073703210,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -33,57 +33,57 @@
     },
     {
       "name": "vite:worker",
-      "start": 1761072563794,
-      "end": 1761072563794,
+      "start": 1761073703210,
+      "end": 1761073703210,
       "order": "normal-normal"
     },
     {
       "name": "vite:vue",
-      "start": 1761072563794,
-      "end": 1761072563794,
+      "start": 1761073703210,
+      "end": 1761073703210,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1761072563794,
-      "end": 1761072563794,
+      "start": 1761073703211,
+      "end": 1761073703211,
       "order": "normal-normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1761072563794,
-      "end": 1761072563794,
+      "start": 1761073703211,
+      "end": 1761073703211,
       "order": "normal-normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1761072563794,
-      "end": 1761072563794,
+      "start": 1761073703211,
+      "end": 1761073703211,
       "order": "normal-normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1761072563794,
-      "end": 1761072563794,
+      "start": 1761073703211,
+      "end": 1761073703211,
       "order": "normal-normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1761072563794,
-      "end": 1761072563794,
+      "start": 1761073703211,
+      "end": 1761073703211,
       "order": "normal-normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1761072563794,
-      "end": 1761072563794,
+      "start": 1761073703211,
+      "end": 1761073703211,
       "order": "normal-normal"
     },
     {
       "name": "unplugin-vue-components",
       "result": "/* unplugin-vue-components disabled */import { defineComponent as _defineComponent } from \"vue\";\nimport { createElementVNode as _createElementVNode, unref as _unref, renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, toDisplayString as _toDisplayString } from \"vue\";\nconst _hoisted_1 = { class: \"details-section\" };\nconst _hoisted_2 = { class: \"details-container\" };\nconst _hoisted_3 = { class: \"details-content\" };\nconst _hoisted_4 = { class: \"characteristics-grid\" };\nconst _hoisted_5 = { class: \"characteristic-label\" };\nconst _hoisted_6 = { class: \"characteristic-value\" };\nimport { useUnit } from \"effector-vue/composition\";\nimport { getProductByIdQuery } from \"@/entities/Product\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"ProductDetails\",\n  setup(__props) {\n    const { data: product } = useUnit(getProductByIdQuery);\n    return (_ctx, _cache) => {\n      return _openBlock(), _createElementBlock(\"section\", _hoisted_1, [\n        _createElementVNode(\"div\", _hoisted_2, [\n          _createElementVNode(\"div\", _hoisted_3, [\n            _cache[0] || (_cache[0] = _createElementVNode(\"h2\", { class: \"details-title\" }, \"Details\", -1)),\n            _cache[1] || (_cache[1] = _createElementVNode(\"p\", { class: \"details-description\" }, \" Just as a book is judged by its cover, the first thing you notice when you pick up a modern smartphone is the display. Nothing surprising, because advanced technologies allow you to practically level the display frames and cutouts for the front camera and speaker, making it look like a solid piece of glass. And how good that in such routes both Apple and Samsung are the pioneers. Both companies last year for the first time in the world, release aphone with a giant screen, while the body is made very compact. Also from the reviews is the camera is just a blessing, clean pictures, every smallest detail. And selfie is just super. The phone is very light yet premium. And the larger the screen, the more space is available for the content placed on it. \", -1)),\n            _createElementVNode(\"div\", _hoisted_4, [\n              (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(_unref(product).characteristics, (char, index) => {\n                return _openBlock(), _createElementBlock(\"div\", {\n                  key: index,\n                  class: \"characteristic-row\"\n                }, [\n                  _createElementVNode(\"span\", _hoisted_5, _toDisplayString(char.characteristic), 1),\n                  _createElementVNode(\"span\", _hoisted_6, _toDisplayString(char.value) + \" \" + _toDisplayString(char.unit_type !== \"значение\" ? char.unit_type : \"\"), 1)\n                ]);\n              }), 128))\n            ])\n          ])\n        ])\n      ]);\n    };\n  }\n});\n",
-      "start": 1761072563794,
-      "end": 1761072563795,
+      "start": 1761073703211,
+      "end": 1761073703212,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -99,14 +99,14 @@
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1761072563795,
-      "end": 1761072563795,
+      "start": 1761073703212,
+      "end": 1761073703213,
       "order": "normal-normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1761072563796,
-      "end": 1761072563796,
+      "start": 1761073703213,
+      "end": 1761073703213,
       "order": "normal"
     }
   ]

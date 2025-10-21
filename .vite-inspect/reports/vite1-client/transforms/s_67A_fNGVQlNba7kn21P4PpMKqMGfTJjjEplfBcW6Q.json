@@ -4,20 +4,20 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveComponent as _resolveComponent, normalizeClass as _normalizeClass, openBlock as _openBlock, createBlock as _createBlock } from \"vue\"\n\nimport { useStoreMap, useUnit } from 'effector-vue/composition';\n\nimport { ProductModel } from '@/entities/Product/index.js';\n\n\nexport default /*@__PURE__*/_defineComponent({\n  __name: 'ProductLike',\n  props: {\n    productId: {},\n    text: {}\n  },\n  setup(__props: any) {\n\n\nconst [onProductLikeClick] = useUnit([ProductModel.productLikeSettled]);\n\nconst isLiked = useStoreMap({\n    store: ProductModel.$likedProducts,\n    keys: () => __props.productId,\n    fn: (products, productId) => products.includes(`${productId}`),\n});\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_Button = _resolveComponent(\"Button\")!\n\n  return (_openBlock(), _createBlock(_component_Button, {\n    size: \"large\",\n    type: \"button\",\n    variant: __props.text ? 'outlined' : 'text',\n    severity: \"contrast\",\n    icon: `${__props.text ? null : `pi ${_unref(isLiked) ? 'pi-heart-fill' : 'pi-heart '}`}`,\n    \"aria-label\": \"Set Like for a product\",\n    class: _normalizeClass([\"flex p-2\", `text-(${_unref(isLiked) ? 'red-500' : 'gray-400'}) ${__props.text ? 'w-full m-0 justify-center' : 'ml-auto justify-end mt-[-0.5rem] mr-[-0.5rem] w-fit'}`]),\n    label: __props.text ? __props.text : '',\n    onClick: _cache[0] || (_cache[0] = ($event: any) => (\n            _unref(onProductLikeClick)({\n                id: `${__props.productId}`,\n            })\n        ))\n  }, null, 8, [\"variant\", \"icon\", \"class\", \"label\"]))\n}\n}\n\n})",
-      "start": 1761072564354,
-      "end": 1761072564354
+      "start": 1761073703806,
+      "end": 1761073703806
     },
     {
       "name": "@tailwindcss/vite:generate:build",
-      "start": 1761072564354,
-      "end": 1761072564355,
+      "start": 1761073703806,
+      "end": 1761073703806,
       "order": "pre"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, normalizeClass as _normalizeClass, openBlock as _openBlock, createBlock as _createBlock } from \"vue\";\nimport { useStoreMap, useUnit } from \"effector-vue/composition\";\nimport { ProductModel } from \"@/entities/Product/index.js\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"ProductLike\",\n  props: {\n    productId: {},\n    text: {}\n  },\n  setup(__props) {\n    const [onProductLikeClick] = useUnit([ProductModel.productLikeSettled]);\n    const isLiked = useStoreMap({\n      store: ProductModel.$likedProducts,\n      keys: () => __props.productId,\n      fn: (products, productId) => products.includes(`${productId}`)\n    });\n    return (_ctx, _cache) => {\n      const _component_Button = _resolveComponent(\"Button\");\n      return _openBlock(), _createBlock(_component_Button, {\n        size: \"large\",\n        type: \"button\",\n        variant: __props.text ? \"outlined\" : \"text\",\n        severity: \"contrast\",\n        icon: `${__props.text ? null : `pi ${_unref(isLiked) ? \"pi-heart-fill\" : \"pi-heart \"}`}`,\n        \"aria-label\": \"Set Like for a product\",\n        class: _normalizeClass([\"flex p-2\", `text-(${_unref(isLiked) ? \"red-500\" : \"gray-400\"}) ${__props.text ? \"w-full m-0 justify-center\" : \"ml-auto justify-end mt-[-0.5rem] mr-[-0.5rem] w-fit\"}`]),\n        label: __props.text ? __props.text : \"\",\n        onClick: _cache[0] || (_cache[0] = ($event) => _unref(onProductLikeClick)({\n          id: `${__props.productId}`\n        }))\n      }, null, 8, [\"variant\", \"icon\", \"class\", \"label\"]);\n    };\n  }\n});\n",
-      "start": 1761072564355,
-      "end": 1761072564362,
+      "start": 1761073703806,
+      "end": 1761073703824,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -33,57 +33,57 @@
     },
     {
       "name": "vite:worker",
-      "start": 1761072564362,
-      "end": 1761072564362,
+      "start": 1761073703824,
+      "end": 1761073703824,
       "order": "normal-normal"
     },
     {
       "name": "vite:vue",
-      "start": 1761072564362,
-      "end": 1761072564362,
+      "start": 1761073703824,
+      "end": 1761073703824,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1761072564362,
-      "end": 1761072564362,
+      "start": 1761073703824,
+      "end": 1761073703824,
       "order": "normal-normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1761072564362,
-      "end": 1761072564362,
+      "start": 1761073703824,
+      "end": 1761073703824,
       "order": "normal-normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1761072564362,
-      "end": 1761072564362,
+      "start": 1761073703824,
+      "end": 1761073703824,
       "order": "normal-normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1761072564362,
-      "end": 1761072564362,
+      "start": 1761073703824,
+      "end": 1761073703824,
       "order": "normal-normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1761072564362,
-      "end": 1761072564362,
+      "start": 1761073703824,
+      "end": 1761073703824,
       "order": "normal-normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1761072564362,
-      "end": 1761072564363,
+      "start": 1761073703824,
+      "end": 1761073703824,
       "order": "normal-normal"
     },
     {
       "name": "unplugin-vue-components",
       "result": "/* unplugin-vue-components disabled */import __unplugin_components_0 from 'primevue/button';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, normalizeClass as _normalizeClass, openBlock as _openBlock, createBlock as _createBlock } from \"vue\";\nimport { useStoreMap, useUnit } from \"effector-vue/composition\";\nimport { ProductModel } from \"@/entities/Product/index.js\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"ProductLike\",\n  props: {\n    productId: {},\n    text: {}\n  },\n  setup(__props) {\n    const [onProductLikeClick] = useUnit([ProductModel.productLikeSettled]);\n    const isLiked = useStoreMap({\n      store: ProductModel.$likedProducts,\n      keys: () => __props.productId,\n      fn: (products, productId) => products.includes(`${productId}`)\n    });\n    return (_ctx, _cache) => {\n      const _component_Button = __unplugin_components_0;\n      return _openBlock(), _createBlock(_component_Button, {\n        size: \"large\",\n        type: \"button\",\n        variant: __props.text ? \"outlined\" : \"text\",\n        severity: \"contrast\",\n        icon: `${__props.text ? null : `pi ${_unref(isLiked) ? \"pi-heart-fill\" : \"pi-heart \"}`}`,\n        \"aria-label\": \"Set Like for a product\",\n        class: _normalizeClass([\"flex p-2\", `text-(${_unref(isLiked) ? \"red-500\" : \"gray-400\"}) ${__props.text ? \"w-full m-0 justify-center\" : \"ml-auto justify-end mt-[-0.5rem] mr-[-0.5rem] w-fit\"}`]),\n        label: __props.text ? __props.text : \"\",\n        onClick: _cache[0] || (_cache[0] = ($event) => _unref(onProductLikeClick)({\n          id: `${__props.productId}`\n        }))\n      }, null, 8, [\"variant\", \"icon\", \"class\", \"label\"]);\n    };\n  }\n});\n",
-      "start": 1761072564363,
-      "end": 1761072564363,
+      "start": 1761073703824,
+      "end": 1761073703825,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -99,14 +99,14 @@
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1761072564363,
-      "end": 1761072564363,
+      "start": 1761073703825,
+      "end": 1761073703825,
       "order": "normal-normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1761072564363,
-      "end": 1761072564363,
+      "start": 1761073703825,
+      "end": 1761073703825,
       "order": "normal"
     }
   ]

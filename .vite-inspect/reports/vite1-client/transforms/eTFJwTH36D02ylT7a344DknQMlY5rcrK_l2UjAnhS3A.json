@@ -4,34 +4,34 @@
     {
       "name": "vite:vue",
       "result": "\n.root {\n    --p-tabs-active-bar-background: #000;\n    --p-tabs-active-bar-height: 2px;\n    --p-tabs-tab-border-width: 0;\n    --p-tabs-tabpanel-padding: 32px 0 0 0;\n\n    margin-bottom: 56px;\n}\n",
-      "start": 1761072563573,
-      "end": 1761072563574
+      "start": 1761073702925,
+      "end": 1761073702925
     },
     {
       "name": "@tailwindcss/vite:generate:build",
       "result": "\n.root {\n    --p-tabs-active-bar-background: #000;\n    --p-tabs-active-bar-height: 2px;\n    --p-tabs-tab-border-width: 0;\n    --p-tabs-tabpanel-padding: 32px 0 0 0;\n\n    margin-bottom: 56px;\n}\n",
-      "start": 1761072563574,
-      "end": 1761072563574,
+      "start": 1761073702925,
+      "end": 1761073702926,
       "order": "pre",
       "sourcemaps": null
     },
     {
       "name": "vite:esbuild",
-      "start": 1761072563575,
-      "end": 1761072563575,
+      "start": 1761073702927,
+      "end": 1761073702927,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1761072563575,
-      "end": 1761072563575,
+      "start": 1761073702927,
+      "end": 1761073702927,
       "order": "normal-normal"
     },
     {
       "name": "vite:vue",
       "result": "\n.root[data-v-96fb042c] {\n    --p-tabs-active-bar-background: #000;\n    --p-tabs-active-bar-height: 2px;\n    --p-tabs-tab-border-width: 0;\n    --p-tabs-tabpanel-padding: 32px 0 0 0;\n\n    margin-bottom: 56px;\n}\n",
-      "start": 1761072563575,
-      "end": 1761072563575,
+      "start": 1761073702927,
+      "end": 1761073702928,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -39,45 +39,45 @@
     },
     {
       "name": "vite:define",
-      "start": 1761072563575,
-      "end": 1761072563575,
+      "start": 1761073702928,
+      "end": 1761073702928,
       "order": "normal-normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1761072563575,
-      "end": 1761072563575,
+      "start": 1761073702928,
+      "end": 1761073702928,
       "order": "normal-normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1761072563575,
-      "end": 1761072563575,
+      "start": 1761073702928,
+      "end": 1761073702928,
       "order": "normal-normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1761072563575,
-      "end": 1761072563575,
+      "start": 1761073702928,
+      "end": 1761073702928,
       "order": "normal-normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1761072563575,
-      "end": 1761072563575,
+      "start": 1761073702928,
+      "end": 1761073702928,
       "order": "normal-normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1761072563575,
-      "end": 1761072563575,
+      "start": 1761073702928,
+      "end": 1761073702928,
       "order": "normal-normal"
     },
     {
       "name": "unplugin-vue-components",
       "result": "/* unplugin-vue-components disabled */",
-      "start": 1761072563575,
-      "end": 1761072563575,
+      "start": 1761073702928,
+      "end": 1761073702928,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -93,14 +93,14 @@
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1761072563575,
-      "end": 1761072563575,
+      "start": 1761073702928,
+      "end": 1761073702928,
       "order": "normal-normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1761072563575,
-      "end": 1761072563575,
+      "start": 1761073702928,
+      "end": 1761073702928,
       "order": "normal"
     }
   ]

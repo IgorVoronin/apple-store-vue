@@ -4,33 +4,33 @@
     {
       "name": "vite:load-fallback",
       "result": "<script setup lang=\"ts\">\nimport { useStoreMap, useUnit } from 'effector-vue/composition';\n\nimport { type Product, ProductModel } from '@/entities/Product';\n\nconst { product } = defineProps<{\n    product: Product;\n}>();\n\nconst [cart] = useUnit([ProductModel.$productCart]);\n\nconst productCount = useStoreMap({\n    store: ProductModel.$productCart,\n    keys() {\n        return product;\n    },\n    fn: (cart, product) => Number(cart[product.id]?.count),\n});\n\nconst [onAddProductToCart, onRemoveProductFromCart] = useUnit([\n    ProductModel.cartProductSettled,\n    ProductModel.cartProductRemoved,\n]);\n</script>\n<template>\n    <Button\n        v-if=\"!cart[product.id]?.count\"\n        class=\"w-full rounded-lg\"\n        severity=\"contrast\"\n        @click=\"onAddProductToCart(product)\"\n        >Buy Now</Button\n    >\n    <ButtonGroup v-if=\"cart[product.id]?.count > 0\">\n        <Button class=\"min-w-[50px] text-xl w-full\" severity=\"contrast\" @click=\"onRemoveProductFromCart(product)\"\n            >-</Button\n        >\n        <Button class=\"min-w-[50px] text-xl w-full\" severity=\"contrast\">\n            {{ productCount }}\n        </Button>\n        <Button class=\"min-w-[50px] text-xl w-full\" severity=\"contrast\" @click=\"onAddProductToCart(product)\">+</Button>\n    </ButtonGroup>\n</template>\n",
-      "start": 1761072564087,
-      "end": 1761072564125,
+      "start": 1761073703458,
+      "end": 1761073703513,
       "sourcemaps": null
     },
     {
       "name": "@tailwindcss/vite:generate:build",
-      "start": 1761072564125,
-      "end": 1761072564125,
+      "start": 1761073703513,
+      "end": 1761073703513,
       "order": "pre"
     },
     {
       "name": "vite:esbuild",
-      "start": 1761072564125,
-      "end": 1761072564125,
+      "start": 1761073703513,
+      "end": 1761073703513,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1761072564125,
-      "end": 1761072564125,
+      "start": 1761073703513,
+      "end": 1761073703513,
       "order": "normal-normal"
     },
     {
       "name": "vite:vue",
       "result": "import _sfc_main from \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/features/AddProductToCartAction/ui/AddProductToCartAction.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/features/AddProductToCartAction/ui/AddProductToCartAction.vue?vue&type=script&setup=true&lang.ts\";\nexport default _sfc_main;\n",
-      "start": 1761072564125,
-      "end": 1761072564372,
+      "start": 1761073703513,
+      "end": 1761073703824,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -38,45 +38,45 @@
     },
     {
       "name": "vite:define",
-      "start": 1761072564372,
-      "end": 1761072564372,
+      "start": 1761073703824,
+      "end": 1761073703824,
       "order": "normal-normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1761072564372,
-      "end": 1761072564372,
+      "start": 1761073703824,
+      "end": 1761073703824,
       "order": "normal-normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1761072564372,
-      "end": 1761072564372,
+      "start": 1761073703824,
+      "end": 1761073703824,
       "order": "normal-normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1761072564372,
-      "end": 1761072564372,
+      "start": 1761073703824,
+      "end": 1761073703824,
       "order": "normal-normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1761072564372,
-      "end": 1761072564372,
+      "start": 1761073703824,
+      "end": 1761073703824,
       "order": "normal-normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1761072564372,
-      "end": 1761072564372,
+      "start": 1761073703824,
+      "end": 1761073703824,
       "order": "normal-normal"
     },
     {
       "name": "unplugin-vue-components",
       "result": "/* unplugin-vue-components disabled */import _sfc_main from \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/features/AddProductToCartAction/ui/AddProductToCartAction.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/features/AddProductToCartAction/ui/AddProductToCartAction.vue?vue&type=script&setup=true&lang.ts\";\nexport default _sfc_main;\n",
-      "start": 1761072564372,
-      "end": 1761072564373,
+      "start": 1761073703824,
+      "end": 1761073703824,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -92,14 +92,14 @@
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1761072564373,
-      "end": 1761072564373,
+      "start": 1761073703824,
+      "end": 1761073703824,
       "order": "normal-normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1761072564373,
-      "end": 1761072564373,
+      "start": 1761073703824,
+      "end": 1761073703824,
       "order": "normal"
     }
   ]

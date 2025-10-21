@@ -4,33 +4,33 @@
     {
       "name": "vite:load-fallback",
       "result": "<script setup>\nimport { ref } from 'vue';\nimport { useUnit, useVModel } from 'effector-vue/composition';\n\nimport { ProductFilters, ProductFiltersModel } from '@/features/ProductFilters';\n\nconst visible = ref(false);\n\nconst sort = useVModel(ProductFiltersModel.$sortBy);\nconst options = ref([\n    {\n        code: 'rating',\n        name: 'By Rating',\n    },\n    {\n        code: 'data',\n        name: 'By Date',\n    },\n    {\n        code: 'price',\n        name: 'By Price',\n    },\n]);\n\nconst [totalProducts] = useUnit([ProductFiltersModel.$totalFilteredProducts]);\n</script>\n<template>\n    <div class=\"grid grid-cols-2 gap-4 mb-8 items-center\">\n        <p class=\"hidden lg:block\">\n            Selected Products: <b class=\"text-lg\">{{ totalProducts }}</b>\n        </p>\n        <Button\n            outlined\n            severity=\"contrast\"\n            label=\"Filters\"\n            icon=\"pi pi-sliders-h\"\n            icon-pos=\"right\"\n            size=\"large\"\n            class=\"lg:hidden justify-between\"\n            @click=\"visible = true\"\n        />\n        <Select\n            v-model=\"sort\"\n            size=\"large\"\n            :options=\"options\"\n            option-label=\"name\"\n            placeholder=\"Sort By\"\n            class=\"w-full lg:w-[256px] lg:place-self-end\"\n        />\n    </div>\n\n    <Drawer v-model:visible=\"visible\" class=\"mt-[200px]\" position=\"full\">\n        <template #container>\n            <div class=\"mx-4 pt-10\">\n                <div class=\"mb-6\">\n                    <Button text severity=\"contrast\" size=\"large\" class=\"text-2xl\" @click=\"visible = false\">\n                        <span class=\"pi pi-chevron-left mr-4\" />Filters\n                    </Button>\n                </div>\n                <ProductFilters />\n                <Button @click=\"visible = false\">Apply</Button>\n            </div>\n        </template>\n    </Drawer>\n</template>\n",
-      "start": 1761072563845,
-      "end": 1761072563947,
+      "start": 1761073703244,
+      "end": 1761073703282,
       "sourcemaps": null
     },
     {
       "name": "@tailwindcss/vite:generate:build",
-      "start": 1761072563947,
-      "end": 1761072563947,
+      "start": 1761073703282,
+      "end": 1761073703282,
       "order": "pre"
     },
     {
       "name": "vite:esbuild",
-      "start": 1761072563947,
-      "end": 1761072563947,
+      "start": 1761073703282,
+      "end": 1761073703282,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1761072563947,
-      "end": 1761072563947,
+      "start": 1761073703282,
+      "end": 1761073703282,
       "order": "normal-normal"
     },
     {
       "name": "vite:vue",
       "result": "import { unref as _unref, toDisplayString as _toDisplayString, createElementVNode as _createElementVNode, createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, createVNode as _createVNode, isRef as _isRef, withCtx as _withCtx, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\nconst _hoisted_1 = { class: \"grid grid-cols-2 gap-4 mb-8 items-center\" }\nconst _hoisted_2 = { class: \"hidden lg:block\" }\nconst _hoisted_3 = { class: \"text-lg\" }\nconst _hoisted_4 = { class: \"mx-4 pt-10\" }\nconst _hoisted_5 = { class: \"mb-6\" }\n\nimport { ref } from 'vue';\nimport { useUnit, useVModel } from 'effector-vue/composition';\n\nimport { ProductFilters, ProductFiltersModel } from '@/features/ProductFilters';\n\n\nconst _sfc_main = {\n  __name: 'ProductsGridFilterBar',\n  setup(__props) {\n\nconst visible = ref(false);\n\nconst sort = useVModel(ProductFiltersModel.$sortBy);\nconst options = ref([\n    {\n        code: 'rating',\n        name: 'By Rating',\n    },\n    {\n        code: 'data',\n        name: 'By Date',\n    },\n    {\n        code: 'price',\n        name: 'By Price',\n    },\n]);\n\nconst [totalProducts] = useUnit([ProductFiltersModel.$totalFilteredProducts]);\n\nreturn (_ctx, _cache) => {\n  const _component_Button = _resolveComponent(\"Button\")\n  const _component_Select = _resolveComponent(\"Select\")\n  const _component_Drawer = _resolveComponent(\"Drawer\")\n\n  return (_openBlock(), _createElementBlock(_Fragment, null, [\n    _createElementVNode(\"div\", _hoisted_1, [\n      _createElementVNode(\"p\", _hoisted_2, [\n        _cache[5] || (_cache[5] = _createTextVNode(\" Selected Products: \", -1)),\n        _createElementVNode(\"b\", _hoisted_3, _toDisplayString(_unref(totalProducts)), 1)\n      ]),\n      _createVNode(_component_Button, {\n        outlined: \"\",\n        severity: \"contrast\",\n        label: \"Filters\",\n        icon: \"pi pi-sliders-h\",\n        \"icon-pos\": \"right\",\n        size: \"large\",\n        class: \"lg:hidden justify-between\",\n        onClick: _cache[0] || (_cache[0] = $event => (visible.value = true))\n      }),\n      _createVNode(_component_Select, {\n        modelValue: _unref(sort),\n        \"onUpdate:modelValue\": _cache[1] || (_cache[1] = $event => (_isRef(sort) ? (sort).value = $event : null)),\n        size: \"large\",\n        options: options.value,\n        \"option-label\": \"name\",\n        placeholder: \"Sort By\",\n        class: \"w-full lg:w-[256px] lg:place-self-end\"\n      }, null, 8, [\"modelValue\", \"options\"])\n    ]),\n    _createVNode(_component_Drawer, {\n      visible: visible.value,\n      \"onUpdate:visible\": _cache[4] || (_cache[4] = $event => ((visible).value = $event)),\n      class: \"mt-[200px]\",\n      position: \"full\"\n    }, {\n      container: _withCtx(() => [\n        _createElementVNode(\"div\", _hoisted_4, [\n          _createElementVNode(\"div\", _hoisted_5, [\n            _createVNode(_component_Button, {\n              text: \"\",\n              severity: \"contrast\",\n              size: \"large\",\n              class: \"text-2xl\",\n              onClick: _cache[2] || (_cache[2] = $event => (visible.value = false))\n            }, {\n              default: _withCtx(() => [...(_cache[6] || (_cache[6] = [\n                _createElementVNode(\"span\", { class: \"pi pi-chevron-left mr-4\" }, null, -1),\n                _createTextVNode(\"Filters \", -1)\n              ]))]),\n              _: 1\n            })\n          ]),\n          _createVNode(_unref(ProductFilters)),\n          _createVNode(_component_Button, {\n            onClick: _cache[3] || (_cache[3] = $event => (visible.value = false))\n          }, {\n            default: _withCtx(() => [...(_cache[7] || (_cache[7] = [\n              _createTextVNode(\"Apply\", -1)\n            ]))]),\n            _: 1\n          })\n        ])\n      ]),\n      _: 1\n    }, 8, [\"visible\"])\n  ], 64))\n}\n}\n\n}\n\n\n\nexport default _sfc_main",
-      "start": 1761072563947,
-      "end": 1761072563949,
+      "start": 1761073703282,
+      "end": 1761073703284,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -38,45 +38,45 @@
     },
     {
       "name": "vite:define",
-      "start": 1761072563949,
-      "end": 1761072563949,
+      "start": 1761073703284,
+      "end": 1761073703284,
       "order": "normal-normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1761072563949,
-      "end": 1761072563949,
+      "start": 1761073703284,
+      "end": 1761073703284,
       "order": "normal-normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1761072563949,
-      "end": 1761072563949,
+      "start": 1761073703284,
+      "end": 1761073703284,
       "order": "normal-normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1761072563949,
-      "end": 1761072563949,
+      "start": 1761073703284,
+      "end": 1761073703284,
       "order": "normal-normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1761072563949,
-      "end": 1761072563949,
+      "start": 1761073703284,
+      "end": 1761073703284,
       "order": "normal-normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1761072563949,
-      "end": 1761072563949,
+      "start": 1761073703284,
+      "end": 1761073703284,
       "order": "normal-normal"
     },
     {
       "name": "unplugin-vue-components",
       "result": "/* unplugin-vue-components disabled */import __unplugin_components_2 from 'primevue/drawer';\nimport __unplugin_components_1 from 'primevue/select';\nimport __unplugin_components_0 from 'primevue/button';\nimport { unref as _unref, toDisplayString as _toDisplayString, createElementVNode as _createElementVNode, createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, createVNode as _createVNode, isRef as _isRef, withCtx as _withCtx, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\nconst _hoisted_1 = { class: \"grid grid-cols-2 gap-4 mb-8 items-center\" }\nconst _hoisted_2 = { class: \"hidden lg:block\" }\nconst _hoisted_3 = { class: \"text-lg\" }\nconst _hoisted_4 = { class: \"mx-4 pt-10\" }\nconst _hoisted_5 = { class: \"mb-6\" }\n\nimport { ref } from 'vue';\nimport { useUnit, useVModel } from 'effector-vue/composition';\n\nimport { ProductFilters, ProductFiltersModel } from '@/features/ProductFilters';\n\n\nconst _sfc_main = {\n  __name: 'ProductsGridFilterBar',\n  setup(__props) {\n\nconst visible = ref(false);\n\nconst sort = useVModel(ProductFiltersModel.$sortBy);\nconst options = ref([\n    {\n        code: 'rating',\n        name: 'By Rating',\n    },\n    {\n        code: 'data',\n        name: 'By Date',\n    },\n    {\n        code: 'price',\n        name: 'By Price',\n    },\n]);\n\nconst [totalProducts] = useUnit([ProductFiltersModel.$totalFilteredProducts]);\n\nreturn (_ctx, _cache) => {\n  const _component_Button = __unplugin_components_0\n  const _component_Select = __unplugin_components_1\n  const _component_Drawer = __unplugin_components_2\n\n  return (_openBlock(), _createElementBlock(_Fragment, null, [\n    _createElementVNode(\"div\", _hoisted_1, [\n      _createElementVNode(\"p\", _hoisted_2, [\n        _cache[5] || (_cache[5] = _createTextVNode(\" Selected Products: \", -1)),\n        _createElementVNode(\"b\", _hoisted_3, _toDisplayString(_unref(totalProducts)), 1)\n      ]),\n      _createVNode(_component_Button, {\n        outlined: \"\",\n        severity: \"contrast\",\n        label: \"Filters\",\n        icon: \"pi pi-sliders-h\",\n        \"icon-pos\": \"right\",\n        size: \"large\",\n        class: \"lg:hidden justify-between\",\n        onClick: _cache[0] || (_cache[0] = $event => (visible.value = true))\n      }),\n      _createVNode(_component_Select, {\n        modelValue: _unref(sort),\n        \"onUpdate:modelValue\": _cache[1] || (_cache[1] = $event => (_isRef(sort) ? (sort).value = $event : null)),\n        size: \"large\",\n        options: options.value,\n        \"option-label\": \"name\",\n        placeholder: \"Sort By\",\n        class: \"w-full lg:w-[256px] lg:place-self-end\"\n      }, null, 8, [\"modelValue\", \"options\"])\n    ]),\n    _createVNode(_component_Drawer, {\n      visible: visible.value,\n      \"onUpdate:visible\": _cache[4] || (_cache[4] = $event => ((visible).value = $event)),\n      class: \"mt-[200px]\",\n      position: \"full\"\n    }, {\n      container: _withCtx(() => [\n        _createElementVNode(\"div\", _hoisted_4, [\n          _createElementVNode(\"div\", _hoisted_5, [\n            _createVNode(_component_Button, {\n              text: \"\",\n              severity: \"contrast\",\n              size: \"large\",\n              class: \"text-2xl\",\n              onClick: _cache[2] || (_cache[2] = $event => (visible.value = false))\n            }, {\n              default: _withCtx(() => [...(_cache[6] || (_cache[6] = [\n                _createElementVNode(\"span\", { class: \"pi pi-chevron-left mr-4\" }, null, -1),\n                _createTextVNode(\"Filters \", -1)\n              ]))]),\n              _: 1\n            })\n          ]),\n          _createVNode(_unref(ProductFilters)),\n          _createVNode(_component_Button, {\n            onClick: _cache[3] || (_cache[3] = $event => (visible.value = false))\n          }, {\n            default: _withCtx(() => [...(_cache[7] || (_cache[7] = [\n              _createTextVNode(\"Apply\", -1)\n            ]))]),\n            _: 1\n          })\n        ])\n      ]),\n      _: 1\n    }, 8, [\"visible\"])\n  ], 64))\n}\n}\n\n}\n\n\n\nexport default _sfc_main",
-      "start": 1761072563949,
-      "end": 1761072563950,
+      "start": 1761073703284,
+      "end": 1761073703285,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -92,14 +92,14 @@
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1761072563950,
-      "end": 1761072563950,
+      "start": 1761073703285,
+      "end": 1761073703285,
       "order": "normal-normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1761072563950,
-      "end": 1761072563950,
+      "start": 1761073703285,
+      "end": 1761073703285,
       "order": "normal"
     }
   ]

@@ -4,20 +4,20 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, unref as _unref, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\nconst _hoisted_1 = { class: \"root\" }\n\nimport { MainContainer } from '@/shared/ui';\n\nimport { BestsellersProducts, FeaturedProducts, NewArrivals } from './ui';\n\nexport default /*@__PURE__*/_defineComponent({\n  __name: 'MainProducts',\n  setup(__props) {\n\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_Tab = _resolveComponent(\"Tab\")!\n  const _component_TabList = _resolveComponent(\"TabList\")!\n  const _component_TabPanel = _resolveComponent(\"TabPanel\")!\n  const _component_TabPanels = _resolveComponent(\"TabPanels\")!\n  const _component_Tabs = _resolveComponent(\"Tabs\")!\n\n  return (_openBlock(), _createElementBlock(\"section\", _hoisted_1, [\n    _createVNode(_unref(MainContainer), null, {\n      default: _withCtx(() => [\n        _createVNode(_component_Tabs, { value: \"new\" }, {\n          default: _withCtx(() => [\n            _createVNode(_component_TabList, null, {\n              default: _withCtx(() => [\n                _createVNode(_component_Tab, {\n                  class: \"text-black\",\n                  value: \"new\"\n                }, {\n                  default: _withCtx(() => [...(_cache[0] || (_cache[0] = [\n                    _createTextVNode(\"New Arrival\", -1)\n                  ]))]),\n                  _: 1\n                }),\n                _createVNode(_component_Tab, {\n                  class: \"text-black\",\n                  value: \"best\"\n                }, {\n                  default: _withCtx(() => [...(_cache[1] || (_cache[1] = [\n                    _createTextVNode(\"Bestseller\", -1)\n                  ]))]),\n                  _: 1\n                }),\n                _createVNode(_component_Tab, {\n                  class: \"text-black\",\n                  value: \"featured\"\n                }, {\n                  default: _withCtx(() => [...(_cache[2] || (_cache[2] = [\n                    _createTextVNode(\"Featured Products\", -1)\n                  ]))]),\n                  _: 1\n                })\n              ]),\n              _: 1\n            }),\n            _createVNode(_component_TabPanels, null, {\n              default: _withCtx(() => [\n                _createVNode(_component_TabPanel, { value: \"new\" }, {\n                  default: _withCtx(() => [\n                    _createVNode(_unref(NewArrivals))\n                  ]),\n                  _: 1\n                }),\n                _createVNode(_component_TabPanel, { value: \"best\" }, {\n                  default: _withCtx(() => [\n                    _createVNode(_unref(BestsellersProducts))\n                  ]),\n                  _: 1\n                }),\n                _createVNode(_component_TabPanel, { value: \"featured\" }, {\n                  default: _withCtx(() => [\n                    _createVNode(_unref(FeaturedProducts))\n                  ]),\n                  _: 1\n                })\n              ]),\n              _: 1\n            })\n          ]),\n          _: 1\n        })\n      ]),\n      _: 1\n    })\n  ]))\n}\n}\n\n})",
-      "start": 1761072563573,
-      "end": 1761072563574
+      "start": 1761073702925,
+      "end": 1761073702925
     },
     {
       "name": "@tailwindcss/vite:generate:build",
-      "start": 1761072563574,
-      "end": 1761072563574,
+      "start": 1761073702925,
+      "end": 1761073702925,
       "order": "pre"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, unref as _unref, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\";\nconst _hoisted_1 = { class: \"root\" };\nimport { MainContainer } from \"@/shared/ui\";\nimport { BestsellersProducts, FeaturedProducts, NewArrivals } from \"./ui\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"MainProducts\",\n  setup(__props) {\n    return (_ctx, _cache) => {\n      const _component_Tab = _resolveComponent(\"Tab\");\n      const _component_TabList = _resolveComponent(\"TabList\");\n      const _component_TabPanel = _resolveComponent(\"TabPanel\");\n      const _component_TabPanels = _resolveComponent(\"TabPanels\");\n      const _component_Tabs = _resolveComponent(\"Tabs\");\n      return _openBlock(), _createElementBlock(\"section\", _hoisted_1, [\n        _createVNode(_unref(MainContainer), null, {\n          default: _withCtx(() => [\n            _createVNode(_component_Tabs, { value: \"new\" }, {\n              default: _withCtx(() => [\n                _createVNode(_component_TabList, null, {\n                  default: _withCtx(() => [\n                    _createVNode(_component_Tab, {\n                      class: \"text-black\",\n                      value: \"new\"\n                    }, {\n                      default: _withCtx(() => [..._cache[0] || (_cache[0] = [\n                        _createTextVNode(\"New Arrival\", -1)\n                      ])]),\n                      _: 1\n                    }),\n                    _createVNode(_component_Tab, {\n                      class: \"text-black\",\n                      value: \"best\"\n                    }, {\n                      default: _withCtx(() => [..._cache[1] || (_cache[1] = [\n                        _createTextVNode(\"Bestseller\", -1)\n                      ])]),\n                      _: 1\n                    }),\n                    _createVNode(_component_Tab, {\n                      class: \"text-black\",\n                      value: \"featured\"\n                    }, {\n                      default: _withCtx(() => [..._cache[2] || (_cache[2] = [\n                        _createTextVNode(\"Featured Products\", -1)\n                      ])]),\n                      _: 1\n                    })\n                  ]),\n                  _: 1\n                }),\n                _createVNode(_component_TabPanels, null, {\n                  default: _withCtx(() => [\n                    _createVNode(_component_TabPanel, { value: \"new\" }, {\n                      default: _withCtx(() => [\n                        _createVNode(_unref(NewArrivals))\n                      ]),\n                      _: 1\n                    }),\n                    _createVNode(_component_TabPanel, { value: \"best\" }, {\n                      default: _withCtx(() => [\n                        _createVNode(_unref(BestsellersProducts))\n                      ]),\n                      _: 1\n                    }),\n                    _createVNode(_component_TabPanel, { value: \"featured\" }, {\n                      default: _withCtx(() => [\n                        _createVNode(_unref(FeaturedProducts))\n                      ]),\n                      _: 1\n                    })\n                  ]),\n                  _: 1\n                })\n              ]),\n              _: 1\n            })\n          ]),\n          _: 1\n        })\n      ]);\n    };\n  }\n});\n",
-      "start": 1761072563574,
-      "end": 1761072563794,
+      "start": 1761073702926,
+      "end": 1761073703210,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -33,57 +33,57 @@
     },
     {
       "name": "vite:worker",
-      "start": 1761072563794,
-      "end": 1761072563794,
+      "start": 1761073703210,
+      "end": 1761073703210,
       "order": "normal-normal"
     },
     {
       "name": "vite:vue",
-      "start": 1761072563794,
-      "end": 1761072563794,
+      "start": 1761073703210,
+      "end": 1761073703210,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1761072563794,
-      "end": 1761072563794,
+      "start": 1761073703211,
+      "end": 1761073703211,
       "order": "normal-normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1761072563794,
-      "end": 1761072563794,
+      "start": 1761073703211,
+      "end": 1761073703211,
       "order": "normal-normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1761072563794,
-      "end": 1761072563794,
+      "start": 1761073703211,
+      "end": 1761073703211,
       "order": "normal-normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1761072563794,
-      "end": 1761072563794,
+      "start": 1761073703211,
+      "end": 1761073703211,
       "order": "normal-normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1761072563794,
-      "end": 1761072563794,
+      "start": 1761073703211,
+      "end": 1761073703211,
       "order": "normal-normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1761072563794,
-      "end": 1761072563794,
+      "start": 1761073703211,
+      "end": 1761073703211,
       "order": "normal-normal"
     },
     {
       "name": "unplugin-vue-components",
       "result": "/* unplugin-vue-components disabled */import __unplugin_components_4 from 'primevue/tabs';\nimport __unplugin_components_3 from 'primevue/tabpanels';\nimport __unplugin_components_2 from 'primevue/tabpanel';\nimport __unplugin_components_1 from 'primevue/tablist';\nimport __unplugin_components_0 from 'primevue/tab';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, unref as _unref, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\";\nconst _hoisted_1 = { class: \"root\" };\nimport { MainContainer } from \"@/shared/ui\";\nimport { BestsellersProducts, FeaturedProducts, NewArrivals } from \"./ui\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"MainProducts\",\n  setup(__props) {\n    return (_ctx, _cache) => {\n      const _component_Tab = __unplugin_components_0;\n      const _component_TabList = __unplugin_components_1;\n      const _component_TabPanel = __unplugin_components_2;\n      const _component_TabPanels = __unplugin_components_3;\n      const _component_Tabs = __unplugin_components_4;\n      return _openBlock(), _createElementBlock(\"section\", _hoisted_1, [\n        _createVNode(_unref(MainContainer), null, {\n          default: _withCtx(() => [\n            _createVNode(_component_Tabs, { value: \"new\" }, {\n              default: _withCtx(() => [\n                _createVNode(_component_TabList, null, {\n                  default: _withCtx(() => [\n                    _createVNode(_component_Tab, {\n                      class: \"text-black\",\n                      value: \"new\"\n                    }, {\n                      default: _withCtx(() => [..._cache[0] || (_cache[0] = [\n                        _createTextVNode(\"New Arrival\", -1)\n                      ])]),\n                      _: 1\n                    }),\n                    _createVNode(_component_Tab, {\n                      class: \"text-black\",\n                      value: \"best\"\n                    }, {\n                      default: _withCtx(() => [..._cache[1] || (_cache[1] = [\n                        _createTextVNode(\"Bestseller\", -1)\n                      ])]),\n                      _: 1\n                    }),\n                    _createVNode(_component_Tab, {\n                      class: \"text-black\",\n                      value: \"featured\"\n                    }, {\n                      default: _withCtx(() => [..._cache[2] || (_cache[2] = [\n                        _createTextVNode(\"Featured Products\", -1)\n                      ])]),\n                      _: 1\n                    })\n                  ]),\n                  _: 1\n                }),\n                _createVNode(_component_TabPanels, null, {\n                  default: _withCtx(() => [\n                    _createVNode(_component_TabPanel, { value: \"new\" }, {\n                      default: _withCtx(() => [\n                        _createVNode(_unref(NewArrivals))\n                      ]),\n                      _: 1\n                    }),\n                    _createVNode(_component_TabPanel, { value: \"best\" }, {\n                      default: _withCtx(() => [\n                        _createVNode(_unref(BestsellersProducts))\n                      ]),\n                      _: 1\n                    }),\n                    _createVNode(_component_TabPanel, { value: \"featured\" }, {\n                      default: _withCtx(() => [\n                        _createVNode(_unref(FeaturedProducts))\n                      ]),\n                      _: 1\n                    })\n                  ]),\n                  _: 1\n                })\n              ]),\n              _: 1\n            })\n          ]),\n          _: 1\n        })\n      ]);\n    };\n  }\n});\n",
-      "start": 1761072563794,
-      "end": 1761072563795,
+      "start": 1761073703211,
+      "end": 1761073703213,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -99,14 +99,14 @@
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1761072563796,
-      "end": 1761072563796,
+      "start": 1761073703213,
+      "end": 1761073703213,
       "order": "normal-normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1761072563797,
-      "end": 1761072563797,
+      "start": 1761073703214,
+      "end": 1761073703214,
       "order": "normal"
     }
   ]

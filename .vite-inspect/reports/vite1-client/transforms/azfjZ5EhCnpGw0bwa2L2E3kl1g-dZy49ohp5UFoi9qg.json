@@ -4,20 +4,20 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { resolveComponent as _resolveComponent, createVNode as _createVNode, createElementVNode as _createElementVNode, createTextVNode as _createTextVNode, unref as _unref, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\nconst _hoisted_1 = { class: \"banner\" }\n\nimport { RedirectToShopPage } from '@/features/RedirectToShopPage';\n\nexport default /*@__PURE__*/_defineComponent({\n  __name: 'SaleBanner',\n  setup(__props) {\n\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_Image = _resolveComponent(\"Image\")!\n\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    _createVNode(_component_Image, {\n      class: \"img top\",\n      src: \"/landing/bottom-banner/top.webp\"\n    }),\n    _createVNode(_component_Image, {\n      class: \"img left\",\n      src: \"/landing/bottom-banner/left.webp\"\n    }),\n    _cache[0] || (_cache[0] = _createElementVNode(\"h4\", null, \"Big Summer Sale\", -1)),\n    _cache[1] || (_cache[1] = _createElementVNode(\"p\", { class: \"description\" }, [\n      _createTextVNode(\" Commodo fames vitae vitae leo mauris in. Eu\"),\n      _createElementVNode(\"br\"),\n      _createTextVNode(\" cosequat. \")\n    ], -1)),\n    _createVNode(_unref(RedirectToShopPage), { \"class-name\": \"m-auto\" }),\n    _createVNode(_component_Image, {\n      class: \"img bottom\",\n      src: \"/landing/bottom-banner/bottom.webp\"\n    }),\n    _createVNode(_component_Image, {\n      class: \"img right\",\n      src: \"/landing/bottom-banner/right.webp\"\n    })\n  ]))\n}\n}\n\n})",
-      "start": 1761072563563,
-      "end": 1761072563563
+      "start": 1761073702898,
+      "end": 1761073702898
     },
     {
       "name": "@tailwindcss/vite:generate:build",
-      "start": 1761072563563,
-      "end": 1761072563563,
+      "start": 1761073702898,
+      "end": 1761073702899,
       "order": "pre"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { resolveComponent as _resolveComponent, createVNode as _createVNode, createElementVNode as _createElementVNode, createTextVNode as _createTextVNode, unref as _unref, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\";\nconst _hoisted_1 = { class: \"banner\" };\nimport { RedirectToShopPage } from \"@/features/RedirectToShopPage\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"SaleBanner\",\n  setup(__props) {\n    return (_ctx, _cache) => {\n      const _component_Image = _resolveComponent(\"Image\");\n      return _openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n        _createVNode(_component_Image, {\n          class: \"img top\",\n          src: \"/landing/bottom-banner/top.webp\"\n        }),\n        _createVNode(_component_Image, {\n          class: \"img left\",\n          src: \"/landing/bottom-banner/left.webp\"\n        }),\n        _cache[0] || (_cache[0] = _createElementVNode(\"h4\", null, \"Big Summer Sale\", -1)),\n        _cache[1] || (_cache[1] = _createElementVNode(\"p\", { class: \"description\" }, [\n          _createTextVNode(\" Commodo fames vitae vitae leo mauris in. Eu\"),\n          _createElementVNode(\"br\"),\n          _createTextVNode(\" cosequat. \")\n        ], -1)),\n        _createVNode(_unref(RedirectToShopPage), { \"class-name\": \"m-auto\" }),\n        _createVNode(_component_Image, {\n          class: \"img bottom\",\n          src: \"/landing/bottom-banner/bottom.webp\"\n        }),\n        _createVNode(_component_Image, {\n          class: \"img right\",\n          src: \"/landing/bottom-banner/right.webp\"\n        })\n      ]);\n    };\n  }\n});\n",
-      "start": 1761072563564,
-      "end": 1761072563794,
+      "start": 1761073702901,
+      "end": 1761073703210,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -33,57 +33,57 @@
     },
     {
       "name": "vite:worker",
-      "start": 1761072563794,
-      "end": 1761072563794,
+      "start": 1761073703210,
+      "end": 1761073703210,
       "order": "normal-normal"
     },
     {
       "name": "vite:vue",
-      "start": 1761072563794,
-      "end": 1761072563794,
+      "start": 1761073703210,
+      "end": 1761073703210,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1761072563794,
-      "end": 1761072563794,
+      "start": 1761073703210,
+      "end": 1761073703211,
       "order": "normal-normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1761072563794,
-      "end": 1761072563794,
+      "start": 1761073703211,
+      "end": 1761073703211,
       "order": "normal-normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1761072563794,
-      "end": 1761072563794,
+      "start": 1761073703211,
+      "end": 1761073703211,
       "order": "normal-normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1761072563794,
-      "end": 1761072563794,
+      "start": 1761073703211,
+      "end": 1761073703211,
       "order": "normal-normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1761072563794,
-      "end": 1761072563794,
+      "start": 1761073703211,
+      "end": 1761073703211,
       "order": "normal-normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1761072563794,
-      "end": 1761072563794,
+      "start": 1761073703211,
+      "end": 1761073703211,
       "order": "normal-normal"
     },
     {
       "name": "unplugin-vue-components",
       "result": "/* unplugin-vue-components disabled */import __unplugin_components_0 from 'primevue/image';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { resolveComponent as _resolveComponent, createVNode as _createVNode, createElementVNode as _createElementVNode, createTextVNode as _createTextVNode, unref as _unref, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\";\nconst _hoisted_1 = { class: \"banner\" };\nimport { RedirectToShopPage } from \"@/features/RedirectToShopPage\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"SaleBanner\",\n  setup(__props) {\n    return (_ctx, _cache) => {\n      const _component_Image = __unplugin_components_0;\n      return _openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n        _createVNode(_component_Image, {\n          class: \"img top\",\n          src: \"/landing/bottom-banner/top.webp\"\n        }),\n        _createVNode(_component_Image, {\n          class: \"img left\",\n          src: \"/landing/bottom-banner/left.webp\"\n        }),\n        _cache[0] || (_cache[0] = _createElementVNode(\"h4\", null, \"Big Summer Sale\", -1)),\n        _cache[1] || (_cache[1] = _createElementVNode(\"p\", { class: \"description\" }, [\n          _createTextVNode(\" Commodo fames vitae vitae leo mauris in. Eu\"),\n          _createElementVNode(\"br\"),\n          _createTextVNode(\" cosequat. \")\n        ], -1)),\n        _createVNode(_unref(RedirectToShopPage), { \"class-name\": \"m-auto\" }),\n        _createVNode(_component_Image, {\n          class: \"img bottom\",\n          src: \"/landing/bottom-banner/bottom.webp\"\n        }),\n        _createVNode(_component_Image, {\n          class: \"img right\",\n          src: \"/landing/bottom-banner/right.webp\"\n        })\n      ]);\n    };\n  }\n});\n",
-      "start": 1761072563794,
-      "end": 1761072563795,
+      "start": 1761073703211,
+      "end": 1761073703212,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -99,14 +99,14 @@
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1761072563795,
-      "end": 1761072563796,
+      "start": 1761073703213,
+      "end": 1761073703213,
       "order": "normal-normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1761072563796,
-      "end": 1761072563796,
+      "start": 1761073703213,
+      "end": 1761073703213,
       "order": "normal"
     }
   ]

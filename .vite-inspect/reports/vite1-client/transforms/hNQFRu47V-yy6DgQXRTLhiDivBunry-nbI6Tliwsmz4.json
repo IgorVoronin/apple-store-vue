@@ -4,33 +4,33 @@
     {
       "name": "vite:load-fallback",
       "result": "<script setup lang=\"ts\">\nimport { useUnit, useVModel } from 'effector-vue/composition';\n\nimport { CATEGORIES_MAP } from '@/entities/Product/lib/mapCategories';\nimport { ProductModel } from '@/entities/Product';\n\nconst [characteristics, allProcessors, allProducts, allDiagonals, allCategories] = useUnit([\n    ProductModel.$allCharacteristicsNames,\n    ProductModel.$allProcessorTypes,\n    ProductModel.$availableProducts,\n    ProductModel.$allDiagonalTypes,\n    ProductModel.$allCategories,\n]);\n\nconst selectedDiagonals = useVModel(ProductModel.$selectedDiagonals);\nconst selectedProcessors = useVModel(ProductModel.$selectedProcessors);\nconst selectedCategories = useVModel(ProductModel.$selectedCategories);\n</script>\n\n<template>\n    <Accordion :value=\"['Категория']\" multiple>\n        <!-- Фильтр по категориям -->\n        <AccordionPanel value=\"Категория\">\n            <AccordionHeader>Категория</AccordionHeader>\n            <AccordionContent>\n                <div v-for=\"category in allCategories\" :key=\"category\" class=\"flex items-center gap-2 mb-4\">\n                    <Checkbox v-model=\"selectedCategories\" :input-id=\"category\" :value=\"category\" class=\"m-0\" />\n                    <label :for=\"category\">\n                        {{ CATEGORIES_MAP[category] || category }}\n                        <span class=\"text-gray-400\">\n                            {{ allProducts.filter((product) => product.category === category).length }}\n                        </span>\n                    </label>\n                </div>\n            </AccordionContent>\n        </AccordionPanel>\n\n        <!-- Фильтры по характеристикам -->\n        <AccordionPanel v-for=\"tab in characteristics\" :key=\"tab\" :value=\"tab\">\n            <AccordionHeader>{{ tab }}</AccordionHeader>\n            <AccordionContent v-if=\"tab === 'Процессор'\">\n                <div v-for=\"processor in allProcessors\" :key=\"processor\" class=\"flex items-center gap-2 mb-4\">\n                    <Checkbox v-model=\"selectedProcessors\" :input-id=\"processor\" :value=\"processor\" class=\"m-0\" />\n                    <label :for=\"processor\"\n                        >{{ processor }}\n                        <span class=\"text-gray-400\">{{\n                            allProducts.filter(\n                                (product) => product.characteristics.filter((el) => el.value === processor).length\n                            ).length\n                        }}</span>\n                    </label>\n                </div>\n            </AccordionContent>\n            <AccordionContent v-if=\"tab === 'Диагональ'\">\n                <div v-for=\"diagonal in allDiagonals\" :key=\"diagonal\" class=\"flex items-center gap-2 mb-4\">\n                    <Checkbox v-model=\"selectedDiagonals\" :input-id=\"diagonal\" :value=\"diagonal\" class=\"m-0\" />\n                    <label :for=\"diagonal\"\n                        >{{ diagonal }}\n                        <span class=\"text-gray-400\">{{\n                            allProducts.filter(\n                                (product) => product.characteristics.filter((el) => el.value === diagonal).length\n                            ).length\n                        }}</span>\n                    </label>\n                </div>\n            </AccordionContent>\n        </AccordionPanel>\n    </Accordion>\n</template>\n",
-      "start": 1761072563992,
-      "end": 1761072564032,
+      "start": 1761073703353,
+      "end": 1761073703440,
       "sourcemaps": null
     },
     {
       "name": "@tailwindcss/vite:generate:build",
-      "start": 1761072564032,
-      "end": 1761072564032,
+      "start": 1761073703440,
+      "end": 1761073703440,
       "order": "pre"
     },
     {
       "name": "vite:esbuild",
-      "start": 1761072564032,
-      "end": 1761072564032,
+      "start": 1761073703440,
+      "end": 1761073703440,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1761072564032,
-      "end": 1761072564032,
+      "start": 1761073703440,
+      "end": 1761073703440,
       "order": "normal-normal"
     },
     {
       "name": "vite:vue",
       "result": "import _sfc_main from \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/features/ProductFilters/ProductFilters.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/features/ProductFilters/ProductFilters.vue?vue&type=script&setup=true&lang.ts\";\nexport default _sfc_main;\n",
-      "start": 1761072564032,
-      "end": 1761072564173,
+      "start": 1761073703440,
+      "end": 1761073703559,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -38,45 +38,45 @@
     },
     {
       "name": "vite:define",
-      "start": 1761072564173,
-      "end": 1761072564173,
+      "start": 1761073703559,
+      "end": 1761073703559,
       "order": "normal-normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1761072564173,
-      "end": 1761072564173,
+      "start": 1761073703559,
+      "end": 1761073703559,
       "order": "normal-normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1761072564173,
-      "end": 1761072564173,
+      "start": 1761073703559,
+      "end": 1761073703559,
       "order": "normal-normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1761072564173,
-      "end": 1761072564173,
+      "start": 1761073703559,
+      "end": 1761073703559,
       "order": "normal-normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1761072564173,
-      "end": 1761072564173,
+      "start": 1761073703559,
+      "end": 1761073703559,
       "order": "normal-normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1761072564173,
-      "end": 1761072564174,
+      "start": 1761073703559,
+      "end": 1761073703559,
       "order": "normal-normal"
     },
     {
       "name": "unplugin-vue-components",
       "result": "/* unplugin-vue-components disabled */import _sfc_main from \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/features/ProductFilters/ProductFilters.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"C:/Users/iyvor/OneDrive/Документы/Шарага/4_семестр/Фреймворки JS/FW-JS/src/features/ProductFilters/ProductFilters.vue?vue&type=script&setup=true&lang.ts\";\nexport default _sfc_main;\n",
-      "start": 1761072564174,
-      "end": 1761072564174,
+      "start": 1761073703559,
+      "end": 1761073703560,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -92,14 +92,14 @@
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1761072564174,
-      "end": 1761072564174,
+      "start": 1761073703560,
+      "end": 1761073703560,
       "order": "normal-normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1761072564174,
-      "end": 1761072564174,
+      "start": 1761073703560,
+      "end": 1761073703560,
       "order": "normal"
     }
   ]

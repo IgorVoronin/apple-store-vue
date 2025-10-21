@@ -4,20 +4,20 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { normalizeClass as _normalizeClass, createElementVNode as _createElementVNode, toDisplayString as _toDisplayString, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\nconst _hoisted_1 = { class: \"root\" }\n\n\nexport default /*@__PURE__*/_defineComponent({\n  __name: 'CategoryCard',\n  props: {\n    label: {},\n    icon: {},\n    category: {}\n  },\n  setup(__props: any) {\n\n\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_RouterLink = _resolveComponent(\"RouterLink\")!\n\n  return (_openBlock(), _createElementBlock(\"li\", _hoisted_1, [\n    _createVNode(_component_RouterLink, {\n      to: { path: '/products', query: { category: __props.category } },\n      class: \"card-link\"\n    }, {\n      default: _withCtx(() => [\n        _createElementVNode(\"span\", {\n          class: _normalizeClass(__props.icon)\n        }, null, 2),\n        _createElementVNode(\"p\", null, _toDisplayString(__props.label), 1)\n      ]),\n      _: 1\n    }, 8, [\"to\"])\n  ]))\n}\n}\n\n})",
-      "start": 1761072564073,
-      "end": 1761072564073
+      "start": 1761073703446,
+      "end": 1761073703446
     },
     {
       "name": "@tailwindcss/vite:generate:build",
-      "start": 1761072564073,
-      "end": 1761072564073,
+      "start": 1761073703446,
+      "end": 1761073703446,
       "order": "pre"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { normalizeClass as _normalizeClass, createElementVNode as _createElementVNode, toDisplayString as _toDisplayString, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\";\nconst _hoisted_1 = { class: \"root\" };\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"CategoryCard\",\n  props: {\n    label: {},\n    icon: {},\n    category: {}\n  },\n  setup(__props) {\n    return (_ctx, _cache) => {\n      const _component_RouterLink = _resolveComponent(\"RouterLink\");\n      return _openBlock(), _createElementBlock(\"li\", _hoisted_1, [\n        _createVNode(_component_RouterLink, {\n          to: { path: \"/products\", query: { category: __props.category } },\n          class: \"card-link\"\n        }, {\n          default: _withCtx(() => [\n            _createElementVNode(\"span\", {\n              class: _normalizeClass(__props.icon)\n            }, null, 2),\n            _createElementVNode(\"p\", null, _toDisplayString(__props.label), 1)\n          ]),\n          _: 1\n        }, 8, [\"to\"])\n      ]);\n    };\n  }\n});\n",
-      "start": 1761072564075,
-      "end": 1761072564094,
+      "start": 1761073703447,
+      "end": 1761073703459,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -33,57 +33,57 @@
     },
     {
       "name": "vite:worker",
-      "start": 1761072564094,
-      "end": 1761072564094,
+      "start": 1761073703459,
+      "end": 1761073703459,
       "order": "normal-normal"
     },
     {
       "name": "vite:vue",
-      "start": 1761072564094,
-      "end": 1761072564094,
+      "start": 1761073703459,
+      "end": 1761073703459,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1761072564095,
-      "end": 1761072564095,
+      "start": 1761073703459,
+      "end": 1761073703459,
       "order": "normal-normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1761072564095,
-      "end": 1761072564095,
+      "start": 1761073703459,
+      "end": 1761073703459,
       "order": "normal-normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1761072564095,
-      "end": 1761072564095,
+      "start": 1761073703459,
+      "end": 1761073703459,
       "order": "normal-normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1761072564095,
-      "end": 1761072564095,
+      "start": 1761073703459,
+      "end": 1761073703459,
       "order": "normal-normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1761072564095,
-      "end": 1761072564095,
+      "start": 1761073703459,
+      "end": 1761073703459,
       "order": "normal-normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1761072564095,
-      "end": 1761072564095,
+      "start": 1761073703459,
+      "end": 1761073703459,
       "order": "normal-normal"
     },
     {
       "name": "unplugin-vue-components",
       "result": "/* unplugin-vue-components disabled */import { defineComponent as _defineComponent } from \"vue\";\nimport { normalizeClass as _normalizeClass, createElementVNode as _createElementVNode, toDisplayString as _toDisplayString, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\";\nconst _hoisted_1 = { class: \"root\" };\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"CategoryCard\",\n  props: {\n    label: {},\n    icon: {},\n    category: {}\n  },\n  setup(__props) {\n    return (_ctx, _cache) => {\n      const _component_RouterLink = _resolveComponent(\"RouterLink\");\n      return _openBlock(), _createElementBlock(\"li\", _hoisted_1, [\n        _createVNode(_component_RouterLink, {\n          to: { path: \"/products\", query: { category: __props.category } },\n          class: \"card-link\"\n        }, {\n          default: _withCtx(() => [\n            _createElementVNode(\"span\", {\n              class: _normalizeClass(__props.icon)\n            }, null, 2),\n            _createElementVNode(\"p\", null, _toDisplayString(__props.label), 1)\n          ]),\n          _: 1\n        }, 8, [\"to\"])\n      ]);\n    };\n  }\n});\n",
-      "start": 1761072564095,
-      "end": 1761072564095,
+      "start": 1761073703459,
+      "end": 1761073703459,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -99,14 +99,14 @@
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1761072564096,
-      "end": 1761072564096,
+      "start": 1761073703459,
+      "end": 1761073703459,
       "order": "normal-normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1761072564096,
-      "end": 1761072564096,
+      "start": 1761073703459,
+      "end": 1761073703459,
       "order": "normal"
     }
   ]

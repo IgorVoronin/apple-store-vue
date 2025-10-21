@@ -4,20 +4,20 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { createElementVNode as _createElementVNode, unref as _unref, resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, renderList as _renderList, Fragment as _Fragment, createElementBlock as _createElementBlock, withCtx as _withCtx, createVNode as _createVNode } from \"vue\"\n\nconst _hoisted_1 = { class: \"my-[80px] text-2xl\" }\nconst _hoisted_2 = {\n  key: 1,\n  class: \"list\"\n}\n\nimport { useUnit } from 'effector-vue/composition';\n\nimport { MainContainer } from '@/shared/ui';\n\nimport { CategoryCard, getAllProductsQuery, ProductModel } from '@/entities/Product';\n\n\nexport default /*@__PURE__*/_defineComponent({\n  __name: 'CategoriesView',\n  setup(__props) {\n\nconst [categories, isLoading] = useUnit([ProductModel.$categories, getAllProductsQuery.$pending]);\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_ProgressSpinner = _resolveComponent(\"ProgressSpinner\")!\n\n  return (_openBlock(), _createElementBlock(\"section\", _hoisted_1, [\n    _createVNode(_unref(MainContainer), null, {\n      default: _withCtx(() => [\n        _cache[0] || (_cache[0] = _createElementVNode(\"h2\", { class: \"italic mb-[32px]\" }, \"Browse by category\", -1)),\n        (_unref(isLoading))\n          ? (_openBlock(), _createBlock(_component_ProgressSpinner, {\n              key: 0,\n              class: \"justify-center flex my-8\"\n            }))\n          : _createCommentVNode(\"\", true),\n        (!_unref(isLoading))\n          ? (_openBlock(), _createElementBlock(\"ul\", _hoisted_2, [\n              (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(_unref(categories), (category) => {\n                return (_openBlock(), _createBlock(_unref(CategoryCard), {\n                  key: category.id,\n                  label: category.label,\n                  icon: category.icon,\n                  category: category.category\n                }, null, 8, [\"label\", \"icon\", \"category\"]))\n              }), 128))\n            ]))\n          : _createCommentVNode(\"\", true)\n      ]),\n      _: 1\n    })\n  ]))\n}\n}\n\n})",
-      "start": 1761072563557,
-      "end": 1761072563557
+      "start": 1761073702942,
+      "end": 1761073702942
     },
     {
       "name": "@tailwindcss/vite:generate:build",
-      "start": 1761072563557,
-      "end": 1761072563557,
+      "start": 1761073702942,
+      "end": 1761073702942,
       "order": "pre"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { createElementVNode as _createElementVNode, unref as _unref, resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, renderList as _renderList, Fragment as _Fragment, createElementBlock as _createElementBlock, withCtx as _withCtx, createVNode as _createVNode } from \"vue\";\nconst _hoisted_1 = { class: \"my-[80px] text-2xl\" };\nconst _hoisted_2 = {\n  key: 1,\n  class: \"list\"\n};\nimport { useUnit } from \"effector-vue/composition\";\nimport { MainContainer } from \"@/shared/ui\";\nimport { CategoryCard, getAllProductsQuery, ProductModel } from \"@/entities/Product\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"CategoriesView\",\n  setup(__props) {\n    const [categories, isLoading] = useUnit([ProductModel.$categories, getAllProductsQuery.$pending]);\n    return (_ctx, _cache) => {\n      const _component_ProgressSpinner = _resolveComponent(\"ProgressSpinner\");\n      return _openBlock(), _createElementBlock(\"section\", _hoisted_1, [\n        _createVNode(_unref(MainContainer), null, {\n          default: _withCtx(() => [\n            _cache[0] || (_cache[0] = _createElementVNode(\"h2\", { class: \"italic mb-[32px]\" }, \"Browse by category\", -1)),\n            _unref(isLoading) ? (_openBlock(), _createBlock(_component_ProgressSpinner, {\n              key: 0,\n              class: \"justify-center flex my-8\"\n            })) : _createCommentVNode(\"\", true),\n            !_unref(isLoading) ? (_openBlock(), _createElementBlock(\"ul\", _hoisted_2, [\n              (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(_unref(categories), (category) => {\n                return _openBlock(), _createBlock(_unref(CategoryCard), {\n                  key: category.id,\n                  label: category.label,\n                  icon: category.icon,\n                  category: category.category\n                }, null, 8, [\"label\", \"icon\", \"category\"]);\n              }), 128))\n            ])) : _createCommentVNode(\"\", true)\n          ]),\n          _: 1\n        })\n      ]);\n    };\n  }\n});\n",
-      "start": 1761072563559,
-      "end": 1761072563794,
+      "start": 1761073702943,
+      "end": 1761073703210,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -33,57 +33,57 @@
     },
     {
       "name": "vite:worker",
-      "start": 1761072563794,
-      "end": 1761072563794,
+      "start": 1761073703210,
+      "end": 1761073703210,
       "order": "normal-normal"
     },
     {
       "name": "vite:vue",
-      "start": 1761072563794,
-      "end": 1761072563794,
+      "start": 1761073703210,
+      "end": 1761073703210,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1761072563794,
-      "end": 1761072563794,
+      "start": 1761073703211,
+      "end": 1761073703211,
       "order": "normal-normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1761072563794,
-      "end": 1761072563794,
+      "start": 1761073703211,
+      "end": 1761073703211,
       "order": "normal-normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1761072563794,
-      "end": 1761072563794,
+      "start": 1761073703211,
+      "end": 1761073703211,
       "order": "normal-normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1761072563794,
-      "end": 1761072563794,
+      "start": 1761073703211,
+      "end": 1761073703211,
       "order": "normal-normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1761072563794,
-      "end": 1761072563794,
+      "start": 1761073703211,
+      "end": 1761073703211,
       "order": "normal-normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1761072563794,
-      "end": 1761072563794,
+      "start": 1761073703211,
+      "end": 1761073703211,
       "order": "normal-normal"
     },
     {
       "name": "unplugin-vue-components",
       "result": "/* unplugin-vue-components disabled */import __unplugin_components_0 from 'primevue/progressspinner';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { createElementVNode as _createElementVNode, unref as _unref, resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, renderList as _renderList, Fragment as _Fragment, createElementBlock as _createElementBlock, withCtx as _withCtx, createVNode as _createVNode } from \"vue\";\nconst _hoisted_1 = { class: \"my-[80px] text-2xl\" };\nconst _hoisted_2 = {\n  key: 1,\n  class: \"list\"\n};\nimport { useUnit } from \"effector-vue/composition\";\nimport { MainContainer } from \"@/shared/ui\";\nimport { CategoryCard, getAllProductsQuery, ProductModel } from \"@/entities/Product\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"CategoriesView\",\n  setup(__props) {\n    const [categories, isLoading] = useUnit([ProductModel.$categories, getAllProductsQuery.$pending]);\n    return (_ctx, _cache) => {\n      const _component_ProgressSpinner = __unplugin_components_0;\n      return _openBlock(), _createElementBlock(\"section\", _hoisted_1, [\n        _createVNode(_unref(MainContainer), null, {\n          default: _withCtx(() => [\n            _cache[0] || (_cache[0] = _createElementVNode(\"h2\", { class: \"italic mb-[32px]\" }, \"Browse by category\", -1)),\n            _unref(isLoading) ? (_openBlock(), _createBlock(_component_ProgressSpinner, {\n              key: 0,\n              class: \"justify-center flex my-8\"\n            })) : _createCommentVNode(\"\", true),\n            !_unref(isLoading) ? (_openBlock(), _createElementBlock(\"ul\", _hoisted_2, [\n              (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(_unref(categories), (category) => {\n                return _openBlock(), _createBlock(_unref(CategoryCard), {\n                  key: category.id,\n                  label: category.label,\n                  icon: category.icon,\n                  category: category.category\n                }, null, 8, [\"label\", \"icon\", \"category\"]);\n              }), 128))\n            ])) : _createCommentVNode(\"\", true)\n          ]),\n          _: 1\n        })\n      ]);\n    };\n  }\n});\n",
-      "start": 1761072563794,
-      "end": 1761072563795,
+      "start": 1761073703211,
+      "end": 1761073703212,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -99,14 +99,14 @@
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1761072563795,
-      "end": 1761072563796,
+      "start": 1761073703213,
+      "end": 1761073703213,
       "order": "normal-normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1761072563796,
-      "end": 1761072563796,
+      "start": 1761073703213,
+      "end": 1761073703213,
       "order": "normal"
     }
   ]

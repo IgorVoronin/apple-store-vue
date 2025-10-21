@@ -4,20 +4,20 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { createElementVNode as _createElementVNode, renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, unref as _unref, createVNode as _createVNode, withCtx as _withCtx, createBlock as _createBlock, createCommentVNode as _createCommentVNode } from \"vue\"\n\nconst _hoisted_1 = {\n  key: 0,\n  class: \"related-section\"\n}\nconst _hoisted_2 = { class: \"related-container\" }\n\nimport { computed } from 'vue';\r\nimport { useUnit } from 'effector-vue/composition';\r\n\r\nimport { type Product, ProductList, ProductPreview, getProductByIdQuery } from '@/entities/Product';\r\nimport { ProductModel } from '@/entities/Product';\r\n\r\nimport { AddProductToCartAction } from '@/features/AddProductToCartAction';\r\nimport { ProductLikeAction } from '@/features/ProductLikeAction';\r\n\r\n\nexport default /*@__PURE__*/_defineComponent({\n  __name: 'RelatedProducts',\n  setup(__props) {\n\r\nconst { data: currentProduct } = useUnit(getProductByIdQuery);\r\nconst [allProducts] = useUnit([ProductModel.$availableProducts]);\r\n\r\n// Находим похожие товары той же категории (исключая текущий товар)\r\nconst relatedProducts = computed(() => {\r\n    if (!currentProduct.value?.category) return [];\r\n    \r\n    return allProducts.value\r\n        .filter(product => \r\n            product.category === currentProduct.value.category && \r\n            product.id !== currentProduct.value.id\r\n        )\r\n        .slice(0, 4); // Показываем 4 товара\r\n});\r\n\nreturn (_ctx: any,_cache: any) => {\n  return (relatedProducts.value.length > 0)\n    ? (_openBlock(), _createElementBlock(\"section\", _hoisted_1, [\n        _createElementVNode(\"div\", _hoisted_2, [\n          _cache[0] || (_cache[0] = _createElementVNode(\"h2\", { class: \"related-title\" }, \"Related Products\", -1)),\n          _createVNode(_unref(ProductList), { class: \"related-grid\" }, {\n            default: _withCtx(() => [\n              (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(relatedProducts.value, (product) => {\n                return (_openBlock(), _createBlock(_unref(ProductPreview), {\n                  key: product.id,\n                  product: product as Product\n                }, {\n                  \"like-btn\": _withCtx(() => [\n                    _createVNode(_unref(ProductLikeAction), {\n                      \"product-id\": product.id\n                    }, null, 8, [\"product-id\"])\n                  ]),\n                  \"cart-btn\": _withCtx(() => [\n                    _createVNode(_unref(AddProductToCartAction), {\n                      product: product as Product\n                    }, null, 8, [\"product\"])\n                  ]),\n                  _: 2\n                }, 1032, [\"product\"]))\n              }), 128))\n            ]),\n            _: 1\n          })\n        ])\n      ]))\n    : _createCommentVNode(\"\", true)\n}\n}\n\n})",
-      "start": 1761072563560,
-      "end": 1761072563560
+      "start": 1761073702929,
+      "end": 1761073702929
     },
     {
       "name": "@tailwindcss/vite:generate:build",
-      "start": 1761072563560,
-      "end": 1761072563560,
+      "start": 1761073702929,
+      "end": 1761073702929,
       "order": "pre"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { createElementVNode as _createElementVNode, renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, unref as _unref, createVNode as _createVNode, withCtx as _withCtx, createBlock as _createBlock, createCommentVNode as _createCommentVNode } from \"vue\";\nconst _hoisted_1 = {\n  key: 0,\n  class: \"related-section\"\n};\nconst _hoisted_2 = { class: \"related-container\" };\nimport { computed } from \"vue\";\nimport { useUnit } from \"effector-vue/composition\";\nimport { ProductList, ProductPreview, getProductByIdQuery } from \"@/entities/Product\";\nimport { ProductModel } from \"@/entities/Product\";\nimport { AddProductToCartAction } from \"@/features/AddProductToCartAction\";\nimport { ProductLikeAction } from \"@/features/ProductLikeAction\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"RelatedProducts\",\n  setup(__props) {\n    const { data: currentProduct } = useUnit(getProductByIdQuery);\n    const [allProducts] = useUnit([ProductModel.$availableProducts]);\n    const relatedProducts = computed(() => {\n      if (!currentProduct.value?.category) return [];\n      return allProducts.value.filter(\n        (product) => product.category === currentProduct.value.category && product.id !== currentProduct.value.id\n      ).slice(0, 4);\n    });\n    return (_ctx, _cache) => {\n      return relatedProducts.value.length > 0 ? (_openBlock(), _createElementBlock(\"section\", _hoisted_1, [\n        _createElementVNode(\"div\", _hoisted_2, [\n          _cache[0] || (_cache[0] = _createElementVNode(\"h2\", { class: \"related-title\" }, \"Related Products\", -1)),\n          _createVNode(_unref(ProductList), { class: \"related-grid\" }, {\n            default: _withCtx(() => [\n              (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(relatedProducts.value, (product) => {\n                return _openBlock(), _createBlock(_unref(ProductPreview), {\n                  key: product.id,\n                  product\n                }, {\n                  \"like-btn\": _withCtx(() => [\n                    _createVNode(_unref(ProductLikeAction), {\n                      \"product-id\": product.id\n                    }, null, 8, [\"product-id\"])\n                  ]),\n                  \"cart-btn\": _withCtx(() => [\n                    _createVNode(_unref(AddProductToCartAction), {\n                      product\n                    }, null, 8, [\"product\"])\n                  ]),\n                  _: 2\n                }, 1032, [\"product\"]);\n              }), 128))\n            ]),\n            _: 1\n          })\n        ])\n      ])) : _createCommentVNode(\"\", true);\n    };\n  }\n});\n",
-      "start": 1761072563561,
-      "end": 1761072563794,
+      "start": 1761073702931,
+      "end": 1761073703210,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -33,57 +33,57 @@
     },
     {
       "name": "vite:worker",
-      "start": 1761072563794,
-      "end": 1761072563794,
+      "start": 1761073703210,
+      "end": 1761073703210,
       "order": "normal-normal"
     },
     {
       "name": "vite:vue",
-      "start": 1761072563794,
-      "end": 1761072563794,
+      "start": 1761073703210,
+      "end": 1761073703210,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1761072563794,
-      "end": 1761072563794,
+      "start": 1761073703211,
+      "end": 1761073703211,
       "order": "normal-normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1761072563794,
-      "end": 1761072563794,
+      "start": 1761073703211,
+      "end": 1761073703211,
       "order": "normal-normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1761072563794,
-      "end": 1761072563794,
+      "start": 1761073703211,
+      "end": 1761073703211,
       "order": "normal-normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1761072563794,
-      "end": 1761072563794,
+      "start": 1761073703211,
+      "end": 1761073703211,
       "order": "normal-normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1761072563794,
-      "end": 1761072563794,
+      "start": 1761073703211,
+      "end": 1761073703211,
       "order": "normal-normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1761072563794,
-      "end": 1761072563794,
+      "start": 1761073703211,
+      "end": 1761073703211,
       "order": "normal-normal"
     },
     {
       "name": "unplugin-vue-components",
       "result": "/* unplugin-vue-components disabled */import { defineComponent as _defineComponent } from \"vue\";\nimport { createElementVNode as _createElementVNode, renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, unref as _unref, createVNode as _createVNode, withCtx as _withCtx, createBlock as _createBlock, createCommentVNode as _createCommentVNode } from \"vue\";\nconst _hoisted_1 = {\n  key: 0,\n  class: \"related-section\"\n};\nconst _hoisted_2 = { class: \"related-container\" };\nimport { computed } from \"vue\";\nimport { useUnit } from \"effector-vue/composition\";\nimport { ProductList, ProductPreview, getProductByIdQuery } from \"@/entities/Product\";\nimport { ProductModel } from \"@/entities/Product\";\nimport { AddProductToCartAction } from \"@/features/AddProductToCartAction\";\nimport { ProductLikeAction } from \"@/features/ProductLikeAction\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"RelatedProducts\",\n  setup(__props) {\n    const { data: currentProduct } = useUnit(getProductByIdQuery);\n    const [allProducts] = useUnit([ProductModel.$availableProducts]);\n    const relatedProducts = computed(() => {\n      if (!currentProduct.value?.category) return [];\n      return allProducts.value.filter(\n        (product) => product.category === currentProduct.value.category && product.id !== currentProduct.value.id\n      ).slice(0, 4);\n    });\n    return (_ctx, _cache) => {\n      return relatedProducts.value.length > 0 ? (_openBlock(), _createElementBlock(\"section\", _hoisted_1, [\n        _createElementVNode(\"div\", _hoisted_2, [\n          _cache[0] || (_cache[0] = _createElementVNode(\"h2\", { class: \"related-title\" }, \"Related Products\", -1)),\n          _createVNode(_unref(ProductList), { class: \"related-grid\" }, {\n            default: _withCtx(() => [\n              (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(relatedProducts.value, (product) => {\n                return _openBlock(), _createBlock(_unref(ProductPreview), {\n                  key: product.id,\n                  product\n                }, {\n                  \"like-btn\": _withCtx(() => [\n                    _createVNode(_unref(ProductLikeAction), {\n                      \"product-id\": product.id\n                    }, null, 8, [\"product-id\"])\n                  ]),\n                  \"cart-btn\": _withCtx(() => [\n                    _createVNode(_unref(AddProductToCartAction), {\n                      product\n                    }, null, 8, [\"product\"])\n                  ]),\n                  _: 2\n                }, 1032, [\"product\"]);\n              }), 128))\n            ]),\n            _: 1\n          })\n        ])\n      ])) : _createCommentVNode(\"\", true);\n    };\n  }\n});\n",
-      "start": 1761072563794,
-      "end": 1761072563795,
+      "start": 1761073703211,
+      "end": 1761073703212,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -99,14 +99,14 @@
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1761072563795,
-      "end": 1761072563795,
+      "start": 1761073703212,
+      "end": 1761073703213,
       "order": "normal-normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1761072563796,
-      "end": 1761072563796,
+      "start": 1761073703213,
+      "end": 1761073703213,
       "order": "normal"
     }
   ]
